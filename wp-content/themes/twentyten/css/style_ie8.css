@@ -1,0 +1,27 @@
+#site-search{
+	top:0px;
+	position:relative;
+	height:12px;
+	padding-top:4px;
+}
+
+#searchsubmit{
+	float:right;
+}
+
+.investor-hl-middle-item{
+	margin-bottom:20px;	
+	min-height:100px;
+	height:auto !important;
+	height:100px;
+}
+.investor-hl-content{
+	width:100%;
+	margin:10px auto;
+	overflow:none;	
+}
+
+#about-container{
+	overflow:visible;
+}
+#shareBox{top: 0px;right: 75px;}
