@@ -18,8 +18,6 @@ if($sitepress_settings['existing_content_language_verified']){
         <div id="icon-options-general" class="icon32 icon32_adv"><br /></div>
         <h2><?php echo __('WPML Overview', 'sitepress') ?></h2>    
         
-        <?php include ICL_PLUGIN_PATH . '/menu/basic_advanced_switch.php' ?>
-        
         <p><?php printf(__('WPML makes it possible to run full multilingual websites with WordPress. You are using <b>WPML %s</b>.', 'sitepress'), ICL_SITEPRESS_VERSION)?></p>
         
         <?php do_action('icl_page_overview_top'); ?>
@@ -91,7 +89,7 @@ if($sitepress_settings['existing_content_language_verified']){
                 </tr>
                 
                 <tr>
-                    <td><a href="admin.php?page=<?php echo basename(ICL_PLUGIN_PATH)?>/menu/translation-synchronization.php"><?php _e('Translation synchronization', 'sitepress')?></a></td>
+                    <td><a href="admin.php?page=<?php echo basename(ICL_PLUGIN_PATH)?>/menu/translation-management.php&sm=mcsetup"><?php _e('Translation synchronization', 'sitepress')?></a></td>
                     <td><?php _e('Controls how to synchronize between contents in different languages.','sitepress') ?></td>
                 </tr>
                 

@@ -37,11 +37,8 @@ define('CMS_NAV_CACHE_EXPIRE', '1 HOUR');
 
 class CMSNavigation{
     var $settings;
-    function __construct(){
-        $this->CMSNavigation();
-    } 
       
-    function CMSNavigation(){
+    function __construct(){
         
         global $cms_nav_ie_ver, $sitepress;
         if(!isset($sitepress)){
@@ -367,7 +364,7 @@ class CMSNavigation{
                             $smain_li_classes[] = 'selected_page';
                         }                        
                         
-                        ?><li<?php if(!empty($smain_li_classes)):?> class="<?php echo join(' ' , $smain_li_classes)?>"<?php endif?>><a href="<?php echo $sitepress->language_url(); ?>" class="<?php if($this->settings['cat_menu_contents'] != 'nothing'):?>trigger<?php endif?>"><?php echo $cat_menu_title  ?><?php if(!isset($cms_nav_ie_ver) || $cms_nav_ie_ver > 6): ?></a><?php endif; ?><?php
+                        ?><li<?php if(!empty($smain_li_classes)):?> class="<?php echo join(' ' , $smain_li_classes)?>"<?php endif?>><a href="<?php echo trailingslashit(get_option('home')) ?>" class="<?php if($this->settings['cat_menu_contents'] != 'nothing'):?>trigger<?php endif?>"><?php echo $cat_menu_title ?><?php if(!isset($cms_nav_ie_ver) || $cms_nav_ie_ver > 6): ?></a><?php endif; ?><?php
                     }else{
                         $sections = array();
                         $subpages = $wpdb->get_results("
@@ -564,7 +561,7 @@ class CMSNavigation{
             $sub = $wpdb->get_results("
                     SELECT p1.ID, meta_value AS section FROM {$wpdb->posts} p1 
                     LEFT JOIN {$wpdb->postmeta} p2 ON p1.ID=p2.post_id AND (meta_key='_cms_nav_section' OR meta_key IS NULL)
-                    WHERE post_parent='{$pid}' AND post_status='publish' ORDER BY {$order}"); 
+                    WHERE post_parent='{$pid}' AND post_type='page' AND post_status='publish' ORDER BY {$order}"); 
             if(empty($sub))  return;                   
             foreach($sub as $s){
                 $sections[$s->section][] = $s->ID;    
@@ -578,7 +575,7 @@ class CMSNavigation{
                     <?php endif; ?>
                     <?php foreach($sec as $s):?>
                     <li class="<?php if($post->ID==$s):?>selected_page_side <?php endif;?>icl-level-1"><?php
-                        if($post->ID!=$s):?><a href="<?php echo get_permalink($s); ?>"><?php endif?><?php echo get_the_title($s) ?><?php if($post->ID!=$s):?></a><?php endif;                                
+                        if($post->ID!=$s):?><a href="<?php echo get_permalink($s); ?>"><?php endif?><span><?php echo get_the_title($s) ?></span><?php if($post->ID!=$s):?></a><?php endif;                                
                             if(!get_post_meta($s, '_cms_nav_minihome', 1)){
                                 $this->__cms_navigation_child_pages_recursive($s, $order); 
                             }                
@@ -617,7 +614,7 @@ class CMSNavigation{
          if($subpages): ?><ul>
             <?php foreach($subpages as $s): 
             ?><li class="<?php if($post->ID==$s->ID):?>selected <?php endif;?>icl-level-<?php echo $level ?>"><?php
-                if($post->ID!=$s->ID):?><a href="<?php echo get_permalink($s->ID)?>"><?php endif;?><?php echo get_the_title($s->ID) ?><?php if($post->ID!=$s->ID):?></a><?php endif;
+                if($post->ID!=$s->ID):?><a href="<?php echo get_permalink($s->ID)?>"><?php endif;?><span><?php echo get_the_title($s->ID) ?></span><?php if($post->ID!=$s->ID):?></a><?php endif;
                 if(!$s->minihome) $this->__cms_navigation_child_pages_recursive($s->ID, $order, $level+1); 
             ?></li>
             <?php endforeach; ?>
@@ -752,6 +749,9 @@ class CMSNavigation{
         if(defined('ICL_DONT_LOAD_NAVIGATION_CSS') && ICL_DONT_LOAD_NAVIGATION_CSS){
             return;
         }
+        $path = dirname(substr(__FILE__, strpos(__FILE__,'wp-content')));
+        $path = str_replace('\\','/',$path);
+        $stylesheet = rtrim(get_option('siteurl'),'/') . '/' . $path . '/res'; 
         wp_enqueue_style('cms-navigation-style-base', ICL_PLUGIN_URL . '/modules/cms-navigation/css/cms-navigation-base.css', array(), ICL_SITEPRESS_VERSION, 'screen');            
         wp_enqueue_style('cms-navigation-style', ICL_PLUGIN_URL . '/modules/cms-navigation/css/cms-navigation.css', array(), ICL_SITEPRESS_VERSION, 'screen');            
     }

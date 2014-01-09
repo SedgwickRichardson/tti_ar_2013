@@ -17,8 +17,8 @@ class IclCommentsTranslation{
     function init(){
         global $current_user, $sitepress_settings, $sitepress, $pagenow, $wpdb;
         if($current_user->ID){
-            $this->enable_comments_translation = get_usermeta($current_user->data->ID,'icl_enable_comments_translation',true);
-            $this->enable_replies_translation = get_usermeta($current_user->data->ID,'icl_enable_replies_translation',true);
+            $this->enable_comments_translation = get_user_meta($current_user->data->ID,'icl_enable_comments_translation',true);
+            $this->enable_replies_translation = get_user_meta($current_user->data->ID,'icl_enable_replies_translation',true);
             
             $this->user_language = $sitepress->get_user_admin_language($current_user->data->ID);
             if(!$this->user_language){
@@ -688,7 +688,7 @@ class IclCommentsTranslation{
         if(!$lang){
             $lang = $this->user_language;
         }
-        $trid = $sitepress->set_element_language_details($comment_id, 'comment', null, $lang);        
+        $translation_id = $sitepress->set_element_language_details($comment_id, 'comment', null, $lang);        
     }
     
     function send_comment_to_translation($comment_id, $to_language){
@@ -698,8 +698,8 @@ class IclCommentsTranslation{
         
         $from_lang = $sitepress->get_language_details($this->user_language);
         $to_lang   = $sitepress->get_language_details($to_language);
-        $from_lang_server = apply_filters('icl_server_languages_map', $from_lang['english_name']);
-        $to_lang_server = apply_filters('icl_server_languages_map', $to_lang['english_name']);
+        $from_lang_server = ICL_Pro_Translation::server_languages_map($from_lang['english_name']);
+        $to_lang_server = ICL_Pro_Translation::server_languages_map($to_lang['english_name']);
         $body = $wpdb->get_var("SELECT comment_content FROM {$wpdb->comments} WHERE comment_ID={$comment_id}");
         $rid = $iclq->cms_create_message($body, $from_lang_server, $to_lang_server);
         if($rid > 0){
