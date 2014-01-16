@@ -267,15 +267,6 @@ $homeContent['zh-hant']['Executive Summary'] = '行政摘要';
 $homeContent['en']['MDA & Governance'] = 'MD&A & Governance';
 $homeContent['zh-hant']['MDA & Governance'] = '討論、分析與管治';
 
-/*$str1 = site_url().get_curr_lang_path();
-$str2 = get_curr_lang_second_path();
-
-$homeContent['en']['Power Equipment link'] = 'The Power Equipment business comprises power tools, hand tools, outdoor products and accessories. In 2012, sales at this business rose by 7.6% to USD2.9 billion, supported by growth in all geographic markets and the strong global expansion of <span class="resetLetterSpace">MILWAUKEE</span><sup>®</sup>. We have solid momentum behind the MILWAUKEE<sup>®</sup> REDLITHIUM™ cordless platforms and there has been further growth in Hand Tools and Power Tool Accessories. RYOBI<sup>®</sup> cordless lithium ion power tools and outdoor products continue to make impressive gains with consumers. The business accounted for 74.4% of Group turnover, against 72.6% in 2011. We generated approximately one third of sales from new products, in line with our plans. <a href="'.$str1.'/executive-summary'.$str2.'/power-equipment-highlights'.$str2.'">Power Equipment Highlights</a>';
-$homeContent['zh-hant']['Power Equipment link'] = '電動工具業務涵蓋電動工具、手動工具、戶外園藝工具及配件。在各地市場業務均見增長以及MILWAUKEE<sup>®</sup>品牌全球業務強勁增長的支持下，帶動電動工具業務二零一二年的銷售額上升7.6%至2,900,000,000美元。 <span class="resetLetterSpace">MILWAUKEE<sup>®</sup> REDLITHIUM™ </span>充電式平台增長動力強勁，而手動工具及電動工具配件亦有進一步增長。RYOBI<sup>®</sup>充電式鋰離子電動工具以及戶外園藝工具的顧客數量增長可觀，令人欣喜。年內電動工具業務佔本集團營業額74.4%，對比二零一一年則為72.6%。約三份之一銷售額來自嶄新產品，與計劃相符。 <a href="'.$str1.'/executive-summary'.$str2.'/power-equipment-highlights'.$str2.'">電動工具摘要</a>';
-
-$homeContent['en']['Floor care link'] = 'Floor care and Appliances margins improved significantly, but sales fell slightly by 1.6% over 2011 to USD1.0 billion following a rationalization of the business which has seen non-performing operations cut and expenses reduced in North America. Our global product development process and centralized purchasing initiatives are bringing benefits. Key gains were made in Europe, with double-digit revenue growth, while global new products sales were maintained at one third of total sales. The business accounted for 25.6% of Group turnover against 27.4% in 2011. <a href="'.$str1.'/executive-summary'.$str2.'/floor-care-and-appliances-highlights'.$str2.'">Floor Care and Appliances Highlights</a>;
-$homeContent['zh-hant']['Floor care link'] = '地板護理及器具的利潤率大幅改善，銷售額微降1.6%至1,000,000,000美元，原因乃年內推行業務整頓，重整北美洲一些表現欠佳的業務以削減部分開支。我們在全球推行的產品研發程序及中央採購策略持續發揮效用，主要得益見諸歐洲方面，營業額取得雙位數字增長，而全球新產品銷售額維持佔總營業額三份之一。此項業務佔本集團年內營業額25.6%，對比二零一一年則為27.4%。 <a href="'.$str1.'/executive-summary'.$str2.'/floor-care-and-appliances-highlights'.$str2.'">地板護理及器具概覽</a>';
-*/
 $homeContent['en']['Our Brands'] = 'Our Brands';
 $homeContent['zh-hant']['Our Brands'] = '我們的品牌';
 
@@ -436,10 +427,7 @@ $(window).load(function () {
 					<a class="addthis_button_reddit"></a>-->
 					<a class="addthis_button_email"></a>
 					<a class="addthis_button_sinaweibo"></a>
-					
 					<div id="qqwb_share__" data-appkey="801387349" data-icon="2" data-counter="0" data-content="<?php echo $homeContent[ICL_LANGUAGE_CODE]['tencent']; ?>"></div>
-					<!--<script type="text/javascript" src="http://china-addthis.googlecode.com/svn/trunk/addthis.js" charset="UTF-8"></script>
-					<a class="addico add_48" href="http://addthis.org.cn/go/?act=share&id=48" i="48" e="click" title="收藏&amp;分享">分享</a>-->
 			  </div>
 		  </div>
 		  <script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
@@ -556,18 +544,6 @@ $(window).load(function () {
                           </div>
                         </div>
                       </div>
-                      <!--<div class="graphContainer noMarginRight oneQuarterGraph">
-														<div class="graphTitleDiv">
-															<span class="graphTitle">Turnover </span>
-															<span class="graphUnit"(US’000)</span>
-														</div>
-														<div class="graphProfile">
-															<span class="smallFont">US</span>
-															<span class="largeFont">0.0</span>
-															<span class="smallFont">billion</span>
-														</div>
-														<img src="<?php bloginfo('wpurl'); ?>/wp-content/themes/twentyten/images/home/img_highlight_graph_2.jpg" alt="" />
-													</div>-->
                       <div class="reviewOperationDetailContent">
                         <?php
 													if(ICL_LANGUAGE_CODE=="en"){
@@ -606,18 +582,6 @@ $(window).load(function () {
                           </div>
                         </div>
                       </div>
-                      <!--<div class="graphContainer noMarginRight oneQuarterGraph">
-														<div class="graphTitleDiv">
-															<span class="graphTitle">Turnover </span>
-															<span class="graphUnit"(US’000)</span>
-														</div>
-														<div class="graphProfile">
-															<span class="smallFont">US</span>
-															<span class="largeFont">0.0</span>
-															<span class="smallFont">billion</span>
-														</div>
-														<img src="<?php bloginfo('wpurl'); ?>/wp-content/themes/twentyten/images/home/img_highlight_graph_2.jpg" alt="" />
-													</div>-->
                       <div class="reviewOperationDetailContent">
                         <?php
 													if(ICL_LANGUAGE_CODE=="en"){
@@ -639,7 +603,6 @@ $(window).load(function () {
             <div class="sectionContent">
               <div class="homeSectionContentDiv lessPaddingTop">
                 <div class="headlineTitle"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Our Brands'] ;?></div>
-                <!--<div class="reviewOperationDetailContent threeQuarterWidth">Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>-->
                 <div class="subheadlineTitle"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Power Equipment'] ;?></div>
                 <div class="brandTabContainer">
                   <div class="clearfix" id="homePowerEquipmentBrandTabContainer">
@@ -782,7 +745,6 @@ $(window).load(function () {
             </div>
             <div class="sectionContent">
               <div class="homeSectionContentDiv"> 
-                <!--<div class="headlineTitle">Sales by Location</div>-->
                 <div class="subheadlineTitle"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Sales by Location'] ;?></div>
                 <div class="clearfix">
                   <div class="graphContainer">
@@ -824,26 +786,14 @@ $(window).load(function () {
                 <div class="clearfix">
                   <div class="graphContainer">
                     <div class="graphTitleDiv"> <span class="graphTitle"><?php echo $homeContent[ICL_LANGUAGE_CODE]['NORTH AMERICA'] ;?></span> </div>
-                    <!--<div class="graphProfile">
-													<span class="smallFont">US</span>
-													<span class="largeFont">$0,000,000</span>
-												</div>-->
                     <div id="home-graph-container-10" class="graph-container" style="height:150px;width:250px"></div>
                   </div>
                   <div class="graphContainer">
                     <div class="graphTitleDiv"> <span class="graphTitle"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Europe'] ;?></span> </div>
-                    <!--<div class="graphProfile">
-													<span class="smallFont">US</span>
-													<span class="largeFont">$0,000,000</span>
-												</div>-->
                     <div id="home-graph-container-11" class="graph-container" style="height:150px;width:250px"></div>
                   </div>
                   <div class="graphContainer noMarginRight">
                     <div class="graphTitleDiv"> <span class="graphTitle"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Rest of the World'] ;?></span> </div>
-                    <!--<div class="graphProfile">
-													<span class="smallFont">US</span>
-													<span class="largeFont">$0,000,000</span>
-												</div>-->
                     <div id="home-graph-container-12" class="graph-container" style="height:150px;width:250px"></div>
                   </div>
                 </div>
@@ -914,26 +864,13 @@ $(window).load(function () {
         </div>
       </div>
       <div id="secondary"> 
-        <!--<ul id="homeRightNav" class="homeRightNav">
-						  <li class="active"><a href="#hightlights">HIGHLIGHTS</a></li>
-						  <li><a href="#chairman">CHAIRMAN'S STATEMENT</a></li>
-						  <li><a href="#operational">OPERATIONAL HIGHLIGHTS</a></li>
-						  <li><a href="#ceo">CEO'S STATEMENT</a></li>
-						  <li><a href="#review">REVIEW OF OPERATIONS</a></li>
-						  <li><a href="#downloads" class="lastItem">DOWNLOADS</a></li>
-						</ul>-->
         <div id="homeRightNav"> <a href="javascript:;" class="active"><?php echo $homeContent[ICL_LANGUAGE_CODE]['HIGHLIGHTS'] ;?></a> <a href="javascript:;"><?php echo $homeContent[ICL_LANGUAGE_CODE]['CHAIRMANS STATEMENT'] ;?></a><a href="javascript:;"><?php echo $homeContent[ICL_LANGUAGE_CODE]['CEO title'] ;?></a> <a href="javascript:;"><?php echo $homeContent[ICL_LANGUAGE_CODE]['REVIEW OF OPERATIONS'] ;?></a> <a href="javascript:;"><?php echo $homeContent[ICL_LANGUAGE_CODE]['OPERATIONAL HIGHLIGHTS'] ;?></a>  <a href="javascript:;" class="lastItem"><?php echo $homeContent[ICL_LANGUAGE_CODE]['DOWNLOADS'] ;?></a> </div>
       </div>
     </div>
-    <?php
-			/* Run the loop to output the page.
-			 * If you want to overload this in a child theme then include a file
-			 * called loop-page.php and that will be used instead.
-			 */
-			 //get_template_part( 'loop', 'page' );
-			?>
   </div>
   <!-- #content --> 
 </div>
 <!-- #container -->
-<?php get_footer(); ?>
+<?php
+	get_footer();
+?>

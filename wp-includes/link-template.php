@@ -2531,3 +2531,22 @@ function the_shortlink( $text = '', $title = '', $before = '', $after = '' ) {
 		echo $before, $link, $after;
 	}
 }
+
+//Custom breadcrumb function
+function get_breadcrumb($post, $showHome){
+	$parents = get_post_ancestors($post);	
+	array_flip($parents);
+	
+	if($showHome){
+		$frontpage_id = get_option('page_on_front');
+		$fpObj = wp_get_single_post( $frontpage_id, "ARRAY_A" );
+		echo '<a href="'.icl_get_home_url().'">'.$fpObj['post_title'].'</a> &#8250; ';
+	}
+	
+	for ($i = count($parents) - 1; $i >=0 ; $i--) { 
+		$pn = get_the_title($parents[$i]);
+		$permalink = get_permalink($parents[$i]);
+		echo '<a href="'.$permalink.'">'.$pn.'</a> &#8250; ';
+	}					
+	echo get_the_title();	
+}

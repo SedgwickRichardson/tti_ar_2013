@@ -17,11 +17,11 @@
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 
-define('DB_NAME', 'ttionline_r');
+define('DB_NAME', 'tti-ar-2013');
 define('WP_HOME', 'http://local.ttigroup.com');
 define('WP_SITEURL', 'http://local.ttigroup.com');
 define('DB_USER', 'root');
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', 'alvarpoon');
 define('DB_HOST', 'localhost');
 
 

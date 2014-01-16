@@ -2703,7 +2703,7 @@ function sanitize_user_object($user, $context = 'display') {
  * @param bool $start Optional, default is true. Whether to display link to first or last post.
  * @return string
  */
-function get_boundary_post_rel_link($title = '%title', $in_same_cat = false, $excluded_categories = '', $start = true) {
+/*function get_boundary_post_rel_link($title = '%title', $in_same_cat = false, $excluded_categories = '', $start = true) {
 	_deprecated_function( __FUNCTION__, '3.3' );
 
 	$posts = get_boundary_post($in_same_cat, $excluded_categories, $start);
@@ -2729,7 +2729,7 @@ function get_boundary_post_rel_link($title = '%title', $in_same_cat = false, $ex
 
 	$boundary = $start ? 'start' : 'end';
 	return apply_filters( "{$boundary}_post_rel_link", $link );
-}
+}*/
 
 /**
  * Display relational link for the first post.
@@ -2741,11 +2741,11 @@ function get_boundary_post_rel_link($title = '%title', $in_same_cat = false, $ex
  * @param bool $in_same_cat Optional. Whether link should be in a same category.
  * @param string $excluded_categories Optional. Excluded categories IDs.
  */
-function start_post_rel_link($title = '%title', $in_same_cat = false, $excluded_categories = '') {
+/* function start_post_rel_link($title = '%title', $in_same_cat = false, $excluded_categories = '') {
 	_deprecated_function( __FUNCTION__, '3.3' );
 
 	echo get_boundary_post_rel_link($title, $in_same_cat, $excluded_categories, true);
-}
+} */
 
 /**
  * Get site index relational link.
@@ -2755,12 +2755,12 @@ function start_post_rel_link($title = '%title', $in_same_cat = false, $excluded_
  *
  * @return string
  */
-function get_index_rel_link() {
+/* function get_index_rel_link() {
 	_deprecated_function( __FUNCTION__, '3.3' );
 
 	$link = "<link rel='index' title='" . esc_attr( get_bloginfo( 'name', 'display' ) ) . "' href='" . esc_url( user_trailingslashit( get_bloginfo( 'url', 'display' ) ) ) . "' />\n";
 	return apply_filters( "index_rel_link", $link );
-}
+} */
 
 /**
  * Display relational link for the site index.
@@ -2768,11 +2768,11 @@ function get_index_rel_link() {
  * @since 2.8.0
  * @deprecated 3.3.0
  */
-function index_rel_link() {
+/* function index_rel_link() {
 	_deprecated_function( __FUNCTION__, '3.3' );
 
 	echo get_index_rel_link();
-}
+} */
 
 /**
  * Get parent post relational link.
@@ -2783,7 +2783,7 @@ function index_rel_link() {
  * @param string $title Optional. Link title format.
  * @return string
  */
-function get_parent_post_rel_link($title = '%title') {
+/* function get_parent_post_rel_link($title = '%title') {
 	_deprecated_function( __FUNCTION__, '3.3' );
 
 	if ( ! empty( $GLOBALS['post'] ) && ! empty( $GLOBALS['post']->post_parent ) )
@@ -2803,7 +2803,7 @@ function get_parent_post_rel_link($title = '%title') {
 	$link .= "' href='" . get_permalink($post) . "' />\n";
 
 	return apply_filters( "parent_post_rel_link", $link );
-}
+} */
 
 /**
  * Display relational link for parent item
@@ -2811,11 +2811,11 @@ function get_parent_post_rel_link($title = '%title') {
  * @since 2.8.0
  * @deprecated 3.3.0
  */
-function parent_post_rel_link($title = '%title') {
+/* function parent_post_rel_link($title = '%title') {
 	_deprecated_function( __FUNCTION__, '3.3' );
 
 	echo get_parent_post_rel_link($title);
-}
+} */
 
 /**
  * Add the "Dashboard"/"Visit Site" menu.
