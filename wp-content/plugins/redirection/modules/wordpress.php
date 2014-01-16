@@ -12,16 +12,15 @@ class WordPress_Module extends Red_Module {
 		add_action( 'send_headers',            array( &$this, 'send_headers' ) );
 		add_filter( 'permalink_redirect_skip', array( &$this, 'permalink_redirect_skip' ) );
 		add_filter( 'wp_redirect',             array( &$this, 'wp_redirect' ), 1, 2 );
-		
+
 		// Remove WordPress 2.3 redirection
-		// XXX still needed?
 		remove_action( 'template_redirect', 'wp_old_slug_redirect' );
 		remove_action( 'edit_form_advanced', 'wp_remember_old_slug' );
 	}
-	
+
 	function init() {
 		global $redirection;
-		
+
 		$url = $_SERVER['REQUEST_URI'];
 
 		// Make sure we don't try and redirect something essential
@@ -41,12 +40,12 @@ class WordPress_Module extends Red_Module {
 			do_action( 'redirection_last', $url, $this );
 		}
 	}
-	
+
 	function protected_url( $url )
 	{
 		global $redirection;
 		$part = explode( '?', $url );
-		
+
 		if ( $part[0] == str_replace( get_bloginfo( 'url' ), '', $redirection->url() ).'/ajax.php' || strpos($url, 'wp-cron.php' ) !== false )
 			return true;
 		return false;
@@ -60,10 +59,14 @@ class WordPress_Module extends Red_Module {
 		return $status;
 	}
 
-	function send_headers( $obj )
-	{
-		if ( !empty($this->matched ) && $this->matched->type == '410' )
-			status_header( 410 );
+	function send_headers( $obj )	{
+		if ( !empty( $this->matched ) && $this->matched->match->action_code == '410' ) {
+			add_filter( 'status_header', array( &$this, 'set_header_410' ) );
+		}
+	}
+
+	function set_header_410() {
+		return 'HTTP/1.1 410 Gone';
 	}
 
 	function wp_redirect( $url, $status )
@@ -91,11 +94,11 @@ class WordPress_Module extends Red_Module {
 				return $url;
     }
 	}
-	
+
 	function save( $data ) {
 		return array();
 	}
-	
+
 	function permalink_redirect_skip( $skip ) {
 		// only want this if we:ve matched using redirection
 		if ( $this->matched )
@@ -110,7 +113,7 @@ class WordPress_Module extends Red_Module {
 			return false;
 		return true;
 	}
-	
+
 	function options()
 	{
 		if ( !$this->is_valid() )
