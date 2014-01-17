@@ -102,7 +102,7 @@ function wpml_languages_selector(){
 }
 
 function wpml_t($context, $name, $original_value){
-    if(function_exists(icl_t)){
+    if(function_exists('icl_t')){
         return icl_t($context, $name, $original_value);
     }else{
         return $original_value;
@@ -155,7 +155,7 @@ function wpml_default_link($anchor){
     }
     
     if($qv){
-        $link = '<a href="' .  $sitepress->language_url($sitepress->get_default_language()) . $url_glue . $qv . '" rel="nofollow">' . $anchor . '</a>';
+        $link = '<a href="' .  $sitepress->language_url($sitepress->get_default_language()) . $url_glue . $qv . '" rel="nofollow">' . esc_html($anchor) . '</a>';
     }else{
         $link = '';
     } 

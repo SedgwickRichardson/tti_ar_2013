@@ -3,7 +3,7 @@
     global $sitepress;
     $sitepress->add_language_selector_to_page($active_languages,
                                               $selected_language,
-                                              $translations,
+                                              empty($translations)?array():$translations,
                                               $element_id,
                                               'tag');
     $sitepress->add_translation_of_selector_to_page($trid,
@@ -16,7 +16,7 @@
     $sitepress->add_translate_options($trid,
                                    $active_languages,
                                    $selected_language,
-                                   $translations,
+                                   empty($translations)?array():$translations,
                                    'tag');
     
 ?>

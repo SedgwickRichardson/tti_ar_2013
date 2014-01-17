@@ -1,6 +1,8 @@
 jQuery(document).ready(function(){
 
-    jQuery('#icl_reminder_show').click(icl_show_hide_reminders);
+    jQuery('#icl_reminder_show').click(icl_show_toggle_reminders);
+    jQuery('#icl_reminder_close').click(icl_show_hide_reminders);
+    
 
     jQuery('#icl_reminder_message').css({'margin-bottom' : '5px'});
     jQuery('#icl_reminder_message').css({'padding-bottom' : '2px'});
@@ -19,7 +21,7 @@ jQuery(document).ready(function(){
 
 var do_message_refresh = false;
 function show_messages() {
-    var command = "icl_ajx_action=icl_messages";
+    var command = "icl_ajx_action=icl_messages&_icl_nonce=" + jQuery('#_icl_nonce_m').val();
     if (do_message_refresh) {
         command += "&refresh=1";
         do_message_refresh = false;
@@ -114,7 +116,7 @@ function icl_tb_set_size(domChunk) {
     }
 }
 
-function dismiss_message(message_id) {
+function dismiss_message(message_id, nonce) {
     do_message_refresh = false;
     jQuery('#icl_reminder_list').html('Refreshing messages  ' + icl_ajxloaderimg);
     tb_remove();
@@ -122,7 +124,7 @@ function dismiss_message(message_id) {
     jQuery.ajax({
         type: "POST",
         url: icl_ajx_url,
-        data: "icl_ajx_action=icl_delete_message&message_id=" + message_id,
+        data: "icl_ajx_action=icl_delete_message&message_id=" + message_id + '&_icl_nonce=' + nonce,
         async: false,
         success: function(msg){
         }
@@ -131,16 +133,17 @@ function dismiss_message(message_id) {
     show_messages();
 }
 
-function icl_show_hide_reminders() {
+function icl_show_toggle_reminders() {
     jqthis = jQuery(this);
     if(jQuery('#icl_reminder_list').css('display')=='none'){
         jQuery('#icl_reminder_list').fadeIn();
         jQuery.ajax({
             type: "POST",
             url: icl_ajx_url,
-            data: "icl_ajx_action=icl_show_reminders&state=show",
+            data: "icl_ajx_action=icl_show_reminders&state=show&_icl_nonce="+jQuery('#_icl_nonce_sr').val(),
             async: true,
             success: function(msg){
+                jqthis.removeClass('icl_maximize').addClass('icl_minimize')                
             }
         }); 
     } else {
@@ -148,9 +151,10 @@ function icl_show_hide_reminders() {
         jQuery.ajax({
             type: "POST",
             url: icl_ajx_url,
-            data: "icl_ajx_action=icl_show_reminders&state=hide",
+            data: "icl_ajx_action=icl_show_reminders&state=hide&_icl_nonce="+jQuery('#_icl_nonce_sr').val(),
             async: true,
             success: function(msg){
+                jqthis.removeClass('icl_minimize').addClass('icl_maximize')
             }
         }); 
         
@@ -158,6 +162,20 @@ function icl_show_hide_reminders() {
     jqthis.children().toggle();    
 }
 
+function icl_show_hide_reminders(){
+    if(confirm(jQuery('#icl_reminder_close_prompt').html())){
+        jQuery.ajax({
+            type: "POST",
+            url: icl_ajx_url,
+            data: "icl_ajx_action=icl_show_reminders&state=close&_icl_nonce="+jQuery('#_icl_nonce_sr').val(),
+            async: true,
+            success: function(msg){
+                jQuery('#icl_reminder_message').fadeOut();
+            }
+        }); 
+        
+    }
+}
 
 function icl_support_view_ticket() {
 		jQuery('#icl_support_table a.icl_support_viewed').bind('click',function(){

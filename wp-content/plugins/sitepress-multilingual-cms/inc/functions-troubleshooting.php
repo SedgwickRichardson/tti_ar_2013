@@ -15,19 +15,24 @@ if ( !function_exists('sys_get_temp_dir')) {
 }
 */  
 function icl_troubleshooting_dumpdb(){
-    ini_set('memory_limit','128M');
+    
+    if($_GET['nonce'] == wp_create_nonce('dbdump') && is_admin() &&  current_user_can('manage_options')){
+    
+        ini_set('memory_limit','128M');
 
-    $dump = _icl_ts_mysqldump(DB_NAME);
-    $gzdump = gzencode($dump, 9);
-    
-    header("Content-Type: application/force-download");
-    header("Content-Type: application/octet-stream");
-    header("Content-Type: application/download");
-    header("Content-Disposition: attachment; filename=" . DB_NAME . ".sql.gz");
-    //header("Content-Encoding: gzip");
-    header("Content-Length: ". strlen($gzdump));
-    
-    echo $gzdump;
+        $dump = _icl_ts_mysqldump(DB_NAME);
+        $gzdump = gzencode($dump, 9);
+        
+        header("Content-Type: application/force-download");
+        header("Content-Type: application/octet-stream");
+        header("Content-Type: application/download");
+        header("Content-Disposition: attachment; filename=" . DB_NAME . ".sql.gz");
+        //header("Content-Encoding: gzip");
+        header("Content-Length: ". strlen($gzdump));
+        
+        echo $gzdump;
+        exit;
+    }
 }
 
 
@@ -51,7 +56,7 @@ function _icl_ts_mysqldump($mysql_database)
     if( $result)
     {
         while( $row= mysql_fetch_row($result))
-        {
+        {       
             //_icl_ts_mysqldump_table_structure($row[0]);
             //_icl_ts_mysqldump_table_data($row[0]);
             _icl_ts_backup_table($row[0], 0, $fp);            
@@ -75,90 +80,6 @@ function _icl_ts_mysqldump($mysql_database)
     
     return $data ;
 }
-
-/*
-function _icl_ts_mysqldump_table_structure($table)
-{
-    echo "DROP TABLE IF EXISTS `$table`;\n\n";
-        
-    $sql="show create table `$table`; ";
-    $result=mysql_query($sql);
-    if( $result)
-    {
-        if($row= mysql_fetch_assoc($result))
-        {
-            echo $row['Create Table'].";\n\n";
-        }
-    }
-    mysql_free_result($result);
-
-}
-*/
-
-/*
-function _icl_ts_mysqldump_table_data($table)
-{
-    
-    $sql="select * from `$table`;";
-    $result=mysql_query($sql);
-    if( $result)
-    {
-        $num_rows= mysql_num_rows($result);
-        $num_fields= mysql_num_fields($result);
-        
-        if( $num_rows > 0)
-        {
-            $field_type=array();
-            $i=0;
-            while( $i < $num_fields)
-            {
-                $meta= mysql_fetch_field($result, $i);
-                array_push($field_type, $meta->type);
-                $i++;
-            }
-            
-            echo "INSERT INTO `$table` VALUES\n";
-            $index=0;
-            while( $row= mysql_fetch_row($result))
-            {
-                echo "(";
-                for( $i=0; $i < $num_fields; $i++)
-                {
-                    if( is_null( $row[$i]))
-                        echo "null";
-                    else
-                    {
-                        switch( $field_type[$i])
-                        {
-                            case 'int':
-                                echo $row[$i];
-                                break;
-                            case 'string':
-                            case 'blob' :
-                            default:
-                                echo "'".mysql_real_escape_string($row[$i])."'";
-                                
-                        }
-                    }
-                    if( $i < $num_fields-1)
-                        echo ",";
-                }
-                echo ")";
-                
-                if( $index < $num_rows-1)
-                    echo ",";
-                else
-                    echo ";";
-                echo "\n";
-                
-                $index++;
-            }
-        }
-    }
-    mysql_free_result($result);
-    echo "\n";
-}
-*/
 
 if ( ! defined('ROWS_PER_SEGMENT') ) define('ROWS_PER_SEGMENT', 100);
 
@@ -233,15 +154,24 @@ function _icl_ts_backup_table($table, $segment = 'none', $fp) {
                     foreach ($table_data as $row) {
                         $values = array();
                         foreach ($row as $key => $value) {
+                            
                             if ($ints[strtolower($key)]) {
                                 // make sure there are no blank spots in the insert syntax,
                                 // yet try to avoid quotation marks around integers
                                 $value = ( null === $value || '' === $value) ? $defs[strtolower($key)] : $value;
                                 $values[] = ( '' === $value ) ? "''" : $value;
                             } else {
-                                $values[] = "'" . str_replace($search, $replace, $wpdb->escape($value)) . "'";
+                                
+                                if(is_null($value)){
+                                    $values[] = 'NULL';
+                                }else{
+                                    $values[] = "'" . str_replace($search, $replace, esc_sql($value)) . "'";    
+                                    
+                                }
+                                
                             }
                         }
+                        
                         _icl_ts_stow(" \n" . $entries . implode(', ', $values) . ');', $fp);
                     }
                     $row_start += $row_inc;
@@ -254,4 +184,80 @@ function _icl_ts_backup_table($table, $segment = 'none', $fp) {
             _icl_ts_stow("\n", $fp);
         }
     } // end backup_table()  
+    
+
+    
+function icl_reset_wpml($blog_id = false){
+    global $wpdb;
+    
+    if(isset($_REQUEST['action']) && $_REQUEST['action'] == 'resetwpml'){
+        check_admin_referer( 'resetwpml' );    
+    }
+    
+    if(empty($blog_id)){
+        $blog_id = isset($_POST['id']) ? $_POST['id'] : $wpdb->blogid;
+    }
+    
+    define('ICL_IS_WPML_RESET', true);
+      
+    if($blog_id || !function_exists('is_multisite') || !is_multisite()){
+
+        if(function_exists('is_multisite') && is_multisite()){
+            switch_to_blog($blog_id);
+        }
+        
+        $icl_tables = array(
+            $wpdb->prefix . 'icl_languages',
+            $wpdb->prefix . 'icl_languages_translations',
+            $wpdb->prefix . 'icl_translations',
+            $wpdb->prefix . 'icl_translation_status',    
+            $wpdb->prefix . 'icl_translate_job',    
+            $wpdb->prefix . 'icl_translate',    
+            $wpdb->prefix . 'icl_locale_map',
+            $wpdb->prefix . 'icl_flags',
+            $wpdb->prefix . 'icl_content_status',
+            $wpdb->prefix . 'icl_core_status',
+            $wpdb->prefix . 'icl_node',
+            $wpdb->prefix . 'icl_strings',
+            $wpdb->prefix . 'icl_string_translations',
+            $wpdb->prefix . 'icl_string_status',
+            $wpdb->prefix . 'icl_string_positions',
+            $wpdb->prefix . 'icl_message_status',
+            $wpdb->prefix . 'icl_reminders',    
+        );
+                
+        foreach($icl_tables as $icl_table){
+            mysql_query("DROP TABLE IF EXISTS " . $icl_table);
+        }
+        
+        delete_option('icl_sitepress_settings');
+        delete_option('icl_sitepress_version');
+        delete_option('_icl_cache');
+        delete_option('_icl_admin_option_names');
+        delete_option('wp_icl_translators_cached');
+        delete_option('WPLANG');   
+         
+        $wpmu_sitewide_plugins = (array) maybe_unserialize( get_site_option( 'active_sitewide_plugins' ) );
+        if(!isset($wpmu_sitewide_plugins[ICL_PLUGIN_FOLDER.'/sitepress.php'])){
+            deactivate_plugins(basename(ICL_PLUGIN_PATH) . '/sitepress.php');
+            $ra = get_option('recently_activated');
+            $ra[basename(ICL_PLUGIN_PATH) . '/sitepress.php'] = time();
+            update_option('recently_activated', $ra);        
+        }else{
+            update_option('_wpml_inactive', true);
+        }
+        
+        
+        if(isset($_REQUEST['submit'])){            
+            wp_redirect(network_admin_url('admin.php?page='.ICL_PLUGIN_FOLDER.'/menu/network.php&updated=true&action=resetwpml'));
+            exit();
+        }
+        
+        if(function_exists('is_multisite') && is_multisite()){
+            restore_current_blog(); 
+        }
+        
+    }
+}
+
 ?>

@@ -34,8 +34,7 @@ function emw_intercept_login ($username) {
             $options['remember'] = $_POST['rememberme'];
             $options['language_number'] = 1;
             update_option('emw_login', $options);
-            header ('HTTP/1.1 301 Moved Permanently');
-            header ('Location: '.$next_domain."?emw-login&user={$username}&nonce={$options['nonce']}");
+            wp_redirect($next_domain."?emw-login&user={$username}&nonce={$options['nonce']}");
             die();
         }
     }
@@ -51,9 +50,8 @@ function emw_intercept_logout () {
         }
         $next_domain = $domains[$languages[1]['language_code']];
         wp_clear_auth_cookie();
-        header ('HTTP/1.1 301 Moved Permanently');
-        header ('Location: '.$next_domain.'?emw-logout&next_language=1&redirect_to='.$_GET['redirect_to']);
-        die();
+        wp_redirect($next_domain.'?emw-logout&next_language=1&redirect_to='.$_GET['redirect_to']);
+        exit;
     }
 }
 
@@ -82,14 +80,12 @@ function emw_check_cross_domain_login () {
                         $options['remember'] = $_POST['rememberme'];
                         $options['language_number'] = $options['language_number']+1;
                         update_option('emw_login', $options);
-                        header ('HTTP/1.1 301 Moved Permanently');
-                        header ('Location: '.$next_domain."?emw-login&user={$username}&nonce={$options['nonce']}");
-                        die();
+                        wp_redirect($next_domain."?emw-login&user={$username}&nonce={$options['nonce']}");
+                        exit;
                     } else {
                         delete_option ('emw_login');
-                        header ('HTTP/1.1 301 Moved Permanently');
-                        header ('Location: '.$options['redirect']);
-                        die();
+                        wp_redirect($options['redirect']);
+                        exit;
                     }
                 }
             } else {
@@ -112,17 +108,15 @@ function emw_check_cross_domain_login () {
             if (isset($languages[$language_index]['language_code'])) {
                 $next_domain = $domains[$languages[$language_index]['language_code']];
                 wp_clear_auth_cookie();
-                header ('HTTP/1.1 301 Moved Permanently');
-                header ('Location: '.$next_domain.'?emw-logout&next_language='.$language_index.'&redirect_to='.$_GET['redirect_to']);
-                die();
+                wp_redirect($next_domain.'?emw-logout&next_language='.$language_index.'&redirect_to='.$_GET['redirect_to']);
+                exit;
             } else {
                 wp_clear_auth_cookie();
-                header ('HTTP/1.1 301 Moved Permanently');
                 if ($_GET['redirect_to'])
-                    header ('Location: '.$_GET['redirect_to']);
+                    wp_redirect($_GET['redirect_to']);
                 else
-                    header ('Location: '.get_option('siteurl'));
-                die();
+                    wp_redirect(get_option('siteurl'));
+                exit;
             }
         }
     }

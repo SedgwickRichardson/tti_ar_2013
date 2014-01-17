@@ -9,10 +9,15 @@ function icl_cache_get($key){
 }  
 
 function icl_cache_set($key, $value=null){
+    
+    global $switched;
+    if(!empty($switched)) return; 
+    
     $icl_cache = get_option('_icl_cache');
     if(false === $icl_cache){
         delete_option('_icl_cache');
     }
+        
     if(!is_null($value)){
         $icl_cache[$key] = $value;    
     }else{
@@ -20,11 +25,40 @@ function icl_cache_set($key, $value=null){
             unset($icl_cache[$key]);
         }        
     }
+    
+    
     update_option('_icl_cache', $icl_cache);
 }
 
-function icl_cache_clear($key){
-    delete_option('_icl_cache');
+function icl_cache_clear($key = false, $key_as_prefix = false){
+    if($key === false){
+        delete_option('_icl_cache');    
+    }else{
+        $icl_cache = get_option('_icl_cache');
+        if(isset($icl_cache[$key])){
+            unset($icl_cache[$key]);
+        }
+
+		if($key_as_prefix) {
+			$cache_keys = array_keys($icl_cache);
+			foreach($cache_keys as $cache_key) {
+				if(strpos($cache_key, $key)===0) {
+					unset($icl_cache[$key]);
+				}
+			}
+		}
+                
+        // special cache of 'per language' - clear different statuses
+        if(false !== strpos($key, '_per_language')){
+            foreach($icl_cache as $k => $v){
+                if(false !== strpos($k, $key . '#')){
+                    unset($icl_cache[$k]);
+                }    
+            }        
+        }
+           
+        update_option('_icl_cache', $icl_cache);
+    }
 }
 
 define('ICL_DISABLE_CACHE', false);
@@ -50,7 +84,7 @@ class icl_cache{
         if(ICL_DISABLE_CACHE){
             return null;
         }
-        return $this->data[$key];
+        return isset($this->data[$key]) ? $this->data[$key] : false;
     }
     
     function has_key($key){

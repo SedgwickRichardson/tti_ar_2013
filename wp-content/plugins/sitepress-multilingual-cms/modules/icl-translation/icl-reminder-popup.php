@@ -5,8 +5,8 @@
     // NOTE: this is also used for other popup links to ICanLocalize
 
     global $wpdb;
-    	
-    $target = $_GET['target'];
+        
+    $target = $_GET['target'];    
     $auto_resize = isset($_GET['auto_resize']) && $_GET['auto_resize'];
     $unload_cb = isset($_GET['unload_cb']) ? $_GET['unload_cb'] : false;
     if(preg_match('|^@select-translators;([^;]+);([^;]+)@|', $target, $matches)){
@@ -20,7 +20,9 @@
         
         foreach($this->get_active_languages() as $lang){
             $lang_server[$lang['code']] = ICL_Pro_Translation::server_languages_map($lang['english_name']);
-        }        
+        }    
+        
+        
         if(!$this->icl_account_configured()){
             $user['create_account'] = 1;
             $user['anon'] = 1;
@@ -29,7 +31,7 @@
             $user['blogid'] = $wpdb->blogid?$wpdb->blogid:1;
             $user['url'] = get_option('siteurl');
             $user['title'] = get_option('blogname');
-            $user['description'] = $this->settings['icl_site_description'];
+            $user['description'] = @strval($this->settings['icl_site_description']);
             $user['is_verified'] = 1;                
            if(defined('ICL_AFFILIATE_ID') && defined('ICL_AFFILIATE_KEY')){
                 $user['affiliate_id'] = ICL_AFFILIATE_ID;
@@ -39,7 +41,7 @@
             $user['project_kind'] = 2;
             $user['pickup_type'] = intval($this->settings['translation_pickup_method']);
             $notifications = 0;
-            if ( $this->settings['icl_notify_complete']){
+            if ( !empty($this->settings['icl_notify_complete'])){
                 $notifications += 1;
             }
             if ( $this->settings['alert_delay']){
@@ -76,10 +78,19 @@
         }else{
             
             $iclsettings['language_pairs'] = $this->settings['language_pairs'];
-            $iclsettings['language_pairs'][$from_lang][$to_lang] = 1;
+            $iclsettings['language_pairs'][$from_lang][$to_lang] = 1;    
+            
+            // languages pair clean up            
+            
+            foreach($iclsettings['language_pairs'][$from_lang] as $tol => $val){
+                if(empty($lang_server[$tol])){
+                    unset($iclsettings['language_pairs'][$from_lang][$tol]);
+                }
+            }
             $this->save_settings($iclsettings);
             
             // update account - add language pair
+            $incr = 0;
             foreach($this->settings['language_pairs'] as $k=>$v){
                 foreach($v as $k2=>$v2){
                     $incr++;
@@ -98,6 +109,14 @@
         
         $icl_query = new ICanLocalizeQuery($this->settings['site_id'], $this->settings['access_key']);                
         $website_details = $icl_query->get_website_details();
+        
+        if(empty($website_details)){
+            echo '<p class="error">';
+            printf(__('There was a problem connecting to ICanLocalize. Please close this window and try again. If the problem persists please <a%s>contact us</a>.', 'sitepress'), 
+                ' target="_blank" href="http://wpml.org/?page_id=5255"');
+            echo '</p>';
+            exit;
+        }
         
         
         
@@ -119,22 +138,32 @@
     
     }
     
-    $support_mode = $_GET['support'];
+    $support_mode = isset($_GET['support']) ? $_GET['support'] : '';
     
+    /*
     if ($support_mode == '1') {
         $iclq = new ICanLocalizeQuery($this->settings['support_site_id'], $this->settings['support_access_key']);
     } else {
         $iclq = new ICanLocalizeQuery($this->settings['site_id'], $this->settings['access_key']);
     }
     $session_id = $iclq->get_current_session(true, $support_mode == '1');
+    */
+    if(isset($this->settings['site_id']) && isset($this->settings['access_key'])){
+        $iclq = new ICanLocalizeQuery($this->settings['site_id'], $this->settings['access_key']);
+        $session_id = $iclq->get_current_session(true, $support_mode == '1');
+    }else{
+        $session_id = '';
+    }
     
     $admin_lang = $this->get_admin_language();
     
-	
-	if (isset($_GET['code'])) {
-		$add = '&code=' . $_GET['code'];
-	}
-	
+    
+    if (isset($_GET['code'])) {
+        $add = '&code=' . urlencode($_GET['code']);
+    }else{
+        $add = '';
+    }
+    
     if (strpos($target, '?') === false) {
         $target .= '?';
     } else {
@@ -143,9 +172,9 @@
     $target .= "session=" . $session_id . "&lc=" . $admin_lang . $add;
     
 
-    $on_click = 'parent.dismiss_message(' . $_GET['message_id'] . ');';
+    $on_click = isset($_GET['message_id']) ? 'parent.dismiss_message(' . esc_js($_GET['message_id']) . ', \'' . wp_create_nonce('icl_delete_message_nonce') . '\');' : '';
     
-    $can_delete = isset($_GET['message_id']) ? $wpdb->get_var("SELECT can_delete FROM {$wpdb->prefix}icl_reminders WHERE id='{$_GET['message_id']}'") == '1' : false;
+    $can_delete = isset($_GET['message_id']) ? $wpdb->get_var($wpd->prepare("SELECT can_delete FROM {$wpdb->prefix}icl_reminders WHERE id=%d", $_GET['message_id'])) == '1' : false;
 
     $image_path = ICL_PLUGIN_URL . '/res/img/web_logo_small.png';
     echo '<img src="' . $image_path . '"  style="margin: 0px 0px 0px; float: left; "><br clear="all" />';
@@ -157,7 +186,6 @@
     <a id="icl_reminder_dismiss" href="#" onclick="<?php echo $on_click?>"><?php _e('Dismiss', 'sitepress')?></a>
     <br />
     <br />
-<?php endif; ?>
-<?php if(false !== strpos($_SERVER['HTTP_REFERER'], 'content-translation.php')) $ifrwidth='100%'; else $ifrwidth='98%'; ?>
-<iframe src="<?php echo $target;?>" style="width:<?php echo $ifrwidth ?>; height:92%" onload="<?php if($auto_resize):?>jQuery('#TB_window').css('width','90%').css('margin-left', '-45%');<?php endif; ?><?php if($unload_cb):?>jQuery('#TB_window').unbind('unload').bind('unload', <?php echo $unload_cb ?>);<?php endif; ?>">
+<?php endif; ?> 
+<iframe src="<?php echo $target;?>" style="width:100%; height:92%" onload="<?php if($auto_resize):?>jQuery('#TB_window').css('width','90%').css('margin-left', '-45%');<?php endif; ?><?php if($unload_cb):?>jQuery('#TB_window').unbind('unload').bind('tb_unload', <?php echo esc_js($unload_cb) ?>);<?php endif; ?>">
 

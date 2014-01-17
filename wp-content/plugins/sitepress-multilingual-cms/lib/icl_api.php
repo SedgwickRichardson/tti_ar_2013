@@ -21,7 +21,9 @@ class ICanLocalizeQuery{
     function createAccount($data){
 		if (isset($_GET['page']) && $_GET['page'] == ICL_PLUGIN_FOLDER . '/menu/support.php') {
 			$add = '?ignore_languages=1';
-		}
+		}else{
+            $add = '';
+        }
         $request = ICL_API_ENDPOINT . '/websites/create_by_cms.xml'.$add;
         $response = $this->_request($request, 'POST', $data);        
         
@@ -99,7 +101,7 @@ class ICanLocalizeQuery{
         $_display_errors = ini_get('display_errors');
         $_error_reporting = ini_get('error_reporting');
         ini_set('display_errors', '0');        
-        ini_set('error_reporting', E_NONE);        
+        ini_set('error_reporting', 0);        
         
         if (!@is_readable($c->curl_path) || !@is_executable($c->curl_path)){
             $c->curl_path = '/usr/bin/curl';
@@ -143,13 +145,15 @@ class ICanLocalizeQuery{
                 
         return $results;
     }
-    
-    function _request_gz($request_url){
-        $gzipped = true;
-        return $this->_request($request_url, 'GET', null, null, $gzipped);
-    }   
-       
-    function build_cms_request_xml($data, $orig_lang) {
+
+	function _request_gz( $request_url )
+	{
+		$gzipped = true; //function_exists( 'gzinflate' ) && is_callable( 'gzinflate' );
+
+		return $this->_request( $request_url, 'GET', null, null, $gzipped );
+	}
+
+	function build_cms_request_xml($data, $orig_lang) {
         global $wp_taxonomies;
         $taxonomies = array_diff(array_keys((array)$wp_taxonomies), array('post_tag','category'));
         
@@ -167,8 +171,13 @@ class ICanLocalizeQuery{
         $xml .= $tab.'<link url="'.$data['url'].'" />'.$nl;
         $xml .= $tab.'<contents>'.$nl;
         foreach($data['contents'] as $key=>$val){
-            if($key=='categories' || $key == 'tags' || in_array($key, $taxonomies)){$quote="'";}else{$quote='"';}
-            $xml .= $tab.$tab.'<content type="'.$key.'" translate="'.$val['translate'].'" data='.$quote.$val['data'].$quote;
+            if($key=='categories' || $key == 'tags' || in_array($key, $taxonomies)){
+                $quote="'";
+            }else{
+                $quote='"';
+            }
+            
+            $xml .= $tab.$tab.'<content type="' . htmlspecialchars(htmlspecialchars($key, ENT_QUOTES)) . '" translate="'.$val['translate'].'" data='.$quote.$val['data'].$quote;
             if(isset($val['format'])) $xml .= ' format="'.$val['format'].'"';
             $xml .=  ' />'.$nl;    
         }        
@@ -179,7 +188,7 @@ class ICanLocalizeQuery{
         }                
         $xml .= $tab.'</cms_target_languages>'.$nl;
         $xml .= '</cms_request_details>';                
-        
+       
         return $xml;
     }
       
@@ -266,7 +275,12 @@ class ICanLocalizeQuery{
     function cms_requests_all(){
         $request_url = ICL_API_ENDPOINT . '/websites/' . $this->site_id . '/cms_requests.xml?show_languages=1&accesskey=' . $this->access_key;        
         $res = $this->_request($request_url);
-        if(empty($res['info']['pending_cms_requests']['cms_request'])){
+        
+        if($res === false) return false;
+        
+        if(!isset($res['info']['pending_cms_requests']['cms_request'])){
+            $pending_requests = false;
+        }elseif(empty($res['info']['pending_cms_requests']['cms_request'])){
             $pending_requests = array();
         }elseif(count($res['info']['pending_cms_requests']['cms_request'])==1){
             $req = $res['info']['pending_cms_requests']['cms_request']['attr'];
@@ -278,6 +292,7 @@ class ICanLocalizeQuery{
                 $pending_requests[] = $req['attr'];
             }
         }
+        
         return $pending_requests;
     }   
     
@@ -297,12 +312,16 @@ class ICanLocalizeQuery{
         
         $request_url = ICL_API_ENDPOINT . '/websites/' . $this->site_id . '/cms_requests/'.$request_id.'/cms_download?accesskey=' . $this->access_key . '&language=' . $language;                        
         $res = $this->_request_gz($request_url); 
-    
+        
         $content = $res['cms_request_details']['contents']['content'];
                 
         $translation = array();
+        
         if($content)        
         foreach($content as $c){
+            
+            $c['attr']['type'] = htmlspecialchars_decode(htmlspecialchars_decode($c['attr']['type']), ENT_QUOTES);
+            
             if($c['attr']['type']=='tags' || $c['attr']['type']=='categories' || in_array($c['attr']['type'], $taxonomies)){
                 $exp = explode(',',$c['translations']['translation']['attr']['data']);
                 $arr = array();
@@ -320,15 +339,19 @@ class ICanLocalizeQuery{
             }else{
                 $translation[$c['attr']['type']] = $c['attr']['data'];
             }
-            if($c['attr']['format'] == 'base64'){
+            if(@strval($c['attr']['format']) == 'base64'){
                 $translation[$c['attr']['type']] = base64_decode($translation[$c['attr']['type']]);
             }
             
-            if($c['attr']['type'] == 'body'){
-                $translation['body'] = html_entity_decode($translation['body'], ENT_QUOTES, 'UTF-8');
-            }
+			// I've commented out this code. Any content that comes from ICL won't be html_entity_encoded.
+			// By Bruce
+			
+            //if($c['attr']['type'] == 'body'){
+            //    $translation['body'] = html_entity_decode($translation['body'], ENT_QUOTES, 'UTF-8');
+            //}
             
         }
+        
         return $translation;
     }
     
@@ -342,7 +365,7 @@ class ICanLocalizeQuery{
         
         $res = $this->_request($request_url, 'POST' , $parameters);
         
-        return ($res['result']['attr']['error_code']==0);
+        return ($res['info']['status']['attr']['err_code']==0);
     }
     
     function cms_request_translations($request_id){
@@ -468,24 +491,26 @@ class ICanLocalizeQuery{
                     $wpdb->insert($wpdb->prefix.'icl_reminders', $r);
                 }
                 // save the translator status
-                $sitepress->get_icl_translator_status($icl_settings, $website_data);
-                $sitepress->save_settings($iclsettings);               
+                @$sitepress->get_icl_translator_status(@$icl_settings, $website_data);
+                $sitepress->save_settings($icl_settings);               
                 
                 // Now add the reminders.
-                $reminders_xml = $res['info']['reminders']['reminder'];
-                if($reminders_xml) {
-                    
-                    if (sizeof($reminders_xml) == 1) {
-                        // fix problem when only on item found
-                        $reminders_xml = array($reminders_xml);
-                    }
-                    
-                    foreach($reminders_xml as $r){
-    
-                        $r['attr']['can_delete'] = $r['attr']['can_delete'] == 'true' ? 1 : 0;
-                        $r['attr']['show'] = 1;
+                if(!empty($res['info']['reminders']['reminder'])){
+                    $reminders_xml = $res['info']['reminders']['reminder'];
+                    if($reminders_xml) {
                         
-                        $wpdb->insert($wpdb->prefix.'icl_reminders', $r['attr']);
+                        if (sizeof($reminders_xml) == 1) {
+                            // fix problem when only on item found
+                            $reminders_xml = array($reminders_xml);
+                        }
+                        
+                        foreach($reminders_xml as $r){
+        
+                            $r['attr']['can_delete'] = $r['attr']['can_delete'] == 'true' ? 1 : 0;
+                            $r['attr']['show'] = 1;
+                            
+                            $wpdb->insert($wpdb->prefix.'icl_reminders', $r['attr']);
+                        }
                     }
                 }
                 $last_time = time();

@@ -208,7 +208,7 @@ function icl_upgrade_2_0_0_steps($step, $stepper){
 }
 
 // $iclsettings defined in upgrade.php
-if(!$iclsettings['migrated_2_0_0']){
+if(empty($iclsettings['migrated_2_0_0'])){
     wp_enqueue_script('icl-stepper', ICL_PLUGIN_URL . '/inc/upgrade-functions/2.0.0/stepper.js', array('jquery'));
     add_filter('admin_notices', 'icl_migrate_2_0_0');
     add_action('icl_ajx_custom_call', 'icl_ajx_upgrade_2_0_0', 1, 2);
@@ -219,7 +219,7 @@ function icl_migrate_2_0_0() {
     $txt = get_option('icl_temp_upgrade_data', FALSE) ? __('Resume Upgrade Process', 'sitepress') : __('Run Upgrade Process', 'sitepress');
     echo '<div class="message error" id="icl-migrate"><p><strong>'.__('WPML requires database upgrade', 'sitepress').'</strong></p>'
             .'<p>' . __('This normally takes a few seconds, but may last up to several minutes of very large databases.', 'sitepress') . '</p>' 
-            . '<p><a href="admin-ajax.php?icl_ajx_action=wpml_upgrade_2_0_0" style="" id="icl-migrate-start">' . $txt . '</a></p>'
+            . '<p><a href="index.php?icl_ajx_action=wpml_upgrade_2_0_0" style="" id="icl-migrate-start">' . $txt . '</a></p>'
             . '<div id="icl-migrate-progress" style="display:none; margin: 10px 0 20px 0;">'
             . '</div></div>';
 }

@@ -12,12 +12,12 @@
 ?>
 <?php $sitepress->noscript_notice() ?>
 <div class="wrap">
-    <div id="icon-options-general" class="icon32 icon32_adv"><br /></div>
+    <div id="icon-wpml" class="icon32"><br /></div>
     <h2><?php echo __('Affiliate information check', 'sitepress') ?></h2>    
     
     <form id="icl_affiliate_info_check" method="post" action="">
-    
-    <h3><?php _e('Affiliate test') ?></h3>
+    <?php wp_nonce_field('affiliate_info_check_nonce', '_icl_nonce'); ?>
+    <h3><?php _e('Affiliate test', 'sitepress') ?></h3>
     <table class="widefat">
         <tr>
             <td align="right"><?php _e('Affiliate ID', 'sitepress') ?></td>

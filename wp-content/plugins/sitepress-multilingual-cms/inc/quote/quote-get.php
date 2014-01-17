@@ -16,12 +16,12 @@
     function iclQuoteGetSetSelectLangs() {
         if (jQuery('#icl-quote-get-from').val() == 0) {
             jQuery('.icl-quote-get-toggle-to').fadeOut();
-            jQuery('.icl-quote-get-to').attr('checked', 0);
+            jQuery('.icl-quote-get-to').removeAttr('checked');
             iclQuoteGetCheckFromTo();
             return false;
         }
         jQuery('.icl-quote-get-toggle-to').fadeIn();
-        jQuery('#icl-quote-get-to-'+jQuery('#icl-quote-get-from').val()).attr('checked', 0).parent().hide(0,
+        jQuery('#icl-quote-get-to-'+jQuery('#icl-quote-get-from').val()).removeAttr('checked').parent().hide(0,
         function(){
             iclQuoteGetCheckFromTo();
         }
@@ -39,9 +39,9 @@
             enable = false;
         }
         if (enable) {
-            jQuery('#icl-quote-next-1').attr('disabled', 0);
+            jQuery('#icl-quote-next-1').removeAttr('disabled');
         } else {
-            jQuery('#icl-quote-next-1').attr('disabled', 1);
+            jQuery('#icl-quote-next-1').attr('disabled', 'disabled');
         }
     }
     function iclQuoteGetCheckContentCb() {
@@ -52,9 +52,9 @@
             }
         });
         if (enable) {
-            jQuery('#icl-quote-next-2').attr('disabled', 0);
+            jQuery('#icl-quote-next-2').removeAttr('disabled');
         } else {
-            jQuery('#icl-quote-next-2').attr('disabled', 1);
+            jQuery('#icl-quote-next-2').attr('disabled', 'disabled');
         }
     }
 </script>
@@ -95,7 +95,7 @@ function icl_quote_get_step_one($saved) {
     <?php _e('to these languages:', 'sitepress'); ?>
     <?php
             foreach ($active_languages as $code => $lang) {
-                $selected = is_array($saved['to']) && in_array($code, $saved['to']) ? ' checked="checked"' : '';
+                $selected = @is_array($saved['to']) && @in_array($code, $saved['to']) ? ' checked="checked"' : '';
 
     ?>
             <div class="icl-quote-get-toggle-to" style="display:none;">
@@ -147,6 +147,7 @@ function icl_quote_get_step_one($saved) {
                     $rows[$name]['num'] = 0;
                     continue;
                 }
+                $rows[$name]['words'] = 0;
                 foreach ($posts as $post) {
                     $meta_count = 0;
                     if (!empty($cf_settings)) {
@@ -172,7 +173,7 @@ function icl_quote_get_step_one($saved) {
         <h1><?php _e('Content Types', 'sitepress'); ?></h1>
 	<p>
 <?php printf(__('Your site includes different kinds of content items. Choose which types to include in the quote. <br /><br />To get the word count of specific documents, use the %sTranslation Dashboard%s.',
-                            'sitepress'), '<a href="admin.php?page=' . ICL_PLUGIN_FOLDER . '/menu/translation-management.php">', '</a>'); ?>
+                            'sitepress'), '<a href="admin.php?page=' . WPML_TM_FOLDER . '/menu/main.php">', '</a>'); ?>
         </p>
         <input type="hidden" name="step" value="2" />
         <table border="0" cellpadding="5" cellspacing="15" class="widefat" style="margin-top: 15px;">
@@ -187,7 +188,7 @@ function icl_quote_get_step_one($saved) {
             <tbody>
         <?php
             foreach ($rows as $type => $data) {
-                $selected = is_array($saved['content']) && array_key_exists($data['ID'], $saved['content']) ? ' checked="checked"' : '';
+                $selected = @is_array($saved['content']) && @array_key_exists($data['ID'], $saved['content']) ? ' checked="checked"' : '';
 
         ?>
                 <tr>
@@ -250,7 +251,7 @@ function icl_quote_get_step_one($saved) {
         <div id="icl-quote-get-wrap" style="margin: 25px 0 0 0">
             <form id="icl-quote-get-form" action="" method="post">
                 <input type="hidden" name="icl_ajx_action" value="quote-get-submit" />
-        <?php wp_nonce_field('quote-get-submit'); ?>
+        <?php wp_nonce_field('quote-get-submit_nonce', '_icl_nonce'); ?>
         <?php
         global $sitepress, $sitepress_settings;
         $continue = FALSE;
@@ -273,7 +274,7 @@ function icl_quote_get_step_one($saved) {
             icl_quote_get_step_three($saved);
         } else if (!isset($data['step']) || $data['step'] == 1) {
             if (isset($data['back'])) {
-                $saved['content'] = $data['content'];
+                $saved['content'] = empty($data['content'])?'':$data['content'];
                 $saved['description'] = $data['description'];
             }
             $saved['step'] = 1;

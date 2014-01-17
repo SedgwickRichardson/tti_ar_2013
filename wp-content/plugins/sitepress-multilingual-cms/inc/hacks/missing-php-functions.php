@@ -141,4 +141,13 @@ function money_format($format, $number)
 endif;
 
 if(!defined('E_DEPRECATED')){ define('E_DEPRECATED', 8192); }
+
+if(!function_exists('esc_textarea')):
+    
+    function esc_textarea( $text ) {
+        $safe_text = htmlspecialchars( $text, ENT_QUOTES );
+        return apply_filters( 'esc_textarea', $safe_text, $text );
+    }    
+    
+endif;
 ?>

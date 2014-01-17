@@ -2,7 +2,7 @@
 $icl_enabled_packages = $WPML_Packages->get_enabled_packages();
 ?>
 <div class="wrap">
-    <div id="icon-options-general" class="icon32" style="background: transparent url(<?php echo ICL_PLUGIN_URL ?>/res/img/icon.png) no-repeat"><br /></div>
+    <div id="icon-wpml" class="icon32"><br /></div>
     <h2><?php echo __('Setup WPML', 'sitepress') ?></h2>    
     
     <p class="error fade" style="padding:10px;"><?php _e('WPML compatibility packages will soon be obsolete and removed. Please use other means to make your site multilingual-ready.', 'sitepress')?></p>

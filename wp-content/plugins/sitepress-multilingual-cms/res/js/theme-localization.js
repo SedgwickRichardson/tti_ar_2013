@@ -1,10 +1,10 @@
 addLoadEvent(function(){     
     jQuery('#icl_theme_localization').submit(iclSaveThemeLocalization);
     jQuery('#icl_theme_localization_type').submit(iclSaveThemeLocalizationType);
-    jQuery('#icl_tl_rescan').click(iclThemeLocalizationRescan);
-    jQuery('#icl_tl_rescan_p').submit(iclThemeLocalizationRescanP);
+    jQuery('#icl_theme_localization_type :radio[name="icl_theme_localization_type"]').change(iclEditThemeLocalizationType);
+    jQuery('#icl_theme_localization_type :checkbox[name="icl_theme_localization_load_td"]').change(iclToggleTextDoomainInput);
     
-    jQuery('.check-column :checkbox').live('change', iclCheckColumn);
+    jQuery(document).delegate('.check-column :checkbox', 'change', iclCheckColumn);
 });
 
 function iclSaveThemeLocalization(){
@@ -27,9 +27,16 @@ function iclSaveThemeLocalization(){
 }
 
 function iclSaveThemeLocalizationType(){
+    jQuery(this).find('.icl_form_errors').fadeOut();
+    var val         = jQuery(this).find('[name="icl_theme_localization_type"]:checked').val();
+    var td_on       = jQuery(this).find('[name="icl_theme_localization_load_td"]').attr('checked');
+    var td_value    = jQuery(this).find('[name="textdomain_value"]').val();
+
+    if(val == 2 && td_on && !jQuery.trim(td_value)){
+        jQuery(this).find('.icl_form_errors_1').fadeIn();
+        return false;
+    }
     
-    var formname = jQuery(this).attr('name');
-    ajx_resp = jQuery('form[name="'+formname+'"] .icl_ajx_response').attr('id');
     jQuery.ajax({
         type: "POST",
         url: icl_ajx_url,
@@ -42,51 +49,28 @@ function iclSaveThemeLocalizationType(){
     return false;         
 }
 
-function iclThemeLocalizationRescan(){
-    var thisb = jQuery(this);
-    thisb.next().fadeIn();
-    var data = "icl_ajx_action=icl_tl_rescan";
-    if(jQuery('#icl_load_mo_themes').attr('checked')){
-        data += '&icl_load_mo=1';
-    }
-    jQuery.ajax({
-        type: "POST",
-        url: icl_ajx_url,
-        data: data,
-        success: function(msg){
-            thisb.next().fadeOut();
-            spl = msg.split('|');
-            jQuery('#icl_tl_scan_stats').html(spl[1]).fadeIn();
-            jQuery("#icl_strings_in_theme_wrap").load(location.href.replace(/#(.*)$/,'') + ' #icl_strings_in_theme');
-        }
-    });    
-    return false;
-}
-
-function iclThemeLocalizationRescanP(){
-    var thisf = jQuery(this);
-    thisf.contents().find('.icl_ajx_loader_p').fadeIn();
-    thisf.contents().find('input:submit').attr('disabled','disabled');
-
-    jQuery.ajax({
-        type: "POST",
-        url: icl_ajx_url,
-        data: "icl_ajx_action=icl_tl_rescan_p&"+thisf.serialize(),
-        success: function(msg){
-            thisf.contents().find('.icl_ajx_loader_p').fadeOut();
-            thisf.contents().find('input:submit').removeAttr('disabled');
-            spl = msg.split('|');
-            jQuery('#icl_tl_scan_stats_p').html(spl[1]).fadeIn();
-            jQuery("#icl_strings_in_plugins_wrap").load(location.href.replace(/#(.*)$/,'') + ' #icl_strings_in_plugins');
-        }
-    });    
-    return false;
-}
-
 function iclCheckColumn(){
     if(jQuery(this).attr('checked')){
         jQuery('#icl_strings_in_plugins :checkbox').attr('checked','checked');
     }else{
         jQuery('#icl_strings_in_plugins :checkbox').removeAttr('checked');
     }    
+}
+
+function iclEditThemeLocalizationType(){
+    var val = jQuery(this).val();
+    if(val == 2){
+        jQuery('#icl_tt_type_extra').fadeIn();        
+    }else{
+        jQuery('#icl_tt_type_extra').fadeOut();
+    }
+}
+
+function iclToggleTextDoomainInput(){
+    var checked = jQuery(this).attr('checked');
+    if(checked){
+        jQuery('#icl_tt_type_extra_td').fadeIn();    
+    }else{
+        jQuery('#icl_tt_type_extra_td').fadeOut();
+    }
 }

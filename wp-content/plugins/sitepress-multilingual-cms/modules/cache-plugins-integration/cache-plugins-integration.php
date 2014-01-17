@@ -113,7 +113,7 @@ if(is_admin() || defined('XMLRPC_REQUEST')):
         
         function menu(){
             echo '<div class="updated message">';
-            echo '<h3>' . sprintf(__('<i>%s</i> integration'), str_replace('_', ' ', substr($this->plugin_cp_class, 7))) . '</h3>';
+            echo '<h3>' . sprintf(__('<i>%s</i> integration', 'sitepress'), str_replace('_', ' ', substr($this->plugin_cp_class, 7))) . '</h3>';
             echo '<p>';
             _e('You are using a caching plugin. When you translate strings, the cache needs to be cleared in order for the translation to display.', 'sitepress');
             echo '</p>';

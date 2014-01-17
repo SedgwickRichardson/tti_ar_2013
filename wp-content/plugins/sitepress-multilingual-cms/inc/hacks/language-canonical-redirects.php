@@ -10,8 +10,7 @@ function icl_language_canonical_redirects () {
         $pid = get_query_var('p');
         $permalink = html_entity_decode(get_permalink($pid));
         if($permalink){
-            header ('HTTP/1.1 301 Moved Permanently');
-            header ('Location: '. $permalink);
+            wp_redirect($permalink, 301);
             exit;
         }
     }
