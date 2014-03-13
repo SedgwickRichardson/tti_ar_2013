@@ -16,14 +16,28 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-
-define('DB_NAME', 'tti-ar-2013');
-define('WP_HOME', 'http://local.ttigroup.com');
-define('WP_SITEURL', 'http://local.ttigroup.com');
-define('DB_USER', 'root');
-define('DB_PASSWORD', 'alvarpoon');
-define('DB_HOST', 'localhost');
-
+if ($_SERVER['SERVER_NAME'] == "tti-ar2013.local.com") {
+	define('DB_NAME', 'ttionline_r');
+	/*define('WP_HOME', 'http://tti-ar2013.local.com');
+	define('WP_SITEURL', 'http://tti-ar2013.local.com');*/
+	define('DB_USER', 'root');
+	define('DB_PASSWORD', 'alvarpoon');
+	define('DB_HOST', 'localhost');
+}
+else if($_SERVER['SERVER_NAME'] == "tti-ar2013.sedgwick-richardson.hk"){
+	define('DB_NAME', 'ttionline_r');
+	/*define('WP_HOME', 'http://tti-ar2013.sedgwick-richardson.hk');
+	define('WP_SITEURL', 'http://tti-ar2013.sedgwick-richardson.hk');*/
+	define('DB_USER', 'root');
+	define('DB_PASSWORD', 'sedgw1ck');
+	define('DB_HOST', 'localhost');	
+}
+else if($_SERVER['SERVER_NAME'] == "www.ttigroup.com"){
+	define('DB_NAME', 'ttionline_r');
+	define('DB_USER', 'ttion_usr');
+	define('DB_PASSWORD', 'r33sxiep');
+	define('DB_HOST', 'localhost');
+}
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -57,7 +71,7 @@ define('NONCE_SALT',       'put your unique phrase here');
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'ar2012_';
+$table_prefix  = 'ar2013_';
 
 /**
  * WordPress Localized Language, defaults to English.
