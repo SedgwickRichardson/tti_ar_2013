@@ -37,6 +37,7 @@ else if($_SERVER['SERVER_NAME'] == "www.ttigroup.com"){
 	define('DB_USER', 'ttion_usr');
 	define('DB_PASSWORD', 'r33sxiep');
 	define('DB_HOST', 'localhost');
+	
 }
 
 /** Database Charset to use in creating database tables. */
