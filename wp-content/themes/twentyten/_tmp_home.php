@@ -69,7 +69,7 @@ $str .= '</div>';
 $str .= '<div class="graphProfile dotUnderline">';
 $str .= '<span class="figure_arrow_up">&#8593;</span>';
 /*$str .= '<span class="smallFont"></span>';*/
-$str .= '<span class="graphFigure">00%<</span>';
+$str .= '<span class="graphFigure">00%</span>';
 /*$str .= '<span class="smallFont">百萬美元</span>';*/
 $str .= '</div>';
 $homeContent['zh-hant']['HIGHLIGHTS chart1 title'] =  $str;
@@ -457,7 +457,7 @@ $(window).load(function () {
 		  <script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
 		  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5153b9e640b238a8"></script>
         <div class="homeContentLeft">
-		
+		<div id="prod_status" style="width: 820px;margin: 0 auto;border: 3px solid #f00;margin-bottom:20px"><h1 style="margin:30px auto;color: #f00;font-size: 18px;text-align: center;">Layout programmed, dummy content populated</h1></div>
           <div class="homeSection">
             <div class="sectionTitle">
               <div><?php echo $homeContent[ICL_LANGUAGE_CODE]['HIGHLIGHTS'];?></div>

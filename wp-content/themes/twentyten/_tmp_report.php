@@ -100,6 +100,16 @@ $prevPage = $prevPage[0];
 						</div>
 					</div>
 				</div>
+				<div id="prod_status" style="width: 960px;margin: 0 auto;border: 3px solid #f00;margin-bottom:20px"><h1 style="margin:30px auto;color: #f00;font-size: 18px;text-align: center;">
+					<?php
+						$alert = get_field("prod_status");
+						if($alert==""){
+							echo "Production in process, not for review yet";
+						}else{
+							echo $alert;
+						}
+					?>
+				</h1></div>
                 <div id="report-content-container">
                		<div id="report-content">
                     	<?php get_template_part( 'loop', 'page' );?>

@@ -763,11 +763,17 @@ li[type=i]{list-style-type: none;}
 .brandTabContainer .brandContentContainer .brandImg{float:left;}
 .brandTabContainer .brandContentContainer .brandImg img{display:block;}
 
-/*---------------------------------------Power Equipment Ovewview Page Start---------------------------------------*/
+/*---------------------------------------Power Equipment Brand Page Start---------------------------------------*/
 .brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer{width:232px;background: url(images/highlights/brandBtnWide.gif) no-repeat left top;margin-right: 10px;}
 .brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer:hover,.brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer.active{background-position: right top;}
 .brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer table{margin-bottom:0 !important;}
-/*---------------------------------------Power Equipment Ovewview Page Ends---------------------------------------*/
+/*---------------------------------------Power Equipment Brand Page Ends---------------------------------------*/
+
+/*---------------------------------------Hand Tool Brand Page Start---------------------------------------*/
+.brandTabContainer #HandToolsBrandTabContainer .HandToolsBrandContainer{width:310px;background: url(images/highlights/brandBtnWide2.gif) no-repeat left top;margin-right: 15px;}
+.brandTabContainer #HandToolsBrandTabContainer .HandToolsBrandContainer:hover,.brandTabContainer #HandToolsBrandTabContainer .HandToolsBrandContainer.active{background-position: right top;}
+.brandTabContainer #HandToolsBrandTabContainer .HandToolsBrandContainer table{margin-bottom:0 !important;}
+/*---------------------------------------Hand Tool Brand Page Ends---------------------------------------*/
 
 .findoutMoreDiv {float: right;margin: 15px 8px 0;}
 .btn_findoutMore .findoutMoreLeft{background:url(images/home/bg_findoutMore_left.png) no-repeat; width:16px; height:42px; float: left;/*margin: 15px 8px 0;*/ display:block;}
@@ -924,9 +930,9 @@ padding: 0 0.5em;}
 #chi-page .productTechTable tr.titleRow td{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 .milwaukeeTable tr.titleRow td{ background-color: #E02038;/* border-top: 2px solid #BF2139;border-bottom: 1px solid #BF2139; */}
 .stilettoHartTable tr.titleRow td{ background-color:#7B7979; /* border-top:2px solid #231F20; border-bottom:1px solid #231F20; */} /*Stiletto and Hart*/
-.aegTable tr.titleRow td{ background-color:#F47F24; /* border-top:2px solid #F47F24; border-bottom:1px solid #F47F24; */}
-.ryobiTable tr.titleRow td{ background-color:#C3D52E; /* border-top:2px solid #C3D52E; border-bottom:1px solid #C3D52E; */}
-.homeliteDirtTable tr.titleRow td{ background-color:#EC1C24; /* border-top:2px solid #EC1C24; border-bottom:1px solid #EC1C24; */} /*Homelite and Dirt Devil*/
+.aegTable tr.titleRow td{ background-color:#DC5B26; /* border-top:2px solid #F47F24; border-bottom:1px solid #F47F24; */}
+.ryobiTable tr.titleRow td{ background-color:#E3E65B;color:#393939; /* border-top:2px solid #C3D52E; border-bottom:1px solid #C3D52E; */}
+.homeliteDirtTable tr.titleRow td{ background-color:#FF290B; /* border-top:2px solid #EC1C24; border-bottom:1px solid #EC1C24; */} /*Homelite and Dirt Devil*/
 .hooverTable tr.titleRow td{ background-color:#D86578; border-top:2px solid #C31230; border-bottom:1px solid #C31230;}
 .vaxTable tr.titleRow td{ background-color:#F16528; /* border-top:2px solid #F16528; border-bottom:1px solid #F16528; */}
 .productTechTable tr.lastRow td{border-bottom:1px solid #393939;}
