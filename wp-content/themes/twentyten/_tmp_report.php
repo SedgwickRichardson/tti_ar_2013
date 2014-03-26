@@ -44,7 +44,7 @@ $prevPage = $prevPage[0];
 			<div id="report-page-container">
                 <div id="breadcrumb">
 					<div class="clearfix" style="width:960px; margin:0 auto; border-bottom: 1px dashed #000; padding-bottom: 4px; position:relative;">
-					 	<div style="float:left;">
+					 	<div style="float:left;width: 620px;">
 					 		<?php echo get_breadcrumb($post, true); ?>
 					 	</div>
 						<!--<div style="float:right; width:273px;">

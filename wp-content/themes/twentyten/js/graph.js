@@ -919,12 +919,12 @@ function initFinancialHighlights(lang){
 		},
 		yAxis: {
 			min: 0,
-			max: 4000,
+			max: 4500,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
 			tickWidth: 0,
-			tickInterval: 1000,
+			tickInterval: 1500,
 			lineWidth: 0,
 			lineColor: "#4b6a79",
 			/*offset: -40,*/
@@ -980,7 +980,7 @@ function initFinancialHighlights(lang){
 				/*{y:0,x: 2010, color: '#A8BCC6'},*/
 				{y:3667,x: 2011, color: '#A8BCC6'},
 				{y:3852,x: 2012, color: '#A8BCC6'},
-				{y:3852, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:4300, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
 			]
 		}],
 	});
@@ -1039,7 +1039,7 @@ function initFinancialHighlights(lang){
 		},
 		yAxis: {
 			min: 30,
-			max: 34,
+			max: 35,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
@@ -1099,7 +1099,7 @@ function initFinancialHighlights(lang){
 			data: [
 				{y:32.6,x: 2011, color: '#A8BCC6'},
 				{y:33.5,x: 2012, color: '#A8BCC6'},
-				{y:33.5, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:34.2, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
 			],
 			formatter: function () {
 				return Highcharts.numberFormat(this.y, 1, '.', ',');
@@ -1162,7 +1162,7 @@ function initFinancialHighlights(lang){
 		},
 		yAxis: {
 			min: 0,
-			max: 300,
+			max: 305,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
@@ -1171,6 +1171,7 @@ function initFinancialHighlights(lang){
 			lineWidth: 0,
 			lineColor: "#4b6a79",
 			showFirstLabel: true,
+			endOnTick: false,
 			labels: 
 			{
 				formatter: function () {
@@ -1222,7 +1223,7 @@ function initFinancialHighlights(lang){
 			data: [
 				{y:219,x: 2011, color: '#A8BCC6'},
 				{y:260,x: 2012, color: '#A8BCC6'},
-				{y:260, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:304, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
 			],
 			formatter: function () {
 				return Highcharts.numberFormat(this.y, 1, '.', ',');
@@ -1284,7 +1285,7 @@ function initFinancialHighlights(lang){
 		},
 		yAxis: {
 			min: 0,
-			max: 12,
+			max: 15,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
@@ -1344,7 +1345,7 @@ function initFinancialHighlights(lang){
 			data: [
 				{y:9.47,x: 2011, color: '#A8BCC6'},
 				{y:11.42,x: 2012, color: '#A8BCC6'},
-				{y:11.42, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:13.68, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
 			],
 			formatter: function () {
 				return Highcharts.numberFormat(this.y, 1, '.', ',');
@@ -1594,9 +1595,9 @@ function initFinancialHighlights(lang){
 			name: 'Population',
 			data: [
 				/*{y:0,x: 2010, color: '#A8BCC6'},*/
-				{y:3667,x: 2011, color: '#A8BCC6'},
-				{y:3852,x: 2012, color: '#A8BCC6'},
-				{y:3852, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:2648,x: 2011, color: '#A8BCC6'},
+				{y:2807,x: 2012, color: '#A8BCC6'},
+				{y:3120, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
 			]
 		}],
 	});
@@ -1655,12 +1656,12 @@ $('#graph-container-8').highcharts({
 		},
 		yAxis: {
 			min: 0,
-			max: 4000,
+			max: 900,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
 			tickWidth: 0,
-			tickInterval: 1000,
+			tickInterval: 300,
 			lineWidth: 0,
 			lineColor: "#4b6a79",
 			/*offset: -40,*/
@@ -1715,9 +1716,9 @@ $('#graph-container-8').highcharts({
 			name: 'Population',
 			data: [
 				/*{y:0,x: 2010, color: '#A8BCC6'},*/
-				{y:3667,x: 2011, color: '#A8BCC6'},
-				{y:3852,x: 2012, color: '#A8BCC6'},
-				{y:3852, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:764,x: 2011, color: '#A8BCC6'},
+				{y:768,x: 2012, color: '#A8BCC6'},
+				{y:870, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
 			]
 		}],
 	});
@@ -1776,12 +1777,12 @@ $('#graph-container-9').highcharts({
 		},
 		yAxis: {
 			min: 0,
-			max: 4000,
+			max: 400,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
 			tickWidth: 0,
-			tickInterval: 1000,
+			tickInterval: 100,
 			lineWidth: 0,
 			lineColor: "#4b6a79",
 			/*offset: -40,*/
@@ -1836,9 +1837,9 @@ $('#graph-container-9').highcharts({
 			name: 'Population',
 			data: [
 				/*{y:0,x: 2010, color: '#A8BCC6'},*/
-				{y:3667,x: 2011, color: '#A8BCC6'},
-				{y:3852,x: 2012, color: '#A8BCC6'},
-				{y:3852, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:255,x: 2011, color: '#A8BCC6'},
+				{y:277,x: 2012, color: '#A8BCC6'},
+				{y:310, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
 			]
 		}],
 	});
@@ -1897,12 +1898,12 @@ $('#graph-container-10').highcharts({
 		},
 		yAxis: {
 			min: 0,
-			max: 4000,
+			max: 300,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
 			tickWidth: 0,
-			tickInterval: 1000,
+			tickInterval: 100,
 			lineWidth: 0,
 			lineColor: "#4b6a79",
 			/*offset: -40,*/
@@ -1957,9 +1958,9 @@ $('#graph-container-10').highcharts({
 			name: 'Population',
 			data: [
 				/*{y:0,x: 2010, color: '#A8BCC6'},*/
-				{y:3667,x: 2011, color: '#A8BCC6'},
-				{y:3852,x: 2012, color: '#A8BCC6'},
-				{y:3852, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:152,x: 2011, color: '#A8BCC6'},
+				{y:201,x: 2012, color: '#A8BCC6'},
+				{y:250, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
 			]
 		}],
 	});
@@ -2018,12 +2019,12 @@ $('#graph-container-11').highcharts({
 		},
 		yAxis: {
 			min: 0,
-			max: 4000,
+			max: 400,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
 			tickWidth: 0,
-			tickInterval: 1000,
+			tickInterval: 100,
 			lineWidth: 0,
 			lineColor: "#4b6a79",
 			/*offset: -40,*/
@@ -2078,9 +2079,9 @@ $('#graph-container-11').highcharts({
 			name: 'Population',
 			data: [
 				/*{y:0,x: 2010, color: '#A8BCC6'},*/
-				{y:3667,x: 2011, color: '#A8BCC6'},
-				{y:3852,x: 2012, color: '#A8BCC6'},
-				{y:3852, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:150,x: 2011, color: '#A8BCC6'},
+				{y:275,x: 2012, color: '#A8BCC6'},
+				{y:332, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
 			]
 		}],
 	});
@@ -2138,12 +2139,12 @@ $('#graph-container-12').highcharts({
 		},
 		yAxis: {
 			min: 0,
-			max: 4000,
+			max: 20,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
 			tickWidth: 0,
-			tickInterval: 1000,
+			tickInterval: 5,
 			lineWidth: 0,
 			lineColor: "#4b6a79",
 			/*offset: -40,*/
@@ -2167,7 +2168,7 @@ $('#graph-container-12').highcharts({
 		},
 		tooltip: {
 			formatter: function() {
-                return '<b>'+this.point.category +'</b> USD'+ Highcharts.numberFormat(this.y, 0) +'m';
+                return '<b>'+this.point.category +'</b> '+ Highcharts.numberFormat(this.y, 1) +'%';
             },
 			style: {
 					color: "#2F5364"
@@ -2187,7 +2188,7 @@ $('#graph-container-12').highcharts({
 						if(this.y==0)
 							return "";
 						else
-							return Highcharts.numberFormat(this.y, 0, '.', ',');
+							return Highcharts.numberFormat(this.y, 1, '.', ',');
 					}
 				}
 				//groupPadding: 0.2
@@ -2197,9 +2198,9 @@ $('#graph-container-12').highcharts({
 			name: 'Population',
 			data: [
 				/*{y:0,x: 2010, color: '#A8BCC6'},*/
-				{y:1000,x: 2011, color: '#A8BCC6'},
-				{y:2000,x: 2012, color: '#A8BCC6'},
-				{y:4000, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:18.9,x: 2011, color: '#A8BCC6'},
+				{y:16.2,x: 2012, color: '#A8BCC6'},
+				{y:13.9, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
 			]
 		}],
 	});
@@ -2257,12 +2258,12 @@ $('#graph-container-13').highcharts({
 		},
 		yAxis: {
 			min: 0,
-			max: 4000,
+			max: 60,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
 			tickWidth: 0,
-			tickInterval: 1000,
+			tickInterval: 20,
 			lineWidth: 0,
 			lineColor: "#4b6a79",
 			/*offset: -40,*/
@@ -2286,7 +2287,7 @@ $('#graph-container-13').highcharts({
 		},
 		tooltip: {
 			formatter: function() {
-                return '<b>'+this.point.category +'</b> USD'+ Highcharts.numberFormat(this.y, 0) +'m';
+                return '<b>'+this.point.category +'</b> '+ Highcharts.numberFormat(this.y, 1) +'%';
             },
 			style: {
 					color: "#2F5364"
@@ -2299,14 +2300,14 @@ $('#graph-container-13').highcharts({
 				dataLabels: {
 					enabled: true,
 					align: 'center',
-					x: 0,
+					x: 8,
 					y: -3,
 					useHTML: true,
 					formatter: function () {
 						if(this.y==0)
 							return "";
 						else
-							return Highcharts.numberFormat(this.y, 0, '.', ',');
+							return Highcharts.numberFormat(this.y, 1, '.', ',');
 					}
 				}
 				//groupPadding: 0.2
@@ -2316,9 +2317,9 @@ $('#graph-container-13').highcharts({
 			name: 'Population',
 			data: [
 				/*{y:0,x: 2010, color: '#A8BCC6'},*/
-				{y:1000,x: 2011, color: '#A8BCC6'},
-				{y:2000,x: 2012, color: '#A8BCC6'},
-				{y:4000, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:59.3,x: 2011, color: '#A8BCC6'},
+				{y:25.8,x: 2012, color: '#A8BCC6'},
+				{y:10.6, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
 			]
 		}],
 	});
@@ -3288,13 +3289,13 @@ function initPowerEquipmentHighlightsGraph(lang){
     });
 	var tip1,tip2;
 	if(lang=="en"){
-		tip1 = "North America";
-		tip2 = "Europe,<br>rest of the world"
+		tip1 = "Power Equipment,<br>Accessories and<br>Hand Tools";
+		tip2 = "Floor Care and<br>Appliances"
 	}
 	else
 	{
-		tip1 = "北美洲";
-		tip2 = "歐洲、其他地區"
+		tip1 = "電動工具、配件及手動工具";
+		tip2 = "地板護理及器具"
 	}
 	
 	$('#power-hl-graph-container-1').highcharts({

@@ -640,7 +640,7 @@ li[type=i]{list-style-type: none;}
 #FHContentDiv .graphContainer2Col .graph-container{float:left;width:154px;}
 #FHContentDiv .graphContainer2Col .graphProfile{float: right;width:120px;text-align: left;}
 #FHContentDiv .largeFont,#powerHighlightsContent .largeFont{font-size: 2.5em;color: #0077A5;display: block;margin-bottom: 0.3em;}
-#FHContentDiv .midFont,#powerHighlightsContent .smallFont{margin-bottom: 1em;line-height: 120%;display: block;font-size: 0.9em;color: #4A6678;}
+#FHContentDiv .midFont,#powerHighlightsContent .smallFont{margin-bottom: 1.5em;line-height: 120%;display: block;font-size: 0.9em;color: #4A6678;}
 #powerHighlightsContent .smallFont{font-size: 1em;}
 #powerHighlightsContent .midFont{color: #0077A5;display: block;color: #0077A5;font-size: 1.3em;margin-bottom: 0.5em;}
 .graphContainer2ndRow{padding-top: 20px;}
@@ -650,9 +650,9 @@ li[type=i]{list-style-type: none;}
 .graphContainer .graphTitleDiv{font-size:95%; line-height:130%; padding-bottom:1em;color: #393939; }
 .graphContainer .graphTitleDivWithArrow{background: url(images/highlights/FHArrow.png) no-repeat left top;padding-left: 30px;}
 .reviewOperationTwoColumn .graphContainer .graphTitleDiv{margin-bottom: 15px;}
-.graphContainer .graphTitleDiv .graphTitle{font-size: 16px; font-family: 'Trade Gothic W01 Bold 2';}
+.graphTitleDiv .graphTitle{font-size: 16px; font-family: 'Trade Gothic W01 Bold 2';}
 .graphContainer .graphTitleDiv .graphTitle2{font-family: 'Trade Gothic W01 Bold 2';color: #4A6878;font-size: 120%;}
-#FHContentDiv .graphContainer .graphTitleDiv .graphTitle{font-size: 1.4em;}
+#FHContentDiv .graphTitleDiv .graphTitle{font-size: 1.4em;}
 #chi-page .graphContainer .graphTitleDiv .graphTitle{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 .graphContainer .graphTitleDiv .graphUnit{font-size: 80%;font-family: 'Trade Gothic W01 Roman';;display:block;}
 #chi-page .graphContainer .graphTitleDiv .graphUnit{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
@@ -753,7 +753,7 @@ li[type=i]{list-style-type: none;}
 .brandTabContainer .powerEquipmentBrandContainer:hover table tr td, .brandTabContainer .powerEquipmentBrandContainer.active table tr td{background-color:#F3F5F6}
 .brandTabContainer .powerEquipmentBrandContainer div{/*margin-top:4px;*/}
 .brandTabContainer .powerEquipmentBrandContainer table{margin-bottom:4px !important;}
-.brandTabContainer .powerEquipmentBrandContainer table tr td{ vertical-align:middle; text-align:center; background:url(images/home/arrow_bottom.png) no-repeat center 65px;}
+.brandTabContainer .powerEquipmentBrandContainer table tr td{ vertical-align:middle; text-align:center; /*background:url(images/home/arrow_bottom.png) no-repeat center 65px;*/}
 .brandTabContainer .brandContentContainer .brandContentItem{display:none;}
 .brandTabContainer .brandContentContainer .brandContent{position: relative;float:left; padding: 15px 15px 0 15px; background-color:#D90F33; width: 750px;height: 88px;color:#fff;}
 .brandTabContainer .brandContentContainer .brandContent .subheadlineTitle{margin-top: 0;float: left;width: 158px;text-align: center;}
