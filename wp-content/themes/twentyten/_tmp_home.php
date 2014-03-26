@@ -24,29 +24,40 @@ $homeContent['zh-hant']['Print this page in PDF'] = '列印此頁之PDF';
 $homeContent['en']['HIGHLIGHTS'] = 'Financial Highlights';
 $homeContent['zh-hant']['HIGHLIGHTS'] = '財務摘要';
 
-$str = '<div class="title_HL">A thoughtful, comprehensive strategy and disciplined execution delivered record results.</div>';
-$str .= '<ul>';
-$str .= '<li>Record sales</li>';
-$str .= '<li>Record profit</li>';
-$str .= '<li>Record cash flow</li>';
+$str = '<ul class="section_highlight_list" style="margin-bottom: 10px;">';
+$str .= '<li>Record Sales</li>';
+$str .= '<li>Record Profit</li>';
+$str .= '<li>Record Cash Flow</li>';
+$str .= '</ul>';
+$str .= '<ul class="section_list">';
+$str .= '<li>Enda nimporps exeropicia etue Enda nimporps exeropicia etue</li>';
+$str .= '<li>Enda nimporps exeropicia etue Enda nimporps exeropicia etue</li>';
+$str .= '<li>Enda nimporps exeropicia etue Enda nimporps exeropicia etue</li>';
+$str .= '<li>Enda nimporps exeropicia etue Enda nimporps exeropicia etue</li>';
 $str .= '</ul>';
 $homeContent['en']['HIGHLIGHTS Excerpt'] =  $str;
 
-$str = '<div class="title_HL">有序推行深思熟慮的<br />全面性策略，使我們<br />取得彪炳業績。</div>';
-$str .= '<ul>';
+$str = '<ul class="section_highlight_list" style="margin-bottom: 10px;">';
 $str .= '<li>銷售額創新高</li>';
 $str .= '<li>創紀錄溢利</li>';
 $str .= '<li>創新高紀錄現金流量</li>';
 $str .= '</ul>';
+$str .= '<ul class="section_list">';
+$str .= '<li>Enda nimporps exeropicia etue Enda nimporps exeropicia etue</li>';
+$str .= '<li>Enda nimporps exeropicia etue Enda nimporps exeropicia etue</li>';
+$str .= '<li>Enda nimporps exeropicia etue Enda nimporps exeropicia etue</li>';
+$str .= '<li>Enda nimporps exeropicia etue Enda nimporps exeropicia etue</li>';
+$str .= '</ul>';
 $homeContent['zh-hant']['HIGHLIGHTS Excerpt'] =  $str;
 
-$str = '<div class="graphTitleDiv">';
-$str .= '<span class="graphTitle">SALES Turnover</span>';
+$str = '<div class="graphTitleDiv ">';
+$str .= '<span class="graphTitle">Turnover</span>';
 $str .= '<span class="graphUnit"> USDm</span>';
 $str .= '</div>';
-$str .= '<div class="graphProfile">';
-$str .= '<span class="smallFont">USD</span>';
-$str .= '<span class="largeFont">3,852m</span>';
+$str .= '<div class="graphProfile dotUnderline">';
+$str .= '<span class="figure_arrow_up">&#8593;</span>';
+/*$str .= '<span class="smallFont">USD</span>';*/
+$str .= '<span class="graphFigure">00%</span>';
 //$str .= '<span class="smallFont">m</span>';
 $str .= '</div>';
 $homeContent['en']['HIGHLIGHTS chart1 title'] =  $str;
@@ -55,10 +66,11 @@ $str = '<div class="graphTitleDiv">';
 $str .= '<span class="graphTitle">營業額</span>';
 $str .= '<span class="graphUnit"> 百萬美元</span>';
 $str .= '</div>';
-$str .= '<div class="graphProfile">';
-$str .= '<span class="smallFont"></span>';
-$str .= '<span class="largeFont">3,852</span>';
-$str .= '<span class="smallFont">百萬美元</span>';
+$str .= '<div class="graphProfile dotUnderline">';
+$str .= '<span class="figure_arrow_up">&#8593;</span>';
+/*$str .= '<span class="smallFont"></span>';*/
+$str .= '<span class="graphFigure">00%<</span>';
+/*$str .= '<span class="smallFont">百萬美元</span>';*/
 $str .= '</div>';
 $homeContent['zh-hant']['HIGHLIGHTS chart1 title'] =  $str;
 
@@ -66,9 +78,11 @@ $str = '<div class="graphTitleDiv">';
 $str .= '<span class="graphTitle">Gross Margin </span>';
 $str .= '<span class="graphUnit"> %</span>';
 $str .= '</div>';
-$str .= '<div class="graphProfile">';
-$str .= '<span class="largeFont">33.5%</span>';
-//$str .= '<span class="smallFont">%</span>';
+$str .= '<div class="graphProfile dotUnderline">';
+$str .= '<span class="figure_arrow_up">&#8593;</span>';
+/*$str .= '<span class="smallFont">USD</span>';*/
+$str .= '<span class="graphFigure">00%</span>';
+//$str .= '<span class="smallFont">m</span>';
 $str .= '</div>';
 $homeContent['en']['HIGHLIGHTS chart2 title'] =  $str;
 
@@ -76,7 +90,7 @@ $str = '<div class="graphTitleDiv">';
 $str .= '<span class="graphTitle">毛利率</span>';
 $str .= '<span class="graphUnit"> %</span>';
 $str .= '</div>';
-$str .= '<div class="graphProfile">';
+$str .= '<div class="graphProfil dotUnderlinee">';
 $str .= '<span class="largeFont">33.5%</span>';
 //$str .= '<span class="smallFont">%</span>';
 $str .= '</div>';
@@ -86,9 +100,10 @@ $str = '<div class="graphTitleDiv">';
 $str .= '<span class="graphTitle">EBIT</span>';
 $str .= '<span class="graphUnit"> USDm</span>';
 $str .= '</div>';
-$str .= '<div class="graphProfile">';
-$str .= '<span class="smallFont">USD</span>';
-$str .= '<span class="largeFont">260m</span>';
+$str .= '<div class="graphProfile dotUnderline">';
+$str .= '<span class="figure_arrow_up">&#8593;</span>';
+/*$str .= '<span class="smallFont">USD</span>';*/
+$str .= '<span class="graphFigure">00%</span>';
 //$str .= '<span class="smallFont">m</span>';
 $str .= '</div>';
 $homeContent['en']['HIGHLIGHTS chart3 title'] =  $str;
@@ -97,7 +112,7 @@ $str = '<div class="graphTitleDiv">';
 $str .= '<span class="graphTitle">除利息及稅項前盈利</span>';
 $str .= '<span class="graphUnit"> 百萬美元</span>';
 $str .= '</div>';
-$str .= '<div class="graphProfile">';
+$str .= '<div class="graphProfile dotUnderline">';
 $str .= '<span class="smallFont"></span>';
 $str .= '<span class="largeFont">260</span>';
 $str .= '<span class="smallFont">百萬美元</span>';
@@ -105,13 +120,14 @@ $str .= '</div>';
 $homeContent['zh-hant']['HIGHLIGHTS chart3 title'] =  $str;
 
 $str = '<div class="graphTitleDiv">';
-$str .= '<span class="graphTitle">BASIC EARNINGS PER SHARE</span>';
+$str .= '<span class="graphTitle">Basic Earnings per Share</span>';
 $str .= '<span class="graphUnit"> US cents</span>';
 $str .= '</div>';
-$str .= '<div class="graphProfile">';
-$str .= '<span class="smallFont">US</span>';
-$str .= '<span class="largeFont">11.42 cents</span>';
-//$str .= '<span class="smallFont">cents</span>';
+$str .= '<div class="graphProfile dotUnderline">';
+$str .= '<span class="figure_arrow_up">&#8593;</span>';
+/*$str .= '<span class="smallFont">USD</span>';*/
+$str .= '<span class="graphFigure">00%</span>';
+//$str .= '<span class="smallFont">m</span>';
 $str .= '</div>';
 $homeContent['en']['HIGHLIGHTS chart4 title'] =  $str;
 
@@ -119,18 +135,19 @@ $str = '<div class="graphTitleDiv">';
 $str .= '<span class="graphTitle">每股基本盈利</span>';
 $str .= '<span class="graphUnit"> 美仙</span>';
 $str .= '</div>';
-$str .= '<div class="graphProfile">';
-$str .= '<span class="smallFont"></span>';
-$str .= '<span class="largeFont">11.42</span>';
-$str .= '<span class="smallFont">美仙</span>';
+$str .= '<div class="graphProfile dotUnderline">';
+$str .= '<span class="figure_arrow_up">&#8593;</span>';
+/*$str .= '<span class="smallFont">USD</span>';*/
+$str .= '<span class="graphFigure">00%</span>';
+//$str .= '<span class="smallFont">m</span>';
 $str .= '</div>';
 $homeContent['zh-hant']['HIGHLIGHTS chart4 title'] =  $str;
 
 $homeContent['en']['CHAIRMANS STATEMENT'] = 'Chairman&#39;s Statement';
 $homeContent['zh-hant']['CHAIRMANS STATEMENT'] = '主席報告書';
 
-$str = '<div class="title_HL">I am pleased with the sustained progress made in new product development and our excellent productivity gains, which are the catalysts for sales and profit growth.</div>';
-$str .= '<div style="padding-bottom:25px;">I am pleased to announce that in 2012 TTI delivered record sales, record profit and record cash flow. Our disciplined implementation of the TTI strategic plan is yielding outstanding results across all of our business units and geographic regions. I am particularly pleased with the sustained progress made in new product development and our excellent productivity gains, which are the catalysts for sales and profit growth. These results once again demonstrate the fundamental strengths of TTI’s focus on our strategic drivers of Powerful Brands, Innovative Products, Operational Excellence and Exceptional People.</div>';
+$str = '<div class="title_HL">Aaecenas sed diam eget risus varius blandit sit amet non magn praesent commodo cursus magna.</div>';
+$str .= '<div style="padding-bottom:25px;">Aaecenas sed diam eget risus varius blandit sit amet non magna. praesent commodo cursus magna, vel scelerisque nisl consectetur et.maecenas faucibus mollis interdum. curabitur blandit tempus porttitor. integer posuere erat a ante venenatis dapibus posuere velit aliquet. </div>';
 $homeContent['en']['CHAIRMANS STATEMENT CONTENT'] = $str;
 
 $str = '<div class="title_HL">本人對於研發嶄新產品的驕人成績及強勁的生產力感欣慰，此等均有助於推動銷售額及溢利的增長。</div>';
@@ -141,10 +158,11 @@ $str = '<div class="graphTitleDiv">';
 $str .= '<span class="graphTitle">Dividend per share</span>';
 $str .= '<span class="graphUnit"> US cents</span>';
 $str .= '</div>';
-$str .= '<div class="graphProfile">';
-//$str .= '<span class="smallFont">+</span>';														
-$str .= '<span class="largeFont">+37.3%</span>';
-//$str .= '<span class="smallFont">%</span>';
+$str .= '<div class="graphProfile dotUnderline">';
+$str .= '<span class="figure_arrow_up">&#8593;</span>';
+/*$str .= '<span class="smallFont">USD</span>';*/
+$str .= '<span class="graphFigure">00%</span>';
+//$str .= '<span class="smallFont">m</span>';
 $str .= '</div>';
 $homeContent['en']['CHAIRMANS STATEMENT chart1 title'] = $str;
 
@@ -152,21 +170,23 @@ $str = '<div class="graphTitleDiv">';
 $str .= '<span class="graphTitle">每股股息</span>';
 $str .= '<span class="graphUnit"> 美仙</span>';
 $str .= '</div>';
-$str .= '<div class="graphProfile">';
-//$str .= '<span class="smallFont">+</span>';														
-$str .= '<span class="largeFont">+37.3%</span>';
-//$str .= '<span class="smallFont">%</span>';
+$str .= '<div class="graphProfile dotUnderline">';
+$str .= '<span class="figure_arrow_up">&#8593;</span>';
+/*$str .= '<span class="smallFont">USD</span>';*/
+$str .= '<span class="graphFigure">00%</span>';
+//$str .= '<span class="smallFont">m</span>';
 $str .= '</div>';
 $homeContent['zh-hant']['CHAIRMANS STATEMENT chart1 title'] = $str;
 
 $str = '<div class="graphTitleDiv">';
-$str .= '<span class="graphTitle">Basic Earnings per share</span>';
+$str .= '<span class="graphTitle">Basic Earnings per Share</span>';
 $str .= '<span class="graphUnit"> US cents</span>';
 $str .= '</div>';
-$str .= '<div class="graphProfile">';
-//$str .= '<span class="smallFont">+</span>';
-$str .= '<span class="largeFont">+20.6%</span>';
-//$str .= '<span class="smallFont">%</span>';
+$str .= '<div class="graphProfile dotUnderline">';
+$str .= '<span class="figure_arrow_up">&#8593;</span>';
+/*$str .= '<span class="smallFont">USD</span>';*/
+$str .= '<span class="graphFigure">00%</span>';
+//$str .= '<span class="smallFont">m</span>';
 $str .= '</div>';
 $homeContent['en']['CHAIRMANS STATEMENT chart2 title'] = $str;
 
@@ -174,10 +194,11 @@ $str = '<div class="graphTitleDiv">';
 $str .= '<span class="graphTitle">每股基本盈利</span>';
 $str .= '<span class="graphUnit"> 美仙</span>';
 $str .= '</div>';
-$str .= '<div class="graphProfile">';
-//$str .= '<span class="smallFont">+</span>';
-$str .= '<span class="largeFont">+20.6%</span>';
-//$str .= '<span class="smallFont">%</span>';
+$str .= '<div class="graphProfile dotUnderline">';
+$str .= '<span class="figure_arrow_up">&#8593;</span>';
+/*$str .= '<span class="smallFont">USD</span>';*/
+$str .= '<span class="graphFigure">00%</span>';
+//$str .= '<span class="smallFont">m</span>';
 $str .= '</div>';
 $homeContent['zh-hant']['CHAIRMANS STATEMENT chart2 title'] = $str;
 
@@ -273,26 +294,29 @@ $homeContent['zh-hant']['Our Brands'] = '我們的品牌';
 $homeContent['en']['Find out more'] = 'Find out more';
 $homeContent['zh-hant']['Find out more'] = '了解更多';
 
-$homeContent['en']['Milwaukee intro'] = 'MILWAUKEE<sup>®</sup> is an industry-leading manufacturer and marketer of Heavy-Duty, Portable Electric Power Tools and Accessories. MILWAUKEE<sup>®</sup> leverages technology and disruptive innovation to deliver trade-based solutions to skilled tradesmen around the world.';
-$homeContent['zh-hant']['Milwaukee intro'] = 'MILWAUKEE<sup>®</sup> 是領先業界的重型電動工具、手提電動工具及配件之製造商及營銷商。MILWAUKEE<sup>®</sup>憑藉先進科技與革命性創新技術，為世界各地的專業工匠提供商用解決方案。';
+$homeContent['en']['Milwaukee intro'] = '1 Anteger posuere erat a ante venenatis dapibus posuere velit aliquet. Aaecenas sed diam eget risus varius blandit sit amet non magna. praesent commodo cursus magna, vel scelerisque nisl consectetur et.maecenas faucibus mollis interdum. curabitur blandit tempus porttitor.';
+$homeContent['zh-hant']['Milwaukee intro'] = '1 Anteger posuere erat a ante venenatis dapibus posuere velit aliquet. Aaecenas sed diam eget risus varius blandit sit amet non magna. praesent commodo cursus magna, vel scelerisque nisl consectetur et.maecenas faucibus mollis interdum. curabitur blandit tempus porttitor.';
 
-$homeContent['en']['AEG intro'] = 'The AEG<sup>®</sup> power tools brand has been delivering high-performance tools since 1898. 114 years later and nothing has changed, AEG<sup>®</sup> Power Tools continues to push boundaries and innovate with  a current focus on the cordless sector, harnessing lithium ion power as well  a myriad of traditional but highly innovative corded tools.';
-$homeContent['zh-hant']['AEG intro'] = '自1898年起，AEG<sup>®</sup>電動工具品牌推出眾多效能卓越的工具。114年後的今天，AEG<sup>®</sup>電動工具繼續推陳出新，全力開拓充電式鋰離子電動工具領域，同時推出結合傳統智慧與嶄新設計的交流式電動工具。';
+$homeContent['en']['AEG intro'] = '2 Anteger posuere erat a ante venenatis dapibus posuere velit aliquet. Aaecenas sed diam eget risus varius blandit sit amet non magna. praesent commodo cursus magna, vel scelerisque nisl consectetur et.maecenas faucibus mollis interdum. curabitur blandit tempus porttitor.';
+$homeContent['zh-hant']['AEG intro'] = '2 Anteger posuere erat a ante venenatis dapibus posuere velit aliquet. Aaecenas sed diam eget risus varius blandit sit amet non magna. praesent commodo cursus magna, vel scelerisque nisl consectetur et.maecenas faucibus mollis interdum. curabitur blandit tempus porttitor.';
 
-$homeContent['en']['Ryobi intro'] ='RYOBI<sup>®</sup> brand offers the most extensive award winning and innovative line of consumer focused products and accessories for worldwide use. The RYOBI<sup>®</sup> power tool range is anchored by the 18-volt ONE+ System<sup>®</sup> of over 50 products, ranging from drills, drivers, saws and trimmers to sanders. The brand also offers a wide variety of outdoor products that supports end-user needs with extensive lines of energy efficient gas, electric and cordless products.';
-$homeContent['zh-hant']['Ryobi intro'] = 'RYOBI<sup>®</sup>品牌為世界各地提供以消費者為主的眾多屢獲殊榮之嶄新產品和配件。RYOBI<sup>®</sup>電動工具系列以18伏特ONE+ System<sup>®</sup>為基礎，推出逾五十款產品，包括電鑽、電批、電鋸、剪草機及打磨機。此品牌也提供多款戶外園藝工具，包括具能源效益的燃油驅動式、電動式及充電式產品，充分滿足終端用戶的需要。';
+$homeContent['en']['Ryobi intro'] ='3 Anteger posuere erat a ante venenatis dapibus posuere velit aliquet. Aaecenas sed diam eget risus varius blandit sit amet non magna. praesent commodo cursus magna, vel scelerisque nisl consectetur et.maecenas faucibus mollis interdum. curabitur blandit tempus porttitor.';
+$homeContent['zh-hant']['Ryobi intro'] = '3 Anteger posuere erat a ante venenatis dapibus posuere velit aliquet. Aaecenas sed diam eget risus varius blandit sit amet non magna. praesent commodo cursus magna, vel scelerisque nisl consectetur et.maecenas faucibus mollis interdum. curabitur blandit tempus porttitor.';
 
-$homeContent['en']['homelite intro'] = 'HOMELITE<sup>®</sup> Consumer Products manufactures a full line of Outdoor Power Equipment including String trimmers, blowers, chainsaws, hedge trimmers, pressure washers, generators and outdoor accessories for the consumer, do-it-yourself and garden enthusiast.';
-$homeContent['zh-hant']['homelite intro'] = 'HOMELITE<sup>®</sup>消費者產品備有一系列戶外電動工具，包括剪草機、鼓風機、鏈鋸、籬笆修剪機、高壓清洗機、發電機，以及各款戶外產品配件，款式一應俱全，專為消費者、DIY一族和園藝愛好者而設。';
+$homeContent['en']['homelite intro'] = '4 Anteger posuere erat a ante venenatis dapibus posuere velit aliquet. Aaecenas sed diam eget risus varius blandit sit amet non magna. praesent commodo cursus magna, vel scelerisque nisl consectetur et.maecenas faucibus mollis interdum. curabitur blandit tempus porttitor.';
+$homeContent['zh-hant']['homelite intro'] = '4 Anteger posuere erat a ante venenatis dapibus posuere velit aliquet. Aaecenas sed diam eget risus varius blandit sit amet non magna. praesent commodo cursus magna, vel scelerisque nisl consectetur et.maecenas faucibus mollis interdum. curabitur blandit tempus porttitor.';
 
-$homeContent['en']['Hoover intro'] = 'HOOVER<sup>®</sup> is creating the future of Floor Care. We recognize that people’s homes and lives are constantly evolving, and we’re changing with them.</p><p>We are proud that each of the 700 patents we currently hold represents a challenge we’ve overcome in our drive to make new, powerful and desirable cleaning products.</p><p>We want to be recognized for making people’s lives easier and so we make those that do the cleaning the focus of everything we do.';
-$homeContent['zh-hant']['Hoover intro'] = 'HOOVER<sup>®</sup> 為地板護理創造未來。我們深明人的家居和生活不斷變化，因此我們也與時並進。</p><p>我們目前擁有700項專利權，每一項專利權均印證了我們致力提供全新、高效和合意的清潔用品，我們對此引以為傲。</p><p>我們冀望可為人們締造更寫意的生活，並取得認同，為此我們所有的工作重點首要是提供合適的清潔用品。';
+$homeContent['en']['Hoover intro'] = '1 Anteger posuere erat a ante venenatis dapibus posuere velit aliquet. Aaecenas sed diam eget risus varius blandit sit amet non magna. praesent commodo cursus magna, vel scelerisque nisl consectetur et.maecenas faucibus mollis interdum. curabitur blandit tempus porttitor.';
+$homeContent['zh-hant']['Hoover intro'] = '1 Anteger posuere erat a ante venenatis dapibus posuere velit aliquet. Aaecenas sed diam eget risus varius blandit sit amet non magna. praesent commodo cursus magna, vel scelerisque nisl consectetur et.maecenas faucibus mollis interdum. curabitur blandit tempus porttitor.';
 
-$homeContent['en']['VAX intro'] = 'Performance is everything. That’s why VAX<sup>®</sup> is the UK’s bestselling Floor Care brand. And the only company in the UK to offer cleaning products in every category.</p><p>From carpet cleaners, upright and cylinder vacuum cleaners, steam, cordless, and hard floor cleaners – we listen carefully to those who are using our products, so that we can design with their needs in mind.';
-$homeContent['zh-hant']['VAX intro'] = '效能重於一切。這正是VAX<sup>®</sup>成為英國最暢銷地板護理品牌的原因。我們也是英國唯一提供所有種類清潔用品的公司。</p><p>從地毯清洗機、直立式及塵罐式吸塵機、蒸氣清洗機、充電式以至地板清洗機產品，我們均細心聆聽各用戶的意見，務求設計最能令客戶滿足的產品。';
+$homeContent['en']['Oreck intro'] = '2 Anteger posuere erat a ante venenatis dapibus posuere velit aliquet. Aaecenas sed diam eget risus varius blandit sit amet non magna. praesent commodo cursus magna, vel scelerisque nisl consectetur et.maecenas faucibus mollis interdum. curabitur blandit tempus porttitor.';
+$homeContent['zh-hant']['Oreck intro'] = '2 Anteger posuere erat a ante venenatis dapibus posuere velit aliquet. Aaecenas sed diam eget risus varius blandit sit amet non magna. praesent commodo cursus magna, vel scelerisque nisl consectetur et.maecenas faucibus mollis interdum. curabitur blandit tempus porttitor.';
 
-$homeContent['en']['Dirt Devil intro'] = 'DIRT DEVIL<sup>®</sup> is a vibrant and contemporary brand that addresses every floor care need in one great value, convenient and easy to use package.</p><p>Each product is engineered to get a job done well and efficiently. From quick clean-ups to full house cleaning, DIRT DEVIL<sup>®</sup> has the answer – so busy people can clean up fast and with style.';
-$homeContent['zh-hant']['Dirt Devil intro'] = 'DIRT DEVIL<sup>®</sup>是一個充滿活力的當代品牌，產品物超所值，方便易用，能滿足所有地板護理需要。</p><p>每種產品均以美滿有效完成工作為目標。DIRT DEVIL<sup>®</sup>適合快速打掃以及全屋清潔，因此事務繁忙之人士也可迅速敏捷完成清潔工作。';
+$homeContent['en']['VAX intro'] = '3 Anteger posuere erat a ante venenatis dapibus posuere velit aliquet. Aaecenas sed diam eget risus varius blandit sit amet non magna. praesent commodo cursus magna, vel scelerisque nisl consectetur et.maecenas faucibus mollis interdum. curabitur blandit tempus porttitor.';
+$homeContent['zh-hant']['VAX intro'] = '3 Anteger posuere erat a ante venenatis dapibus posuere velit aliquet. Aaecenas sed diam eget risus varius blandit sit amet non magna. praesent commodo cursus magna, vel scelerisque nisl consectetur et.maecenas faucibus mollis interdum. curabitur blandit tempus porttitor.';
+
+$homeContent['en']['Dirt Devil intro'] = '4 Anteger posuere erat a ante venenatis dapibus posuere velit aliquet. Aaecenas sed diam eget risus varius blandit sit amet non magna. praesent commodo cursus magna, vel scelerisque nisl consectetur et.maecenas faucibus mollis interdum. curabitur blandit tempus porttitor.';
+$homeContent['zh-hant']['Dirt Devil intro'] = '4 Anteger posuere erat a ante venenatis dapibus posuere velit aliquet. Aaecenas sed diam eget risus varius blandit sit amet non magna. praesent commodo cursus magna, vel scelerisque nisl consectetur et.maecenas faucibus mollis interdum. curabitur blandit tempus porttitor.';
 
 $homeContent['en']['DOWNLOADS'] = 'Downloads';
 $homeContent['zh-hant']['DOWNLOADS'] = '下載';
@@ -322,11 +346,11 @@ $homeContent['en']['Business Review'] = 'Business Review';
 $homeContent['zh-hant']['Business Review'] = '業務回顧';
 $homeContent['en']['Operational Highlights'] = 'Operational Highlights';
 $homeContent['zh-hant']['Operational Highlights'] = '營運摘要';
-$homeContent['en']['Power Equipment Highlights'] = 'Power Equipment Highlights';
+$homeContent['en']['Power Equipment Highlights'] = 'Power Equipment, Accessories and Hand Tools Overview';
 $homeContent['zh-hant']['Power Equipment Highlights'] = '電動工具摘要';
-$homeContent['en']['Power Equipment'] = 'Power Equipment';
+$homeContent['en']['Power Equipment'] = 'Power Equipment, Accessories and Hand Tools';
 $homeContent['zh-hant']['Power Equipment'] = '電動工具';
-$homeContent['en']['Floor Care and Appliances Highlights'] = 'Floor Care and Appliances Highlights';
+$homeContent['en']['Floor Care and Appliances Highlights'] = 'Floor Care and Appliances Overview';
 $homeContent['zh-hant']['Floor Care and Appliances Highlights'] = '地板護理及器具摘要';
 $homeContent['en']['Floor Care and Appliances'] = 'Floor Care and Appliances';
 $homeContent['zh-hant']['Floor Care and Appliances'] = '地板護理及器具';
@@ -451,13 +475,14 @@ $(window).load(function () {
                     </div>
                   </div>
                   <div class="clearfix">
-                    <div class="graphContainer"> <?php echo $homeContent[ICL_LANGUAGE_CODE]['HIGHLIGHTS chart3 title'] ;?>
+                    <div class="graphContainer graphContainer2ndRow"> <?php echo $homeContent[ICL_LANGUAGE_CODE]['HIGHLIGHTS chart3 title'] ;?>
                       <div id="home-graph-container-3" class="graph-container" style="width: 250px; height: 150px;"></div>
                     </div>
-                    <div class="graphContainer noMarginRight"> <?php echo $homeContent[ICL_LANGUAGE_CODE]['HIGHLIGHTS chart4 title'] ;?>
+                    <div class="graphContainer graphContainer2ndRow noMarginRight"> <?php echo $homeContent[ICL_LANGUAGE_CODE]['HIGHLIGHTS chart4 title'] ;?>
                       <div id="home-graph-container-4" class="graph-container" style="width: 250px; height: 150px;"></div>
                     </div>
                   </div>
+                  <div class="readMoreDiv"> <a href="<?php echo site_url();echo get_curr_lang_path() ; ?>/executive-summary<?php echo get_curr_lang_second_path() ; ?>/chairmans-statement<?php echo get_curr_lang_second_path() ; ?>" class="btn_readMore clearfix"> <span class="readMoreLeft"></span> <span class="readMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['CHAIRMANS STATEMENT read more'] ;?></span> <span class="readMoreRight"></span> </a> </div>
                 </div>
               </div>
             </div>
@@ -479,9 +504,9 @@ $(window).load(function () {
                         <div id="home-graph-container-6" class="graph-container" style="width: 250px; height: 150px;"></div>
                       </div>
                     </div>
+                    <div class="readMoreDiv"> <a href="<?php echo site_url();echo get_curr_lang_path() ; ?>/executive-summary<?php echo get_curr_lang_second_path() ; ?>/chairmans-statement<?php echo get_curr_lang_second_path() ; ?>" class="btn_readMore clearfix"> <span class="readMoreLeft"></span> <span class="readMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['CHAIRMANS STATEMENT read more'] ;?></span> <span class="readMoreRight"></span> </a> </div>
                   </div>
                 </div>
-                <div class="readMoreDiv"> <a href="<?php echo site_url();echo get_curr_lang_path() ; ?>/executive-summary<?php echo get_curr_lang_second_path() ; ?>/chairmans-statement<?php echo get_curr_lang_second_path() ; ?>" class="btn_readMore clearfix"> <span class="readMoreLeft"></span> <span class="readMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['CHAIRMANS STATEMENT read more'] ;?></span> <span class="readMoreRight"></span> </a> </div>
               </div>
             </div>
           </div>
@@ -497,20 +522,19 @@ $(window).load(function () {
                     <?php
 												if(ICL_LANGUAGE_CODE=="en"){
 												?>
-                    <div style="font-size:20px; font-family:'Trade Gothic W01 Bold'; line-height:25px; padding-bottom:10px;">A Bold Vision Driven by a Powerful Strategic Roadmap</div>
+                    <div class="title_HL">A Bold Vision Driven by a Powerful Strategic Roadmap</div>
                     <div style="padding-bottom:25px;">TTI has a powerful strategy and a disciplined process to ensure we deliver outstanding performance in any economic environment and across all geographic regions. Our vision is to become the global leader in each of our strategic businesses through the deployment of Powerful Brands, Innovative Products, Operational Excellence and Exceptional People. Over the past few years we have raised the level of performance at TTI by focusing on executing our Strategic Roadmap. The record results in 2012 and our accomplishments over the last three years demonstrate that we are on the right path. We have achieved our record performance by consistently delivering strong organic growth. We have also increased free cash flow while strengthening our balance sheet with efficient use of working capital.</div>
                     <? }
 												else{
 												?>
-                    <div style="font-size:20px; font-weight:bold;font-family:'Heiti SC', 'Microsoft Yahei', 'SimHei'; line-height:25px; padding-bottom:10px;">強勁策略路線圖驅動下展現之秀麗前景</div>
+                    <div class="title_HL">強勁策略路線圖驅動下展現之秀麗前景</div>
                     <div style="padding-bottom:25px;font-size: 105%;">創科實業擁有強勁的策略和嚴謹有序的業務流程，以確保無論在任何經濟環境下及在所有地區均能創出卓越佳績。我們的願景是透過利用強勁品牌、創新產品、優秀人才及卓越營運，成為各策略業務的全球領導者。過去數年，我們集中執行策略路線圖，已提升創科實業的業績水平。二零一二年業績創新高紀錄及我們在過去三年取得的成就，足以證明我們的路線正確。我們持續強勁的自然內部增長，取得創新高紀錄的業績。我們亦增加了自由現金流量並有效地運用營運資金以增強資產負債表。</div>
                     <?
 												}
 												?>
+					<div class="readMoreDiv"> <a href="<?php echo site_url();echo get_curr_lang_path() ; ?>/executive-summary<?php echo get_curr_lang_second_path() ; ?>/ceos-strategic-review" class="btn_readMore clearfix"> <span class="readMoreLeft"></span> <span class="readMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['CEO read more'] ;?></span> <span class="readMoreRight"></span> </a> </div>
                   </div>
                 </div>
-                <div style="padding-bottom:30px;"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/themes/twentyten/images/home/img_ceo_chart<?php echo get_curr_lang_second_path() ; ?>.gif" alt="" /> </div>
-                <div class="readMoreDiv"> <a href="<?php echo site_url();echo get_curr_lang_path() ; ?>/executive-summary<?php echo get_curr_lang_second_path() ; ?>/ceos-strategic-review" class="btn_readMore clearfix"> <span class="readMoreLeft"></span> <span class="readMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['CEO read more'] ;?></span> <span class="readMoreRight"></span> </a> </div>
               </div>
             </div>
           </div>
@@ -519,25 +543,26 @@ $(window).load(function () {
               <div><?php echo $homeContent[ICL_LANGUAGE_CODE]['REVIEW OF OPERATIONS'] ;?></div>
             </div>
             <div class="sectionContent">
-              <div class="homeSectionContentDiv">
+              <div class="homeSectionContentDiv" style="padding-left:17px;">
                 <div class="clearfix">
                   <div class="reviewOperationTwoColumn">
                     <div class="headlineTitle"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Power Equipment'] ;?></div>
                     <div class="clearfix">
                       <div class="graphContainer fullwidthGraph">
-                        <div class="graphTitleDiv"> <span class="graphTitle"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Sales by Business'] ;?></span> </div>
+                        <div class="graphTitleDiv dotUnderline"> <span class="graphTitle"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Sales by Business'] ;?></span><span class="graphUnit">%</span></div>
                         <div class="clearfix">
-                          <div id="home-graph-container-13" class="graph-container" style="width:140px;height:145px;float:left;"></div>
-                          <div class="graphProfile" style="float:left; width:235px; padding:1.2em 0;">
+                          <div id="home-graph-container-13" class="graph-container"></div>
+                          <div class="graphProfile">
                             <?php
 															if(ICL_LANGUAGE_CODE=="en"){
 															?>
-                            <span class="midFont darkText">USD</span><span class="midFont numberText">2.9 billion </span><br>
-                            <span class="midFont numberText">74.4%</span><span class="midFont darkText"> of the total turnover</span>
+                            <span class="largeFont">73</span>
+                            <span class="midFont">Power Equipment and Accessories</span>
                             <? }
 															else{
 															?>
-                            <span class="midFont darkText">營業額</span><span class="midFont numberText">2,900,000,000</span><span class="midFont darkText">美元</span><br /><span class="midFont darkText">佔集團營業額</span><span class="midFont numberText">74.4%</span>
+                            <span class="largeFont">73</span>
+                            <span class="midFont">Power Equipment and Accessories</span>
                             <?
 															}
 															?>
@@ -548,11 +573,11 @@ $(window).load(function () {
                         <?php
 													if(ICL_LANGUAGE_CODE=="en"){
 													?>
-                        The Power Equipment business comprises power tools, hand tools, outdoor products and accessories. In 2012, sales at this business rose by 7.6% to USD2.9 billion, supported by growth in all geographic markets and the strong global expansion of <span class="resetLetterSpace">MILWAUKEE</span><sup>®</sup>. We have solid momentum behind the MILWAUKEE<sup>®</sup> REDLITHIUM™ cordless platforms and there has been further growth in Hand Tools and Power Tool Accessories. RYOBI<sup>®</sup> cordless lithium ion power tools and outdoor products continue to make impressive gains with consumers. The business accounted for 74.4% of Group turnover, against 72.6% in 2011. We generated approximately one third of sales from new products, in line with our plans.<br /><a href="<?php echo site_url();echo get_curr_lang_path();?>/executive-summary<?php echo get_curr_lang_second_path();?>/power-equipment-highlights<?php echo get_curr_lang_second_path();?>">Power Equipment Highlights</a>
+                        Aaecenas sed diam eget risus varius blandit sit amet non magna. praesent commodo cursus magna, vel scelerisque nisl consectetur et.maecenas faucibus mollis interdum. curabitur blandit tempus porttitor. pibus posuere vel aecenas sed diam eget risus.<a class="detailsLink" href="<?php echo site_url();echo get_curr_lang_path();?>/executive-summary<?php echo get_curr_lang_second_path();?>/power-equipment-highlights<?php echo get_curr_lang_second_path();?>">Power Equipment, Accessories and Hand Tools Overview</a>
                         <? }
 													else{
 													?>
-                        電動工具業務涵蓋電動工具、手動工具、戶外<br />園藝工具及配件。在各地市場業務均見增長以及MILWAUKEE<sup>®</sup>品牌全球業務強勁增長的支持下，帶動電動工具業務二零一二年的銷售額上升7.6%至2,900,000,000美元。<span class="resetLetterSpace">MILWAUKEE<sup>®</sup> REDLITHIUM™ </span>充電式平台增長動力強勁，而手動工具及電動工具配件亦有進一步增長。RYOBI<sup>®</sup>充電式鋰離子電動工具以及戶外園藝工具的顧客數量增長可觀，令人欣喜。年內電動工具業務佔本集團營業額74.4%，對比二零一一年則為72.6%。約三份之一銷售額來自嶄新產品，與計劃相符。<br /><a href="<?php echo site_url(); echo get_curr_lang_path();?>/executive-summary<?php echo get_curr_lang_second_path();?>/power-equipment-highlights<?php echo get_curr_lang_second_path();?>">電動工具摘要</a>
+                        電動工具業務涵蓋電動工具、手動工具、戶外<br />園藝工具及配件。在各地市場業務均見增長以及MILWAUKEE<sup>®</sup>品牌全球業務強勁增長的支持下，帶動電動工具業務二零一二年的銷售額上升7.6%至2,900,000,000美元。<span class="resetLetterSpace">MILWAUKEE<sup>®</sup> REDLITHIUM™ </span>充電式平台增長動力強勁，而手動工具及電動工具配件亦有進一步增長。RYOBI<sup>®</sup>充電式鋰離子電動工具以及戶外園藝工具的顧客數量增長可觀，令人欣喜。年內電動工具業務佔本集團營業額74.4%，對比二零一一年則為72.6%。約三份之一銷售額來自嶄新產品，與計劃相符。<a class="detailsLink" href="<?php echo site_url(); echo get_curr_lang_path();?>/executive-summary<?php echo get_curr_lang_second_path();?>/power-equipment-highlights<?php echo get_curr_lang_second_path();?>">電動工具摘要</a>
                         <?
 													}
 													?>
@@ -563,19 +588,20 @@ $(window).load(function () {
                     <div class="headlineTitle"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Floor Care'] ;?></div>
                     <div class="clearfix">
                       <div class="graphContainer fullwidthGraph">
-                        <div class="graphTitleDiv"> <span class="graphTitle"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Sales by Business'] ;?></span> </div>
+                        <div class="graphTitleDiv dotUnderline"> <span class="graphTitle"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Sales by Business'] ;?></span><span class="graphUnit">%</span></div>
                         <div class="clearfix">
-                          <div id="home-graph-container-14" class="graph-container" style="width:140px;height:145px;float:left;"></div>
-                          <div class="graphProfile" style="float:left; width:235px; padding:1.2em 0;">
+                          <div id="home-graph-container-14" class="graph-container"></div>
+                          <div class="graphProfile">
                             <?php
 															if(ICL_LANGUAGE_CODE=="en"){
 															?>
-                            <span class="midFont darkText">USD</span><span class="midFont"><span class="numberText">1.0</span> billion</span><br>
-                            <span class="midFont numberText">25.6%</span><span class="midFont darkText"> of the total turnover</span>
+                            <span class="largeFont">27</span>
+                            <span class="midFont">Floor Care and Appliances</span>
                             <? }
 															else{
 															?>
-                            <span class="midFont darkText">營業額</span><span class="midFont numberText">1,000,000,000</span><span class="midFont darkText">美元</span><br /><span class="midFont darkText">佔集團營業額</span><span class="midFont numberText">25.6%</span>
+							<span class="largeFont">27</span>
+                            <span class="midFont">Floor Care and Appliances</span>
                             <?
 															}
 															?>
@@ -586,11 +612,11 @@ $(window).load(function () {
                         <?php
 													if(ICL_LANGUAGE_CODE=="en"){
 													?>
-                        Floor care and Appliances margins improved significantly, but sales fell slightly by 1.6% over 2011 to USD1.0 billion following a rationalization of the business which has seen non-performing operations cut and expenses reduced in North America. Our global product development process and centralized purchasing initiatives are bringing benefits. Key gains were made in Europe, with double-digit revenue growth, while global new products sales were maintained at one third of total sales. The business accounted for 25.6% of Group turnover against 27.4% in 2011.<br /><a href="<?php echo site_url(); echo get_curr_lang_path();?>/executive-summary<?php echo get_curr_lang_second_path(); ?>/floor-care-and-appliances-highlights<?php echo get_curr_lang_second_path(); ?>">Floor Care and Appliances Highlights</a>
+                        Aaecenas sed diam eget risus varius blandit sit amet non magna. praesetetur et.maecenas faucibus mollis interdum. curabitur blandit tempus porttitor. integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aaecenas sed diam eget.<a class="detailsLink" href="<?php echo site_url(); echo get_curr_lang_path();?>/executive-summary<?php echo get_curr_lang_second_path(); ?>/floor-care-and-appliances-highlights<?php echo get_curr_lang_second_path(); ?>">Floor care and Appliances Overview</a>
                         <? }
 													else{
 													?>
-                        地板護理及器具的利潤率大幅改善，銷售額微降1.6%至1,000,000,000美元，原因乃年內推行業務整頓，重整北美洲一些表現欠佳的業務以削減部分開支。我們在全球推行的產品研發程序及中央採購策略持續發揮效用，主要得益見諸歐洲方面，營業額取得雙位數字增長，而全球新產品銷售額維持佔總營業額三份之一。此項業務佔本集團年內營業額25.6%，對比二零一一年則為27.4%。<br /><a href="<?php echo site_url(); echo get_curr_lang_path();?>/executive-summary<?php echo get_curr_lang_second_path(); ?>/floor-care-and-appliances-highlights<?php echo get_curr_lang_second_path(); ?>">地板護理及器具摘要</a>
+                        地板護理及器具的利潤率大幅改善，銷售額微降1.6%至1,000,000,000美元，原因乃年內推行業務整頓，重整北美洲一些表現欠佳的業務以削減部分開支。我們在全球推行的產品研發程序及中央採購策略持續發揮效用，主要得益見諸歐洲方面，營業額取得雙位數字增長，而全球新產品銷售額維持佔總營業額三份之一。此項業務佔本集團年內營業額25.6%，對比二零一一年則為27.4%。<a class="detailsLink" href="<?php echo site_url(); echo get_curr_lang_path();?>/executive-summary<?php echo get_curr_lang_second_path(); ?>/floor-care-and-appliances-highlights<?php echo get_curr_lang_second_path(); ?>">地板護理及器具摘要</a>
                         <?
 													}
 													?>
@@ -601,8 +627,9 @@ $(window).load(function () {
               </div>
             </div>
             <div class="sectionContent">
-              <div class="homeSectionContentDiv lessPaddingTop">
-                <div class="headlineTitle"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Our Brands'] ;?></div>
+              <div class="homeSectionContentDiv lessPaddingTop" style="padding-left: 17px;">
+                <div class="headlineTitle" style="padding-bottom: 0"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Our Brands'] ;?></div>
+                <p>Anteger posuere erat a ante venenatis dapibus posuere velit aliquet. Aaecenas sed diam eget risus varius blandit sit amet non magna. praesent commodo cursus magna, vel scelerisque nisl consectetur et.maecenas faucibus mollis interdum. curabitur blandit tempus porttitor. integer </p>
                 <div class="subheadlineTitle"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Power Equipment'] ;?></div>
                 <div class="brandTabContainer">
                   <div class="clearfix" id="homePowerEquipmentBrandTabContainer">
@@ -610,7 +637,7 @@ $(window).load(function () {
                       <div>
                         <table cellpadding="0" cellspacing="0" border="0" width="100%">
                           <tr>
-                            <td height="74"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/operationalHighlight/logo_milwaukee.png" width="82" alt="" /></td>
+                            <td height="62"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/operational-highlight/logo_milwaukee.png" width="82" alt="" /></td>
                           </tr>
                         </table>
                       </div>
@@ -619,7 +646,7 @@ $(window).load(function () {
                       <div>
                         <table cellpadding="0" cellspacing="0" border="0" width="100%">
                           <tr>
-                            <td height="74"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/operationalHighlight/logo_aeg.png" width="59" alt="" /></td>
+                            <td height="62"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/operational-highlight/logo_aeg.png" width="59" alt="" /></td>
                           </tr>
                         </table>
                       </div>
@@ -628,7 +655,7 @@ $(window).load(function () {
                       <div>
                         <table cellpadding="0" cellspacing="0" border="0" width="100%">
                           <tr>
-                            <td height="74"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/operationalHighlight/logo_ryobi.png" width="82" alt="" /></td>
+                            <td height="62"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/operational-highlight/logo_ryobi.png" width="82" alt="" /></td>
                           </tr>
                         </table>
                       </div>
@@ -637,7 +664,7 @@ $(window).load(function () {
                       <div>
                         <table cellpadding="0" cellspacing="0" border="0" width="100%">
                           <tr>
-                            <td height="74"><img src="<?php bloginfo('wpurl'); ?>/wp-content/themes/twentyten/images/general/logo_homelite_lrg.png" width="106" alt="" /></td>
+                            <td height="62"><img src="<?php bloginfo('wpurl'); ?>/wp-content/themes/twentyten/images/general/logo_homelite_lrg.png" width="106" alt="" /></td>
                           </tr>
                         </table>
                       </div>
@@ -645,65 +672,74 @@ $(window).load(function () {
                   </div>
                   <div class="brandContentContainer clearfix" id="homePowerEquipmentBrandContentContainer">
                     <div class="brandContentItem" style="display:block;">
+                    	<div class="brandImg"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/pt_milwaukee.jpg" alt="" /> </div>
                       <div class="brandContent" style="background-color:#E12139;">
-                        <div class="subheadlineTitle"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/milwaukee_tab_logo.png" width="90" alt="" /></div>
+                        <div class="subheadlineTitle"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/milwaukee_tab_logo.png"  alt="" /></div>
                         <p><?php echo $homeContent[ICL_LANGUAGE_CODE]['Milwaukee intro'] ;?></p>
-                        <div class="findoutMoreDiv"> <a class="btn_findoutMore clearfix" href="<?php echo site_url();echo get_curr_lang_path() ; ?>/executive-summary<?php echo get_curr_lang_second_path() ; ?>/power-equipment<?php echo get_curr_lang_second_path() ; ?>/industrial-power-tools-and-accessories<?php echo get_curr_lang_second_path() ; ?>/milwaukee<?php echo get_curr_lang_second_path() ; ?>"> <span class="findoutMoreLeft"></span> <span class="findoutMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Find out more'] ;?></span> <span class="findoutMoreRight"></span> </a> </div>
                       </div>
-                      <div class="brandImg"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/pt_milwaukee.jpg" alt="" /> </div>
+                       <div class="findoutMoreDiv"> <a class="btn_findoutMore clearfix" href="<?php echo site_url();echo get_curr_lang_path() ; ?>/executive-summary<?php echo get_curr_lang_second_path() ; ?>/power-equipment<?php echo get_curr_lang_second_path() ; ?>/industrial-power-tools-and-accessories<?php echo get_curr_lang_second_path() ; ?>/milwaukee<?php echo get_curr_lang_second_path() ; ?>"> <span class="findoutMoreLeft"></span> <span class="findoutMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Find out more'] ;?></span> <span class="findoutMoreRight"></span> </a> </div>
                     </div>
                     <div class="brandContentItem">
+                    	<div class="brandImg"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/pt_milwaukee.jpg" alt="" /> </div>
                       <div class="brandContent" style="background-color:#F47F24;">
-                        <div class="subheadlineTitle"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/aeg_tab_logo.png" width="84" alt="" /></div>
+                        <div class="subheadlineTitle"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/aeg_tab_logo.png" alt="" /></div>
                         <p><?php echo $homeContent[ICL_LANGUAGE_CODE]['AEG intro'] ;?></p>
-                        <div class="findoutMoreDiv"> <a class="btn_findoutMore clearfix" href="<?php echo site_url();echo get_curr_lang_path() ; ?>/executive-summary<?php echo get_curr_lang_second_path() ; ?>/power-equipment<?php echo get_curr_lang_second_path() ; ?>/professional-power-tools-and-accessories<?php echo get_curr_lang_second_path() ; ?>/aeg<?php echo get_curr_lang_second_path() ; ?>"> <span class="findoutMoreLeft"></span> <span class="findoutMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Find out more'] ;?></span> <span class="findoutMoreRight"></span> </a> </div>
                       </div>
-                      <div class="brandImg"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/pt_aeg.jpg" alt="" /> </div>
+                      <div class="findoutMoreDiv"> <a class="btn_findoutMore clearfix" href="<?php echo site_url();echo get_curr_lang_path() ; ?>/executive-summary<?php echo get_curr_lang_second_path() ; ?>/power-equipment<?php echo get_curr_lang_second_path() ; ?>/professional-power-tools-and-accessories<?php echo get_curr_lang_second_path() ; ?>/aeg<?php echo get_curr_lang_second_path() ; ?>"> <span class="findoutMoreLeft"></span> <span class="findoutMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Find out more'] ;?></span> <span class="findoutMoreRight"></span> </a> </div>
                     </div>
                     <div class="brandContentItem">
+                    	<div class="brandImg"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/pt_milwaukee.jpg" alt="" /> </div>
                       <div class="brandContent" style="background-color:#C2D42D;color:#393939;">
-                        <div class="subheadlineTitle"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/ryobi_tab_logo.png" width="103" alt="" /></div>
+                        <div class="subheadlineTitle"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/ryobi_tab_logo.png" alt="" /></div>
                         <p><?php echo $homeContent[ICL_LANGUAGE_CODE]['Ryobi intro'] ;?></p>
-                        <div class="findoutMoreDiv"> <a class="btn_findoutMore clearfix" href="<?php echo site_url();echo get_curr_lang_path() ; ?>/executive-summary<?php echo get_curr_lang_second_path() ; ?>/power-equipment<?php echo get_curr_lang_second_path() ; ?>/consumer-and-trade-power-tools-and-accessories<?php echo get_curr_lang_second_path() ; ?>/ryobi<?php echo get_curr_lang_second_path() ; ?>"> <span class="findoutMoreLeft"></span> <span class="findoutMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Find out more'] ;?></span> <span class="findoutMoreRight"></span> </a> </div>
                       </div>
-                      <div class="brandImg"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/pt_ryobi.jpg" alt="" /> </div>
+                      <div class="findoutMoreDiv"> <a class="btn_findoutMore clearfix" href="<?php echo site_url();echo get_curr_lang_path() ; ?>/executive-summary<?php echo get_curr_lang_second_path() ; ?>/power-equipment<?php echo get_curr_lang_second_path() ; ?>/consumer-and-trade-power-tools-and-accessories<?php echo get_curr_lang_second_path() ; ?>/ryobi<?php echo get_curr_lang_second_path() ; ?>"> <span class="findoutMoreLeft"></span> <span class="findoutMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Find out more'] ;?></span> <span class="findoutMoreRight"></span> </a> </div>
                     </div>
                     <div class="brandContentItem">
+                    	<div class="brandImg"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/pt_milwaukee.jpg" alt="" /> </div>
                       <div class="brandContent" style="background-color:#EC1C24">
-                        <div class="subheadlineTitle"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/homelite_tab_logo.png" width="151" alt="" /></div>
+                        <div class="subheadlineTitle"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/homelite_tab_logo.png" alt="" /></div>
                         <p><?php echo $homeContent[ICL_LANGUAGE_CODE]['homelite intro'] ;?></p>
-                        <div class="findoutMoreDiv"> <a class="btn_findoutMore clearfix" href="<?php echo site_url();echo get_curr_lang_path() ; ?>/executive-summary<?php echo get_curr_lang_second_path() ; ?>/power-equipment<?php echo get_curr_lang_second_path() ; ?>/outdoor-products-and-accessories<?php echo get_curr_lang_second_path() ; ?>/homelite<?php echo get_curr_lang_second_path() ; ?>"> <span class="findoutMoreLeft"></span> <span class="findoutMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Find out more'] ;?></span> <span class="findoutMoreRight"></span> </a> </div>
                       </div>
-                      <div class="brandImg"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/pt_homelite.jpg" alt="" /> </div>
+                       <div class="findoutMoreDiv"> <a class="btn_findoutMore clearfix" href="<?php echo site_url();echo get_curr_lang_path() ; ?>/executive-summary<?php echo get_curr_lang_second_path() ; ?>/power-equipment<?php echo get_curr_lang_second_path() ; ?>/outdoor-products-and-accessories<?php echo get_curr_lang_second_path() ; ?>/homelite<?php echo get_curr_lang_second_path() ; ?>"> <span class="findoutMoreLeft"></span> <span class="findoutMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Find out more'] ;?></span> <span class="findoutMoreRight"></span> </a> </div>
                     </div>
                   </div>
                 </div>
                 <div class="subheadlineTitle"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Floor Care'] ;?></div>
                 <div class="brandTabContainer">
                   <div class="clearfix" id="homeFloorCareBrandTabContainer">
-                    <div class="powerEquipmentBrandContainer active threeColumn">
+                    <div class="powerEquipmentBrandContainer active">
                       <div>
                         <table cellpadding="0" cellspacing="0" border="0" width="100%">
                           <tr>
-                            <td height="74"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/floorcare/logo_hoover.png" width="47" alt="" /></td>
+                            <td height="62"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/floorcare/logo_hoover.png" width="47" alt="" /></td>
                           </tr>
                         </table>
                       </div>
                     </div>
-                    <div class="powerEquipmentBrandContainer threeColumn">
+                    <div class="powerEquipmentBrandContainer">
                       <div>
                         <table cellpadding="0" cellspacing="0" border="0" width="100%">
                           <tr>
-                            <td height="74"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/floorcare/logo_vax.png" width="89" alt="" /></td>
+                            <td height="62"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/floorcare/logo_oreck.png" width="110" alt="" /></td>
                           </tr>
                         </table>
                       </div>
                     </div>
-                    <div class="powerEquipmentBrandContainer threeColumn noMarginRight">
+                    <div class="powerEquipmentBrandContainer">
                       <div>
                         <table cellpadding="0" cellspacing="0" border="0" width="100%">
                           <tr>
-                            <td height="74"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/floorcare/logo_dirt_devil.png" width="56" alt="" /></td>
+                            <td height="62"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/floorcare/logo_vax.png" width="89" alt="" /></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="powerEquipmentBrandContainer noMarginRight">
+                      <div>
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                          <tr>
+                            <td height="62"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/floorcare/logo_dirt_devil.png" width="56" alt="" /></td>
                           </tr>
                         </table>
                       </div>
@@ -711,97 +747,41 @@ $(window).load(function () {
                   </div>
                   <div class="brandContentContainer clearfix" id="homeFloorCareBrandContentContainer">
                     <div class="brandContentItem" style="display:block;">
+                    	<div class="brandImg"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/pt_oreck.jpg" alt="" /> </div>
                       <div class="brandContent" style="background-color:#C31230;" id="brandContent-hoover">
-                        <div class="subheadlineTitle"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/hoover_tab_logo.png" width="44" alt="" /></div>
+                        <div class="subheadlineTitle"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/hoover_tab_logo.png" alt="" /></div>
                         <p><?php echo $homeContent[ICL_LANGUAGE_CODE]['Hoover intro'] ;?></p>
-                        <div class="findoutMoreDiv"> <a class="btn_findoutMore clearfix" href="<?php echo site_url();echo get_curr_lang_path() ; ?>/executive-summary<?php echo get_curr_lang_second_path() ; ?>/floor-care-and-appliances<?php echo get_curr_lang_second_path() ; ?>/hoover<?php echo get_curr_lang_second_path() ; ?>"> <span class="findoutMoreLeft"></span> <span class="findoutMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Find out more'] ;?></span> <span class="findoutMoreRight"></span> </a> </div>
                       </div>
-                      <div class="brandImg"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/pt_hoover.jpg" alt="" /> </div>
+                      <div class="findoutMoreDiv"> <a class="btn_findoutMore clearfix" href="<?php echo site_url();echo get_curr_lang_path() ; ?>/executive-summary<?php echo get_curr_lang_second_path() ; ?>/floor-care-and-appliances<?php echo get_curr_lang_second_path() ; ?>/hoover<?php echo get_curr_lang_second_path() ; ?>"> <span class="findoutMoreLeft"></span> <span class="findoutMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Find out more'] ;?></span> <span class="findoutMoreRight"></span> </a> </div>
                     </div>
                     <div class="brandContentItem">
+                    	<div class="brandImg"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/pt_oreck.jpg" alt="" /> </div>
+                      <div class="brandContent" style="background-color:#C31230;" id="brandContent-hoover">
+                        <div class="subheadlineTitle"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/oreck_tab_logo.png" alt="" /></div>
+                        <p><?php echo $homeContent[ICL_LANGUAGE_CODE]['Oreck intro'] ;?></p>
+                      </div>
+                      <div class="findoutMoreDiv"> <a class="btn_findoutMore clearfix" href="<?php echo site_url();echo get_curr_lang_path() ; ?>/executive-summary<?php echo get_curr_lang_second_path() ; ?>/floor-care-and-appliances<?php echo get_curr_lang_second_path() ; ?>/hoover<?php echo get_curr_lang_second_path() ; ?>"> <span class="findoutMoreLeft"></span> <span class="findoutMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Find out more'] ;?></span> <span class="findoutMoreRight"></span> </a> </div>
+                    </div>
+                    <div class="brandContentItem">
+                    	<div class="brandImg"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/pt_oreck.jpg" alt="" /> </div>
                       <div class="brandContent" style="background-color:#F16528;">
-                        <div class="subheadlineTitle"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/vax_tab_logo.png" width="93" alt="" /></div>
+                        <div class="subheadlineTitle"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/vax_tab_logo.png" alt="" /></div>
                         <p><?php echo $homeContent[ICL_LANGUAGE_CODE]['VAX intro'] ;?></p>
-                        <div class="findoutMoreDiv"> <a class="btn_findoutMore clearfix" href="<?php echo site_url();echo get_curr_lang_path() ; ?>/executive-summary<?php echo get_curr_lang_second_path() ; ?>/floor-care-and-appliances<?php echo get_curr_lang_second_path() ; ?>/vax<?php echo get_curr_lang_second_path() ; ?>"> <span class="findoutMoreLeft"></span> <span class="findoutMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Find out more'] ;?></span> <span class="findoutMoreRight"></span> </a> </div>
+                        
                       </div>
-                      <div class="brandImg"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/pt_vax.jpg" alt="" /> </div>
+                      <div class="findoutMoreDiv"> <a class="btn_findoutMore clearfix" href="<?php echo site_url();echo get_curr_lang_path() ; ?>/executive-summary<?php echo get_curr_lang_second_path() ; ?>/floor-care-and-appliances<?php echo get_curr_lang_second_path() ; ?>/vax<?php echo get_curr_lang_second_path() ; ?>"> <span class="findoutMoreLeft"></span> <span class="findoutMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Find out more'] ;?></span> <span class="findoutMoreRight"></span> </a> </div>
                     </div>
                     <div class="brandContentItem">
+                    	<div class="brandImg"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/pt_oreck.jpg" alt="" /> </div>
                       <div class="brandContent" style="background-color:#CED0D1;color: #393939;">
-                        <div class="subheadlineTitle"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/dirt_tab_logo.png" width="51" alt="" /></div>
+                        <div class="subheadlineTitle"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/dirt_tab_logo.png" alt="" /></div>
                         <p><?php echo $homeContent[ICL_LANGUAGE_CODE]['Dirt Devil intro'] ;?></p>
-                        <div class="findoutMoreDiv"> <a class="btn_findoutMore clearfix" href="<?php echo site_url();echo get_curr_lang_path() ; ?>/executive-summary<?php echo get_curr_lang_second_path() ; ?>/floor-care-and-appliances<?php echo get_curr_lang_second_path() ; ?>/dirt-devil<?php echo get_curr_lang_second_path() ; ?>"> <span class="findoutMoreLeft"></span> <span class="findoutMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Find out more'] ;?></span> <span class="findoutMoreRight"></span> </a> </div>
+                        
                       </div>
-                      <div class="brandImg"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/pt_dirtdevil.jpg" alt="" /> </div>
+                      <div class="findoutMoreDiv"> <a class="btn_findoutMore clearfix" href="<?php echo site_url();echo get_curr_lang_path() ; ?>/executive-summary<?php echo get_curr_lang_second_path() ; ?>/floor-care-and-appliances<?php echo get_curr_lang_second_path() ; ?>/dirt-devil<?php echo get_curr_lang_second_path() ; ?>"> <span class="findoutMoreLeft"></span> <span class="findoutMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Find out more'] ;?></span> <span class="findoutMoreRight"></span> </a> </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="homeSection">
-            <div class="sectionTitle">
-              <div><?php echo $homeContent[ICL_LANGUAGE_CODE]['OPERATIONAL HIGHLIGHTS'] ;?></div>
-            </div>
-            <div class="sectionContent">
-              <div class="homeSectionContentDiv"> 
-                <div class="subheadlineTitle"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Sales by Location'] ;?></div>
-                <div class="clearfix">
-                  <div class="graphContainer">
-                    <div class="graphTitleDiv"> <span class="graphTitle"><?php echo $homeContent[ICL_LANGUAGE_CODE]['NORTH AMERICA'] ;?></span> </div>
-                    <div class="clearfix pieChartContainer">
-                      <table cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td width="135"><div id="home-graph-container-7" class="graph-container" style="width:140px;height:145px"></div></td>
-                          <td class="graphProfile verticalAlign" width="110"><span class="largeFont">72.9</span> <span class="smallFont">%</span></td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <div class="graphContainer">
-                    <div class="graphTitleDiv"> <span class="graphTitle"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Europe'] ;?></span> </div>
-                    <div class="clearfix pieChartContainer">
-                      <table cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td width="135"><div id="home-graph-container-8" class="graph-container" style="width:140px;height:145px"></div></td>
-                          <td class="graphProfile verticalAlign" width="110"><span class="largeFont">19.9</span> <span class="smallFont">%</span></td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <div class="graphContainer noMarginRight">
-                    <div class="graphTitleDiv"> <span class="graphTitle"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Rest of the World'] ;?></span> </div>
-                    <div class="clearfix pieChartContainer">
-                      <table cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td width="135"><div id="home-graph-container-9" class="graph-container" style="width:140px;height:145px"></div></td>
-                          <td class="graphProfile verticalAlign" width="110"><span class="largeFont">7.2</span> <span class="smallFont">%</span></td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                <div style="padding-bottom: 0px;" class="subheadlineTitle"><?php echo $homeContent[ICL_LANGUAGE_CODE]['TURNOVER'] ;?></div>
-                <div style="margin-bottom: 10px;class="graphUnit"><?php echo $homeContent[ICL_LANGUAGE_CODE]['USDm'] ;?></div>
-                <div class="clearfix">
-                  <div class="graphContainer">
-                    <div class="graphTitleDiv"> <span class="graphTitle"><?php echo $homeContent[ICL_LANGUAGE_CODE]['NORTH AMERICA'] ;?></span> </div>
-                    <div id="home-graph-container-10" class="graph-container" style="height:150px;width:250px"></div>
-                  </div>
-                  <div class="graphContainer">
-                    <div class="graphTitleDiv"> <span class="graphTitle"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Europe'] ;?></span> </div>
-                    <div id="home-graph-container-11" class="graph-container" style="height:150px;width:250px"></div>
-                  </div>
-                  <div class="graphContainer noMarginRight">
-                    <div class="graphTitleDiv"> <span class="graphTitle"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Rest of the World'] ;?></span> </div>
-                    <div id="home-graph-container-12" class="graph-container" style="height:150px;width:250px"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="sectionContent">
-              <div class="homeSectionContentDiv lessPaddingTop">
-                <div class="readMoreDiv"> <a href="<?php echo site_url();echo get_curr_lang_path() ; ?>/executive-summary<?php echo get_curr_lang_second_path() ; ?>/operational-highlights<?php echo get_curr_lang_second_path() ; ?>" class="btn_readMore clearfix"> <span class="readMoreLeft"></span> <span class="readMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Operational Highlights read more'] ;?></span> <span class="readMoreRight"></span> </a> </div>
               </div>
             </div>
           </div>
@@ -809,29 +789,28 @@ $(window).load(function () {
             <div class="sectionTitle">
               <div><?php echo $homeContent[ICL_LANGUAGE_CODE]['DOWNLOADS'] ;?></div>
             </div>
-            <div class="sectionContent" style="background-image:none;">
-              <div class="homeSectionContentDiv">
+            <div class="sectionContent" id="sectionContentDownload">
+              <div class="homeSectionContentDiv" style="padding-left:17px;">
                 <div class="clearfix">
                   <div class="downloadLeft">
-                    <div class="headlineTitle headerBorder"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Full Report (PDF)'] ;?></div>
+                    <div class="headlineTitle dotUnderline"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Full Report (PDF)'] ;?></div>
                     <div class="reportCoverContainer"><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><img src="<?php bloginfo('wpurl'); ?>/wp-content/themes/twentyten/images/home/home_cover<?php echo get_curr_lang_second_path() ; ?>.jpg" alt="" /></a></div>
                     <a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Download full report'] ;?></a> </div>
                   <div class="downloadRight">
-                    <div class="headlineTitle headerBorder"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Sections (PDF)'] ;?></div>
-                    <div class="downloadLinksContainer">
+                    <div class="headlineTitle dotUnderline"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Sections (PDF)'] ;?></div>
+                    <div class="downloadLinksContainer dotUnderline">
                       <div><?php echo $homeContent[ICL_LANGUAGE_CODE]['Executive Summary'] ;?></div>
                       <ul class="downloadLinkList">
                         <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Financial_Highlights<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Financial Highlights'] ;?></a></li>
                         <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Chairman_Statement<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['CHAIRMANS STATEMENT'] ;?></a></li>
                         <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_CEO_Review<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Chief Executive Officers Strategic Review'] ;?></a></li>
-                         <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Operational_Highlights<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Operational Highlights'] ;?></a></li>
                         <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Power_Equipment_Highlights<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Power Equipment Highlights'] ;?></a></li>
                         <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Power_Equipment<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Power Equipment'] ;?></a></li>
                         <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Floor_Care_And_Appliances_Highlights<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Floor Care and Appliances Highlights'] ;?></a></li>
                         <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Floor_Care_And_Appliances<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Floor Care and Appliances'] ;?></a></li>
                       </ul>
                     </div>
-                    <div class="downloadLinksContainer">
+                    <div class="downloadLinksContainer dotUnderline">
                       <div><?php echo $homeContent[ICL_LANGUAGE_CODE]['MDA & Governance'] ;?></div>
                       <ul class="downloadLinkList">
                       	<li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Board_of_Directors<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Board of Directors'] ;?></a></li>
@@ -840,7 +819,7 @@ $(window).load(function () {
                         <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Director_Report<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Report of the Directors'] ;?></a></li>
                       </ul>
                     </div>
-                    <div class="downloadLinksContainer">
+                    <div class="downloadLinksContainer dotUnderline">
                       <div><?php echo $homeContent[ICL_LANGUAGE_CODE]['Financials'] ;?></div>
                       <ul class="downloadLinkList">
                         <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Financial_Summary<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Financial Summary'] ;?></a></li>
@@ -864,7 +843,7 @@ $(window).load(function () {
         </div>
       </div>
       <div id="secondary"> 
-        <div id="homeRightNav"> <a href="javascript:;" class="active"><?php echo $homeContent[ICL_LANGUAGE_CODE]['HIGHLIGHTS'] ;?></a> <a href="javascript:;"><?php echo $homeContent[ICL_LANGUAGE_CODE]['CHAIRMANS STATEMENT'] ;?></a><a href="javascript:;"><?php echo $homeContent[ICL_LANGUAGE_CODE]['CEO title'] ;?></a> <a href="javascript:;"><?php echo $homeContent[ICL_LANGUAGE_CODE]['REVIEW OF OPERATIONS'] ;?></a> <a href="javascript:;"><?php echo $homeContent[ICL_LANGUAGE_CODE]['OPERATIONAL HIGHLIGHTS'] ;?></a>  <a href="javascript:;" class="lastItem"><?php echo $homeContent[ICL_LANGUAGE_CODE]['DOWNLOADS'] ;?></a> </div>
+        <div id="homeRightNav"> <a href="javascript:;" class="active"><?php echo $homeContent[ICL_LANGUAGE_CODE]['HIGHLIGHTS'] ;?></a> <a href="javascript:;"><?php echo $homeContent[ICL_LANGUAGE_CODE]['CHAIRMANS STATEMENT'] ;?></a><a href="javascript:;"><?php echo $homeContent[ICL_LANGUAGE_CODE]['CEO title'] ;?></a> <a href="javascript:;"><?php echo $homeContent[ICL_LANGUAGE_CODE]['REVIEW OF OPERATIONS'] ;?></a><a href="javascript:;" class="lastItem"><?php echo $homeContent[ICL_LANGUAGE_CODE]['DOWNLOADS'] ;?></a> </div>
       </div>
     </div>
   </div>

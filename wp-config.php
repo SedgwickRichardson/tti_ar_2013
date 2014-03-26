@@ -18,16 +18,16 @@
 /** The name of the database for WordPress */
 if ($_SERVER['SERVER_NAME'] == "tti-ar2013.local.com") {
 	define('DB_NAME', 'ttionline_r');
-	/*define('WP_HOME', 'http://tti-ar2013.local.com');
-	define('WP_SITEURL', 'http://tti-ar2013.local.com');*/
+	define('WP_HOME', 'http://tti-ar2013.local.com');
+	define('WP_SITEURL', 'http://tti-ar2013.local.com');
 	define('DB_USER', 'root');
 	define('DB_PASSWORD', 'alvarpoon');
 	define('DB_HOST', 'localhost');
 }
 else if($_SERVER['SERVER_NAME'] == "tti-ar2013.sedgwick-richardson.hk"){
 	define('DB_NAME', 'ttionline_r');
-	/*define('WP_HOME', 'http://tti-ar2013.sedgwick-richardson.hk');
-	define('WP_SITEURL', 'http://tti-ar2013.sedgwick-richardson.hk');*/
+	define('WP_HOME', 'http://tti-ar2013.sedgwick-richardson.hk');
+	define('WP_SITEURL', 'http://tti-ar2013.sedgwick-richardson.hk');
 	define('DB_USER', 'root');
 	define('DB_PASSWORD', 'sedgw1ck');
 	define('DB_HOST', 'localhost');	

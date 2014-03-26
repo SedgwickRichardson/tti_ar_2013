@@ -37,10 +37,10 @@
 		echo ' | ' . sprintf( __( 'Page %s', 'twentyten' ), max( $paged, $page ) );
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
+<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/43e1adce-17f3-48ab-a9c7-54a3c7075afc.css"/>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/tti.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/font-<?php if($_COOKIE['gre_font_cookie']) echo $_COOKIE['gre_font_cookie'];else echo "medium"; ?>.css" />
-<link type="text/css" rel="stylesheet" href="http://fast.fonts.com/cssapi/cdee7a6d-52ce-4b99-8944-065316b44217.css"/>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.1'></script>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -173,11 +173,11 @@ $(document).ready(function(){
 	$homeContent['en']['BACK TO TOP'] = 'BACK TO TOP';
 	$homeContent['zh-hant']['BACK TO TOP'] = '返回頁首';
 	
-	$homeContent['en']['report image name'] = 'img_annual_report_2012.png';
-	$homeContent['zh-hant']['report image name'] = 'img_annual_report_2012_chi.png';
+	$homeContent['en']['report image name'] = 'img_annual_report_2013.png';
+	$homeContent['zh-hant']['report image name'] = 'img_annual_report_2013_chi.png';
 	
-	$homeContent['en']['TTI Annual Report 2012'] = 'TTI Annual Report 2012';
-	$homeContent['zh-hant']['TTI Annual Report 2012'] = '創科實業有限公司 2012年 年報';
+	$homeContent['en']['TTI Annual Report 2012'] = 'TTI Annual Report 2013';
+	$homeContent['zh-hant']['TTI Annual Report 2012'] = '創科實業有限公司 2013年 年報';
 	
 	$homeContent['en']['Quick Links'] = 'Quick Links';
 	$homeContent['zh-hant']['Quick Links'] = '快速連結';

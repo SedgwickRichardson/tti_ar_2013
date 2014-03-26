@@ -1209,8 +1209,24 @@ function initFindOutMore(id, id2)
 		{
 			resetFindout();
 			var offset = $(this).offset();
-			findOutMoreContentArray[this.num].style.left = offset.left-20+'px';
-			findOutMoreContentArray[this.num].style.top = offset.top-600+'px';
+			var posY = offset.top - $(window).scrollTop();
+			var posX = offset.left - $(window).scrollLeft();
+			//console.log(posX+" "+posY);
+			var popup_left,popup_top;
+			if(posX<=700){
+				popup_left = 20;
+			}
+			else{
+				popup_left = -280;
+			}
+			if(posY<=400){
+				popup_top = -260;
+			}
+			else{
+				popup_top = -700;
+			}
+			findOutMoreContentArray[this.num].style.left = offset.left+popup_left+'px';
+			findOutMoreContentArray[this.num].style.top = offset.top+popup_top+'px';
 			findOutMoreContentArray[this.num].style.display = 'block';	
 			findoutMoreShowFlag = true;
 		}

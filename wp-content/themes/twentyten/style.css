@@ -23,8 +23,9 @@ a:hover { text-decoration: underline; }/* =Layout-------------------------------
 #footer { clear: both; width: 100%; }/*LAYOUT: One column, no sidebarDESCRIPTION: One centered column with no sidebar*/
 body.home #footer{background-color: #F5F6F7;}
 .one-column #content { margin: 0 auto; width: 960px; }/*LAYOUT: Full width, no sidebarDESCRIPTION: Full width content with no sidebar; used for attachment pages*/
-.single-attachment #content { margin: 0 auto; width: 900px; }/* =Fonts-------------------------------------------------------------- */
-body, input, textarea, .page-title span, .pingback a.url { font-family:'Trade Gothic W01 Light';}
+.single-attachment #content { margin: 0 auto; width: 900px; }
+/* =Fonts-------------------------------------------------------------- */
+body, input, textarea, .page-title span, .pingback a.url { font-family:'Trade Gothic W01 Roman';}
 h3#comments-title, h3#reply-title, #access .menu, #access div.menu ul, #cancel-comment-reply-link, .form-allowed-tags, #site-info, #site-title, #wp-calendar, .comment-meta, .comment-body tr th, .comment-body thead th, .entry-content label, .entry-content tr th, .entry-content thead th, .entry-meta, .entry-title, .entry-utility, #respond label, .navigation, .page-title, .pingback p, .reply, .widget-title, .wp-caption-text { font-family: "Arial", Arial, Helvetica, "Nimbus Sans L", sans-serif; }
 input[type=submit] { font-family: "Arial", Arial, Helvetica, "Nimbus Sans L", sans-serif; -webkit-text-size-adjust:none; }
 pre { font-family: "Courier 10 Pitch", Courier, monospace; }
@@ -71,9 +72,9 @@ sup, sub { height: 0; line-height: 1; position: relative; vertical-align: baseli
 sup { bottom: 1ex; }
 sub { top: .5ex; }
 input[type="text"], textarea { background: #f9f9f9; border: 1px solid #ccc; box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1); -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1); -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1); padding: 2px; }
-a:link { color: #458CB5;text-decoration: none; }
-a:visited { color: #458CB5;text-decoration: none; }
-a:active, a:hover { color: #458CB5; text-decoration: underline; }/* Text meant only for screen readers */
+a:link { color: #458CB4;text-decoration: none; }
+a:visited { color: #458CB4;text-decoration: none; }
+a:active, a:hover { color: #458CB4; text-decoration: underline; }/* Text meant only for screen readers */
 .screen-reader-text { position: absolute; left: -9000px; }
 #content .noMargin { margin:0; }
 .clearfix { display: block; }
@@ -134,7 +135,7 @@ body.home .shareBox{top: 25px;right: -125px; z-index:999}
 #chi-page #access .menu-header li, #chi-page div.menu li{width:192px;}
 #access ul.sub-menu li { margin-right:0; border-bottom: 1px solid #CCCCCC; }
 #access #menu-item-37 ul, #access #menu-item-101 ul { left:-18px; }
-#access a { color: #E5E5E5; display: block; line-height: 20px; height:37px; padding: 12px 0 0; text-decoration:none; font-size:16px; font-family:'Trade Gothic W01 Cn 18'; margin-top:10px; text-transform:uppercase;}
+#access a { color: #E5E5E5; display: block; line-height: 20px; height:37px; padding: 12px 0 0; text-decoration:none; font-size:13px; font-family:'Trade Gothic W01 Bold 2'; margin-top:10px; text-transform:uppercase;}
 #chi-page #access a {font-family:'Heiti SC', 'Microsoft Yahei', 'SimHei';}
 #access ul ul {	/* box-shadow: 0px 3px 3px rgba(0,0,0,0.2);	-moz-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);	-webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.2); */ display: none; position: absolute; top: 34px; left: 0; float: left; width: auto; z-index: 99999; background-color: #EBEBEB; }
 #access ul ul li { min-width: 180px; border-bottom:1px solid #CCCCCC; }
@@ -176,12 +177,12 @@ body.page-id-18 #access ul li#menu-item-101 a,body.page-id-158 #access ul li#men
 #content .tableIndent2{padding-left: 3em !important;}
 #content .tableIndent3{padding-left: 3.7em !important;}
 #content span.tableIndent, #content span.tableIndent2{display:block;}
-#content table.financialTable tr td {line-height:140%; padding:0 8px;border-bottom: 1px solid #EAEAEA; vertical-align:bottom; padding-left: 1em;text-indent: -1em;padding-top: 0.5em;padding-bottom: 0.5em;}
-#content table.financialTable tr.heading-row td {padding-bottom: 8px;padding-top: 8px;line-height: 130%;/* padding-left: 0; text-indent: 0; line-height:110%; border-bottom:3px solid #343434; padding-top:10px; */ text-indent:0; padding-left:8px;}
+#content table.financialTable tr td {font-size: 90%;line-height: 100%; padding:0 8px;border-bottom: 1px solid #EAEAEA; vertical-align:bottom; padding-left: 1em;text-indent: -1em;padding-top: 0.4em;padding-bottom: 0.4em;}
+#content table.financialTable tr.heading-row td {/*padding-bottom: 8px;padding-top: 8px;*/line-height: 130%;/* padding-left: 0; text-indent: 0; line-height:110%; border-bottom:3px solid #343434; padding-top:10px; */ text-indent:0; padding-left:8px;}
 #chi-page #content table.financialTable tr.heading-row td{font-family:'Heiti SC', 'Microsoft Yahei', 'SimHei';}
 #content table.financialTable tr.heading-row td.bold{/*font-family:'Trade Gothic W02 Bold 2'; font-weight:normal;*/}
 #chi-page #content table.financialTable tr.heading-row td.bold{font-family:'Heiti SC', 'Microsoft Yahei', 'SimHei'; font-weight:bold;}
-#content table.highlightTable tr.heading-row td {padding-left: 0; text-indent: 0; line-height:110%; border-bottom:3px solid #343434; padding-top:10px;padding-bottom:0}
+#content table.highlightTable tr.heading-row td {padding-left: 0; text-indent: 0; line-height:110%; border-bottom:1px solid #343434; /*padding-top:10px;padding-bottom:0*/}
 #chi-page #content table.highlightTable tr.heading-row td{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
 #content table.highlightTable tr td {border-bottom: 1px solid #9B9B9B;}
 #chi-page #content table.highlightTable tr td{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
@@ -368,23 +369,25 @@ h3#reply-title { margin: 18px 0; }
 /*body.home #iconBtn{top: 6px;z-index: 800;right: 10px;position: absolute;margin-top: 0;}*/
 body.home #iconBtn{margin-top: 14px;float:right;}
 #iconBtnstickyContainer{background:url(../../themes/twentyten/images/general/bg_home_top_sticky.png) bottom no-repeat; width:829px; height:44px; z-index:997;}
-#primary .homeSection{padding-bottom:45px; font-family:'Trade Gothic W01 Roman'; font-size: 120%; line-height: 140%;}
+#primary .homeSection{padding-bottom:45px; font-family:'Trade Gothic W01 Roman'; font-size: 15px; line-height: 140%;}
 #chi-page #primary .homeSection{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';line-height: 1.7em;letter-spacing: 1px}
-.sectionTitle{background:url(images/general/bg_home_title.jpg) no-repeat; width:825px; height:49px; color:#fff; font-family: 'TradeGothicW01-BoldCn20 675334'; font-size:130%;}
+.sectionTitle{background:#A8BCC6 url(images/general/bg_home_title.png) no-repeat; width:825px; height:45px; color:#fff; font-family: 'Trade Gothic W01 Bold 2'; font-size:22px;}
 #chi-page .sectionTitle{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
-.sectionTitle div{display:block; padding:13px 0 0 24px; letter-spacing:1px;font-size:90%;text-transform: uppercase;}
-.sectionContent{background:url(images/general/bg_home_item_btmBorder.png) no-repeat bottom; width:820px; margin-left:5px;}
-.homeSectionContentDiv{padding:33px 17px 0 17px;}
-.contentLeft{float:left; width:253px; margin-right:15px;}
-.contentLeft .title_HL,.contentRight .title_HL{font-size:130%; font-family:'Trade Gothic W01 Bold'; line-height:25px; padding-bottom:15px;}
+.sectionTitle div{display:block; padding:13px 0 0 24px; font-size:22px;}
+.sectionContent{/*background:url(images/general/bg_home_item_btmBorder.png) no-repeat bottom;*/ width:820px; margin-left:5px;}
+.homeSectionContentDiv{padding:33px 15px 20px 0;}
+.contentLeft{float:left; width:253px; margin-right:22px;}
+.contentLeft .title_HL,.contentRight .title_HL{font-size:18px; font-family:'Trade Gothic W01 Bold 2';; line-height:25px; padding-bottom:15px;color:#0077A7;}
 #chi-page .contentLeft .title_HL,#chi-page .contentRight .title_HL{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;letter-spacing:1px;}
 .page-id-326 .contentLeft .title_HL,body.home  .contentLeft .title_HL{ font-family: 'Trade Gothic W01 Roman'}
 .page-id-328#chi-page .contentLeft .title_HL,body.home#chi-page  .contentLeft .title_HL{ font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:normal;}
 .contentLeft ul li{/* font-family:'Trade Gothic W01 Light'; */ font-size:100%; padding-bottom:8px;}
 .page-id-326 .contentLeft ul ,body.home .contentLeft ul,.page-id-328 .contentLeft ul,body.home#chi-page .contentLeft ul {list-style: none;margin:0;}
-.page-id-326 .contentLeft ul li,body.home .contentLeft ul li{ font-family:'Trade Gothic W01 Bold';font-size: 130%;padding-bottom: 0.1em;padding-left: 15px;background:url(images/general/HLBullet.gif) no-repeat 0 center;}
+body.home .contentLeft ul.section_highlight_list li{ font-family:'Trade Gothic W01 Bold 2';font-size: 20px;line-height: 20px; padding: 8px 0 12px 18px;;background:url(images/home/main_section_arrow.png) no-repeat;color:#fff;}
+.section_list li{ padding-left: 27px;font-family:'Trade Gothic W01 Roman';font-size: 15px;background:url(images/home/main_section_bullet.png) no-repeat left 2px;line-height: 18px;margin-left: 15px;}
 .page-id-328 .contentLeft ul li,body.home#chi-page .contentLeft ul li{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;font-size: 130%;padding-bottom: 0.1em;padding-left: 15px;background:url(images/general/HLBullet.gif) no-repeat 0 center;}
-.contentRight{float:left; width:518px;}
+.contentRight{float:right; width:520px;}
+#FHContentDiv .contentRight{width:584px;}
 .homeSectionContentDiv #worldMapContainer{margin:20px 0 0 20px;}
 .globalOperationTable{margin:0 !important;}
 .globalOperationTable tr td{padding-right:15px; font-size:85%; width: 200px;}
@@ -399,14 +402,15 @@ body.home #iconBtn{margin-top: 14px;float:right;}
 .globalOperationContent table{display:none;}
 .reviewOperationTwoColumn{float:left; width:380px; margin-right:25px;}
 .reviewOperationDetailContent{padding-bottom:20px;}
+.reviewOperationDetailContent a.detailsLink{display: block;margin-top:10px;}
 .threeQuarterWidth{width:540px; padding-bottom:30px;}
 .downloadLeft{float:left; width:182px; margin-right:85px;}
 .headerBorder{border-bottom:3px solid #343434; margin-bottom:20px;}
 .reportCoverContainer{width:139px; height:180px; /* background-color:#383838;  */margin-bottom:15px;}
 .reportCoverContainer a{padding-left: 0;display: block;width: 139px;height: 180px;}
 .downloadRight{float:left; width:515px;}
-.downloadLinksContainer{border-bottom:1px solid #343434; margin-bottom:20px;}
-.downloadLinksContainer div, .sectionHeader{font-size:120%; font-family:'TradeGothicW01-BoldCn20 675334'; text-transform:uppercase; padding-bottom:10px;}
+.downloadLinksContainer{margin-bottom:12px;padding-bottom: 10px;}
+.downloadLinksContainer div, .sectionHeader{font-size:18px; font-family:'Trade Gothic W01 Bold 2'; padding-bottom:10px;}
 #chi-page .downloadLinksContainer div, #chi-page .sectionHeader{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 .downloadLinkList{margin:0 0 20px 0 !important;}
 #chi-page .downloadLinkList,#chi-page .downloadLeft p{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
@@ -414,14 +418,14 @@ body.home #iconBtn{margin-top: 14px;float:right;}
 .downloadLink{background:url(images/home/btn_download.png) no-repeat 0 2px; padding-left:25px; color:#000;}
 #secondary {width: 148px; margin-top:38px; float:left;}
 #secondary #homeRightNav {width:148px; background:#fff; -moz-box-shadow: 1px 1px 8px #ccc; -webkit-box-shadow: 1px 1px 8px #ccc; box-shadow: 1px 1px 8px #ccc; position:fixed; }
-#secondary #homeRightNav a{background:url(images/general/bg_right_nav.png) no-repeat bottom; display:block; width:136px; padding:15px 6px; font-family: 'Trade Gothic W01 Cn 18'; color:#8A8A8A; font-size:110%;text-transform: uppercase; }
+#secondary #homeRightNav a{background:url(images/general/bg_right_nav.png) no-repeat bottom; display:block; /*width:140px;*/ padding:15px 4px; font-family: 'Trade Gothic W01 Roman'; color:#8A8A8A; font-size:11px;text-transform: uppercase; }
 #chi-page #secondary #homeRightNav a{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
-#secondary #homeRightNav a:hover{color:#fff; background-color:#96A8B1; text-decoration:none; font-weight:normal;}
-#secondary #homeRightNav a.active{color:#fff; background-color:#2E5263; font-weight:normal;}
+#secondary #homeRightNav a:hover{color:#fff; background-color:#0072A4; text-decoration:none; font-weight:normal;}
+#secondary #homeRightNav a.active{color:#fff; background-color:#0072A4; font-weight:normal;}
 #secondary #homeRightNav a.lastItem{background-image:none !important;}
 /* Footer widget areas */
 #footer-widget-area { }/* =Footer-------------------------------------------------------------- */
-#footer { padding-bottom: 50px; position:relative; z-index:1200; background-color:#fff;}
+#footer { padding-bottom: 50px; position:relative; z-index:1200; background-color:#fff;font-family: 'Trade Gothic W01 Roman'}
 #colophon {overflow: hidden;}
 #site-info { font-weight: bold; }
 #site-info a { color: #000; text-decoration: none; }
@@ -558,8 +562,8 @@ img#wpstats { display: none; }
 .lower-roman { /* margin-left: 2em; */ margin-left:20px;}
 .lower-roman ol li{ margin-left:40px;}
 .lower-roman li { /* list-style:outside lower-roman; */ margin-bottom: 0.5em; }
-#content .financialTable { /*background-color:#F2F4F5;*/ }
-#content .financialTable .bold{font-family:'Trade Gothic W02 Bold 2'; font-weight:normal;}
+#content .financialTable { /*background-color:#F2F4F5;*/ border-spacing: 5px 0;border-collapse: separate;}
+#content .financialTable .bold{font-family:'Trade Gothic W01 Bold 2'; font-weight:normal;}
 #content .financialTable .lightBg { background-color:#F2F4F5; }
 #content .financialTable .whiteBg { background-color:#FFF; }
 #content .financialTable .setBottom { vertical-align:bottom !important; }
@@ -629,41 +633,66 @@ li[type=i]{list-style-type: none;}
 #chi-page .chairmanStatementRight ul li p{margin-left: 1.6em;}
 .fullWidthContent .whiteBackgroundContent{padding:20px 60px 10px 15px; background-color:#fff;}
 /*.fullWidthContent .whiteBackgroundContent div{display:none;}*/
-.graphContainer{width:250px; float:left; margin-right:15px; border-top:3px solid #393939; padding:10px 0 15px 0;}
+.graphContainer{width:250px; float:left; margin-right:15px; padding:0 0 15px 0;}
+#FHContentDiv .graphContainer{margin-bottom: 20px;width: 250px;}
+#FHContentDiv .graphProfile{/*float: right;width: 100px;*/}
+#FHContentDiv .graphContainer.graphContainer2Col{width:274px;margin-right:35px;padding:0;}
+#FHContentDiv .graphContainer2Col .graph-container{float:left;width:154px;}
+#FHContentDiv .graphContainer2Col .graphProfile{float: right;width:120px;text-align: left;}
+#FHContentDiv .largeFont,#powerHighlightsContent .largeFont{font-size: 2.5em;color: #0077A5;display: block;margin-bottom: 0.3em;}
+#FHContentDiv .midFont,#powerHighlightsContent .smallFont{margin-bottom: 1em;line-height: 120%;display: block;font-size: 0.9em;color: #4A6678;}
+#powerHighlightsContent .smallFont{font-size: 1em;}
+#powerHighlightsContent .midFont{color: #0077A5;display: block;color: #0077A5;font-size: 1.3em;margin-bottom: 0.5em;}
+.graphContainer2ndRow{padding-top: 20px;}
 .oneQuarterGraph{width:180px;}
 .fullwidthGraph{width:377px;}
 .noMarginRight{margin-right:0 !important;}
-.graphContainer .graphTitleDiv{font-size:95%; line-height:130%; padding-bottom:10px;color: #393939; }
-.graphContainer .graphTitleDiv .graphTitle{font-family:'TradeGothicW01-BoldCn20 675334'; text-transform:uppercase; /* letter-spacing:-1px; */}
+.graphContainer .graphTitleDiv{font-size:95%; line-height:130%; padding-bottom:1em;color: #393939; }
+.graphContainer .graphTitleDivWithArrow{background: url(images/highlights/FHArrow.png) no-repeat left top;padding-left: 30px;}
+.reviewOperationTwoColumn .graphContainer .graphTitleDiv{margin-bottom: 15px;}
+.graphContainer .graphTitleDiv .graphTitle{font-size: 16px; font-family: 'Trade Gothic W01 Bold 2';}
+.graphContainer .graphTitleDiv .graphTitle2{font-family: 'Trade Gothic W01 Bold 2';color: #4A6878;font-size: 120%;}
+#FHContentDiv .graphContainer .graphTitleDiv .graphTitle{font-size: 1.4em;}
 #chi-page .graphContainer .graphTitleDiv .graphTitle{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 .graphContainer .graphTitleDiv .graphUnit{font-size: 80%;font-family: 'Trade Gothic W01 Roman';;display:block;}
 #chi-page .graphContainer .graphTitleDiv .graphUnit{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
-.graphContainer .graphProfile{font-family:'TradeGothicW01-BoldCn20 675334'; color:#777; padding-bottom:10px; line-height:130%;}
+.graphContainer .graphProfile{text-align: right;font-family: 'Trade Gothic W01 Bold 2';color: #A7BBC5; padding-bottom:10px; line-height:130%;}
+.chairmanStatementLeft .graphContainer .graphProfile{text-align: left;}
+.reviewOperationTwoColumn .graphContainer .graphProfile{}
+.dotUnderline{background: url(images/home/figure_dot_line.png) repeat-x center bottom;margin-bottom: 1em;}
 #chi-page .graphContainer .graphProfile{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;line-height: 1.5em;}
+.graphContainer .figure_arrow_up{width:19px;height:21px;background: url(images/home/figure_arrow_up.gif);vertical-align: top;display: inline-block;margin-right: 5px;font-size: 0;line-height: 0;}
 .graphContainer .graphProfile .darkText{color:#777 !Important;font-family:'Trade Gothic W01 Bold'}
-.graphContainer .graphProfile .smallFont{font-size:20px;font-family:'Trade Gothic W01 Cn 18';color:#FAA519;}
+.graphContainer .graphProfile .smallFont{font-size:20px;/*font-family:'Trade Gothic W01 Cn 18';color:#FAA519;*/}
 #chi-page .graphContainer .graphProfile .smallFont{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:normal;font-size: 95%;top: 0.2em;position: relative;}
-.graphContainer .graphProfile .largeFont{font-size:28px;font-family: 'TradeGothicW01-BoldCn20 675334';color:#FAA519;}
+.graphContainer .graphProfile .graphFigure{font-size:28px;/*font-family: 'TradeGothicW01-BoldCn20 675334';color:#FAA519;*/}
+.reviewOperationTwoColumn .graph-container{float: left;width:177px;height:158px;}
+.reviewOperationTwoColumn .graphProfile{float: left;width: 193px;padding: 1.2em 0;}
+.reviewOperationTwoColumn .graphContainer .graphProfile{font-family: 'Trade Gothic W01 Bold 2';color:#1974A5;text-align: left;}
+.reviewOperationTwoColumn .graphContainer .graphProfile .largeFont{font-size: 36px;display: block;line-height: 100%;}
+.reviewOperationTwoColumn .graphContainer .graphProfile .midFont{font-size: 20px;}
 #chi-page .graphContainer .graphProfile .largeFont{position: relative;top: 0.1em;font-weight: normal;}
-.graphContainer .graphProfile .midFont{font-size:24px;font-family:'Trade Gothic W01 Bold';color:#FAA519;}
-#chi-page .graphContainer .graphProfile .midFont {font-size:16px;font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
+.graphContainer .graphProfile .midFont{/*font-size:24px;font-family:'Trade Gothic W01 Bold';color:#FAA519;*/}
+#chi-page .graphContainer .graphProfile .midFont {/*font-size:16px;font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';*/}
 /* #chi-page .graphContainer .graphProfile .midFont{font-family: 'Trade Gothic W01 Bold';font-weight:normal;} */
 .graphContainer .graphProfile  .smallerFont{font-family:'Trade Gothic W01 Cn 18';font-size: 95%;}
 #chi-page .graphContainer .graphProfile  .smallerFont{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-size: 90%;}
 #chi-page  .graphContainer .graphProfile .numberText {font-family: 'Trade Gothic W01 Bold';font-weight: normal;}
 .morePaddingBottomForTextOnlyGraph{padding-bottom:40px;}
-.readMoreDiv {height:72px;display: inline-block;}
+.readMoreDiv {height:72px;display: inline-block;margin-top: 10px;}
 .btn_readMore .readMoreLeft{background:url(images/home/bg_readMore_left.png) no-repeat; width:15px; height:42px; float:left; display:block;}
 .btn_readMore:hover .readMoreLeft{background:url(images/home/bg_readMore_left.png) -15px 0 no-repeat;}
-.homeSection .btn_readMore .readMoreMid{padding:21px 0 21px 15px; line-height:0;}
-.btn_readMore .readMoreMid{background:url(images/home/arrow_readMore.png) no-repeat #3A5D6E 0 50%; float:left; display:block; color:#fff; font-family:'TradeGothicW01-BoldCn20 675334'; padding:21px 0 21px 15px; line-height:0;}
+.homeSection .btn_readMore .readMoreMid{padding:21px 0 21px 15px; line-height:0;font-size: 15px;}
+.btn_readMore .readMoreMid{background:url(images/home/arrow_readMore.png) no-repeat #3A5D6E 0 50%; float:left; display:block; color:#fff; font-family:'Trade Gothic W01 Bold 2'; padding:21px 0 21px 15px; line-height:0;}
 #chi-page .btn_readMore .readMoreMid{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
 .btn_readMore:hover .readMoreMid{background-color:#8EAFBE;}
 .btn_readMore .arrowBack{background:url(images/home/arrow_goBack.png) no-repeat #3A5D6E 0 50%;}
 .btn_readMore:hover .arrowBack{text-decoration: none;;background:url(images/home/arrow_goBack.png) no-repeat #8EAFBE 0 50%;}
 .btn_readMore .readMoreRight{background:url(images/home/bg_readMore_right.png) no-repeat; width:15px; height:42px; float:left; display:block;}
 .btn_readMore:hover .readMoreRight{background:url(images/home/bg_readMore_right.png) -15px 0 no-repeat;}
-.headlineTitle{font-family:'TradeGothicW01-BoldCn20 675334';line-height: 100%;/*font-size: 200%;*/ font-size: 200%; padding-bottom:25px;letter-spacing: -1px;}
+.headlineTitle{font-family:'Trade Gothic W01 Bold 2';line-height: 110%;/*font-size: 200%;*/ font-size: 1.5em;padding-bottom: 0.5em;}
+.homeSectionContentDiv .headlineTitle{height: 2em;}
+#sectionContentDownload .headlineTitle{padding-bottom: 15px;margin-bottom: 10px;}
 #chi-page .headlineTitle{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;font-size: 170%;}
 .headlineTitle a{display:block; float:left; margin-right:40px; opacity:0.2;}
 .headlineTitle a:hover, .headlineTitle a.currentBrand{ opacity:1;}
@@ -672,7 +701,7 @@ li[type=i]{list-style-type: none;}
 .headlineTitle span.bodTitle{font-size: 80%;}
 .headlineTitle span.bodPos{font-size: 80%;display: block;font-family:'TradeGothicW01-Cn18Obl';}
 #chi-page  #content .headlineTitle span{font-family:'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:normal;}
-.subheadlineTitle{font-family:'TradeGothicW01-BoldCn20 675334'; font-size:120%; padding-bottom:10px; /* color:#343434; */ text-transform:uppercase;}
+.subheadlineTitle{font-size: 1.2em;font-family: 'Trade Gothic W01 Bold 2';margin-top: 40px; }
 #chi-page .subheadlineTitle{font-family:'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold}
 .pieChartContainer{padding-top:10px; min-height:145px;}
 .pieChartDiv{float:left; width:120px; margin-right:15px;}
@@ -717,26 +746,35 @@ li[type=i]{list-style-type: none;}
 .grey{color:#343434;}
 .featureListing li{font-size:120%; padding-bottom:10px; font-family:'Trade Gothic W02 Bold 2';}
 .brandTabContainer{padding:10px 0 30px 0;}
+.oneColumnPageHeaderContainer .brandTabContainer{margin-bottom: 3em;padding:0;border-bottom: 1px solid #000;}
 .brandTabContainer .threeColumn{width:249px !important;}
-.brandTabContainer .powerEquipmentBrandContainer{float:left; width:182px; margin-right:15px; border-top:3px solid #343434; cursor:pointer;}
+.brandTabContainer .powerEquipmentBrandContainer{float:left; width:192px; margin-right:2px;  cursor:pointer;background: url(images/home/brandBtn.gif) no-repeat left top;padding-top: 12px;}
+.brandTabContainer .powerEquipmentBrandContainer.active,.brandTabContainer .powerEquipmentBrandContainer:hover{background-position: right top;}
 .brandTabContainer .powerEquipmentBrandContainer:hover table tr td, .brandTabContainer .powerEquipmentBrandContainer.active table tr td{background-color:#F3F5F6}
-.brandTabContainer .powerEquipmentBrandContainer div{margin-top:4px;}
-.brandTabContainer .powerEquipmentBrandContainer table{margin-bottom:10px !important;}
+.brandTabContainer .powerEquipmentBrandContainer div{/*margin-top:4px;*/}
+.brandTabContainer .powerEquipmentBrandContainer table{margin-bottom:4px !important;}
 .brandTabContainer .powerEquipmentBrandContainer table tr td{ vertical-align:middle; text-align:center; background:url(images/home/arrow_bottom.png) no-repeat center 65px;}
 .brandTabContainer .brandContentContainer .brandContentItem{display:none;}
-.brandTabContainer .brandContentContainer .brandContent{position: relative;float:left; padding:15px 10px 0 10px; background-color:#D90F33; width:226px; height: 399px; color:#fff;}
-.brandTabContainer .brandContentContainer .brandContent .subheadlineTitle{padding-bottom:15px;}
-.brandTabContainer .brandContentContainer .brandContent p{line-height: 1.3em;font-size: 85%;margin-bottom: 0.5em;}
+.brandTabContainer .brandContentContainer .brandContent{position: relative;float:left; padding: 15px 15px 0 15px; background-color:#D90F33; width: 750px;height: 88px;color:#fff;}
+.brandTabContainer .brandContentContainer .brandContent .subheadlineTitle{margin-top: 10px;float: left;width: 178px;}
+.brandTabContainer .brandContentContainer .brandContent p{line-height: 1.3em;font-size: 15px;margin-bottom: 0.5em;margin-left: 178px;}
 #chi-page .brandTabContainer .brandContentContainer .brandContent p{line-height: 1.7em;margin-bottom: 0.8em;}
 .brandTabContainer .brandContentContainer #brandContent-hoover p{padding-bottom: 0.5em;}
 .brandTabContainer .brandContentContainer .brandImg{float:left;}
 .brandTabContainer .brandContentContainer .brandImg img{display:block;}
-.findoutMoreDiv {margin:10px 0 0;position: absolute;bottom: 15px;}
-.btn_findoutMore .findoutMoreLeft{background:url(images/home/bg_findoutMore_left.png) no-repeat; width:16px; height:42px; float:left; display:block;}
+
+/*---------------------------------------Power Equipment Ovewview Page Start---------------------------------------*/
+.brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer{width:232px;background: url(images/highlights/brandBtnWide.gif) no-repeat left top;margin-right: 10px;}
+.brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer:hover,.brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer.active{background-position: right top;}
+.brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer table{margin-bottom:0 !important;}
+/*---------------------------------------Power Equipment Ovewview Page Ends---------------------------------------*/
+
+.findoutMoreDiv {float: right;margin: 15px 8px 0;}
+.btn_findoutMore .findoutMoreLeft{background:url(images/home/bg_findoutMore_left.png) no-repeat; width:16px; height:42px; float: left;/*margin: 15px 8px 0;*/ display:block;}
 .btn_findoutMore:hover .findoutMoreLeft{background:url(images/home/bg_findoutMore_left.png) -16px 0 no-repeat; }
 /*.btn_findoutMore:hover .findoutMoreLeft{background:url(images/home/bg_findoutMore_left_hover.png) no-repeat;}*/
-.btn_findoutMore .findoutMoreMid{ line-height:0; background:url(images/home/arrow_readMore.png) no-repeat #343434 0 50%; float:left; display:block; padding: 21px 0 21px 15px; color:#fff; font-family:'TradeGothicW01-BoldCn20 675334';}
-.btn_findoutMore:hover .findoutMoreMid{background-color:#676868;}
+.btn_findoutMore .findoutMoreMid{ background:url(images/home/arrow_readMore.png) no-repeat #4B6A79 0 50%; float:left; display:block; padding: 5px 0 0 15px;height: 29px;color:#fff;font-family: 'Trade Gothic W01 Bold 2';}
+.btn_findoutMore:hover .findoutMoreMid{background-color:#C1CAD1;}
 #chi-page .btn_findoutMore .findoutMoreMid{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
 /*.btn_findoutMore:hover .findoutMoreMid{background-color:#8EAFBE;}*/
 .btn_findoutMore .findoutMoreRight{background:url(images/home/bg_findoutMore_right.png) no-repeat; width:16px; height:42px; float:left; display:block;}
@@ -745,17 +783,20 @@ li[type=i]{list-style-type: none;}
 /*reusable ends by Ron on 2013-03-27*/
 /*Chairman's statement starts by Ron on 2013-03-27*/
 .pageTitlewithImgLeft{padding:20px 0 0 265px;}
-.chairmanStatementLeft{width:250px; float:left; margin:5px 15px 0 0;}
-.chairmanStatementLeft .graphContainer{width:195px;}
+.chairmanStatementLeft{width: 243px;float: left;margin: 5px 22px 0 0;}
+.chairmanStatementLeft .graphContainer{width: inherit;/*width:195px;*/}
 .chairmanStatementLeft .graphImgContainer{padding:10px 0;}
+.chairmanStatementLeft .graphContainer .graphTitleDiv{margin-bottom:2.5em; }
 .chairmanStatementRight{width:695px; float:left;}
+.chairmanStatementRight .graphContainer .graphProfile{text-align: left;}
 .chairmanName{font-family:'Trade Gothic W02 Bold 2'; /*font-weight:bold;*/ color:#393939; letter-spacing:-1px;}
 #chi-page .chairmanName{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;letter-spacing:0;}
 /*Chairman's statement ends*/
 /*Board of directors starts by Ron on 2013-03-27*/
-.boardOfDirectorLinks{padding:20px 0 40px 0;}
-.boardOfDirectorLinks .active{color:#393939;}
-.boardOfDirectorLinks a{font-family:'TradeGothicW01-BoldCn20 675334'; font-size:18px; margin-right:55px; text-decoration:underline; text-transform:uppercase; color:#458CB5;}
+.boardOfDirectorLinks{/*padding:20px 0 40px 0;*/margin-bottom: 4em;}
+.boardOfDirectorLinks .active{color:#fff;background-color: #0072A4;}
+.boardOfDirectorLinks a{padding: 0.5em 1em;background-color: #EDEEF0;font-family: 'Trade Gothic W01 Bold 2';font-size: 1em;margin-right: 0.6em;color: #999999;}
+.boardOfDirectorLinks a:hover{text-decoration: none;color: #fff;background-color: #0072A4;}
 #chi-page .boardOfDirectorLinks a{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 .boardOfDirectorPhoto{/* background-color: #2F5364; */margin-bottom: 35px;}
 .bodPhotoItem{float:left; width:192px; cursor:pointer;}
@@ -829,23 +870,31 @@ li[type=i]{list-style-type: none;}
 .mainBannerContainer{padding:20px 0 40px 0; position:relative; width:960px; height:486px;}
 .findoutMoreBannerContent{background:url(images/general/bg_findoutmore_content.png) repeat; position:absolute; bottom:40px;  display:none; width:178px; height:49px; right:0;}
 #btn_close_findoutMoreBanner{position:absolute; background:url(images/general/btn_close_findoutmoreBanner.png) no-repeat; width:32px; height:33px; top:-15px; right:55px; opacity:0;}
-.findoutMoreBannerContent .contentDiv{width:608px; padding:22px 90px 36px 262px; color:#fff; font-size:13px; opacity:0;}
+.findoutMoreBannerContent .contentDiv{width:608px; padding: 5px 90px 36px 262px;color:#fff; font-size:13px; opacity:0;}
 .findoutMoreBannerContent .contentDiv p{padding-bottom:0 !important;}
-.findoutMoreBannerContent .findoutMoreTitle{font-family:'TradeGothicW01-BoldCn20 675334'; text-transform:uppercase; font-size:18px; padding-bottom:12px;}
+.findoutMoreBannerContent .findoutMoreTitle{font-family:'Trade Gothic W01 Bold 2'; text-transform:uppercase; font-size:18px; padding-bottom: 20px;}
 #chi-page .findoutMoreBannerContent .findoutMoreTitle{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 #btn_banner_findoutMore{background:url(images/general/btn_findoutmore.png) no-repeat; width:178px; height:49px; position:absolute; bottom:40px; right:0px; z-index:799;}
 #chi-page #btn_banner_findoutMore{background:url(images/general/btn_findoutmore-tc.png) no-repeat;}
-.powerEquipmentTableContainer{padding:20px 0;}
-.powerEquipmentTable tr td{padding-right:25px; vertical-align:middle;}
-.btn_milwaukee{background:url(../../uploads/2013/operationalHighlight/logo_milwaukee.png) no-repeat; width:98px; height:45px; display:block;}
-.btn_aeg{background:url(../../uploads/2013/operationalHighlight/logo_aeg.png) no-repeat; width:91px; height:43px; display:block;}
-.btn_ryobi{background:url(../../uploads/2013/operationalHighlight/logo_ryobi.png) no-repeat; width:90px; height:36px; display:block;}
-.btn_homelite{background:url(images/general/logo_homelite_lrg.png) no-repeat; width:133px; height:26px; display:block;}
-.btn_homelite_small{background:url(../../uploads/2013/operationalHighlight/logo_homelite.png) no-repeat; width:108px; height:20px; display:block;}
+.powerEquipmentTableContainer{/*padding:20px 0;*/}
+.powerEquipmentTable tr td{/*padding-right:25px; vertical-align:middle;*/}
+#report-content .highlightTableTitle{background-color: #333333;padding: 5px 11px;color: #fff;font-family:'Trade Gothic W01 Bold 2' }
+.btn_milwaukee{background:url(../../uploads/2013/operational-highlight/logo_milwaukee.jpg) no-repeat; width:226px; height:153px; display:block;}
+.btn_milwaukee2{background:url(../../uploads/2013/operational-highlight/logo_milwaukee2.jpg) no-repeat; width:226px; height:153px; display:block;}
+.btn_aeg{background:url(../../uploads/2013/operational-highlight/logo_aeg.jpg) no-repeat; width:226px; height:153px; display:block;}
+.btn_ryobi{background:url(../../uploads/2013/operational-highlight/logo_ryobi.jpg) no-repeat; width:226px; height:153px; display:block;}
+.btn_ryobi2{background:url(../../uploads/2013/operational-highlight/logo_ryobi2.jpg) no-repeat; width:344px; height:130px; display:block;margin-right:6px !important;}
+.btn_stiletto{background:url(../../uploads/2013/operational-highlight/logo_stelitto.jpg) no-repeat; width:226px; height:153px; display:block;}
+.btn_homelite{background:url(../../uploads/2013/operational-highlight/logo_homelite.jpg) no-repeat; width:342px; height:130px; display:block;}
+.btn_hart{background:url(../../uploads/2013/operational-highlight/logo_hart.jpg) no-repeat; width:226px; height:130px; display:block;}
+.btn_homelite_small{background:url(../../uploads/2013/operational-highlight/logo_homelite.png) no-repeat; width:108px; height:20px; display:block;}
 .btn_hoover{background:url(../../uploads/2013/floorcare/logo_hoover.png) no-repeat; width:50px; height:51px; display:block;}
 .btn_vax{background:url(../../uploads/2013/floorcare/logo_vax.png) no-repeat; width:93px; height:35px; display:block;}
 .btn_dirtDevil{background:url(../../uploads/2013/floorcare/logo_dirt_devil.png) no-repeat; width:60px; height:49px; display:block;}
-#findOutMoreContainer{}
+
+#findOutMoreContainer a{/*width:226px;height:153px;*/text-indent: -9999px;margin-right: 7px;
+margin-bottom: 26px;}
+#findOutMoreContainer a:hover{background-position: right top;}
 #findOutMoreContent .findOutMoreItem{position:absolute; display:none;}
 #findOutMoreContent .findOutMoreItem .btn_findOutMoreClose{background:url(images/general/btn_findoutmore_close.png) no-repeat; width:28px; height:28px; position: absolute; right: 15px; top: 15px; display:block;}
 #findOutMoreContent .findOutMoreTop{background:url(images/general/bg_findoutmore_top.png) no-repeat; width:309px; height:16px;}
@@ -866,11 +915,12 @@ li[type=i]{list-style-type: none;}
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
  .productTechTable tr td ul{margin:0 0 20px 15px !important;}
 }
-.productTechTable tr td ul li{padding-bottom: 0;}
+.productTechTable tr td ul li{padding-bottom: 0;line-height: 130%;}
 #chi-page .productTechTable tr td ul li{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
 .productTechTable tr.headerRow td{font-family:'TradeGothicW01-BoldCn20 675334'; font-size:120%; text-transform:uppercase; padding: 5px 8px 0px; border-bottom:none;}
-#chi-page .productTechTable tr.headerRow td{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
-.productTechTable tr.titleRow td{color:#fff; font-family: 'TradeGothicW01-BoldCn20 675334'; font-size:110%; text-transform:uppercase; padding:0 8px;}
+#chi-page .productTechTable tr.headerRow td{color: #fff;font-family: 'Trade Gothic W01 Bold 2';font-size: 110%;/* text-transform: uppercase; */
+padding: 0 0.5em;}
+.productTechTable tr.titleRow td{color: #fff;font-family: 'Trade Gothic W01 Bold 2';font-size: 1em;padding: 0 0.5em;}
 #chi-page .productTechTable tr.titleRow td{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 .milwaukeeTable tr.titleRow td{ background-color: #E02038;/* border-top: 2px solid #BF2139;border-bottom: 1px solid #BF2139; */}
 .stilettoHartTable tr.titleRow td{ background-color:#7B7979; /* border-top:2px solid #231F20; border-bottom:1px solid #231F20; */} /*Stiletto and Hart*/
