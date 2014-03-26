@@ -756,7 +756,7 @@ li[type=i]{list-style-type: none;}
 .brandTabContainer .powerEquipmentBrandContainer table tr td{ vertical-align:middle; text-align:center; background:url(images/home/arrow_bottom.png) no-repeat center 65px;}
 .brandTabContainer .brandContentContainer .brandContentItem{display:none;}
 .brandTabContainer .brandContentContainer .brandContent{position: relative;float:left; padding: 15px 15px 0 15px; background-color:#D90F33; width: 750px;height: 88px;color:#fff;}
-.brandTabContainer .brandContentContainer .brandContent .subheadlineTitle{margin-top: 10px;float: left;width: 178px;}
+.brandTabContainer .brandContentContainer .brandContent .subheadlineTitle{margin-top: 0;float: left;width: 158px;text-align: center;}
 .brandTabContainer .brandContentContainer .brandContent p{line-height: 1.3em;font-size: 15px;margin-bottom: 0.5em;margin-left: 178px;}
 #chi-page .brandTabContainer .brandContentContainer .brandContent p{line-height: 1.7em;margin-bottom: 0.8em;}
 .brandTabContainer .brandContentContainer #brandContent-hoover p{padding-bottom: 0.5em;}

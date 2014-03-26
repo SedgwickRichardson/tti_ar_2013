@@ -62,12 +62,12 @@ Highcharts.setOptions({
 		},
 		yAxis: {
 			min: 0,
-			max: 4000,
+			max: 4500,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
 			tickWidth: 0,
-			tickInterval: 1000,
+			tickInterval: 1500,
 			lineWidth: 0,
 			lineColor: "#4b6a79",
 			/*offset: -40,*/
@@ -123,7 +123,7 @@ Highcharts.setOptions({
 				/*{y:0,x: 2010, color: '#A8BCC6'},*/
 				{y:3667,x: 2011, color: '#A8BCC6'},
 				{y:3852,x: 2012, color: '#A8BCC6'},
-				{y:3852, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:4300, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
 			]
 		}],
 	});
@@ -182,7 +182,7 @@ Highcharts.setOptions({
 		},
 		yAxis: {
 			min: 30,
-			max: 34,
+			max: 35,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
@@ -242,7 +242,7 @@ Highcharts.setOptions({
 			data: [
 				{y:32.6,x: 2011, color: '#A8BCC6'},
 				{y:33.5,x: 2012, color: '#A8BCC6'},
-				{y:33.5, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:34.2, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
 			],
 			formatter: function () {
 				return Highcharts.numberFormat(this.y, 1, '.', ',');
@@ -305,7 +305,7 @@ Highcharts.setOptions({
 		},
 		yAxis: {
 			min: 0,
-			max: 300,
+			max: 305,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
@@ -314,6 +314,7 @@ Highcharts.setOptions({
 			lineWidth: 0,
 			lineColor: "#4b6a79",
 			showFirstLabel: true,
+			endOnTick: false,
 			labels: 
 			{
 				formatter: function () {
@@ -365,7 +366,7 @@ Highcharts.setOptions({
 			data: [
 				{y:219,x: 2011, color: '#A8BCC6'},
 				{y:260,x: 2012, color: '#A8BCC6'},
-				{y:260, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:304, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
 			],
 			formatter: function () {
 				return Highcharts.numberFormat(this.y, 1, '.', ',');
@@ -427,7 +428,7 @@ Highcharts.setOptions({
 		},
 		yAxis: {
 			min: 0,
-			max: 12,
+			max: 15,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
@@ -487,7 +488,7 @@ Highcharts.setOptions({
 			data: [
 				{y:9.47,x: 2011, color: '#A8BCC6'},
 				{y:11.42,x: 2012, color: '#A8BCC6'},
-				{y:11.42, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:13.68, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
 			],
 			formatter: function () {
 				return Highcharts.numberFormat(this.y, 1, '.', ',');
@@ -549,7 +550,7 @@ Highcharts.setOptions({
 		},
 		yAxis: {
 			min: 0,
-			max: 3,
+			max: 3.06,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
@@ -558,6 +559,7 @@ Highcharts.setOptions({
 			lineWidth: 0,
 			lineColor: "#4b6a79",
 			showFirstLabel: true,
+			endOnTick: false,
 			labels: 
 			{
 				/*formatter: function () {
@@ -608,7 +610,7 @@ Highcharts.setOptions({
 			name: 'Population',
 			data: [
 				{y:2.25,x: 2012, color: '#A8BCC6'},
-				{y:2.25, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:3.06, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
 			],
 			formatter: function () {
 				return Highcharts.numberFormat(this.y, 1, '.', ',');
@@ -670,12 +672,12 @@ Highcharts.setOptions({
 		},
 		yAxis: {
 			min: 0,
-			max: 12,
+			max: 15,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
 			tickWidth: 0,
-			tickInterval: 3,
+			tickInterval: 5,
 			lineWidth: 0,
 			lineColor: "#4b6a79",
 			showFirstLabel: true,
@@ -723,7 +725,7 @@ Highcharts.setOptions({
 			name: 'Population',
 			data: [
 				{y:11.42,x: 2012, color: '#A8BCC6'},
-				{y:11.42, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:13.68, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
 			]
 		}],
 	});
@@ -733,13 +735,13 @@ Highcharts.setOptions({
     });
 	var tip1,tip2;
 	if(lang=="en"){
-		tip1 = "North America";
-		tip2 = "Europe,<br>rest of the world"
+		tip1 = "Power Equipment,<br>Accessories and<br>Hand Tools";
+		tip2 = "Floor Care and<br>Appliances"
 	}
 	else
 	{
-		tip1 = "北美洲";
-		tip2 = "歐洲、其他地區"
+		tip1 = "電動工具、配件及手動工具";
+		tip2 = "地板護理及器具"
 	}
 	
 	$('#home-graph-container-13').highcharts({
@@ -758,7 +760,7 @@ Highcharts.setOptions({
             },
             tooltip: {
         	    formatter: function() {
-                    return '<b>'+this.percentage+'%</b><br>'+this.point.name;
+                    return '<b>'+Highcharts.numberFormat(this.percentage, 1, '.', ',')+'%</b><br>'+this.point.name;
                 },
 				style: {
 					//fontFamily: 'Trade Gothic W01 Roman',
@@ -775,8 +777,8 @@ Highcharts.setOptions({
                 innerSize: '60%',
                 showInLegend:false,
 				data: [
-                    [tip1,   73],
-                    [tip2,  27]
+                    [tip1,   73.1],
+                    [tip2,  26.9]
                 ],
 				dataLabels: {
                     enabled: false
@@ -795,12 +797,12 @@ Highcharts.setOptions({
 	     colors: ['#A8BCC6','#0077A8']
 	});
 	if(lang=="en"){
-		tip1 = "Power<br>Equipment";
-		tip2 = "Floor Care<br>and Appliances"
+		tip1 = "Power Equipment,<br>Accessories and<br>Hand Tools";
+		tip2 = "Floor Care and<br>Appliances"
 	}
 	else
 	{
-		tip1 = "電動工具";
+		tip1 = "電動工具、配件及手動工具";
 		tip2 = "地板護理及器具"
 	}
 	$('#home-graph-container-14').highcharts({
@@ -819,7 +821,7 @@ Highcharts.setOptions({
             },
             tooltip: {
         	    formatter: function() {
-                    return '<b>'+this.percentage+'%</b><br>'+this.point.name;
+                    return '<b>'+Highcharts.numberFormat(this.percentage, 1, '.', ',')+'%</b><br>'+this.point.name;
                 },
 				style: {
 				//	fontFamily: 'Trade Gothic W01 Roman',
@@ -836,8 +838,8 @@ Highcharts.setOptions({
                 innerSize: '60%',
                 showInLegend:false,
 				data: [
-					[tip1, 73],
-					[tip2,  27]
+					[tip1, 73.1],
+					[tip2,  26.9]
                 ],
 				dataLabels: {
                     enabled: false
