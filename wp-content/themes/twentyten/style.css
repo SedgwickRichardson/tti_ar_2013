@@ -632,10 +632,10 @@ li[type=i]{list-style-type: none;}
 #FHContentDiv .graphContainer.graphContainer2Col{width:274px;margin-right:35px;padding:0;}
 #FHContentDiv .graphContainer2Col .graph-container{float:left;width:154px;}
 #FHContentDiv .graphContainer2Col .graphProfile{float: right;width:120px;text-align: left;}
-#FHContentDiv .largeFont,#powerHighlightsContent .largeFont{font-size: 2.5em;color: #0077A5;display: block;margin-bottom: 0.3em;}
-#FHContentDiv .midFont,#powerHighlightsContent .smallFont{margin-bottom: 1.5em;line-height: 120%;display: block;font-size: 0.9em;color: #4A6678;}
-#powerHighlightsContent .smallFont{font-size: 1em;}
-#powerHighlightsContent .midFont{color: #0077A5;display: block;color: #0077A5;font-size: 1.3em;margin-bottom: 0.5em;}
+#FHContentDiv .largeFont,#powerHighlightsContent .largeFont,.MDALeft .largeFont{font-size: 2.5em;color: #0077A5;display: block;margin-bottom: 0.3em;}
+#FHContentDiv .midFont,#powerHighlightsContent .smallFont,.MDALeft .smallFont{margin-bottom: 1.5em;line-height: 120%;display: block;font-size: 0.9em;color: #4A6678;}
+#powerHighlightsContent .smallFont,.MDALeft .smallFont{font-size: 1em;}
+#powerHighlightsContent .midFont,.MDALeft .midFont{color: #0077A5;display: block;color: #0077A5;font-size: 1.3em;margin-bottom: 0.5em;}
 .graphContainer2ndRow{padding-top: 20px;}
 .oneQuarterGraph{width:180px;}
 .fullwidthGraph{width:377px;}
@@ -659,7 +659,7 @@ li[type=i]{list-style-type: none;}
 #chi-page .graphContainer .graphProfile{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;line-height: 1.5em;}
 .graphContainer .figure_arrow_up{width:19px;height:21px;background: url(images/home/figure_arrow_up.gif);vertical-align: top;display: inline-block;margin-right: 5px;font-size: 0;line-height: 0;}
 .graphContainer .graphProfile .darkText{color:#777 !Important;font-family:'Trade Gothic W01 Bold'}
-.graphContainer .graphProfile .smallFont{font-size:20px;/*font-family:'Trade Gothic W01 Cn 18';color:#FAA519;*/}
+.graphContainer .graphProfile .smallFont{/*font-size:20px;*//*font-family:'Trade Gothic W01 Cn 18';color:#FAA519;*/}
 #chi-page .graphContainer .graphProfile .smallFont{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:normal;font-size: 95%;top: 0.2em;position: relative;}
 .graphContainer .graphProfile .graphFigure{font-size:28px;/*font-family: 'TradeGothicW01-BoldCn20 675334';color:#FAA519;*/}
 .reviewOperationTwoColumn .graph-container{float: left;width:177px;height:158px;}
@@ -778,7 +778,12 @@ li[type=i]{list-style-type: none;}
 .chairmanName{font-family:'Trade Gothic W01 Bold 2'; /*font-weight:bold;*/ color:#393939;}
 #chi-page .chairmanName{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;letter-spacing:0;}
 /*--------------------------------------Chairman's statement ends--------------------------------------*/
-
+.MDARight{float:left;width:480px;}
+.MDARight div{padding: 15px 0 0 25px;}
+#content .generalContent .MDARight h2{margin-top:0;}
+.MDALeft{margin-right:0;margin-top:0;}
+.MDALeft img{margin-bottom:40px;}
+.MDALeft .graphContainer .graphProfile{text-align: left;}
 /*---------------------------------------Board of directors--------------------------------------------*/
 .boardOfDirectorLinks{/*padding:20px 0 40px 0;*/margin-bottom: 4em;}
 .boardOfDirectorLinks .active{color:#fff;background-color: #0072A4;}

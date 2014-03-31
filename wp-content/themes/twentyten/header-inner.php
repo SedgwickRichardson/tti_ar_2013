@@ -112,6 +112,9 @@ $(document).ready(function(){
 	else if($('body').hasClass('page-id-328')){
 		initFinancialHighlights("chi");
 	}
+	else if($('body').hasClass('page-id-68')){
+		initMDAGraph("en");
+	}
 
 });
 $(window).load(function () {
