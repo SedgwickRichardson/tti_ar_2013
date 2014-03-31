@@ -3041,11 +3041,10 @@ function initChairmanGraph(){
 			spacingBottom: 3,
 			spacingLeft: 0,
 			spacingRight: 0,
-			marginRight: 53,
-			marginTop: 10,
+			marginRight: 0,
+			marginTop: 20,
 			style: {
-				//fontFamily: 'Trade Gothic W01 Roman',
-				color: "#2F5364"
+				color: "#0077A8"
 			},
 			dataLabels: {
                 formatter: function () {
@@ -3063,26 +3062,22 @@ function initChairmanGraph(){
 			text: null
 		},
 		xAxis: {
-			/*categories: [
-				'2011',
-				'2012'
-			],*/
 			categories: [],
 			tickWidth: 0,
 			lineColor: "#4b6a79",
 			lineWidth: 1,
 			maxPadding: 0.25,
-			min: 2010,
-			max: 2013,
 			showFirstLabel: true,
-			showLastLabel: true,
+			useHTML: true,
 			labels: {
 				style: {
-					fontSize: '11px'//,
+					/*fontSize: '11px',*/
+					color: '#4B6A79',
+					/*font: '11px \'Trade Gothic W01 Roman\''*/
 					//fontFamily: 'Trade Gothic W01 Roman'
 				},
 				formatter: function () {
-					if (this.value == 2012) {
+					if (this.value == 2013) {
 						return '<b>' + this.value + '</b>';
 					} else {
 						return this.value;
@@ -3093,23 +3088,23 @@ function initChairmanGraph(){
 		},
 		yAxis: {
 			min: 0,
+			max: 3.06,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
-			tickWidth: 2,
-			tickInterval: 0.5,
-			lineWidth: 1,
+			tickWidth: 0,
+			tickInterval: 1,
+			lineWidth: 0,
 			lineColor: "#4b6a79",
-			offset: -25,
 			showFirstLabel: true,
+			endOnTick: false,
 			labels: 
 			{
-				formatter: function () {
-                    return Highcharts.numberFormat(this.value, 1);
-				},
+				/*formatter: function () {
+					return Highcharts.numberFormat(this.value, 1);
+				},*/
 				style: {
-					fontSize: '11px'//,
-					//fontFamily: 'Trade Gothic W01 Roman'
+					color: "#4B6A79"
 				}
 			},
 			tickColor: "#4b6a79"
@@ -3122,27 +3117,28 @@ function initChairmanGraph(){
 		},
 		tooltip: {
 			formatter: function() {
-                return '<b>'+this.point.category +'</b> US'+ this.y +' cents';
+                return '<b>'+this.point.category +'</b> US'+ Highcharts.numberFormat(this.y, 2) +' cents';
             },
 			style: {
-					//fontFamily: 'Trade Gothic W01 Roman',
 					color: "#2F5364"
 			}
 		},
 		plotOptions: {
 			column: {
 				borderWidth: 0,
-				//pointWidth: 30,
-				pointPadding: 0.1,
+				pointWidth: 20,
+				//pointPadding: 0.1,
 				dataLabels: {
 					enabled: true,
-					color: '#2F5364',
+					/*color: '#A8BCC6',*/
 					align: 'center',
 					x: 0,
 					y: 0,
-					style: {
-						fontSize: '11px'//,
-						//fontFamily: 'Trade Gothic W01 Roman'
+					formatter: function () {
+						if(this.y==0)
+							return "";
+						else
+							return this.y;
 					}
 				}
 				//groupPadding: 0.2
@@ -3151,11 +3147,12 @@ function initChairmanGraph(){
 		series: [{
 			name: 'Population',
 			data: [
-				//{y:1.64,x: 2011, color: '#B4C2C9'},
-				{y:1.64,x: 2011, color: '#B4C2C9'},
-				{y:2.25, x: 2012, color: '#37596A', dataLabels:{style: {fontWeight: 'bold',fontSize: '11px',fontFamily: 'Trade Gothic W01 Roman'}}}
-			]
-			 
+				{y:2.25,x: 2012, color: '#A8BCC6'},
+				{y:3.06, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+			],
+			formatter: function () {
+				return Highcharts.numberFormat(this.y, 1, '.', ',');
+			}
 		}],
 	});
 	
@@ -3166,11 +3163,10 @@ function initChairmanGraph(){
 			spacingBottom: 3,
 			spacingLeft: 0,
 			spacingRight: 0,
-			marginRight: 53,
-			marginTop: 10,
+			marginRight: 0,
+			marginTop: 20,
 			style: {
-				//fontFamily: 'Trade Gothic W01 Roman',
-				color: "#2F5364"
+				color: "#0077A8"
 			},
 			dataLabels: {
                 formatter: function () {
@@ -3188,26 +3184,22 @@ function initChairmanGraph(){
 			text: null
 		},
 		xAxis: {
-			/*categories: [
-				'2011',
-				'2012'
-			],*/
 			categories: [],
 			tickWidth: 0,
 			lineColor: "#4b6a79",
 			lineWidth: 1,
 			maxPadding: 0.25,
-			min: 2010,
-			max: 2013,
 			showFirstLabel: true,
-			showLastLabel: true,
+			useHTML: true,
 			labels: {
 				style: {
-					fontSize: '11px'//,
+					/*fontSize: '11px',*/
+					color: '#4B6A79',
+					/*font: '11px \'Trade Gothic W01 Roman\''*/
 					//fontFamily: 'Trade Gothic W01 Roman'
 				},
 				formatter: function () {
-					if (this.value == 2012) {
+					if (this.value == 2013) {
 						return '<b>' + this.value + '</b>';
 					} else {
 						return this.value;
@@ -3218,21 +3210,22 @@ function initChairmanGraph(){
 		},
 		yAxis: {
 			min: 0,
-			max: 12,
+			max: 15,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
-			tickWidth: 2,
-			tickInterval: 3,
-			lineWidth: 1,
+			tickWidth: 0,
+			tickInterval: 5,
+			lineWidth: 0,
 			lineColor: "#4b6a79",
-			offset: -25,
 			showFirstLabel: true,
 			labels: 
 			{
+				/*formatter: function () {
+					return Highcharts.numberFormat(this.value, 1);
+				},*/
 				style: {
-					fontSize: '11px'//,
-					//fontFamily: 'Trade Gothic W01 Roman'
+					color: "#4B6A79"
 				}
 			},
 			tickColor: "#4b6a79"
@@ -3245,28 +3238,23 @@ function initChairmanGraph(){
 		},
 		tooltip: {
 			formatter: function() {
-                return '<b>'+this.point.category +'</b> US'+ this.y +' cents';
+                return '<b>'+this.point.category +'</b> US'+ Highcharts.numberFormat(this.y, 2) +' cents';
             },
 			style: {
-					//fontFamily: 'Trade Gothic W01 Roman',
 					color: "#2F5364"
 			}
 		},
 		plotOptions: {
 			column: {
 				borderWidth: 0,
-				//pointWidth: 30,
-				pointPadding: 0.1,
+				pointWidth: 20,
+				//pointPadding: 0.1,
 				dataLabels: {
 					enabled: true,
-					color: '#2F5364',
+					/*color: '#A8BCC6',*/
 					align: 'center',
 					x: 0,
-					y: 0,
-					style: {
-						fontSize: '11px'//,
-						//fontFamily: 'Trade Gothic W01 Roman'
-					}
+					y: 0
 				}
 				//groupPadding: 0.2
 			}
@@ -3274,11 +3262,9 @@ function initChairmanGraph(){
 		series: [{
 			name: 'Population',
 			data: [
-				//{y:1.64,x: 2011, color: '#B4C2C9'},
-				{y:9.47,x: 2011, color: '#B4C2C9'},
-				{y:11.42, x: 2012, color: '#37596A', dataLabels:{style: {fontWeight: 'bold',fontSize: '11px',fontFamily: 'Trade Gothic W01 Roman'}}}
+				{y:11.42,x: 2012, color: '#A8BCC6'},
+				{y:13.68, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
 			]
-			 
 		}],
 	});
 }
@@ -3349,16 +3335,15 @@ function initPowerEquipmentHighlightsGraph(lang){
 }
 function initFloorCareHighlightsGraph(lang){
 	Highcharts.setOptions({
-     colors: ['#FAA519','#B4C2C9']
-    });
-	var tip1,tip2;
+	     colors: ['#A8BCC6','#0077A8']
+	});
 	if(lang=="en"){
-		tip1 = "Power Equipment";
-		tip2 = "Floor Care and Appliances"
+		tip1 = "Power Equipment,<br>Accessories and<br>Hand Tools";
+		tip2 = "Floor Care and<br>Appliances"
 	}
 	else
 	{
-		tip1 = "電動工具";
+		tip1 = "電動工具、配件及手動工具";
 		tip2 = "地板護理及器具"
 	}
 	$('#floor-hl-graph-container-1').highcharts({
@@ -3377,31 +3362,30 @@ function initFloorCareHighlightsGraph(lang){
             },
             tooltip: {
         	    formatter: function() {
-                    return '<b>'+this.percentage+'%</b> '+this.point.name;
+                    return '<b>'+Highcharts.numberFormat(this.percentage, 1, '.', ',')+'%</b><br>'+this.point.name;
                 },
 				style: {
-					fontFamily: 'Trade Gothic W01 Roman',
+				//	fontFamily: 'Trade Gothic W01 Roman',
 					color: "#2F5364"
 				}
             },
             plotOptions: {
                 pie: {
-					center: [40, 40]
+					center: [55, 55]
                 }
             },
             series: [{
                 type: 'pie',
-                innerSize: '85%',
+                innerSize: '60%',
                 showInLegend:false,
 				data: [
-					[tip2,  25.6],
-                    [tip1,   74.4]
-                    
+					[tip1, 73.1],
+					[tip2,  26.9]
                 ],
 				dataLabels: {
                     enabled: false
                 },
-				startAngle: 92
+				startAngle: 180
             }],
 			credits: {
 				enabled: false

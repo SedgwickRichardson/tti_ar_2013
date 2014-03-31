@@ -84,7 +84,7 @@ a#searchsubmit-404 { float:left; }
 .page-item-2591, .page-item-1473{margin-top:-95px;}
 
 .page-item-64, .page-item-68{margin-left: 0px;}
-.page-item-70, .page-item-72{margin-left: 325px;}
+.page-item-70, .page-item-72{margin-left: 454px;}
 .page-item-70{margin-top:-63px;}
 
 .page-item-138, .page-item-154{margin-left: 0px;}
@@ -244,7 +244,7 @@ body.page-id-1476 #report-content,body.page-id-1480 #report-content{height:494px
 #chi-page .quote{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;letter-spacing: 1px;line-height: 150%;font-size: 130%;}
 #chi-page .quote p{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
 span.person-title { font-size:70%; /*color:#4b6a79;*/ }
-#report-content p { padding-bottom: 1.5em; /*line-height:190%;*/line-height: 180%;font-family: 'Trade Gothic W01 Roman';}
+#report-content p { padding-bottom: 1.5em; /*line-height:190%;*/line-height: 150%;font-family: 'Trade Gothic W01 Roman';}
 #chi-page #report-content p{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
 #chi-page #report-content p,#chi-page #report-content td{/* font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei'; */letter-spacing: 1px;line-height: 170%}
 #report-content h6{font-size: 1em;/*padding: 5px 0 5px;*/font-family: 'Trade Gothic W01 Bold 2';font-weight: normal;color: #000;}
@@ -273,7 +273,7 @@ span.person-title { font-size:70%; /*color:#4b6a79;*/ }
 .brands-pics { float:right; text-align:right; width:70%; margin-top:20px; }
 .brand-desc { padding-top:20px; float:left; width:25%; }
 .review-operation-desc { float:left; width: 60%; }
-.finance-notes-sub-title { color:#666; font-weight: bold;margin-bottom: 0.5em;}
+.finance-notes-sub-title { color:#666; margin-bottom: 0.5em; font-family: 'Trade Gothic W01 Bold 2';}
 #chi-page .finance-notes-sub-title {font-size: 110%;font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei'; }
 .GSM-header { font-size: 130%; font-weight: bold; color: #333; width:95%; border-bottom:1px solid #aaa; }
 .GSM-country { font-size: 110%; font-weight: bold; color: #555; margin-bottom:5px; }

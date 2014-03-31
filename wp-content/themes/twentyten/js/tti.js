@@ -1200,6 +1200,14 @@ function initFindOutMore(id, id2)
 	var findOutMoreBtnArray = document.getElementById(id).getElementsByTagName('A');
 	var findOutMoreContentArray = getElementsByClassName(document.getElementById(id2), 'findOutMoreItem');
 	var closeBtnArray = new Array();
+
+	//offset for floorcare popup
+	var popup_offset_x, popup_offset_y = 0;
+	var isFloorcare = $('#findOutMoreContainer_floorcare').length>0;
+	/*if($('#findOutMoreContainer_floorcare')){
+		popup_offset_y = 40;
+		popup_offset_x = 40;
+	}*/
 	
 	for(var i=0; i<findOutMoreBtnArray.length; i++)
 	{
@@ -1214,17 +1222,30 @@ function initFindOutMore(id, id2)
 			//console.log(posX+" "+posY);
 			var popup_left,popup_top;
 			if(posX<=700){
-				popup_left = 20;
+				if(isFloorcare)
+					popup_left = 60;
+				else
+					popup_left = 20;
 			}
 			else{
-				popup_left = -280;
+				if(isFloorcare)
+					popup_left = -240;
+				else
+					popup_left = -280;
 			}
-			if(posY<=400){
-				popup_top = -260;
+			if(posY<=250){
+				if(isFloorcare)
+					popup_top = -200;
+				else
+					popup_top = -270;
 			}
 			else{
-				popup_top = -700;
+				if(isFloorcare)
+					popup_top = -660;
+				else
+					popup_top = -700;
 			}
+			//console.log("popup_top="+popup_top+", popup_left="+popup_left);
 			findOutMoreContentArray[this.num].style.left = offset.left+popup_left+'px';
 			findOutMoreContentArray[this.num].style.top = offset.top+popup_top+'px';
 			findOutMoreContentArray[this.num].style.display = 'block';	

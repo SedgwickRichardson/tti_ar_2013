@@ -10,6 +10,7 @@
  * @since Twenty Ten 1.0
  */
 get_header("inner"); 
+remove_filter ('the_content', 'wpautop');
 $currLang = ICL_LANGUAGE_CODE;
 $langContent['en']['Download this section'] = '&#128229;';
 $langContent['zh-hant']['Download this section'] = '&#128229;';
