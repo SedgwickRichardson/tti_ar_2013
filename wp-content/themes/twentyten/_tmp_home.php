@@ -673,7 +673,7 @@ $(window).load(function () {
                   <div class="brandContentContainer clearfix" id="homePowerEquipmentBrandContentContainer">
                     <div class="brandContentItem" style="display:block;">
                     	<div class="brandImg"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/pt_milwaukee.jpg" alt="" /> </div>
-                      <div class="brandContent" style="background-color:#D90F33;">
+                      <div class="brandContent" style="background-color:#ff0e2d;">
                         <div class="subheadlineTitle"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/milwaukee_tab_logo.png"  alt="" /></div>
                         <p><?php echo $homeContent[ICL_LANGUAGE_CODE]['Milwaukee intro'] ;?></p>
                       </div>
@@ -681,7 +681,7 @@ $(window).load(function () {
                     </div>
                     <div class="brandContentItem">
                     	<div class="brandImg"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/pt_aeg.jpg" alt="" /> </div>
-                      <div class="brandContent" style="background-color:#DC5B26;">
+                      <div class="brandContent" style="background-color:#f4792a;">
                         <div class="subheadlineTitle"><img style="margin-top:5px" src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/aeg_tab_logo.png" alt="" /></div>
                         <p><?php echo $homeContent[ICL_LANGUAGE_CODE]['AEG intro'] ;?></p>
                       </div>
@@ -689,7 +689,7 @@ $(window).load(function () {
                     </div>
                     <div class="brandContentItem">
                     	<div class="brandImg"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/pt_ryobi.jpg" alt="" /> </div>
-                      <div class="brandContent" style="background-color:#E3E65B;color:#393939;">
+                      <div class="brandContent" style="background-color:#d5e041;color:#393939;">
                         <div class="subheadlineTitle"><img style="margin-top:10px" src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/ryobi_tab_logo.png" alt="" /></div>
                         <p><?php echo $homeContent[ICL_LANGUAGE_CODE]['Ryobi intro'] ;?></p>
                       </div>
@@ -697,7 +697,7 @@ $(window).load(function () {
                     </div>
                     <div class="brandContentItem">
                     	<div class="brandImg"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/pt_homelite.jpg" alt="" /> </div>
-                      <div class="brandContent" style="background-color:#FF290B">
+                      <div class="brandContent" style="background-color:#ee2e24">
                         <div class="subheadlineTitle"><img style="margin-top: 20px;" src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/homelite_tab_logo.png" alt="" /></div>
                         <p><?php echo $homeContent[ICL_LANGUAGE_CODE]['homelite intro'] ;?></p>
                       </div>
@@ -748,7 +748,7 @@ $(window).load(function () {
                   <div class="brandContentContainer clearfix" id="homeFloorCareBrandContentContainer">
                     <div class="brandContentItem" style="display:block;">
                     	<div class="brandImg"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/pt_hoover.jpg" alt="" /> </div>
-                      <div class="brandContent" style="background-color:#CE1141;" id="brandContent-hoover">
+                      <div class="brandContent" style="background-color:#cd1338;" id="brandContent-hoover">
                         <div class="subheadlineTitle"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/hoover_tab_logo.png" alt="" /></div>
                         <p><?php echo $homeContent[ICL_LANGUAGE_CODE]['Hoover intro'] ;?></p>
                       </div>
@@ -756,7 +756,7 @@ $(window).load(function () {
                     </div>
                     <div class="brandContentItem">
                     	<div class="brandImg"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/pt_oreck.jpg" alt="" /> </div>
-                      <div class="brandContent" style="background-color:#003F7F;" id="brandContent-hoover">
+                      <div class="brandContent" style="background-color:#004990;" id="brandContent-hoover">
                         <div class="subheadlineTitle"><img style="margin-top: 25px;" src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/oreck_tab_logo.png" alt="" /></div>
                         <p><?php echo $homeContent[ICL_LANGUAGE_CODE]['Oreck intro'] ;?></p>
                       </div>
@@ -764,7 +764,7 @@ $(window).load(function () {
                     </div>
                     <div class="brandContentItem">
                     	<div class="brandImg"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/pt_vax.jpg" alt="" /> </div>
-                      <div class="brandContent" style="background-color:#F58426;">
+                      <div class="brandContent" style="background-color:#f26722;">
                         <div class="subheadlineTitle"><img style="margin-top: 15px;" src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/vax_tab_logo.png" alt="" /></div>
                         <p><?php echo $homeContent[ICL_LANGUAGE_CODE]['VAX intro'] ;?></p>
                         
@@ -773,7 +773,7 @@ $(window).load(function () {
                     </div>
                     <div class="brandContentItem">
                     	<div class="brandImg"> <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/pt_dirtdevil.jpg" alt="" /> </div>
-                      <div class="brandContent" style="background-color:#E3173E;color: #fff;">
+                      <div class="brandContent" style="background-color:#ff0e2d;color: #fff;">
                         <div class="subheadlineTitle"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/dirt_tab_logo.png" alt="" /></div>
                         <p><?php echo $homeContent[ICL_LANGUAGE_CODE]['Dirt Devil intro'] ;?></p>
                         

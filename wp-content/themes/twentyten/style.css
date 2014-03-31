@@ -98,9 +98,9 @@ body.home#chi-page #tooltips_download{top:30px}
 body.home .shareBox{top: 25px;right: -125px; z-index:999}
 #chi-page .shareBox{right: 85px;}
 .shareBox a{margin:0 4px;}
-#quickLinkBox{display:none; background:url(images/general/bg_quicklinks.png) no-repeat; height: 84px; padding: 18px; position: absolute; right: 128px;top: 95px; width: 103px; z-index: 999;}
+#quickLinkBox{display:none; background:url(images/general/bg_quicklinks.png) no-repeat; height: 84px; padding: 18px 15px; position: absolute; right: 128px;top: 95px; width: 109px; z-index: 999;}
 #chi-page #quickLinkBox{right: 109px;}
-#second-nav #quickLinkBox a{font-size: 95%;display: block;margin-bottom: 2px;}
+#second-nav #quickLinkBox a{line-height: 150%;font-size: 0.8em;display: block;margin-bottom: 3px;}
 .addthis_button_facebook .at16nc.at16t_facebook{background:url(images/general/btn_facebook.png) no-repeat; width:24px; height:24px;}
 .addthis_button_facebook .at16nc.at16t_facebook:hover{background-position:0 -74px !important;}
 .addthis_button_twitter .at16nc.at16t_twitter{background:url(images/general/btn_twitter.png) no-repeat 0 0; width:24px; height:24px;}
@@ -404,18 +404,7 @@ body.home .contentLeft ul.section_highlight_list li{ font-family:'Trade Gothic W
 .reviewOperationDetailContent{padding-bottom:20px;}
 .reviewOperationDetailContent a.detailsLink{display: block;margin-top:10px;}
 .threeQuarterWidth{width:540px; padding-bottom:30px;}
-.downloadLeft{float:left; width:182px; margin-right:85px;}
-.headerBorder{border-bottom:3px solid #343434; margin-bottom:20px;}
-.reportCoverContainer{width:139px; height:180px; /* background-color:#383838;  */margin-bottom:15px;}
-.reportCoverContainer a{padding-left: 0;display: block;width: 139px;height: 180px;}
-.downloadRight{float:left; width:515px;}
-.downloadLinksContainer{margin-bottom:12px;padding-bottom: 10px;}
-.downloadLinksContainer div, .sectionHeader{font-size:18px; font-family:'Trade Gothic W01 Bold 2'; padding-bottom:10px;}
-#chi-page .downloadLinksContainer div, #chi-page .sectionHeader{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
-.downloadLinkList{margin:0 0 20px 0 !important;}
-#chi-page .downloadLinkList,#chi-page .downloadLeft p{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
-.downloadLinkList li{padding-bottom: 0;list-style: none;margin-bottom: 10px;}
-.downloadLink{background:url(images/home/btn_download.png) no-repeat 0 2px; padding-left:25px; color:#000;}
+
 #secondary {width: 148px; margin-top:38px; float:left;}
 #secondary #homeRightNav {width:148px; background:#fff; -moz-box-shadow: 1px 1px 8px #ccc; -webkit-box-shadow: 1px 1px 8px #ccc; box-shadow: 1px 1px 8px #ccc; position:fixed; }
 #secondary #homeRightNav a{background:url(images/general/bg_right_nav.png) no-repeat bottom; display:block; /*width:140px;*/ padding:15px 4px; font-family: 'Trade Gothic W01 Roman'; color:#8A8A8A; font-size:11px;text-transform: uppercase; }
@@ -593,7 +582,7 @@ li[type=i]{list-style-type: none;}
 #content.chi-content .generalContent h1{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;letter-spacing:0px;}
 #content .generalContent h2{font-family: 'Trade Gothic W01 Roman'; font-size: 130%; line-height: 120%; margin-bottom: 0.7em; margin-top: 2.5em;}
 #content.chi-content .generalContent h2{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
-#content .generalContent h6{font-family: 'Trade Gothic W01 Roman'; font-size: 120%; line-height: 120%; margin-bottom: 5px; }
+#content .generalContent h6{font-family: 'Trade Gothic W01 Roman'; font-size: 120%; line-height: 120%; margin-bottom: 5px;color: #0072A4; }
 #content.chi-content .generalContent h6{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
 #content .generalContent h7{font-family: 'TradeGothicW01-BoldCn20 675334'; font-size: 110%; line-height: 120%; margin-bottom: 5px; font-weight:normal;}
 #content .generalContent p{padding-bottom: 1.5em;}
@@ -623,7 +612,7 @@ li[type=i]{list-style-type: none;}
 .treeListContent ol li.currentAnchor a, .treeListContent ul li.currentAnchor a{color:#393939;}
 /*reusable starts by Ron on 2013-03-27*/
 .centerDiv{width:984px; margin:0 auto;}
-.innerPageCenterDiv{width:960px; margin:0 auto;/*position: relative;*/}
+#content .innerPageCenterDiv{width:960px; margin:0 auto;/*position: relative;*/}
 .quoteContainer{/* width:700px;  */padding-bottom:10px;}
 .oneColumnPageHeaderContainer{padding:20px 0 10px 0; position:relative;}
 .threeQuarterWidthContainer{width:786px;}
@@ -634,6 +623,8 @@ li[type=i]{list-style-type: none;}
 .chairmanStatementRight ul li p{margin-left: 1.1em;}
 #chi-page .chairmanStatementRight ul li p{margin-left: 1.6em;}
 .fullWidthContent .whiteBackgroundContent{padding:20px 60px 10px 15px; background-color:#fff;}
+#content .corpInfoContent h2{margin-top:0;}
+
 /*.fullWidthContent .whiteBackgroundContent div{display:none;}*/
 .graphContainer{width:250px; float:left; margin-right:15px; padding:0 0 15px 0;}
 #FHContentDiv .graphContainer{margin-bottom: 20px;width: 250px;}
@@ -661,7 +652,8 @@ li[type=i]{list-style-type: none;}
 .graphContainer .graphTitleDiv .graphUnit{font-size: 80%;font-family: 'Trade Gothic W01 Roman';;display:block;}
 #chi-page .graphContainer .graphTitleDiv .graphUnit{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
 .graphContainer .graphProfile{text-align: right;font-family: 'Trade Gothic W01 Bold 2';color: #A7BBC5; padding-bottom:10px; line-height:130%;}
-.chairmanStatementLeft .graphContainer .graphProfile{/*text-align: left;*/}
+.chairmanStatementLeft .graphContainer .graphProfile{text-align: right;}
+.overviewLeft .graphContainer .graphProfile{text-align: left;}
 .reviewOperationTwoColumn .graphContainer .graphProfile{}
 .dotUnderline{background: url(images/home/figure_dot_line.png) repeat-x center bottom;margin-bottom: 1em;}
 #chi-page .graphContainer .graphProfile{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;line-height: 1.5em;}
@@ -694,58 +686,34 @@ li[type=i]{list-style-type: none;}
 .btn_readMore:hover .arrowBack{text-decoration: none;;background:url(images/home/arrow_goBack.png) no-repeat #8EAFBE 0 50%;}
 .btn_readMore .readMoreRight{background:url(images/home/bg_readMore_right.png) no-repeat; width:15px; height:42px; float:left; display:block;}
 .btn_readMore:hover .readMoreRight{background:url(images/home/bg_readMore_right.png) -15px 0 no-repeat;}
-.headlineTitle{font-family:'Trade Gothic W01 Bold 2';line-height: 110%;/*font-size: 200%;*/ font-size: 1.5em;padding-bottom: 0.5em;}
+.headlineTitle{font-family:'Trade Gothic W01 Bold 2';line-height: 110%; font-size: 1.5em;padding-bottom: 2em;}
 .homeSectionContentDiv .headlineTitle{height: 2em;}
 #sectionContentDownload .headlineTitle{padding-bottom: 15px;margin-bottom: 10px;}
 #chi-page .headlineTitle{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;font-size: 170%;}
 .headlineTitle a{display:block; float:left; margin-right:40px; opacity:0.2;}
 .headlineTitle a:hover, .headlineTitle a.currentBrand{ opacity:1;}
 #chi-page  #content .headlineTitle{font-family:'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;letter-spacing:1px;line-height: 120%;}
-.headlineTitle span{font-family:'Trade Gothic W01 Roman';letter-spacing: -1px;}
+.headlineTitle span{font-family:'Trade Gothic W01 Roman';/*letter-spacing: -1px;*/}
 .headlineTitle span.bodTitle{font-size: 80%;}
 .headlineTitle span.bodPos{font-size: 1em;display: block;font-family: 'Trade Gothic W01 Roman';}
 #chi-page  #content .headlineTitle span{font-family:'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:normal;}
 .subheadlineTitle{font-size: 1.2em;font-family: 'Trade Gothic W01 Bold 2';margin-top: 40px; }
 #chi-page .subheadlineTitle{font-family:'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold}
-.pieChartContainer{padding-top:10px; min-height:145px;}
-.pieChartDiv{float:left; width:120px; margin-right:15px;}
-.profileWithPieChart{float:left; width:110px;}
-.verticalAlign{ vertical-align:middle;}
-.lessPaddingTop{padding-top:20px;}
-.manpowerIcon{display: block;float: left;}
-#chi-page .manpowerIcon{margin-top: 2px;}
-.manpowerNum{margin-top: 3px;display: block;float: left;}
-#chi-page .manpowerNum{margin-top: 0;}
-#chi-page .english{font-family: 'Trade Gothic W01 Cn 18'!important;}
-.strategicRoadMapDiv{padding-left:15px; position:relative;}
-.strategicRoadMapDiv div{padding:30px 0;}
-#strategicMapBtn{position:relative; z-index:2000}
-#strategicMapImageContainer{padding: 0; background:url(../../uploads/2013/ceoReview/img_ceo_map.png) no-repeat 0 8px; height: 260px; margin: 40px 0 60px ; width: 693px;/*background-position:0 4px\9;*/}
-#chi-page #strategicMapImageContainer{background:url(../../uploads/2013/ceoReview/img_ceo_map-tc.png) no-repeat 0 8px;}
-@-moz-document url-prefix() { 
-#strategicMapImageContainer,#chi-page #strategicMapImageContainer{
-      background-position:0 5px;
-  }
-}
-#strategicMapImageContainer a{position:absolute;}
-#strategicMapImageContainer a:hover,#chi-page #strategicMapImageContainer a:hover{background-position:0 -65px;}
-#strategicMapImageContainer a.active, #chi-page #strategicMapImageContainer a.active{background-position:0 -133px;}
-#strategicMapImageContainer .btn_drive-sales-growth{background:url(../../uploads/2013/ceoReview/btn_drive-sales-growth.png) no-repeat; width:289px; height:47px; top:135px; left:176px; z-index:889}
-#chi-page #strategicMapImageContainer .btn_drive-sales-growth{background:url(../../uploads/2013/ceoReview/btn_drive-sales-growth-tc.png) no-repeat;}
-#strategicMapImageContainer .btn_gross-margin-enhancement{background:url(../../uploads/2013/ceoReview/btn_gross-margin-enhancement.png) no-repeat; height: 48px; left: 199px; top: 179px; width: 289px; z-index: 789;}
-#chi-page #strategicMapImageContainer .btn_gross-margin-enhancement{background:url(../../uploads/2013/ceoReview/btn_gross-margin-enhancement-tc.png) no-repeat;}
-#strategicMapImageContainer .btn_organizational-development{background:url(../../uploads/2013/ceoReview/btn_organizational-development.png) no-repeat; height: 50px; left: 220px; top: 223px; width: 279px; z-index: 689;}
-#chi-page #strategicMapImageContainer .btn_organizational-development{background:url(../../uploads/2013/ceoReview/btn_organizational-development-tc.png) no-repeat;}
-#strategicMapImageContainer .btn_operating-cycle-development{background:url(../../uploads/2013/ceoReview/btn_operating-cycle-development.png) no-repeat; height: 50px; left: 198px; top: 268px; width: 294px; z-index: 589;}
-#chi-page #strategicMapImageContainer .btn_operating-cycle-development{background:url(../../uploads/2013/ceoReview/btn_operating-cycle-development-tc.png) no-repeat;}
-#strategicMapImageContainer .btn_generate-free-cash-flow{background:url(../../uploads/2013/ceoReview/btn_generate-free-cash-flow.png) no-repeat; height: 50px; left: 176px; top: 313px; width: 289px; z-index: 489;}
-#chi-page #strategicMapImageContainer .btn_generate-free-cash-flow{background:url(../../uploads/2013/ceoReview/btn_generate-free-cash-flow-tc.png) no-repeat;}
-#report-content .ceoArrowHeading {margin-bottom: 40px;background:url(../../uploads/2013/ceoReview/ceo_arrow_bg.png) no-repeat; width:442px;height:129px;padding: 32px 165px 0 87px;}
-#chi-page #report-content .ceoArrowHeading{padding: 15px 165px 0 87px;height: 146px;font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
-#report-content .ceoArrowHeading p{line-height: 28px;font-size: 27px;font-family: 'Trade Gothic W01 Bold';padding-bottom: 5px;color:#54798C;}
-#chi-page #report-content .ceoArrowHeading p{line-height: 130%;padding-bottom: 5px;}
-#report-content .ceoArrowHeading p.ceoArrowSubheading{color: #54798C;line-height: 140%;font-family: 'Trade Gothic W01 Roman';font-size: 110%;color: #393939;}
-#report-content .ceoArrowHeading .white{color:#fff;}
+
+/*--------------------------------------download page---------------------------------*/
+.downloadLeft{float:left; width:182px; margin-right:85px;}
+.headerBorder{border-bottom:3px solid #343434; margin-bottom:1em;padding-bottom: 0.5em;}
+.reportCoverContainer{width:139px; height:180px; /* background-color:#383838;  */margin-bottom:15px;}
+.reportCoverContainer a{padding-left: 0;display: block;width: 139px;height: 180px;}
+.downloadRight{float:left; width:515px;}
+.downloadLinksContainer{margin-bottom:12px;padding-bottom: 10px;}
+.downloadLinksContainer div, .sectionHeader{font-size:18px; font-family:'Trade Gothic W01 Bold 2'; padding-bottom:10px;}
+#chi-page .downloadLinksContainer div, #chi-page .sectionHeader{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
+.downloadLinkList{margin:0 0 20px 0 !important;}
+#chi-page .downloadLinkList,#chi-page .downloadLeft p{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
+.downloadLinkList li{padding-bottom: 0;list-style: none;margin-bottom: 10px;}
+.downloadLink{background:url(images/home/btn_download.png) no-repeat 0 2px; padding-left:25px; color:#000;}
+
 /*#strategicMapImageContainer img{position:absolute; display:none;}*/
 .grey{color:#343434;}
 .featureListing li{font-size:120%; padding-bottom:10px; font-family:'Trade Gothic W02 Bold 2';}
@@ -800,7 +768,7 @@ li[type=i]{list-style-type: none;}
 
 /*------------------------------------Chairman's Statement--------------------------------------------*/
 .chairmanStatementLeft{width: 245px;float: left;margin: 5px 22px 0 0;}
-.chairmanStatementLeft .graphContainer{width: inherit;margin-top: 35px;/*width:195px;*/}
+.chairmanStatementLeft .graphContainer{width: inherit;/*margin-top: 35px;*//*width:195px;*/}
 .chairmanStatementLeft .graphImgContainer{padding:10px 0;}
 .chairmanStatementLeft .graphContainer .graphTitleDiv{/*margin-bottom:2.5em; */}
 .chairmanStatementRight{width:693px; float:left;}
@@ -835,6 +803,7 @@ li[type=i]{list-style-type: none;}
 #chi-page .bodPhotoPos{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-size: 90%;}
 .bodContent{width:700px; margin-left:5px;}
 .bodContent .bodContentItem{display:none;}
+.bodContent .headlineTitle{font-size:1.3em;}
 .BODheadlineTitle{padding-bottom: 1.5em;margin-bottom: 1em;border-bottom: 1px solid #000;}
 /*------------------------------------------------Board of directors ends-------------------------------------------*/
 
@@ -871,34 +840,14 @@ li[type=i]{list-style-type: none;}
 #chi-page .globalOperationsItem .contentDiv ul li{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
 .workforceByLocationContainer{float:left; width:693px;}
 .workforceByLocationContainer .graphContainer{width:220px;}
-#worldMapContainer{ background:url(images/home/img_global_operation.jpg) no-repeat; width:696px; height:342px; position:relative;}
-#worldMapContainer div{position:absolute;}
-#worldMapContainer a{ background:url(images/general/btn_globalOperations_country.png) no-repeat; width:29px; height:29px; display:block; float:left;}
-#worldMapContainer span{ text-transform:uppercase; font-family:'TradeGothicW01-BoldCn20 675334'; font-size:120%; display:none; width:150px; float:left; padding-left: 5px; padding-top: 4px; line-height:110%;}
-#chi-page #worldMapContainer span{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
-#worldMapContainer div:hover span{display:block;}
-#worldMapContainer div:hover a{background-position:0 -50px;}
-#worldMapContainer div.active span{display:block;}
-#worldMapContainer div.active a{background-position:0 -100px;}
-#worldMapContainer .btnCanada{top:70px; left:80px;}
-#worldMapContainer .btnUSA{left:106px; top:118px;}
-#worldMapContainer .btnMexico{left:111px; top:153px;}
-#worldMapContainer .btnLatin{left: 194px; top: 253px;}
-#worldMapContainer .btnMiddleEast{left: 366px; top: 161px;}
-#worldMapContainer .btnMiddleEast a{background:url(images/general/btn_middleEast.png) no-repeat; width:125px; height:91px;}
-#worldMapContainer .btnMiddleEast span{position: absolute; left: 35px; top: 45px;}
-#worldMapContainer .btnMiddleEast:hover a{background-position:0 -200px;}
-#worldMapContainer .btnMiddleEast.active a{background-position:0 -400px;}
-#worldMapContainer .btnEurope{left: 334px; top: 105px;}
-#worldMapContainer .btnAsia{left: 527px; top: 147px;}
-#worldMapContainer .btnAust{left: 585px; top: 260px; width:150px;}
+
 /*Operational highlights ends by Ron on 2013-03-28*/
 /*power equipment starts by Ron on 2013-03-28*/
 .mainBannerContainer{padding:20px 0 40px 0; position:relative; width:960px; height:486px;}
 .findoutMoreBannerContent{background:url(images/general/bg_findoutmore_content.png) repeat; position:absolute; bottom:40px;  display:none; width:178px; height:49px; right:0;}
 .btn_close_findoutMoreBanner{position:absolute; background:url(images/general/btn_close_findoutmoreBanner.png) no-repeat; width:32px; height:33px; top:-15px; right:55px; opacity:0;}
 .btn_close_findoutMoreBanner_floorcare{background:url(images/general/btn_close_findoutmoreBanner_floorcare.png) no-repeat;}
-.findoutMoreBannerContent .contentDiv{width:608px; padding: 5px 90px 36px 262px;color:#fff; font-size:13px; opacity:0;}
+.findoutMoreBannerContent .contentDiv{width:608px; padding: 20px 90px 36px 262px;color:#fff; font-size:13px; opacity:0;}
 .findoutMoreBannerContent .contentDiv p{padding-bottom:0 !important;}
 .findoutMoreBannerContent .findoutMoreTitle{font-family:'Trade Gothic W01 Bold 2'; text-transform:uppercase; font-size:18px; padding-bottom: 20px;}
 #chi-page .findoutMoreBannerContent .findoutMoreTitle{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
@@ -956,15 +905,15 @@ margin-bottom: 6px;}
 padding: 0 0.5em;}
 .productTechTable tr.titleRow td{color: #fff;font-family: 'Trade Gothic W01 Bold 2';font-size: 1em;padding: 0 0.5em;}
 #chi-page .productTechTable tr.titleRow td{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
-.milwaukeeTable tr.titleRow td{ background-color: #E02038;/* border-top: 2px solid #BF2139;border-bottom: 1px solid #BF2139; */}
+.milwaukeeTable tr.titleRow td{ background-color: #ff0e2d;/* border-top: 2px solid #BF2139;border-bottom: 1px solid #BF2139; */}
 .stilettoHartTable tr.titleRow td{ background-color:#7B7979; /* border-top:2px solid #231F20; border-bottom:1px solid #231F20; */} /*Stiletto and Hart*/
-.aegTable tr.titleRow td{ background-color:#DC5B26; /* border-top:2px solid #F47F24; border-bottom:1px solid #F47F24; */}
-.ryobiTable tr.titleRow td{ background-color:#E3E65B;color:#393939; /* border-top:2px solid #C3D52E; border-bottom:1px solid #C3D52E; */}
-.homeliteDirtTable tr.titleRow td{ background-color:#FF290B; /* border-top:2px solid #EC1C24; border-bottom:1px solid #EC1C24; */} /*Homelite and Dirt Devil*/
-.dirtTable tr.titleRow td{ background-color:#E3173E;}
-.hooverTable tr.titleRow td{ background-color:#CE1141;}
-.oreckTable tr.titleRow td{ background-color:#003F7F;}
-.vaxTable tr.titleRow td{ background-color:#F58426; /* border-top:2px solid #F16528; border-bottom:1px solid #F16528; */}
+.aegTable tr.titleRow td{ background-color:#f4792a; /* border-top:2px solid #F47F24; border-bottom:1px solid #F47F24; */}
+.ryobiTable tr.titleRow td{ background-color:#d5e041;color:#393939; /* border-top:2px solid #C3D52E; border-bottom:1px solid #C3D52E; */}
+.homeliteDirtTable tr.titleRow td{ background-color:#ee2e24; /* border-top:2px solid #EC1C24; border-bottom:1px solid #EC1C24; */} /*Homelite and Dirt Devil*/
+.dirtTable tr.titleRow td{ background-color:#ff0e2d;}
+.hooverTable tr.titleRow td{ background-color:#cd1338;}
+.oreckTable tr.titleRow td{ background-color:#004990;}
+.vaxTable tr.titleRow td{ background-color:#f26722; /* border-top:2px solid #F16528; border-bottom:1px solid #F16528; */}
 .productTechTable tr.lastRow td{border-bottom:1px solid #393939;}
 .productTechTable tr td li.lastList{padding-bottom:0;}
 .productTechfullWidth{border-top:24px solid #E95D12; border-bottom:24px solid #E95D12; padding:60px 0;}
