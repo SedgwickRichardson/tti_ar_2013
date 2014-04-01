@@ -768,6 +768,7 @@ li[type=i]{list-style-type: none;}
 
 /*------------------------------------Chairman's Statement--------------------------------------------*/
 .chairmanStatementLeft{width: 245px;float: left;margin: 5px 22px 0 0;}
+.chairmanStatementLeft img{margin-bottom: 40px;}
 .chairmanStatementLeft .graphContainer{width: inherit;/*margin-top: 35px;*//*width:195px;*/}
 .chairmanStatementLeft .graphImgContainer{padding:10px 0;}
 .chairmanStatementLeft .graphContainer .graphTitleDiv{/*margin-bottom:2.5em; */}
@@ -779,10 +780,10 @@ li[type=i]{list-style-type: none;}
 #chi-page .chairmanName{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;letter-spacing:0;}
 /*--------------------------------------Chairman's statement ends--------------------------------------*/
 .MDARight{float:left;width:480px;}
-.MDARight div{padding: 15px 0 0 25px;}
+.MDARight .MDARightInner{padding: 15px 0 0 25px;}
 #content .generalContent .MDARight h2{margin-top:0;}
 .MDALeft{margin-right:0;margin-top:0;}
-.MDALeft img{margin-bottom:40px;}
+.MDALeft img{/*margin-bottom:40px;*/}
 .MDALeft .graphContainer .graphProfile{text-align: left;}
 /*---------------------------------------Board of directors--------------------------------------------*/
 .boardOfDirectorLinks{/*padding:20px 0 40px 0;*/margin-bottom: 4em;}
