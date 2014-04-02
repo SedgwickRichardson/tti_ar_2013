@@ -136,7 +136,7 @@ body.home .shareBox{top: 25px;right: -125px; z-index:999}
 #access ul.sub-menu li { margin-right:0; border-bottom: 1px solid #CCCCCC; }
 #access #menu-item-37 ul, #access #menu-item-101 ul { left:-18px; }
 #access a { color: #E5E5E5; display: block; line-height: 20px; height:37px; padding: 12px 0 0; text-decoration:none; font-size:13px; font-family:'Trade Gothic W01 Bold 2'; margin-top:10px; text-transform:uppercase;}
-#chi-page #access a {font-family:'Heiti SC', 'Microsoft Yahei', 'SimHei';}
+#chi-page #access a {font:16px 'Heiti SC', 'Microsoft Yahei', 'SimHei';height: 41px;padding: 8px 0 0;}
 #access ul ul {	/* box-shadow: 0px 3px 3px rgba(0,0,0,0.2);	-moz-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);	-webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.2); */ display: none; position: absolute; top: 34px; left: 0; float: left; width: auto; z-index: 99999; background-color: #EBEBEB; }
 #access ul ul li { min-width: 180px; border-bottom:1px solid #CCCCCC; }
 #access ul ul ul { left: 100%; top: 0; }
@@ -385,7 +385,7 @@ body.home #iconBtn{margin-top: 14px;float:right;}
 .page-id-326 .contentLeft ul ,body.home .contentLeft ul,.page-id-328 .contentLeft ul,body.home#chi-page .contentLeft ul {list-style: none;margin:0;}
 body.home .contentLeft ul.section_highlight_list li{ font-family:'Trade Gothic W01 Bold 2';font-size: 20px;line-height: 20px; padding: 8px 0 12px 18px;;background:url(images/home/main_section_arrow.png) no-repeat;color:#fff;}
 .section_list li{ padding-left: 27px;font-family:'Trade Gothic W01 Roman';font-size: 15px;background:url(images/home/main_section_bullet.png) no-repeat left 2px;line-height: 18px;margin-left: 15px;}
-.page-id-328 .contentLeft ul li,body.home#chi-page .contentLeft ul li{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;font-size: 130%;padding-bottom: 0.1em;padding-left: 15px;background:url(images/general/HLBullet.gif) no-repeat 0 center;}
+.page-id-328 .contentLeft ul li,body.home#chi-page .contentLeft ul li{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;/*font-size: 130%;padding-bottom: 0.1em;padding-left: 15px;background:url(images/general/HLBullet.gif) no-repeat 0 center;*/}
 .contentRight{float:right; width:520px;}
 #FHContentDiv .contentRight{width:584px;}
 .homeSectionContentDiv #worldMapContainer{margin:20px 0 0 20px;}
@@ -646,9 +646,12 @@ li[type=i]{list-style-type: none;}
 .graphContainer .graphTitleDivWithArrow{background: url(images/highlights/FHArrow.png) no-repeat left top;padding-left: 30px;}
 .reviewOperationTwoColumn .graphContainer .graphTitleDiv{margin-bottom: 15px;}
 .graphTitleDiv .graphTitle{font-size: 1.4em; font-family: 'Trade Gothic W01 Bold 2';}
+#chi-page .graphTitleDiv .graphTitle{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 .graphContainer .graphTitleDiv .graphTitle2{font-family: 'Trade Gothic W01 Bold 2';color: #4A6878;font-size: 120%;}
+#chi-page .graphContainer .graphTitleDiv .graphTitle2{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 #FHContentDiv .graphTitleDiv .graphTitle{font-size: 1.4em;}
-#chi-page .graphContainer .graphTitleDiv .graphTitle{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
+
+#chi-page .graphContainer .graphTitleDiv .graphTitle{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;line-height: 130%;}
 .graphContainer .graphTitleDiv .graphUnit{font-size: 80%;font-family: 'Trade Gothic W01 Roman';;display:block;}
 #chi-page .graphContainer .graphTitleDiv .graphUnit{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
 .graphContainer .graphProfile{text-align: right;font-family: 'Trade Gothic W01 Bold 2';color: #A7BBC5; padding-bottom:10px; line-height:130%;}
@@ -702,17 +705,19 @@ li[type=i]{list-style-type: none;}
 
 /*--------------------------------------download page---------------------------------*/
 .downloadLeft{float:left; width:182px; margin-right:85px;}
+#chi-page .downloadLeft{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
 .headerBorder{border-bottom:3px solid #343434; margin-bottom:1em;padding-bottom: 0.5em;}
 .reportCoverContainer{width:139px; height:180px; /* background-color:#383838;  */margin-bottom:15px;}
 .reportCoverContainer a{padding-left: 0;display: block;width: 139px;height: 180px;}
-.downloadRight{float:left; width:515px;}
+.downloadRight{float:left; width: 550px;}
+.homeSectionContentDiv .downloadRight{width: 515px;}
 .downloadLinksContainer{margin-bottom:12px;padding-bottom: 10px;}
 .downloadLinksContainer div, .sectionHeader{font-size:18px; font-family:'Trade Gothic W01 Bold 2'; padding-bottom:10px;}
 #chi-page .downloadLinksContainer div, #chi-page .sectionHeader{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 .downloadLinkList{margin:0 0 20px 0 !important;}
 #chi-page .downloadLinkList,#chi-page .downloadLeft p{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
-.downloadLinkList li{padding-bottom: 0;list-style: none;margin-bottom: 10px;}
-.downloadLink{background:url(images/home/btn_download.png) no-repeat 0 2px; padding-left:25px; color:#000;}
+.downloadLinkList li{padding-bottom: 0;list-style: none;margin-bottom: 10px;background:url(images/home/btn_download.png) no-repeat 0 2px; padding-left:25px; }
+.downloadLink{color:#000;}
 
 /*#strategicMapImageContainer img{position:absolute; display:none;}*/
 .grey{color:#343434;}
@@ -720,8 +725,10 @@ li[type=i]{list-style-type: none;}
 .brandTabContainer{padding:10px 0 30px 0;}
 .oneColumnPageHeaderContainer .brandTabContainer{margin-bottom: 3em;padding:0;border-bottom: 1px solid #000;}
 .brandTabContainer .threeColumn{width:249px !important;}
+.brandTabContainer a{opacity: 0.3;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";}
 .brandTabContainer .powerEquipmentBrandContainer{float:left; width:192px; margin-right:2px;  cursor:pointer;background: url(images/home/brandBtn.gif) no-repeat left top;padding-top: 12px;}
 .brandTabContainer .powerEquipmentBrandContainer.active,.brandTabContainer .powerEquipmentBrandContainer:hover{background-position: right top;}
+.brandTabContainer .powerEquipmentBrandContainer.active a,.brandTabContainer .powerEquipmentBrandContainer:hover a{opacity: 1;}
 .brandTabContainer .powerEquipmentBrandContainer:hover table tr td, .brandTabContainer .powerEquipmentBrandContainer.active table tr td{background-color:#F3F5F6}
 .brandTabContainer .powerEquipmentBrandContainer div{/*margin-top:4px;*/}
 .brandTabContainer .powerEquipmentBrandContainer table{margin-bottom:4px !important;}
@@ -739,12 +746,12 @@ li[type=i]{list-style-type: none;}
 .brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer{width:232px;background: url(images/highlights/brandBtnWide.gif) no-repeat left top;margin-right: 10px;}
 .brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer:hover,.brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer.active{background-position: right top;}
 .brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer table{margin-bottom:0 !important;}
-
+.brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer:hover a,.brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer.active a{opacity: 1;}
 /*---------------------------------------Hand Tool Brand Page---------------------------------------*/
 .brandTabContainer #HandToolsBrandTabContainer .HandToolsBrandContainer{width:310px;background: url(images/highlights/brandBtnWide2.gif) no-repeat left top;margin-right: 15px;}
 .brandTabContainer #HandToolsBrandTabContainer .HandToolsBrandContainer:hover,.brandTabContainer #HandToolsBrandTabContainer .HandToolsBrandContainer.active{background-position: right top;}
 .brandTabContainer #HandToolsBrandTabContainer .HandToolsBrandContainer table{margin-bottom:0 !important;}
-
+.brandTabContainer #HandToolsBrandTabContainer .HandToolsBrandContainer:hover a,.brandTabContainer #HandToolsBrandTabContainer .HandToolsBrandContainer.active a{opacity: 1;}
 /*---------------------------------------Floorcare Brand Page---------------------------------------*/
 .brandTabContainer #FloorcareBrandTabContainer .FloorcareBrandContainer{width:232px;background: url(images/highlights/brandBtnWide3.gif) no-repeat left top;margin-right: 10px;}
 .brandTabContainer #FloorcareBrandTabContainer .FloorcareBrandContainer:hover,.brandTabContainer #FloorcareBrandTabContainer .FloorcareBrandContainer.active{background-position: right top;}
@@ -862,6 +869,7 @@ li[type=i]{list-style-type: none;}
 .powerEquipmentTableContainer{/*padding:20px 0;*/}
 .powerEquipmentTable tr td{/*padding-right:25px; vertical-align:middle;*/}
 #report-content .highlightTableTitle{background-color: #333333;padding: 5px 11px;color: #fff;font-family:'Trade Gothic W01 Bold 2' }
+#chi-page #report-content .highlightTableTitle{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
 
 /*----------------------buttons in overview pages------------------------------*/
 .btn_milwaukee{background:url(../../uploads/2013/operational-highlight/logo_milwaukee.jpg) no-repeat; width:226px; height:153px; display:block;}
