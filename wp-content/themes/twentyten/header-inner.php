@@ -93,7 +93,11 @@ $(document).ready(function(){
 	//init interactive chart for Power Equipment Highlights
 		initFloorCareHighlightsGraph("en");
 	}
-	else if($('body').hasClass('page-id-1473')){
+	else if($('body').hasClass('page-id-1470')){
+	//init interactive chart for Power Equipment Highlights
+		initFloorCareHighlightsGraph("en");
+	}
+	else if($('body').hasClass('page-id-5322')){
 		initFloorCareHighlightsGraph("chi");
 	}
 	else if($('body').hasClass('page-id-13') || $('body').hasClass('page-id-18')){

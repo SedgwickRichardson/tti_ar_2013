@@ -644,6 +644,7 @@ li[type=i]{list-style-type: none;}
 .noPaddingBottom{padding-bottom:0 !important;}
 .graphContainer .graphTitleDiv{font-size:95%; line-height:130%; padding-bottom:1em;color: #393939; }
 .graphContainer .graphTitleDivWithArrow{background: url(images/highlights/FHArrow.png) no-repeat left top;padding-left: 30px;}
+#chi-page .graphContainer .graphTitleDivWithArrow{background-position: left 3px;}
 .reviewOperationTwoColumn .graphContainer .graphTitleDiv{margin-bottom: 15px;}
 .graphTitleDiv .graphTitle{font-size: 1.4em; font-family: 'Trade Gothic W01 Bold 2';}
 #chi-page .graphTitleDiv .graphTitle{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
@@ -725,10 +726,10 @@ li[type=i]{list-style-type: none;}
 .brandTabContainer{padding:10px 0 30px 0;}
 .oneColumnPageHeaderContainer .brandTabContainer{margin-bottom: 3em;padding:0;border-bottom: 1px solid #000;}
 .brandTabContainer .threeColumn{width:249px !important;}
-.brandTabContainer a{opacity: 0.3;position:static;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";}
+.brandTabContainer a{opacity: 0.3;display: block;filter: alpha(opacity=30);}
 .brandTabContainer .powerEquipmentBrandContainer{float:left; width:192px; margin-right:2px;  cursor:pointer;background: url(images/home/brandBtn.gif) no-repeat left top;padding-top: 12px;}
 .brandTabContainer .powerEquipmentBrandContainer.active,.brandTabContainer .powerEquipmentBrandContainer:hover{background-position: right top;}
-.brandTabContainer .powerEquipmentBrandContainer.active a,.brandTabContainer .powerEquipmentBrandContainer:hover a{opacity: 1;}
+.brandTabContainer .powerEquipmentBrandContainer.active a,.brandTabContainer .powerEquipmentBrandContainer:hover a{opacity: 1;filter: alpha(opacity=100);}
 .brandTabContainer .powerEquipmentBrandContainer:hover table tr td, .brandTabContainer .powerEquipmentBrandContainer.active table tr td{background-color:#F3F5F6}
 .brandTabContainer .powerEquipmentBrandContainer div{/*margin-top:4px;*/}
 .brandTabContainer .powerEquipmentBrandContainer table{margin-bottom:4px !important;}
@@ -746,12 +747,12 @@ li[type=i]{list-style-type: none;}
 .brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer{width:232px;background: url(images/highlights/brandBtnWide.gif) no-repeat left top;margin-right: 10px;}
 .brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer:hover,.brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer.active{background-position: right top;}
 .brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer table{margin-bottom:0 !important;}
-.brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer:hover a,.brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer.active a{opacity: 1;}
+.brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer:hover a,.brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer.active a{opacity: 1;filter: alpha(opacity=100);}
 /*---------------------------------------Hand Tool Brand Page---------------------------------------*/
 .brandTabContainer #HandToolsBrandTabContainer .HandToolsBrandContainer{width:310px;background: url(images/highlights/brandBtnWide2.gif) no-repeat left top;margin-right: 15px;}
 .brandTabContainer #HandToolsBrandTabContainer .HandToolsBrandContainer:hover,.brandTabContainer #HandToolsBrandTabContainer .HandToolsBrandContainer.active{background-position: right top;}
 .brandTabContainer #HandToolsBrandTabContainer .HandToolsBrandContainer table{margin-bottom:0 !important;}
-.brandTabContainer #HandToolsBrandTabContainer .HandToolsBrandContainer:hover a,.brandTabContainer #HandToolsBrandTabContainer .HandToolsBrandContainer.active a{opacity: 1;}
+.brandTabContainer #HandToolsBrandTabContainer .HandToolsBrandContainer:hover a,.brandTabContainer #HandToolsBrandTabContainer .HandToolsBrandContainer.active a{opacity: 1;filter: alpha(opacity=100);}
 /*---------------------------------------Floorcare Brand Page---------------------------------------*/
 .brandTabContainer #FloorcareBrandTabContainer .FloorcareBrandContainer{width:232px;background: url(images/highlights/brandBtnWide3.gif) no-repeat left top;margin-right: 10px;}
 .brandTabContainer #FloorcareBrandTabContainer .FloorcareBrandContainer:hover,.brandTabContainer #FloorcareBrandTabContainer .FloorcareBrandContainer.active{background-position: right top;}
@@ -873,18 +874,25 @@ li[type=i]{list-style-type: none;}
 
 /*----------------------buttons in overview pages------------------------------*/
 .btn_milwaukee{background:url(../../uploads/2013/operational-highlight/logo_milwaukee.jpg) no-repeat; width:226px; height:153px; display:block;}
+#chi-page .btn_milwaukee{background:url(../../uploads/2013/operational-highlight/logo_milwaukee_tc.jpg) no-repeat; }
 .btn_milwaukee2{background:url(../../uploads/2013/operational-highlight/logo_milwaukee2.jpg) no-repeat; width:226px; height:153px; display:block;}
 .btn_aeg{background:url(../../uploads/2013/operational-highlight/logo_aeg.jpg) no-repeat; width:226px; height:153px; display:block;}
+#chi-page .btn_aeg{background:url(../../uploads/2013/operational-highlight/logo_aeg_tc.jpg) no-repeat; }
 .btn_ryobi{background:url(../../uploads/2013/operational-highlight/logo_ryobi.jpg) no-repeat; width:226px; height:153px; display:block;}
+#chi-page .btn_ryobi{background:url(../../uploads/2013/operational-highlight/logo_ryobi_tc.jpg) no-repeat;}
 .btn_ryobi2{background:url(../../uploads/2013/operational-highlight/logo_ryobi2.jpg) no-repeat; width:344px; height:130px; display:block;margin-right:6px !important;}
 .btn_stiletto{background:url(../../uploads/2013/operational-highlight/logo_stelitto.jpg) no-repeat; width:226px; height:153px; display:block;}
 .btn_homelite{background:url(../../uploads/2013/operational-highlight/logo_homelite.jpg) no-repeat; width:342px; height:130px; display:block;}
 .btn_hart{background:url(../../uploads/2013/operational-highlight/logo_hart.jpg) no-repeat; width:226px; height:130px; display:block;}
 .btn_homelite_small{background:url(../../uploads/2013/operational-highlight/logo_homelite.png) no-repeat; width:108px; height:20px; display:block;}
 .btn_hoover{background:url(../../uploads/2013/operational-highlight/logo_hoover.jpg) no-repeat; width:342px; height:213px; display:block;}
+#chi-page .btn_hoover{background:url(../../uploads/2013/operational-highlight/logo_hoover_tc.jpg) no-repeat;}
 .btn_vax{background:url(../../uploads/2013/operational-highlight/logo_vax.jpg) no-repeat; width:342px; height:213px; display:block;}
+#chi-page .btn_vax{background:url(../../uploads/2013/operational-highlight/logo_vax_tc.jpg) no-repeat;}
 .btn_dirt{background:url(../../uploads/2013/operational-highlight/logo_dirt.jpg) no-repeat; width:342px; height:213px; display:block;}
+#chi-page .btn_dirt{background:url(../../uploads/2013/operational-highlight/logo_dirt_tc.jpg) no-repeat; }
 .btn_oreck{background:url(../../uploads/2013/operational-highlight/logo_oreck.jpg) no-repeat; width:342px; height:213px; display:block;}
+#chi-page .btn_oreck{background:url(../../uploads/2013/operational-highlight/logo_oreck_tc.jpg) no-repeat;}
 
 /*----------------------find out more popup in overview pages------------------------------*/
 #findOutMoreContainer a{/*width:226px;height:153px;*/text-indent: -9999px;margin-right: 7px;
@@ -913,7 +921,7 @@ margin-bottom: 6px;}
  .productTechTable tr td ul{margin:0 0 20px 15px !important;}
 }
 .productTechTable tr td ul li{padding-bottom: 0;line-height: 130%;}
-#chi-page .productTechTable tr td ul li{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
+#chi-page .productTechTable tr td ul li{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';line-height: 160%;}
 .productTechTable tr.headerRow td{font-family:'TradeGothicW01-BoldCn20 675334'; font-size:120%; text-transform:uppercase; padding: 5px 8px 0px; border-bottom:none;}
 #chi-page .productTechTable tr.headerRow td{color: #fff;font-family: 'Trade Gothic W01 Bold 2';font-size: 110%;/* text-transform: uppercase; */
 padding: 0 0.5em;}
@@ -958,6 +966,8 @@ padding: 0 0.5em;}
 .neg-indent{padding-left: 1em; text-indent: -1em;}
 .nowrap{white-space : nowrap}
 .resetLetterSpace{letter-spacing: 0px;}
+.eng-bold-font{font-family: 'Trade Gothic W01 Bold 2';}
+.eng-regular-font{font-family: 'Trade Gothic W01 Roman';}
 /*SiteMap starts*/
 #chi-page .siteMapContainer a,#chi-page .siteMaplinkContainer a, #chi-page .siteMapContainer span{font-family: 'Heiti SC','Microsoft Yahei','SimHei';}
 #chi-page .siteMapTitle{font-family: 'Heiti SC','Microsoft Yahei','SimHei';}
@@ -986,7 +996,7 @@ body.page-id-371 #report-content p{font-family: 'Heiti SC','Microsoft Yahei','Si
 .bottomBacktoTop{position:fixed; bottom:0; height:30px; box-shadow: 0 0 2px #000000; background:url(images/general/arrow_up.png) no-repeat center 10px #2E5263; text-align:center; color:#fff !important; z-index:2000; width:100%; font-family: 'Trade Gothic W01 Cn 18'; padding-top:20px; font-size:14px; display:none;}
 .sideBacktoTop{position:fixed; background:url(images/general/btn_backtotop.png) no-repeat; right:20px; width:43px; height:43px; bottom:20px; z-index:2000; display:none;}
 .sideBacktoTop:hover{background-position:0 -93px;}
-.btnOverlayOpen{display:none;position:absolute; background:url(images/general/btn_overlay_open.png) no-repeat; width:24px; height:24px;display:block;text-indent:-9999px;cursor:pointer;}
+/*.btnOverlayOpen{display:none;position:absolute; background:url(images/general/btn_overlay_open.png) no-repeat; width:24px; height:24px;display:block;text-indent:-9999px;cursor:pointer;}
 .btnOverlayOpen:hover{background-position:-24px 0;}
 #btnOverlayOpen1{top: 16px;left: 12px;}
 #btnOverlayOpen2{left: 417px;top: 31px;}
@@ -1047,4 +1057,4 @@ body.page-id-371 #report-content p{font-family: 'Heiti SC','Microsoft Yahei','Si
 #dirtdevilOverlay .open2{top: 348px;left: 424px;}
 #chi-page #dirtdevilOverlay .open2{top: 355px;left: 430px;}
 #dirtdevilOverlay .open3{top: 474px;left: 750px;}
-#chi-page #dirtdevilOverlay .open3{top: 484px;left: 760px;}
+#chi-page #dirtdevilOverlay .open3{top: 484px;left: 760px;}*/
