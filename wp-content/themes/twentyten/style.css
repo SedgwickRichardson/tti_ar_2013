@@ -710,7 +710,7 @@ li[type=i]{list-style-type: none;}
 .reportCoverContainer{width:139px; height:180px; /* background-color:#383838;  */margin-bottom:15px;}
 .reportCoverContainer a{padding-left: 0;display: block;width: 139px;height: 180px;}
 .downloadRight{float:left; width: 550px;}
-.homeSectionContentDiv .downloadRight{width: 515px;}
+#sectionContentDownload .downloadRight{width: 515px;}
 .downloadLinksContainer{margin-bottom:12px;padding-bottom: 10px;}
 .downloadLinksContainer div, .sectionHeader{font-size:18px; font-family:'Trade Gothic W01 Bold 2'; padding-bottom:10px;}
 #chi-page .downloadLinksContainer div, #chi-page .sectionHeader{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
@@ -725,7 +725,7 @@ li[type=i]{list-style-type: none;}
 .brandTabContainer{padding:10px 0 30px 0;}
 .oneColumnPageHeaderContainer .brandTabContainer{margin-bottom: 3em;padding:0;border-bottom: 1px solid #000;}
 .brandTabContainer .threeColumn{width:249px !important;}
-.brandTabContainer a{opacity: 0.3;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";}
+.brandTabContainer a{opacity: 0.3;position:static;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";}
 .brandTabContainer .powerEquipmentBrandContainer{float:left; width:192px; margin-right:2px;  cursor:pointer;background: url(images/home/brandBtn.gif) no-repeat left top;padding-top: 12px;}
 .brandTabContainer .powerEquipmentBrandContainer.active,.brandTabContainer .powerEquipmentBrandContainer:hover{background-position: right top;}
 .brandTabContainer .powerEquipmentBrandContainer.active a,.brandTabContainer .powerEquipmentBrandContainer:hover a{opacity: 1;}
@@ -858,7 +858,7 @@ li[type=i]{list-style-type: none;}
 /*power equipment starts by Ron on 2013-03-28*/
 .mainBannerContainer{padding:20px 0 40px 0; position:relative; width:960px; height:486px;}
 .findoutMoreBannerContent{background:url(images/general/bg_findoutmore_content.png) repeat; position:absolute; bottom:40px;  display:none; width:178px; height:49px; right:0;}
-.btn_close_findoutMoreBanner{position:absolute; background:url(images/general/btn_close_findoutmoreBanner.png) no-repeat; width:32px; height:33px; top:-15px; right:55px; opacity:0;}
+.btn_close_findoutMoreBanner{position:absolute; background:url(images/general/btn_close_findoutmoreBanner.png) no-repeat; width: 66px;height: 28px;top: -15px;right: 25px; opacity:0;}
 .btn_close_findoutMoreBanner_floorcare{background:url(images/general/btn_close_findoutmoreBanner_floorcare.png) no-repeat;}
 .findoutMoreBannerContent .contentDiv{width:608px; padding: 20px 90px 36px 262px;color:#fff; font-size:13px; opacity:0;}
 .findoutMoreBannerContent .contentDiv p{padding-bottom:0 !important;}
@@ -893,7 +893,7 @@ margin-bottom: 26px;}
 margin-bottom: 6px;}
 #findOutMoreContainer a:hover,#findOutMoreContainer_floorcare a:hover{background-position: right top;}
 #findOutMoreContent .findOutMoreItem{position:absolute; display:none;}
-#findOutMoreContent .findOutMoreItem .btn_findOutMoreClose{background:url(images/general/btn_findoutmore_close.png) no-repeat; width:28px; height:28px; position: absolute; right: 15px; top: 15px; display:block;}
+#findOutMoreContent .findOutMoreItem .btn_findOutMoreClose{background:url(images/general/btn_findoutmore_close.png) no-repeat;width: 59px;height: 20px;position: absolute;right: 12px;top: 20px; display:block;}
 #findOutMoreContent .findOutMoreTop{background:url(images/general/bg_findoutmore_top.png) no-repeat; width:309px; height:16px;}
 #findOutMoreContent .findOutMoreMid{background:url(images/general/bg_findoutmore_mid.png) repeat-y; width:269px; padding:25px 20px 0;}
 #findOutMoreContent .findOutMoreMid img{display:block; padding-bottom:10px;}

@@ -256,7 +256,7 @@ $(window).load(function () {
 <div id="header">
 		<div id="masthead">
 			<div class="headerContainer clearfix">
-				<div id="tti-logo"><a target="_blank" title ="<?php echo $homeContent[ICL_LANGUAGE_CODE]['TTI Annual Report 2012'];?>" href="http://www.ttigroup.com/"><img src="<?php bloginfo( 'template_url' ); ?>/images/headers/tti_logo.jpg" /></a></div>
+				<div id="tti-logo"><a title ="<?php echo $homeContent[ICL_LANGUAGE_CODE]['TTI Annual Report 2012'];?>" href="<?php echo site_url();echo get_curr_lang_path() ; ?>"><img src="<?php bloginfo( 'template_url' ); ?>/images/headers/tti_logo.jpg" /></a></div>
 				<div id="branding" role="banner">
 					<h1 id="site-title">
 							<a rel="home" title="<?php echo $homeContent[ICL_LANGUAGE_CODE]['TTI Annual Report 2012'];?>" href="<?php echo site_url();echo get_curr_lang_path() ; ?>"><img src="<?php bloginfo( 'template_url' ); ?>/images/headers/<?php echo $homeContent[ICL_LANGUAGE_CODE]['report image name'];?>" /></a>
