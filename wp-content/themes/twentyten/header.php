@@ -76,7 +76,7 @@ $(document).ready(function(){
 				{
 					$("#iconBtnstickyContainer").css({"top":window.pageYOffset-5, "position":"absolute"});
 				}else
-					$('#iconBtnstickyContainer').css({position: 'fixed', top: '183px'});
+					$('#iconBtnstickyContainer').css({position: 'fixed', top: '193px'});
 				$('.homeContentLeft').css({'margin-top':38});
 				//$('#backToTop').show();
 			//$('#header .logo img').css({"margin": "10px"});

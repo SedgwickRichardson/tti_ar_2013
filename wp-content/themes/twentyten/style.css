@@ -61,7 +61,7 @@ dd { margin-bottom: 18px; }
 strong { font-weight: bold; }
 cite, em, i { font-style: italic; }
 h6 em, h6 i { font-family:'TradeGothicW01-BoldCn20 675337'; font-style:normal!important;font-size: 95%;color: #666; }
-#chi-page h6 em, h6 i{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei'; font-style:italic !important;font-size: 85%;}
+#chi-page h6 em, h6 i{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei'; font-style:italic !important;font-size: 85%;}
 big { font-size: 131.25%; }
 ins { background: #ffc; text-decoration: none; }
 blockquote { margin-left:10px; }
@@ -136,7 +136,7 @@ body.home .shareBox{top: 25px;right: -125px; z-index:999}
 #access ul.sub-menu li { margin-right:0; border-bottom: 1px solid #CCCCCC; }
 #access #menu-item-37 ul, #access #menu-item-101 ul { left:-18px; }
 #access a { color: #E5E5E5; display: block; line-height: 20px; height:37px; padding: 12px 0 0; text-decoration:none; font-size:13px; font-family:'Trade Gothic W01 Bold 2'; margin-top:10px; text-transform:uppercase;}
-#chi-page #access a {font:16px 'Heiti SC', 'Microsoft Yahei', 'SimHei';height: 41px;padding: 8px 0 0;}
+#chi-page #access a {font:16px 'Heiti', 'Microsoft Yahei', 'SimHei';height: 38px;padding: 11px 0 0;}
 #access ul ul {	/* box-shadow: 0px 3px 3px rgba(0,0,0,0.2);	-moz-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);	-webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.2); */ display: none; position: absolute; top: 34px; left: 0; float: left; width: auto; z-index: 99999; background-color: #EBEBEB; }
 #access ul ul li { min-width: 180px; border-bottom:1px solid #CCCCCC; }
 #access ul ul ul { left: 100%; top: 0; }
@@ -163,7 +163,7 @@ body.page-id-18 #access ul li#menu-item-101 a,body.page-id-158 #access ul li#men
 .sub-nav .current_page_item a, .sub-nav .current_page_parent a, .sub-nav .current_page_ancestor a{/*color:#4B6A79 !important;  font-family: 'TradeGothicW01-BoldCn20 675334' !important;*/ color:#2F5364 !important;}
 #main { clear: both; overflow: hidden; padding: 0px 0 0 0; position:relative; /*margin-bottom: 30px;*/ font-size:80%;color:  #393939}
 #content {	/* margin-bottom: 36px; */ position:relative;}
-#chi-page #content{font-family:'Heiti SC', 'Microsoft Yahei', 'SimHei';}
+#chi-page #content{font-family:'Heiti', 'Microsoft Yahei', 'SimHei';}
 #content, #content input, #content textarea { color:  #393939;	/* line-height: 24px; */ }
 /*#content p, #content ul, #content ol,*/ #content dd, #content pre, #content hr { margin-bottom: 10px; }
 /*#content ul ul, #content ol ol, #content ul ol, #content ol ul { margin-bottom: 0; }*/
@@ -179,13 +179,13 @@ body.page-id-18 #access ul li#menu-item-101 a,body.page-id-158 #access ul li#men
 #content span.tableIndent, #content span.tableIndent2{display:block;}
 #content table.financialTable tr td {font-size: 90%;line-height: 100%; padding:0 8px;border-bottom: 1px solid #EAEAEA; vertical-align:bottom; padding-left: 1em;text-indent: -1em;padding-top: 0.4em;padding-bottom: 0.4em;}
 #content table.financialTable tr.heading-row td {/*padding-bottom: 8px;padding-top: 8px;*/line-height: 130%;/* padding-left: 0; text-indent: 0; line-height:110%; border-bottom:3px solid #343434; padding-top:10px; */ text-indent:0; padding-left:8px;}
-#chi-page #content table.financialTable tr.heading-row td{font-family:'Heiti SC', 'Microsoft Yahei', 'SimHei';}
+#chi-page #content table.financialTable tr.heading-row td{font-family:'Heiti', 'Microsoft Yahei', 'SimHei';}
 #content table.financialTable tr.heading-row td.bold{/*font-family:'Trade Gothic W02 Bold 2'; font-weight:normal;*/}
-#chi-page #content table.financialTable tr.heading-row td.bold{font-family:'Heiti SC', 'Microsoft Yahei', 'SimHei'; font-weight:bold;}
+#chi-page #content table.financialTable tr.heading-row td.bold{font-family:'Heiti', 'Microsoft Yahei', 'SimHei'; font-weight:bold;}
 #content table.highlightTable tr.heading-row td {padding-left: 0; text-indent: 0; line-height:110%; border-bottom:1px solid #343434; /*padding-top:10px;padding-bottom:0*/}
-#chi-page #content table.highlightTable tr.heading-row td{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
+#chi-page #content table.highlightTable tr.heading-row td{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}
 #content table.highlightTable tr td {border-bottom: 1px solid #9B9B9B;}
-#chi-page #content table.highlightTable tr td{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
+#chi-page #content table.highlightTable tr td{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}
 #content table.financialTable tr td.italic {font-family: "TradeGothicW01-Cn18Obl" !important; font-style: normal !important;}
 #chi-page #content table.financialTable tr td.italic {font-family:'sans-serif' !important;;font-style:italic !important;;}
 #content table.financialTable tr.no-bottom-border td{border-bottom:none;}
@@ -223,7 +223,7 @@ body.search-results  .page-title{margin-top:36px;}
 .entry-title a:link, .entry-title a:visited { color: #000; text-decoration: none; }
 .entry-title a:active, .entry-title a:hover { color: #ff4b33; }
 body.search-results .entry-title a{font-family: 'TradeGothicW01-BoldCn20 675334';font-size: 95%;padding: 10px 0;font-weight: normal;}
-body#chi-page.search-results .entry-title a{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei',新細明體,細明體;font-weight: bold;}
+body#chi-page.search-results .entry-title a{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei',新細明體,細明體;font-weight: bold;}
 .entry-meta { color: #888; font-size: 12px; }
 .entry-meta abbr, .entry-utility abbr { border: none; }
 .entry-meta abbr:hover, .entry-utility abbr:hover { border-bottom: 1px dotted #666; }
@@ -370,34 +370,34 @@ h3#reply-title { margin: 18px 0; }
 body.home #iconBtn{margin-top: 14px;float:right;}
 #iconBtnstickyContainer{background:url(../../themes/twentyten/images/general/bg_home_top_sticky.png) bottom no-repeat; width:829px; height:44px; z-index:997;}
 #primary .homeSection{padding-bottom:45px; font-family:'Trade Gothic W01 Roman'; font-size: 15px; line-height: 140%;}
-#chi-page #primary .homeSection{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';line-height: 1.7em;letter-spacing: 1px}
+#chi-page #primary .homeSection{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';line-height: 1.7em;letter-spacing: 1px}
 .sectionTitle{background:#A8BCC6 url(images/general/bg_home_title.png) no-repeat; width:825px; height:45px; color:#fff; font-family: 'Trade Gothic W01 Bold 2'; font-size:22px;}
-#chi-page .sectionTitle{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
+#chi-page .sectionTitle{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
 .sectionTitle div{display:block; padding:13px 0 0 24px; font-size:22px;}
 .sectionContent{/*background:url(images/general/bg_home_item_btmBorder.png) no-repeat bottom;*/ width:820px; margin-left:5px;}
 .homeSectionContentDiv{padding:33px 15px 20px 0;}
 .contentLeft{float:left; width:253px; margin-right:22px;}
 .contentLeft .title_HL,.contentRight .title_HL{font-size:18px; font-family:'Trade Gothic W01 Bold 2';; line-height:25px; padding-bottom:15px;color:#0077A7;}
-#chi-page .contentLeft .title_HL,#chi-page .contentRight .title_HL{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;letter-spacing:1px;}
+#chi-page .contentLeft .title_HL,#chi-page .contentRight .title_HL{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;letter-spacing:1px;}
 .page-id-326 .contentLeft .title_HL,body.home  .contentLeft .title_HL{ font-family: 'Trade Gothic W01 Roman'}
-.page-id-328#chi-page .contentLeft .title_HL,body.home#chi-page  .contentLeft .title_HL{ font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:normal;}
+.page-id-328#chi-page .contentLeft .title_HL,body.home#chi-page  .contentLeft .title_HL{ font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:normal;}
 .contentLeft ul li{/* font-family:'Trade Gothic W01 Light'; */ font-size:100%; padding-bottom:8px;}
 .page-id-326 .contentLeft ul ,body.home .contentLeft ul,.page-id-328 .contentLeft ul,body.home#chi-page .contentLeft ul {list-style: none;margin:0;}
 body.home .contentLeft ul.section_highlight_list li{ font-family:'Trade Gothic W01 Bold 2';font-size: 20px;line-height: 20px; padding: 8px 0 12px 18px;;background:url(images/home/main_section_arrow.png) no-repeat;color:#fff;}
 .section_list li{ padding-left: 27px;font-family:'Trade Gothic W01 Roman';font-size: 15px;background:url(images/home/main_section_bullet.png) no-repeat left 2px;line-height: 18px;margin-left: 15px;}
-.page-id-328 .contentLeft ul li,body.home#chi-page .contentLeft ul li{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;/*font-size: 130%;padding-bottom: 0.1em;padding-left: 15px;background:url(images/general/HLBullet.gif) no-repeat 0 center;*/}
+.page-id-328 .contentLeft ul li,body.home#chi-page .contentLeft ul li{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:bold;/*font-size: 130%;padding-bottom: 0.1em;padding-left: 15px;background:url(images/general/HLBullet.gif) no-repeat 0 center;*/}
 .contentRight{float:right; width:520px;}
 #FHContentDiv .contentRight{width:584px;}
 .homeSectionContentDiv #worldMapContainer{margin:20px 0 0 20px;}
 .globalOperationTable{margin:0 !important;}
 .globalOperationTable tr td{padding-right:15px; font-size:85%; width: 200px;}
 .globalOperationTable tr td div{font-family:'Trade Gothic W02 Bold 2';}
-#chi-page .globalOperationTable tr td div{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
+#chi-page .globalOperationTable tr td div{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
 .globalOperationMapContainer{padding:34px 0 0 22px;}
 .globalOperationContentContainer{width:785px;}
 .globalOperationTable tr td .globalOperationCountry{font-size:140%;width:100%;}
 .globalOperationCountry{font-family:'TradeGothicW01-BoldCn20 675334'; font-size:120%; padding-left:35px; color:#383838; background:url(images/home/bullet_country.png) no-repeat; line-height:21px; padding-bottom:20px; padding-top:3px;}
-#chi-page .globalOperationCountry{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
+#chi-page .globalOperationCountry{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 .globalOperationContent{/*padding-bottom:50px*/ height:240px;}
 .globalOperationContent table{display:none;}
 .reviewOperationTwoColumn{float:left; width:380px; margin-right:25px;}
@@ -408,7 +408,7 @@ body.home .contentLeft ul.section_highlight_list li{ font-family:'Trade Gothic W
 #secondary {width: 148px; margin-top:38px; float:left;}
 #secondary #homeRightNav {width:148px; background:#fff; -moz-box-shadow: 1px 1px 8px #ccc; -webkit-box-shadow: 1px 1px 8px #ccc; box-shadow: 1px 1px 8px #ccc; position:fixed; }
 #secondary #homeRightNav a{background:url(images/general/bg_right_nav.png) no-repeat bottom; display:block; /*width:140px;*/ padding:15px 4px; font-family: 'Trade Gothic W01 Roman'; color:#8A8A8A; font-size:11px;text-transform: uppercase; }
-#chi-page #secondary #homeRightNav a{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
+#chi-page #secondary #homeRightNav a{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}
 #secondary #homeRightNav a:hover{color:#fff; background-color:#0072A4; text-decoration:none; font-weight:normal;}
 #secondary #homeRightNav a.active{color:#fff; background-color:#0072A4; font-weight:normal;}
 #secondary #homeRightNav a.lastItem{background-image:none !important;}
@@ -563,7 +563,7 @@ img#wpstats { display: none; }
 #content .topAlignTable tr td{ vertical-align:top !important;}
 #content .summaryTable tr td{font-family:'Trade Gothic W01 Cn 18'; font-size:95%;}
 #content .summaryTable tr td.tableTitle{font-size:100%;}
-#content.chi-content .summaryTable tr td.tableTitle.bold{font-family:'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
+#content.chi-content .summaryTable tr td.tableTitle.bold{font-family:'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
 #content .summaryTable .bold{font-family:'TradeGothicW01-BoldCn20 675334';}
 #chi-page  #content .summaryTable .bold{font-family:'Trade Gothic W01 Cn 18';font-weight:bold!important;}
 #content .summaryTable tr.thick-border-bottom td { border-bottom:2px solid #383838; }
@@ -579,11 +579,11 @@ li[type=i]{list-style-type: none;}
 .page-item-294, .page-item-306{margin-right:0 !Important;}
 #content .generalContent{font-family: 'Trade Gothic W01 Roman'; width: 750px;line-height: 150%;}
 #content .generalContent h1{font-size: 200%;padding-bottom: 25px;/*letter-spacing: -1px;*/font-family: 'Trade Gothic W01 Bold 2'; line-height: 200%;}
-#content.chi-content .generalContent h1{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;letter-spacing:0px;}
+#content.chi-content .generalContent h1{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:bold;letter-spacing:0px;}
 #content .generalContent h2{font-family: 'Trade Gothic W01 Roman'; font-size: 130%; line-height: 120%; margin-bottom: 0.7em; margin-top: 2.5em;}
-#content.chi-content .generalContent h2{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
+#content.chi-content .generalContent h2{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
 #content .generalContent h6{font-family: 'Trade Gothic W01 Roman'; font-size: 120%; line-height: 120%; margin-bottom: 5px;color: #0072A4; }
-#content.chi-content .generalContent h6{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
+#content.chi-content .generalContent h6{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
 #content .generalContent h7{font-family: 'TradeGothicW01-BoldCn20 675334'; font-size: 110%; line-height: 120%; margin-bottom: 5px; font-weight:normal;}
 #content .generalContent p{padding-bottom: 1.5em;}
 #content .leftContent{float:left; width:750px; margin-right:30px;}
@@ -601,9 +601,9 @@ li[type=i]{list-style-type: none;}
 .treeListContent ul{margin-left:15px;}
 .treeListContent ol li{font-family:'Trade Gothic W01 Cn 18'; list-style:decimal; font-size:120%; line-height:110%; margin-bottom:0.5em; padding-left:10px; margin-left:3px; color:#448BB3; cursor:pointer; padding-bottom:0;}
 #chi-page .treeListContent ol li{font-size: 120%;}
-#chi-page .treeListContent ol li a{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-size: 90%;}
+#chi-page .treeListContent ol li a{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-size: 90%;}
 .treeListContent ul li{font-family:'Trade Gothic W01 Roman'; list-style:disc; font-size:140%; line-height:110%; margin-bottom:10px; padding-left:10px; margin-left:3px; color:#448BB3; cursor:pointer; padding-bottom:0;}
-#chi-page .treeListContent ul li{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
+#chi-page .treeListContent ul li{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}
 .governanceTreeListItem .treeListContent ul li{padding-left:0px;font-size:120%;}
 #chi-page .governanceTreeListItem .treeListContent ul li{font-size:110%;}
 .governanceTreeListItem .treeListContent ul li:hover{text-decoration:underline;}
@@ -647,24 +647,24 @@ li[type=i]{list-style-type: none;}
 #chi-page .graphContainer .graphTitleDivWithArrow{background-position: left 3px;}
 .reviewOperationTwoColumn .graphContainer .graphTitleDiv{margin-bottom: 15px;}
 .graphTitleDiv .graphTitle{font-size: 1.4em; font-family: 'Trade Gothic W01 Bold 2';}
-#chi-page .graphTitleDiv .graphTitle{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
+#chi-page .graphTitleDiv .graphTitle{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 .graphContainer .graphTitleDiv .graphTitle2{font-family: 'Trade Gothic W01 Bold 2';color: #4A6878;font-size: 120%;}
-#chi-page .graphContainer .graphTitleDiv .graphTitle2{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
+#chi-page .graphContainer .graphTitleDiv .graphTitle2{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 #FHContentDiv .graphTitleDiv .graphTitle{font-size: 1.4em;}
 
-#chi-page .graphContainer .graphTitleDiv .graphTitle{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;line-height: 130%;}
+#chi-page .graphContainer .graphTitleDiv .graphTitle{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;line-height: 130%;}
 .graphContainer .graphTitleDiv .graphUnit{font-size: 80%;font-family: 'Trade Gothic W01 Roman';;display:block;}
-#chi-page .graphContainer .graphTitleDiv .graphUnit{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
+#chi-page .graphContainer .graphTitleDiv .graphUnit{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}
 .graphContainer .graphProfile{text-align: right;font-family: 'Trade Gothic W01 Bold 2';color: #A7BBC5; padding-bottom:10px; line-height:130%;}
 .chairmanStatementLeft .graphContainer .graphProfile{text-align: right;}
 .overviewLeft .graphContainer .graphProfile{text-align: left;}
 .reviewOperationTwoColumn .graphContainer .graphProfile{}
 .dotUnderline{background: url(images/home/figure_dot_line.png) repeat-x center bottom;margin-bottom: 1em;}
-#chi-page .graphContainer .graphProfile{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;line-height: 1.5em;}
+#chi-page .graphContainer .graphProfile{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:bold;line-height: 1.5em;}
 .graphContainer .figure_arrow_up{width:19px;height:21px;background: url(images/home/figure_arrow_up.gif);vertical-align: top;display: inline-block;margin-right: 5px;font-size: 0;line-height: 0;}
 .graphContainer .graphProfile .darkText{color:#777 !Important;font-family:'Trade Gothic W01 Bold'}
 .graphContainer .graphProfile .smallFont{/*font-size:20px;*//*font-family:'Trade Gothic W01 Cn 18';color:#FAA519;*/}
-#chi-page .graphContainer .graphProfile .smallFont{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:normal;font-size: 95%;top: 0.2em;position: relative;}
+#chi-page .graphContainer .graphProfile .smallFont{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:normal;font-size: 95%;top: 0.2em;position: relative;}
 .graphContainer .graphProfile .graphFigure{font-size:28px;/*font-family: 'TradeGothicW01-BoldCn20 675334';color:#FAA519;*/}
 .reviewOperationTwoColumn .graph-container{float: left;width:177px;height:158px;}
 .reviewOperationTwoColumn .graphProfile{float: left;width: 193px;padding: 1.2em 0;}
@@ -673,10 +673,10 @@ li[type=i]{list-style-type: none;}
 .reviewOperationTwoColumn .graphContainer .graphProfile .midFont{font-size: 20px;}
 #chi-page .graphContainer .graphProfile .largeFont{position: relative;top: 0.1em;font-weight: normal;}
 .graphContainer .graphProfile .midFont{/*font-size:24px;font-family:'Trade Gothic W01 Bold';color:#FAA519;*/}
-#chi-page .graphContainer .graphProfile .midFont {/*font-size:16px;font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';*/}
+#chi-page .graphContainer .graphProfile .midFont {/*font-size:16px;font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';*/}
 /* #chi-page .graphContainer .graphProfile .midFont{font-family: 'Trade Gothic W01 Bold';font-weight:normal;} */
 .graphContainer .graphProfile  .smallerFont{font-family:'Trade Gothic W01 Cn 18';font-size: 95%;}
-#chi-page .graphContainer .graphProfile  .smallerFont{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-size: 90%;}
+#chi-page .graphContainer .graphProfile  .smallerFont{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-size: 90%;}
 #chi-page  .graphContainer .graphProfile .numberText {font-family: 'Trade Gothic W01 Bold';font-weight: normal;}
 .morePaddingBottomForTextOnlyGraph{padding-bottom:40px;}
 .readMoreDiv {height:72px;display: inline-block;margin-top: 10px;}
@@ -684,7 +684,7 @@ li[type=i]{list-style-type: none;}
 .btn_readMore:hover .readMoreLeft{background:url(images/home/bg_readMore_left.png) -15px 0 no-repeat;}
 .homeSection .btn_readMore .readMoreMid{padding:21px 0 21px 15px; line-height:0;font-size: 15px;}
 .btn_readMore .readMoreMid{background:url(images/home/arrow_readMore.png) no-repeat #3A5D6E 0 50%; float:left; display:block; color:#fff; font-family:'Trade Gothic W01 Bold 2'; padding:21px 0 21px 15px; line-height:0;}
-#chi-page .btn_readMore .readMoreMid{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
+#chi-page .btn_readMore .readMoreMid{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}
 .btn_readMore:hover .readMoreMid{background-color:#8EAFBE;}
 .btn_readMore .arrowBack{background:url(images/home/arrow_goBack.png) no-repeat #3A5D6E 0 50%;}
 .btn_readMore:hover .arrowBack{text-decoration: none;;background:url(images/home/arrow_goBack.png) no-repeat #8EAFBE 0 50%;}
@@ -693,20 +693,20 @@ li[type=i]{list-style-type: none;}
 .headlineTitle{font-family:'Trade Gothic W01 Bold 2';line-height: 110%; font-size: 1.5em;padding-bottom: 2em;}
 .homeSectionContentDiv .headlineTitle{height: 2em;}
 #sectionContentDownload .headlineTitle{padding-bottom: 15px;margin-bottom: 10px;}
-#chi-page .headlineTitle{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;font-size: 170%;}
+#chi-page .headlineTitle{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:bold;font-size: 170%;}
 .headlineTitle a{display:block; float:left; margin-right:40px; opacity:0.2;}
 .headlineTitle a:hover, .headlineTitle a.currentBrand{ opacity:1;}
-#chi-page  #content .headlineTitle{font-family:'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;letter-spacing:1px;line-height: 120%;}
+#chi-page  #content .headlineTitle{font-family:'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:bold;letter-spacing:1px;line-height: 120%;}
 .headlineTitle span{font-family:'Trade Gothic W01 Roman';/*letter-spacing: -1px;*/}
 .headlineTitle span.bodTitle{font-size: 80%;}
 .headlineTitle span.bodPos{font-size: 1em;display: block;font-family: 'Trade Gothic W01 Roman';}
-#chi-page  #content .headlineTitle span{font-family:'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:normal;}
+#chi-page  #content .headlineTitle span{font-family:'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:normal;}
 .subheadlineTitle{font-size: 1.2em;font-family: 'Trade Gothic W01 Bold 2';margin-top: 40px; }
-#chi-page .subheadlineTitle{font-family:'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold}
+#chi-page .subheadlineTitle{font-family:'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:bold}
 
 /*--------------------------------------download page---------------------------------*/
 .downloadLeft{float:left; width:182px; margin-right:85px;}
-#chi-page .downloadLeft{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
+#chi-page .downloadLeft{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}
 .headerBorder{border-bottom:3px solid #343434; margin-bottom:1em;padding-bottom: 0.5em;}
 .reportCoverContainer{width:139px; height:180px; /* background-color:#383838;  */margin-bottom:15px;}
 .reportCoverContainer a{padding-left: 0;display: block;width: 139px;height: 180px;}
@@ -714,9 +714,9 @@ li[type=i]{list-style-type: none;}
 #sectionContentDownload .downloadRight{width: 515px;}
 .downloadLinksContainer{margin-bottom:12px;padding-bottom: 10px;}
 .downloadLinksContainer div, .sectionHeader{font-size:18px; font-family:'Trade Gothic W01 Bold 2'; padding-bottom:10px;}
-#chi-page .downloadLinksContainer div, #chi-page .sectionHeader{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
+#chi-page .downloadLinksContainer div, #chi-page .sectionHeader{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 .downloadLinkList{margin:0 0 20px 0 !important;}
-#chi-page .downloadLinkList,#chi-page .downloadLeft p{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
+#chi-page .downloadLinkList,#chi-page .downloadLeft p{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}
 .downloadLinkList li{padding-bottom: 0;list-style: none;margin-bottom: 10px;background:url(images/home/btn_download.png) no-repeat 0 2px; padding-left:25px; }
 .downloadLink{color:#000;}
 
@@ -765,7 +765,7 @@ li[type=i]{list-style-type: none;}
 /*.btn_findoutMore:hover .findoutMoreLeft{background:url(images/home/bg_findoutMore_left_hover.png) no-repeat;}*/
 .btn_findoutMore .findoutMoreMid{ background:url(images/home/arrow_readMore.png) no-repeat #4B6A79 0 50%; float:left; display:block; padding: 5px 0 0 15px;height: 29px;color:#fff;font-family: 'Trade Gothic W01 Bold 2';}
 .btn_findoutMore:hover .findoutMoreMid{background-color:#C1CAD1;}
-#chi-page .btn_findoutMore .findoutMoreMid{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
+#chi-page .btn_findoutMore .findoutMoreMid{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
 /*.btn_findoutMore:hover .findoutMoreMid{background-color:#8EAFBE;}*/
 .btn_findoutMore .findoutMoreRight{background:url(images/home/bg_findoutMore_right.png) no-repeat; width:16px; height:42px; float:left; display:block;}
 .btn_findoutMore:hover .findoutMoreRight{background:url(images/home/bg_findoutMore_right.png) -16px 0 no-repeat; }
@@ -785,7 +785,7 @@ li[type=i]{list-style-type: none;}
 .chairman_signature{line-height: 150%;}
 .chairman_signature img{margin-bottom: 20px;margin-top: 40px;}
 .chairmanName{font-family:'Trade Gothic W01 Bold 2'; /*font-weight:bold;*/ color:#393939;}
-#chi-page .chairmanName{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;letter-spacing:0;}
+#chi-page .chairmanName{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;letter-spacing:0;}
 /*--------------------------------------Chairman's statement ends--------------------------------------*/
 .MDARight{float:left;width:480px;}
 .MDARight .MDARightInner{padding: 15px 0 0 25px;}
@@ -798,7 +798,7 @@ li[type=i]{list-style-type: none;}
 .boardOfDirectorLinks .active{color:#fff;background-color: #0072A4;}
 .boardOfDirectorLinks a{padding: 0.5em 1em;background-color: #EDEEF0;font-family: 'Trade Gothic W01 Bold 2';font-size: 1em;margin-right: 0.6em;color: #999999;}
 .boardOfDirectorLinks a:hover{text-decoration: none;color: #fff;background-color: #0072A4;}
-#chi-page .boardOfDirectorLinks a{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
+#chi-page .boardOfDirectorLinks a{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 .boardOfDirectorPhoto{/* background-color: #2F5364; */margin-bottom: 35px;}
 .bodPhotoItem{float:left; width:191px; cursor:pointer;margin-right:1px;}
 .bodPhotoItem img{display:block; /*opacity:0.2;*/}
@@ -810,11 +810,11 @@ li[type=i]{list-style-type: none;}
 }
 .boardOfDirectorPhoto .active img, .bodPhotoItem:hover img{opacity:1;}
 .bodPhotoName{font-family: 'Trade Gothic W01 Bold 2';margin-right: 2px;color: #393939;font-size: 1.5em;}@-moz-document url-prefix() { 	.bodPhotoName{font-size: 110%; }}
-#chi-page .bodPhotoName{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
+#chi-page .bodPhotoName{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 .bodPhotoTitle{font-family:'Trade Gothic W01 Light';color:#393939;font-size: 70%;}
 .bodPhotoItem:hover .bodPhotoTitle,.bodPhotoItem.active .bodPhotoTitle{color:#fff}
 .bodPhotoPos{font-family: 'Trade Gothic W01 Roman';font-size: 1.1em;color: #393939;}
-#chi-page .bodPhotoPos{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-size: 90%;}
+#chi-page .bodPhotoPos{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-size: 90%;}
 .bodContent{width:700px; margin-left:5px;}
 .bodContent .bodContentItem{display:none;}
 .bodContent .headlineTitle{font-size:1.3em;}
@@ -828,17 +828,17 @@ li[type=i]{list-style-type: none;}
 .operationalTabContentItem{display:none;}
 .operationalTab .active{color:#393939;}
 .operationalTab a{font-family:'TradeGothicW01-BoldCn20 675334'; font-size:18px; margin-right:55px; text-decoration:underline; text-transform:uppercase; color:#458CB5;}
-#chi-page .operationalTab a{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
+#chi-page .operationalTab a{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 .operationalGraph{font-family:'TradeGothicW01-BoldCn20 675334'; color:#4B6A79}
 .operationalGraph .largeFont{font-size: 550%;}
 .operationalGraph .smallFont{font-size: 280%;}
 .operationalHighlightTable{margin-bottom:0 !important;}
 .operationalHighlightTable tr td{padding:13px 0 18px 8px; border-bottom:2px solid #fff; vertical-align:top;background-color:#EBEEF0;}
-#chi-page .operationalHighlightTable tr td{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
+#chi-page .operationalHighlightTable tr td{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}
 .operationalHighlightTable tr.titleRow td{background-color:#3A5D6E; color:#fff; font-family:'TradeGothicW01-BoldCn20 675334'; padding:10px;text-transform: uppercase;}
-#chi-page .operationalHighlightTable tr.titleRow td{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
+#chi-page .operationalHighlightTable tr.titleRow td{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 .operationalHighlightTable tr.headerRow td{padding-top:3px; padding-bottom:3px; border-bottom:2px solid #9A9A9A; font-family:'TradeGothicW01-BoldCn20 675334'; text-transform:uppercase; background-color:#fff;}
-#chi-page .operationalHighlightTable tr.headerRow td{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
+#chi-page .operationalHighlightTable tr.headerRow td{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 .operationalHighlightTable tr.lastRow td{border-bottom:none;}
 .opHighlightTwoColumn{float:left; width:467px; margin-right:25px;}
 .operationalChartContainer{/*background:url(images/general/border_dash.png) repeat-x bottom;*/ margin-bottom:20px}
@@ -848,10 +848,10 @@ li[type=i]{list-style-type: none;}
 .globalOperationsContainer{float:left; width:246px; margin-right:18px;}
 .globalOperationsItem{border-top:3px solid #393939; padding-top:10px; display:none;}
 .globalOperationsItem .contentDiv div{font-family:'Trade Gothic W02 Bold 2'; padding-bottom:5px;}
-#chi-page .globalOperationsItem .contentDiv div{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
+#chi-page .globalOperationsItem .contentDiv div{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 .globalOperationsItem .contentDiv ul{margin-bottom:10px;}
 .globalOperationsItem .contentDiv ul li,.globalOperationTable ul li{padding-bottom: 0.1em;}
-#chi-page .globalOperationsItem .contentDiv ul li{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
+#chi-page .globalOperationsItem .contentDiv ul li{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}
 .workforceByLocationContainer{float:left; width:693px;}
 .workforceByLocationContainer .graphContainer{width:220px;}
 
@@ -860,17 +860,18 @@ li[type=i]{list-style-type: none;}
 .mainBannerContainer{padding:20px 0 40px 0; position:relative; width:960px; height:486px;}
 .findoutMoreBannerContent{background:url(images/general/bg_findoutmore_content.png) repeat; position:absolute; bottom:40px;  display:none; width:178px; height:49px; right:0;}
 .btn_close_findoutMoreBanner{position:absolute; background:url(images/general/btn_close_findoutmoreBanner.png) no-repeat; width: 66px;height: 28px;top: -15px;right: 25px; opacity:0;}
+#chi-page .btn_close_findoutMoreBanner{background:url(images/general/btn_close_findoutmoreBanner_chi.png) no-repeat;}
 .btn_close_findoutMoreBanner_floorcare{background:url(images/general/btn_close_findoutmoreBanner_floorcare.png) no-repeat;}
 .findoutMoreBannerContent .contentDiv{width:608px; padding: 20px 90px 36px 262px;color:#fff; font-size:13px; opacity:0;}
 .findoutMoreBannerContent .contentDiv p{padding-bottom:0 !important;}
 .findoutMoreBannerContent .findoutMoreTitle{font-family:'Trade Gothic W01 Bold 2'; text-transform:uppercase; font-size:18px; padding-bottom: 20px;}
-#chi-page .findoutMoreBannerContent .findoutMoreTitle{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
+#chi-page .findoutMoreBannerContent .findoutMoreTitle{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 #btn_banner_findoutMore{background:url(images/general/btn_findoutmore.png) no-repeat; width:178px; height:49px; position:absolute; bottom:40px; right:0px; z-index:799;}
 #chi-page #btn_banner_findoutMore{background:url(images/general/btn_findoutmore-tc.png) no-repeat;}
 .powerEquipmentTableContainer{/*padding:20px 0;*/}
 .powerEquipmentTable tr td{/*padding-right:25px; vertical-align:middle;*/}
 #report-content .highlightTableTitle{background-color: #333333;padding: 5px 11px;color: #fff;font-family:'Trade Gothic W01 Bold 2' }
-#chi-page #report-content .highlightTableTitle{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
+#chi-page #report-content .highlightTableTitle{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}
 
 /*----------------------buttons in overview pages------------------------------*/
 .btn_milwaukee{background:url(../../uploads/2013/operational-highlight/logo_milwaukee.jpg) no-repeat; width:226px; height:153px; display:block;}
@@ -902,6 +903,7 @@ margin-bottom: 6px;}
 #findOutMoreContainer a:hover,#findOutMoreContainer_floorcare a:hover{background-position: right top;}
 #findOutMoreContent .findOutMoreItem{position:absolute; display:none;}
 #findOutMoreContent .findOutMoreItem .btn_findOutMoreClose{background:url(images/general/btn_findoutmore_close.png) no-repeat;width: 59px;height: 20px;position: absolute;right: 12px;top: 20px; display:block;}
+#chi-page #findOutMoreContent .findOutMoreItem .btn_findOutMoreClose{background:url(images/general/btn_findoutmore_close_chi.png) no-repeat;}
 #findOutMoreContent .findOutMoreTop{background:url(images/general/bg_findoutmore_top.png) no-repeat; width:309px; height:16px;}
 #findOutMoreContent .findOutMoreMid{background:url(images/general/bg_findoutmore_mid.png) repeat-y; width:269px; padding:25px 20px 0;}
 #findOutMoreContent .findOutMoreMid img{display:block; padding-bottom:10px;}
@@ -915,18 +917,18 @@ margin-bottom: 6px;}
 .productTechTable{margin-bottom:50px !important;}
 .lessPaddingBottomTable{margin-bottom:30px !important;}
 .productTechTable tr td{padding:5px 8px 10px; border-bottom:1px solid #E1E1E1; line-height:180%; table-layout: fixed;}
-#chi-page .productTechTable tr td{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';}
+#chi-page .productTechTable tr td{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}
 .productTechTable tr td ul{margin:0 0 0 15px !important;}
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
  .productTechTable tr td ul{margin:0 0 20px 15px !important;}
 }
 .productTechTable tr td ul li{padding-bottom: 0;line-height: 130%;}
-#chi-page .productTechTable tr td ul li{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';line-height: 160%;}
+#chi-page .productTechTable tr td ul li{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';line-height: 160%;}
 .productTechTable tr.headerRow td{font-family:'TradeGothicW01-BoldCn20 675334'; font-size:120%; text-transform:uppercase; padding: 5px 8px 0px; border-bottom:none;}
 #chi-page .productTechTable tr.headerRow td{color: #fff;font-family: 'Trade Gothic W01 Bold 2';font-size: 110%;/* text-transform: uppercase; */
 padding: 0 0.5em;}
 .productTechTable tr.titleRow td{color: #fff;font-family: 'Trade Gothic W01 Bold 2';font-size: 1em;padding: 0 0.5em;}
-#chi-page .productTechTable tr.titleRow td{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
+#chi-page .productTechTable tr.titleRow td{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 .milwaukeeTable tr.titleRow td{ background-color: #ff0e2d;/* border-top: 2px solid #BF2139;border-bottom: 1px solid #BF2139; */}
 .stilettoHartTable tr.titleRow td{ background-color:#7B7979; /* border-top:2px solid #231F20; border-bottom:1px solid #231F20; */} /*Stiletto and Hart*/
 .aegTable tr.titleRow td{ background-color:#f4792a; /* border-top:2px solid #F47F24; border-bottom:1px solid #F47F24; */}
@@ -951,7 +953,7 @@ padding: 0 0.5em;}
 .productTechGalleryRight .productDetail{min-height:270px; margin-bottom:30px; padding-bottom:24px; background:url(images/general/border_dash.png) repeat-x bottom;}
 .productTechGalleryRight .productDetail .detailContentItem{display:none;}
 #report-content .productTechGalleryRight .productDetail .detailContentItem .bold{font-family: 'Trade Gothic W02 Bold 2';font-weight: normal;}
-#chi-page #report-content .productTechGalleryRight .productDetail .detailContentItem .bold{font-family: 'Heiti SC', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
+#chi-page #report-content .productTechGalleryRight .productDetail .detailContentItem .bold{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 .productTechGalleryRight #galleryContainer #arrow_prev{float:left; margin-right:13px; background:url(images/general/arrow_gallery.png) no-repeat 0 98px; width:12px; height:210px; display:block;}
 .productTechGalleryRight #galleryContainer #arrow_next{float:left; margin-left:13px; background:url(images/general/arrow_gallery.png) no-repeat 0 -402px; width:12px; height:210px; display:block;}
 .productTechGalleryRight #galleryContainer .imgContainer{float:left; border-left:1px solid #343434; border-right:1px solid #343434; width:315px; padding:0 10px; position:relative; overflow:hidden; height:216px;}
@@ -962,16 +964,16 @@ padding: 0 0.5em;}
 /*brand detail ends by Ron on 2013-03-29*/
 .page-id-90 .entry-content strong,.page-id-128 .entry-content strong {font-family: 'Trade Gothic W02 Bold 2';font-weight:normal !important;}
 .page-id-90 .entry-content a,.page-id-128  .entry-content a{color: #458CB5;}
-.page-id-128  #report-content, .page-id-128  #report-content p{font-family: 'Heiti SC','Microsoft Yahei','SimHei';}
+.page-id-128  #report-content, .page-id-128  #report-content p{font-family: 'Heiti','Microsoft Yahei','SimHei';}
 .neg-indent{padding-left: 1em; text-indent: -1em;}
 .nowrap{white-space : nowrap}
 .resetLetterSpace{letter-spacing: 0px;}
 .eng-bold-font{font-family: 'Trade Gothic W01 Bold 2';}
 .eng-regular-font{font-family: 'Trade Gothic W01 Roman';}
 /*SiteMap starts*/
-#chi-page .siteMapContainer a,#chi-page .siteMaplinkContainer a, #chi-page .siteMapContainer span{font-family: 'Heiti SC','Microsoft Yahei','SimHei';}
-#chi-page .siteMapTitle{font-family: 'Heiti SC','Microsoft Yahei','SimHei';}
-body.page-id-371 #report-content p{font-family: 'Heiti SC','Microsoft Yahei','SimHei';}
+#chi-page .siteMapContainer a,#chi-page .siteMaplinkContainer a, #chi-page .siteMapContainer span{font-family: 'Heiti','Microsoft Yahei','SimHei';}
+#chi-page .siteMapTitle{font-family: 'Heiti','Microsoft Yahei','SimHei';}
+body.page-id-371 #report-content p{font-family: 'Heiti','Microsoft Yahei','SimHei';}
 .siteMapContainer{margin-top:20px; }
 .siteMapSection{width:176px; margin-right:17px; float:left; margin-bottom:40px;}
 .siteMapSection p{padding-bottom:0 !important;}
