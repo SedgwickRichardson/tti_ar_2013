@@ -247,17 +247,24 @@ body.page-id-1476 #report-content,body.page-id-1480 #report-content{height:494px
 .report-content-515 .quote { color:#4b6a79; /*font-weight:bold;*/ font-size:130%; margin-bottom:15px; line-height:140%; }
 .report-content-515 ul { list-style: outside; }
 .report-content-515 ul .sub-title { color:#4b6a79; font-weight: bold; font-size:100%; }
-.quote{ font-family: 'Trade Gothic W01 Bold 2';font-size: 1.3em;line-height: 130%;padding-bottom: 1em;color: #0072A4;}
+.quote{padding-left:20px; font-family: 'Trade Gothic W01 Bold 2';font-size: 1.3em;line-height: 130%;padding-bottom: 1em;color: #0072A4;background: url(images/home/chairman_quote_open.png) no-repeat top left;}
+.innerPageCenterDiv .oneColumnPageHeaderContainer .quote{background: none;padding-left: 0 }
+.chairmanStatementRight .quote{padding-bottom: 2em;}
+.quoteClose{background: url(images/home/chairman_quote_close.png) no-repeat;width:14px;height:11px;display: inline-block;margin-left: 5px;margin-bottom: -5px;}
 #report-content .quote p {font-size: 105%;font-family: 'TradeGothicW01-BoldCn20 675334'; letter-spacing: -1px;line-height: 130%; padding-bottom: 25px; color:#777;}
 #chi-page #report-content .quote p {font-size: 90%;}
 #chi-page .quote{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:bold;letter-spacing: 1px;line-height: 150%;font-size: 130%;}
 #chi-page .quote p{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
 span.person-title { font-size:70%; /*color:#4b6a79;*/ }
-#report-content p { padding-bottom: 1.5em; /*line-height:190%;*/line-height: 150%;font-family: 'Trade Gothic W01 Roman';}
+#report-content p{ padding-bottom: 1.5em; /*line-height:190%;*/line-height: 180%;font-family: 'Trade Gothic W01 Roman';}
+.homeSection p,.homeSection ul {padding-bottom: 20px;font-size: 16px;line-height: 24px;}
+#chi-page .homeSection p,.homeSection ul {line-height: 30px;}
+.homeSection li{padding-bottom: 5px;}
 #chi-page #report-content p{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}
 #chi-page #report-content p,#chi-page #report-content td{/* font-family: 'Heiti', 'Microsoft Yahei', 'SimHei'; */letter-spacing: 1px;line-height: 170%}
-#report-content h6{font-size: 1em;/*padding: 5px 0 5px;*/font-family: 'Trade Gothic W01 Bold 2';font-weight: normal;color: #000;}
-#chi-page #report-content h6{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;letter-spacing: 1px;}
+#report-content h6, .homeSection h6{font-size: 1.2em;/*padding: 5px 0 5px;*/font-family: 'Trade Gothic W01 Bold 2';font-weight: normal;color: #000;padding-bottom: 0.3em;}
+.homeSection h6{font-size: 18px;}
+#chi-page #report-content h6,#chi-page .homeSection h6{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;letter-spacing: 1px;}
 #report-menu { width:180px; float:right; }
 .report-menu-sep { margin:20px 0; margin-bottom:10px; display:block; height:1px; border-top:1px solid #aaa; }
 .report-menu-title { color:#000; font-weight:bold; font-size:12px; line-height:16px; }

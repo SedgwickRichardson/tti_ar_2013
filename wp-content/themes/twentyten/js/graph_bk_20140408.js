@@ -735,6 +735,130 @@ Highcharts.setOptions({
 			]
 		}],
 	});
+	
+	Highcharts.setOptions({
+     colors: ['#0077A8', '#A8BCC6']
+    });
+	var tip1,tip2;
+	if(lang=="en"){
+		tip1 = "Power Equipment,<br>Accessories and<br>Hand Tools";
+		tip2 = "Floor Care and<br>Appliances"
+	}
+	else
+	{
+		tip1 = "電動工具、配件及手動工具";
+		tip2 = "地板護理及器具"
+	}
+	
+	$('#home-graph-container-13').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+				spacingTop: 0,
+				spacingBottom: 0,
+				spacingLeft: 0,
+				spacingRight: 0,
+				marginRight: 5
+            },
+            title: {
+                text: null
+            },
+            tooltip: {
+        	    formatter: function() {
+                    return '<b>'+Highcharts.numberFormat(this.percentage, 1, '.', ',')+'%</b><br>'+this.point.name;
+                },
+				style: {
+					//fontFamily: 'Trade Gothic W01 Roman',
+					color: "#2F5364"
+				}
+            },
+            plotOptions: {
+                pie: {
+					center: [50, 50]
+                }
+            },
+			series: [{
+                type: 'pie',
+                innerSize: '60%',
+                showInLegend:false,
+				data: [
+                    [tip1,   73.1],
+                    [tip2,  26.9]
+                ],
+				dataLabels: {
+                    enabled: false
+                },
+				startAngle: 180
+            }],
+			credits: {
+				enabled: false
+			},
+			exporting: {
+				enabled: false
+			},
+		});
+
+	Highcharts.setOptions({
+	     colors: ['#A8BCC6','#0077A8']
+	});
+	if(lang=="en"){
+		tip1 = "Power Equipment,<br>Accessories and<br>Hand Tools";
+		tip2 = "Floor Care and<br>Appliances"
+	}
+	else
+	{
+		tip1 = "電動工具、配件及手動工具";
+		tip2 = "地板護理及器具"
+	}
+	$('#home-graph-container-14').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+				spacingTop: 0,
+				spacingBottom: 0,
+				spacingLeft: 0,
+				spacingRight: 0,
+				marginRight: 5,
+            },
+            title: {
+                text: null
+            },
+            tooltip: {
+        	    formatter: function() {
+                    return '<b>'+Highcharts.numberFormat(this.percentage, 1, '.', ',')+'%</b><br>'+this.point.name;
+                },
+				style: {
+				//	fontFamily: 'Trade Gothic W01 Roman',
+					color: "#2F5364"
+				}
+            },
+            plotOptions: {
+                pie: {
+					center: [50, 50]
+                }
+            },
+            series: [{
+                type: 'pie',
+                innerSize: '60%',
+                showInLegend:false,
+				data: [
+					[tip1, 73.1],
+					[tip2,  26.9]
+                ],
+				dataLabels: {
+                    enabled: false
+                },
+				startAngle: 180
+            }],
+			credits: {
+				enabled: false
+			},
+			exporting: {
+				enabled: false
+			},
+		});
 }
 
 function initFinancialHighlights(lang){
@@ -1421,12 +1545,12 @@ function initFinancialHighlights(lang){
 		},
 		yAxis: {
 			min: 0,
-			max: 3500,
+			max: 4000,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
 			tickWidth: 0,
-			tickInterval: 500,
+			tickInterval: 1000,
 			lineWidth: 0,
 			lineColor: "#4b6a79",
 			/*offset: -40,*/

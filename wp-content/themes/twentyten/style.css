@@ -178,12 +178,13 @@ body.page-id-18 #access ul li#menu-item-101 a,body.page-id-158 #access ul li#men
 #content .tableIndent3{padding-left: 3.7em !important;}
 #content span.tableIndent, #content span.tableIndent2{display:block;}
 #content table.financialTable tr td {font-size: 90%;line-height: 100%; padding:0 8px;border-bottom: 1px solid #EAEAEA; vertical-align:bottom; padding-left: 1em;text-indent: -1em;padding-top: 0.4em;padding-bottom: 0.4em;}
+#chi-page #content .homeSection table.financialTable tr td{font-size: 13px;}
 #content table.financialTable tr.heading-row td {/*padding-bottom: 8px;padding-top: 8px;*/line-height: 130%;/* padding-left: 0; text-indent: 0; line-height:110%; border-bottom:3px solid #343434; padding-top:10px; */ text-indent:0; padding-left:8px;}
 #chi-page #content table.financialTable tr.heading-row td{font-family:'Heiti', 'Microsoft Yahei', 'SimHei';}
 #content table.financialTable tr.heading-row td.bold{/*font-family:'Trade Gothic W02 Bold 2'; font-weight:normal;*/}
 #chi-page #content table.financialTable tr.heading-row td.bold{font-family:'Heiti', 'Microsoft Yahei', 'SimHei'; font-weight:bold;}
 #content table.highlightTable tr.heading-row td {padding-left: 0; text-indent: 0; line-height:110%; border-bottom:1px solid #343434; /*padding-top:10px;padding-bottom:0*/}
-#chi-page #content table.highlightTable tr.heading-row td{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}
+#chi-page #content table.highlightTable tr.heading-row td{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';line-height: 130%;}
 #content table.highlightTable tr td {border-bottom: 1px solid #9B9B9B;}
 #chi-page #content table.highlightTable tr td{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}
 #content table.financialTable tr td.italic {font-family: "TradeGothicW01-Cn18Obl" !important; font-style: normal !important;}
@@ -371,20 +372,29 @@ body.home #iconBtn{margin-top: 14px;float:right;}
 #iconBtnstickyContainer{background:url(../../themes/twentyten/images/general/bg_home_top_sticky.png) bottom no-repeat; width:829px; height:44px; z-index:997;}
 #primary .homeSection{padding-bottom:45px; font-family:'Trade Gothic W01 Roman'; font-size: 15px; line-height: 140%;}
 #chi-page #primary .homeSection{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';line-height: 1.7em;letter-spacing: 1px}
-.sectionTitle{background:#A8BCC6 url(images/general/bg_home_title.png) no-repeat; width:825px; height:45px; color:#fff; font-family: 'Trade Gothic W01 Bold 2'; font-size:22px;}
+.sectionTitle{/*background:#A8BCC6 url(images/general/bg_home_title.png) no-repeat;*/ background-color: #0077A8;width:825px; height:45px; color:#fff; font-family: 'Trade Gothic W01 Bold 2'; font-size:22px;}
 #chi-page .sectionTitle{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
-.sectionTitle div{display:block; padding:13px 0 0 24px; font-size:22px;}
+.sectionTitle div{display:block; padding:12px 0 0 24px; font-size:22px;}
 .sectionContent{/*background:url(images/general/bg_home_item_btmBorder.png) no-repeat bottom;*/ width:820px; margin-left:5px;}
 .homeSectionContentDiv{padding:33px 15px 20px 0;}
-.contentLeft{float:left; width:253px; margin-right:22px;}
+.homeSectionContentInnerFullWidthDiv{padding: 30px 0 0 12px;}
+.homeOverviewContentDiv{padding-right:0;padding-top:0;}
+
+.contentLeft{float:left; width: 261px; margin-right:22px;}
 .contentLeft .title_HL,.contentRight .title_HL{font-size:18px; font-family:'Trade Gothic W01 Bold 2';; line-height:25px; padding-bottom:15px;color:#0077A7;}
 #chi-page .contentLeft .title_HL,#chi-page .contentRight .title_HL{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;letter-spacing:1px;}
 .page-id-326 .contentLeft .title_HL,body.home  .contentLeft .title_HL{ font-family: 'Trade Gothic W01 Roman'}
 .page-id-328#chi-page .contentLeft .title_HL,body.home#chi-page  .contentLeft .title_HL{ font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:normal;}
 .contentLeft ul li{/* font-family:'Trade Gothic W01 Light'; */ font-size:100%; padding-bottom:8px;}
 .page-id-326 .contentLeft ul ,body.home .contentLeft ul,.page-id-328 .contentLeft ul,body.home#chi-page .contentLeft ul {list-style: none;margin:0;}
-body.home .contentLeft ul.section_highlight_list li{ font-family:'Trade Gothic W01 Bold 2';font-size: 20px;line-height: 20px; padding: 8px 0 12px 18px;;background:url(images/home/main_section_arrow.png) no-repeat;color:#fff;}
-.section_list li{ padding-left: 27px;font-family:'Trade Gothic W01 Roman';font-size: 15px;background:url(images/home/main_section_bullet.png) no-repeat left 2px;line-height: 18px;margin-left: 15px;}
+.section_highlight_list{list-style-type: none;position:absolute;left:17px;top:37px;margin: 0;}
+.section_highlight_list li{ font-family:'Trade Gothic W01 Bold 2';font-size: 24px;line-height: 20px; color:#fff;margin-bottom: 23px;padding: 0;}
+#chi-page .section_highlight_list li{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:bold;font-size: 21px;}
+.section_list li{ padding-left: 27px;font-family:'Trade Gothic W01 Roman';font-size: 15px;background:url(images/home/main_section_bullet.png) no-repeat left 2px;line-height: 18px;}
+.FH_highlight{background:url(images/home/home_fh_bg.gif) no-repeat; width:820px;height:185px;position: relative;}
+.FH_highlight .section_list{position: absolute;left: 345px;top:18px;list-style-type: none;width: 467px;margin: 0;}
+.FH_highlight .section_list li{margin-bottom: 8px;padding-bottom:0;font-family:'Trade Gothic W01 Bold 2';color:#3D5563;}
+#chi-page .FH_highlight .section_list li{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
 .page-id-328 .contentLeft ul li,body.home#chi-page .contentLeft ul li{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:bold;/*font-size: 130%;padding-bottom: 0.1em;padding-left: 15px;background:url(images/general/HLBullet.gif) no-repeat 0 center;*/}
 .contentRight{float:right; width:520px;}
 #FHContentDiv .contentRight{width:584px;}
@@ -409,9 +419,10 @@ body.home .contentLeft ul.section_highlight_list li{ font-family:'Trade Gothic W
 #secondary #homeRightNav {width:148px; background:#fff; -moz-box-shadow: 1px 1px 8px #ccc; -webkit-box-shadow: 1px 1px 8px #ccc; box-shadow: 1px 1px 8px #ccc; position:fixed; }
 #secondary #homeRightNav a{background:url(images/general/bg_right_nav.png) no-repeat bottom; display:block; /*width:140px;*/ padding:15px 4px; font-family: 'Trade Gothic W01 Roman'; color:#8A8A8A; font-size:11px;text-transform: uppercase; }
 #chi-page #secondary #homeRightNav a{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}
-#secondary #homeRightNav a:hover{color:#fff; background-color:#0072A4; text-decoration:none; font-weight:normal;}
+#secondary #homeRightNav a:hover{color:#fff; background-color:#C1CAD1; text-decoration:none; font-weight:normal;}
 #secondary #homeRightNav a.active{color:#fff; background-color:#0072A4; font-weight:normal;}
 #secondary #homeRightNav a.lastItem{background-image:none !important;}
+
 /* Footer widget areas */
 #footer-widget-area { }/* =Footer-------------------------------------------------------------- */
 #footer { padding-bottom: 50px; position:relative; z-index:1200; background-color:#fff;font-family: 'Trade Gothic W01 Roman'}
@@ -554,7 +565,9 @@ img#wpstats { display: none; }
 
 /*----------------------------------------general & financial content style-----------------------------------------------*/
 #content .financialTable { /*background-color:#F2F4F5;*/ border-spacing: 5px 0;border-collapse: separate;}
+#content .homeSection .financialTable { margin-bottom: 45px}
 #content .financialTable .bold{font-family:'Trade Gothic W01 Bold 2'; font-weight:normal;}
+#chi-page #content .financialTable .bold{font-weight: bold;}
 #content .financialTable .lightBg { background-color:#F2F4F5; }
 #content .financialTable .whiteBg { background-color:#FFF; }
 #content .financialTable .setBottom { vertical-align:bottom !important; }
@@ -619,21 +632,31 @@ li[type=i]{list-style-type: none;}
 .fullWidthContent{width:100%; background-color:#F5F7F8; padding:30px 0 40px; margin-bottom:30px;}
 .fullWidthContent .chairmanStatementLeft{margin-right:0;}
 .fullWidthContent .chairmanStatementRight{width: 710px;}
-.chairmanStatementRight ul, #chi-page .chairmanStatementRight ul{margin: 0;list-style: none;}
+.chairmanStatementRight ul, #chi-page .chairmanStatementRight ul{/*margin: 0;list-style: none;*/}
 .chairmanStatementRight ul li p{margin-left: 1.1em;}
+.chairmanStatementRight ul li{padding-bottom: 0.5em;}
 #chi-page .chairmanStatementRight ul li p{margin-left: 1.6em;}
 .fullWidthContent .whiteBackgroundContent{padding:20px 60px 10px 15px; background-color:#fff;}
 #content .corpInfoContent h2{margin-top:0;}
 
+/*-----------------------------Financial Highlights----------------------------------------*/
 /*.fullWidthContent .whiteBackgroundContent div{display:none;}*/
 .graphContainer{width:250px; float:left; margin-right:15px; padding:0 0 15px 0;}
-#FHContentDiv .graphContainer{margin-bottom: 20px;width: 250px;}
+.FH_highlight_graph{margin-bottom: 25px;}
+.FH_highlight_graph .graphContainer{margin-right: 15px;width: 185px;}
+.homeChairmanContentDiv .graphContainer{margin-left:17px;width:244px;margin-top: 50px;}
+#FHContentDiv .graphRowDiv{margin-bottom:65px;}
+#FHContentDiv .graphContainer{/*margin-bottom: 20px;*/width: 228px;}
 #FHContentDiv .graphProfile{/*float: right;width: 100px;*/}
-#FHContentDiv .graphContainer.graphContainer2Col{width:274px;margin-right:35px;padding:0;}
+#FHContentDiv .graphContainer.graphContainer2Col{width:460px;margin-right:40px;padding:0;}
+#FHContentDiv .graphContainer.graphContainer3Col{width:295px;margin-right:35px;padding:0;}
 #FHContentDiv .graphContainer2Col .graph-container{float:left;width:154px;}
-#FHContentDiv .graphContainer2Col .graphProfile{float: right;width:120px;text-align: left;}
+#FHContentDiv .graphContainer2Col .graphProfile{float: left;width:255px;text-align: left;}
 #FHContentDiv .largeFont,#powerHighlightsContent .largeFont,.MDALeft .largeFont{font-size: 2.5em;color: #0077A5;display: block;margin-bottom: 0.3em;}
 #FHContentDiv .midFont,#powerHighlightsContent .smallFont,.MDALeft .smallFont{margin-bottom: 1.5em;line-height: 120%;display: block;font-size: 0.9em;color: #4A6678;}
+#FHContentDiv .FH_highlight {background: url(../../uploads/2013/financial-highlights/fh_bg.gif) no-repeat;width: 959px;height: 185px;margin-bottom: 50px;}
+#FHContentDiv .FH_highlight .section_list {left: 400px;}
+
 #powerHighlightsContent .smallFont,.MDALeft .smallFont{font-size: 1em;}
 #powerHighlightsContent .midFont,.MDALeft .midFont{color: #0077A5;display: block;color: #0077A5;font-size: 1.3em;margin-bottom: 0.5em;}
 .graphContainer2ndRow{padding-top: 20px;}
@@ -642,16 +665,19 @@ li[type=i]{list-style-type: none;}
 .noMarginRight{margin-right:0 !important;}
 .noMarginBottom{margin-bottom:0 !important;}
 .noPaddingBottom{padding-bottom:0 !important;}
+.textAlignLeft{text-align:left !important;}
 .graphContainer .graphTitleDiv{font-size:95%; line-height:130%; padding-bottom:1em;color: #393939; }
 .graphContainer .graphTitleDivWithArrow{background: url(images/highlights/FHArrow.png) no-repeat left top;padding-left: 30px;}
 #chi-page .graphContainer .graphTitleDivWithArrow{background-position: left 3px;}
 .reviewOperationTwoColumn .graphContainer .graphTitleDiv{margin-bottom: 15px;}
 .graphTitleDiv .graphTitle{font-size: 1.4em; font-family: 'Trade Gothic W01 Bold 2';}
+.homeChairmanContentDiv .graphTitleDiv .graphTitle{font-size: 18px;}
+.chairmanStatementLeft .graphTitleDiv .graphTitle{font-size: 1.3em;}
+.FH_highlight_graph .graphTitleDiv .graphTitle{font-size: 16px;}
 #chi-page .graphTitleDiv .graphTitle{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 .graphContainer .graphTitleDiv .graphTitle2{font-family: 'Trade Gothic W01 Bold 2';color: #4A6878;font-size: 120%;}
 #chi-page .graphContainer .graphTitleDiv .graphTitle2{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 #FHContentDiv .graphTitleDiv .graphTitle{font-size: 1.4em;}
-
 #chi-page .graphContainer .graphTitleDiv .graphTitle{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;line-height: 130%;}
 .graphContainer .graphTitleDiv .graphUnit{font-size: 80%;font-family: 'Trade Gothic W01 Roman';;display:block;}
 #chi-page .graphContainer .graphTitleDiv .graphUnit{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}
@@ -659,19 +685,20 @@ li[type=i]{list-style-type: none;}
 .chairmanStatementLeft .graphContainer .graphProfile{text-align: right;}
 .overviewLeft .graphContainer .graphProfile{text-align: left;}
 .reviewOperationTwoColumn .graphContainer .graphProfile{}
-.dotUnderline{background: url(images/home/figure_dot_line.png) repeat-x center bottom;margin-bottom: 1em;}
+#FHContentDiv .graphContainer .dotUnderline,.graphContainer .dotUnderline{background: url(images/home/figure_dot_line.png) repeat-x center bottom;margin-bottom: 1em;width:100%;text-align: right;}
 #chi-page .graphContainer .graphProfile{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:bold;line-height: 1.5em;}
 .graphContainer .figure_arrow_up{width:19px;height:21px;background: url(images/home/figure_arrow_up.gif);vertical-align: top;display: inline-block;margin-right: 5px;font-size: 0;line-height: 0;}
 .graphContainer .graphProfile .darkText{color:#777 !Important;font-family:'Trade Gothic W01 Bold'}
 .graphContainer .graphProfile .smallFont{/*font-size:20px;*//*font-family:'Trade Gothic W01 Cn 18';color:#FAA519;*/}
 #chi-page .graphContainer .graphProfile .smallFont{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:normal;font-size: 95%;top: 0.2em;position: relative;}
 .graphContainer .graphProfile .graphFigure{font-size:28px;/*font-family: 'TradeGothicW01-BoldCn20 675334';color:#FAA519;*/}
-.reviewOperationTwoColumn .graph-container{float: left;width:177px;height:158px;}
+
+/*.reviewOperationTwoColumn .graph-container{float: left;width:177px;height:158px;}
 .reviewOperationTwoColumn .graphProfile{float: left;width: 193px;padding: 1.2em 0;}
 .reviewOperationTwoColumn .graphContainer .graphProfile{font-family: 'Trade Gothic W01 Bold 2';color:#1974A5;text-align: left;}
 .reviewOperationTwoColumn .graphContainer .graphProfile .largeFont{font-size: 36px;display: block;line-height: 100%;}
-.reviewOperationTwoColumn .graphContainer .graphProfile .midFont{font-size: 20px;}
-#chi-page .graphContainer .graphProfile .largeFont{position: relative;top: 0.1em;font-weight: normal;}
+.reviewOperationTwoColumn .graphContainer .graphProfile .midFont{font-size: 20px;}*/
+#chi-page .graphContainer .graphProfile .largeFont{position: relative;top: 0.1em;font-weight: bold;}
 .graphContainer .graphProfile .midFont{/*font-size:24px;font-family:'Trade Gothic W01 Bold';color:#FAA519;*/}
 #chi-page .graphContainer .graphProfile .midFont {/*font-size:16px;font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';*/}
 /* #chi-page .graphContainer .graphProfile .midFont{font-family: 'Trade Gothic W01 Bold';font-weight:normal;} */
@@ -679,7 +706,7 @@ li[type=i]{list-style-type: none;}
 #chi-page .graphContainer .graphProfile  .smallerFont{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-size: 90%;}
 #chi-page  .graphContainer .graphProfile .numberText {font-family: 'Trade Gothic W01 Bold';font-weight: normal;}
 .morePaddingBottomForTextOnlyGraph{padding-bottom:40px;}
-.readMoreDiv {height:72px;display: inline-block;margin-top: 10px;}
+.readMoreDiv {height:72px;display: inline-block;/*margin-top: 10px;*/float: right;}
 .btn_readMore .readMoreLeft{background:url(images/home/bg_readMore_left.png) no-repeat; width:15px; height:42px; float:left; display:block;}
 .btn_readMore:hover .readMoreLeft{background:url(images/home/bg_readMore_left.png) -15px 0 no-repeat;}
 .homeSection .btn_readMore .readMoreMid{padding:21px 0 21px 15px; line-height:0;font-size: 15px;}
@@ -715,14 +742,15 @@ li[type=i]{list-style-type: none;}
 .downloadLinksContainer{margin-bottom:12px;padding-bottom: 10px;}
 .downloadLinksContainer div, .sectionHeader{font-size:18px; font-family:'Trade Gothic W01 Bold 2'; padding-bottom:10px;}
 #chi-page .downloadLinksContainer div, #chi-page .sectionHeader{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
-.downloadLinkList{margin:0 0 20px 0 !important;}
+.homeSection .downloadLinkList{margin:0 0 20px 0;padding-bottom:0;}
 #chi-page .downloadLinkList,#chi-page .downloadLeft p{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}
-.downloadLinkList li{padding-bottom: 0;list-style: none;margin-bottom: 10px;background:url(images/home/btn_download.png) no-repeat 0 2px; padding-left:25px; }
+.homeSection .downloadLinkList li{padding-bottom: 0;list-style: none;margin-bottom: 10px;background:url(images/home/btn_download.png) no-repeat 0 5px; padding-left:25px;}
 .downloadLink{color:#000;}
 
 /*#strategicMapImageContainer img{position:absolute; display:none;}*/
 .grey{color:#343434;}
 .featureListing li{font-size:120%; padding-bottom:10px; font-family:'Trade Gothic W02 Bold 2';}
+
 .brandTabContainer{padding:10px 0 30px 0;}
 .oneColumnPageHeaderContainer .brandTabContainer{margin-bottom: 3em;padding:0;border-bottom: 1px solid #000;}
 .brandTabContainer .threeColumn{width:249px !important;}
@@ -743,8 +771,23 @@ li[type=i]{list-style-type: none;}
 .brandTabContainer .brandContentContainer .brandImg{float:left;}
 .brandTabContainer .brandContentContainer .brandImg img{display:block;}
 
+.homeOvewviewText{background-color: #4A6978;padding:18px 22px;color:#fff;}
+.homeSection .homeOverviewContentDiv{padding:0}
+.homeOverviewContentDiv img{display: block;}
+.homeOverviewContentDiv table a{display: block;height:61px;}
+.homeFloorcareOverviewContentDiv table a{display: block;height:76px;}
+.homeOverviewContentDiv table a .logoBtnArrow{display:block; background: url(images/home/homeOverviewBtnArrow.gif) no-repeat center top;height: 12px;margin-right: 5px;}
+.homeOverviewContentDiv table a:hover .logoBtnArrow{background-position: center bottom;}
+.homeOverviewContentDiv table a img{display: block;}
+.homeOverviewContentDiv table a:hover img{opacity: 0.3;display: block;filter: alpha(opacity=30);}
+.homeOverviewContentDiv .homeProduct1stCategory p{padding: 5px 0 5px 20px;background-color: #0077A8;font-size:14px;color:#fff;font-family: 'Trade Gothic W01 Bold 2';margin-right: 5px;}
+#chi-page .homeOverviewContentDiv .homeProduct1stCategory p{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
+.homeOverviewContentDiv .homeProduct2ndCategory p{padding: 0;background-color: #EDEEF0;font-size:10px;color:#2A4452;font-family: 'Trade Gothic W01 Bold 2';margin-right: 5px;text-align: center;}
+#chi-page .homeOverviewContentDiv .homeProduct2ndCategory p{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}
+
 /*---------------------------------------Power Equipment Brand Page---------------------------------------*/
-.brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer{width:232px;background: url(images/highlights/brandBtnWide.gif) no-repeat left top;margin-right: 10px;}
+.brandTabContainer img{display: block;}
+.brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer{width:154px;background: url(images/highlights/brandBtnWide.gif) no-repeat left top;margin-right: 6px;}
 .brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer:hover,.brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer.active{background-position: right top;}
 .brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer table{margin-bottom:0 !important;}
 .brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer:hover a,.brandTabContainer #OvewviewPowerEquipmentBrandTabContainer .powerEquipmentBrandContainer.active a{opacity: 1;filter: alpha(opacity=100);}
@@ -777,9 +820,10 @@ li[type=i]{list-style-type: none;}
 /*------------------------------------Chairman's Statement--------------------------------------------*/
 .chairmanStatementLeft{width: 245px;float: left;margin: 5px 22px 0 0;}
 .chairmanStatementLeft img{margin-bottom: 40px;}
-.chairmanStatementLeft .graphContainer{width: inherit;/*margin-top: 35px;*//*width:195px;*/}
+.chairmanStatementLeft .graphContainer{width: inherit;/*margin-top: 35px;*//*width:195px;*/margin-bottom: 35px;}
 .chairmanStatementLeft .graphImgContainer{padding:10px 0;}
 .chairmanStatementLeft .graphContainer .graphTitleDiv{/*margin-bottom:2.5em; */}
+.chairmanStatementRight .bold{color: #0072A4;}
 .chairmanStatementRight{width:693px; float:left;}
 .chairmanStatementRight .graphContainer .graphProfile{text-align: left;}
 .chairman_signature{line-height: 150%;}
@@ -922,7 +966,7 @@ margin-bottom: 6px;}
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
  .productTechTable tr td ul{margin:0 0 20px 15px !important;}
 }
-.productTechTable tr td ul li{padding-bottom: 0;line-height: 130%;}
+.productTechTable tr td ul li{padding-bottom: 0;line-height: 150%;}
 #chi-page .productTechTable tr td ul li{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';line-height: 160%;}
 .productTechTable tr.headerRow td{font-family:'TradeGothicW01-BoldCn20 675334'; font-size:120%; text-transform:uppercase; padding: 5px 8px 0px; border-bottom:none;}
 #chi-page .productTechTable tr.headerRow td{color: #fff;font-family: 'Trade Gothic W01 Bold 2';font-size: 110%;/* text-transform: uppercase; */
