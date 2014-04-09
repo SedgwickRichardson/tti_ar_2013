@@ -40,8 +40,12 @@ Highcharts.setOptions({
 			tickWidth: 0,
 			lineColor: "#4b6a79",
 			lineWidth: 1,
-			maxPadding: 0.5,
-			showFirstLabel: true,
+			/*maxPadding: 0,
+			minPadding: 0,
+			startOnTick: false,
+			endOnTick: false,*/
+			showFirstLabel: false,
+			showLastLabel: false,
 			useHTML: true,
 			labels: {
 				style: {
@@ -100,7 +104,7 @@ Highcharts.setOptions({
 		plotOptions: {
 			column: {
 				borderWidth: 0,
-				pointWidth: 20,
+				pointWidth: 15,
 				/*pointPadding: 0.5,*/
 				dataLabels: {
 					enabled: true,
@@ -116,15 +120,20 @@ Highcharts.setOptions({
 					}
 				}
 				//groupPadding: 0.2
-			}
+			/**/}/*,
+			series: {
+	            pointPadding: 0
+	        }*/
 		},
 		series: [{
 			name: 'Population',
 			data: [
-				/*{y:0,x: 2010, color: '#A8BCC6'},*/
+				{y:0,x: 2010, color: '#A8BCC6'},
 				{y:3667,x: 2011, color: '#A8BCC6'},
 				{y:3852,x: 2012, color: '#A8BCC6'},
-				{y:4300, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:4300, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}},
+				{y:0,x: 2014, color: '#A8BCC6'}
+
 			]
 		}],
 	});
@@ -533,7 +542,8 @@ Highcharts.setOptions({
 			lineColor: "#4b6a79",
 			lineWidth: 1,
 			maxPadding: 0.25,
-			showFirstLabel: true,
+			showFirstLabel: false,
+			showLastLabel: false,
 			useHTML: true,
 			labels: {
 				style: {
@@ -593,7 +603,7 @@ Highcharts.setOptions({
 		plotOptions: {
 			column: {
 				borderWidth: 0,
-				pointWidth: 20,
+				pointWidth: 25,
 				//pointPadding: 0.1,
 				dataLabels: {
 					enabled: true,
@@ -614,8 +624,10 @@ Highcharts.setOptions({
 		series: [{
 			name: 'Population',
 			data: [
+				{y:0,x: 2011, color: '#A8BCC6'},
 				{y:2.25,x: 2012, color: '#A8BCC6'},
-				{y:3.06, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:3.06, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}},
+				{y:0,x: 2014, color: '#A8BCC6'},
 			],
 			formatter: function () {
 				return Highcharts.numberFormat(this.y, 1, '.', ',');
@@ -656,7 +668,8 @@ Highcharts.setOptions({
 			lineColor: "#4b6a79",
 			lineWidth: 1,
 			maxPadding: 0.25,
-			showFirstLabel: true,
+			showFirstLabel: false,
+			showLastLabel: false,
 			useHTML: true,
 			labels: {
 				style: {
@@ -685,7 +698,6 @@ Highcharts.setOptions({
 			tickInterval: 5,
 			lineWidth: 0,
 			lineColor: "#4b6a79",
-			showFirstLabel: true,
 			labels: 
 			{
 				/*formatter: function () {
@@ -715,14 +727,20 @@ Highcharts.setOptions({
 		plotOptions: {
 			column: {
 				borderWidth: 0,
-				pointWidth: 20,
+				pointWidth: 25,
 				//pointPadding: 0.1,
 				dataLabels: {
 					enabled: true,
 					/*color: '#A8BCC6',*/
 					align: 'center',
 					x: 0,
-					y: 0
+					y: 0,
+					formatter: function () {
+						if(this.y==0)
+							return "";
+						else
+							return this.y;
+					}
 				}
 				//groupPadding: 0.2
 			}
@@ -730,8 +748,10 @@ Highcharts.setOptions({
 		series: [{
 			name: 'Population',
 			data: [
+				{y:0,x: 2011, color: '#A8BCC6'},
 				{y:11.42,x: 2012, color: '#A8BCC6'},
-				{y:13.68, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:13.68, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}},
+				{y:0,x: 2014, color: '#A8BCC6'},
 			]
 		}],
 	});
@@ -780,7 +800,8 @@ function initFinancialHighlights(lang){
 			lineColor: "#4b6a79",
 			lineWidth: 1,
 			maxPadding: 0.5,
-			showFirstLabel: true,
+			showFirstLabel: false,
+			showLastLabel: false,
 			useHTML: true,
 			labels: {
 				style: {
@@ -860,10 +881,11 @@ function initFinancialHighlights(lang){
 		series: [{
 			name: 'Population',
 			data: [
-				/*{y:0,x: 2010, color: '#A8BCC6'},*/
+				{y:0,x: 2010, color: '#A8BCC6'},
 				{y:3667,x: 2011, color: '#A8BCC6'},
 				{y:3852,x: 2012, color: '#A8BCC6'},
-				{y:4300, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:4300, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}},
+				{y:0,x: 2014, color: '#A8BCC6'},
 			]
 		}],
 	});
@@ -901,7 +923,8 @@ function initFinancialHighlights(lang){
 			lineColor: "#4b6a79",
 			lineWidth: 1,
 			maxPadding: 0.25,
-			showFirstLabel: true,
+			showFirstLabel: false,
+			showLastLabel: false,
 			useHTML: true,
 			labels: {
 				style: {
@@ -981,9 +1004,11 @@ function initFinancialHighlights(lang){
 		series: [{
 			name: 'Population',
 			data: [
+				{y:0,x: 2010, color: '#A8BCC6'},
 				{y:32.6,x: 2011, color: '#A8BCC6'},
 				{y:33.5,x: 2012, color: '#A8BCC6'},
-				{y:34.2, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:34.2, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}},
+				{y:0,x: 2014, color: '#A8BCC6'},
 			],
 			formatter: function () {
 				return Highcharts.numberFormat(this.y, 1, '.', ',');
@@ -1025,7 +1050,8 @@ function initFinancialHighlights(lang){
 			lineColor: "#4b6a79",
 			lineWidth: 1,
 			maxPadding: 0.25,
-			showFirstLabel: true,
+			showFirstLabel: false,
+			showFirstLabel: false,
 			useHTML: true,
 			labels: {
 				style: {
@@ -1106,9 +1132,11 @@ function initFinancialHighlights(lang){
 		series: [{
 			name: 'Population',
 			data: [
+				{y:0,x: 2010, color: '#A8BCC6'},
 				{y:219,x: 2011, color: '#A8BCC6'},
 				{y:260,x: 2012, color: '#A8BCC6'},
-				{y:304, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:304, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}},
+				{y:0,x: 2014, color: '#A8BCC6'},
 			],
 			formatter: function () {
 				return Highcharts.numberFormat(this.y, 1, '.', ',');
@@ -1149,7 +1177,8 @@ function initFinancialHighlights(lang){
 			lineColor: "#4b6a79",
 			lineWidth: 1,
 			maxPadding: 0.25,
-			showFirstLabel: true,
+			showFirstLabel: false,
+			showLastLabel: false,
 			useHTML: true,
 			labels: {
 				style: {
@@ -1229,9 +1258,11 @@ function initFinancialHighlights(lang){
 		series: [{
 			name: 'Population',
 			data: [
+				{y:0,x: 2010, color: '#A8BCC6'},
 				{y:9.47,x: 2011, color: '#A8BCC6'},
 				{y:11.42,x: 2012, color: '#A8BCC6'},
-				{y:13.68, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:13.68, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}},
+				{y:0,x: 2014, color: '#A8BCC6'},
 			],
 			formatter: function () {
 				return Highcharts.numberFormat(this.y, 1, '.', ',');
@@ -1400,7 +1431,8 @@ function initFinancialHighlights(lang){
 			lineColor: "#4b6a79",
 			lineWidth: 1,
 			maxPadding: 0.5,
-			showFirstLabel: true,
+			showFirstLabel: false,
+			showLastLabel: false,
 			useHTML: true,
 			labels: {
 				style: {
@@ -1481,10 +1513,11 @@ function initFinancialHighlights(lang){
 		series: [{
 			name: 'Population',
 			data: [
-				/*{y:0,x: 2010, color: '#A8BCC6'},*/
+				{y:0,x: 2010, color: '#A8BCC6'},
 				{y:2648,x: 2011, color: '#A8BCC6'},
 				{y:2807,x: 2012, color: '#A8BCC6'},
-				{y:3120, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:3120, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}},
+				{y:0,x: 2014, color: '#A8BCC6'}
 			]
 		}],
 	});
@@ -1522,7 +1555,8 @@ $('#graph-container-8').highcharts({
 			lineColor: "#4b6a79",
 			lineWidth: 1,
 			maxPadding: 0.5,
-			showFirstLabel: true,
+			showFirstLabel: false,
+			showLastLabel: false,
 			useHTML: true,
 			labels: {
 				style: {
@@ -1603,10 +1637,11 @@ $('#graph-container-8').highcharts({
 		series: [{
 			name: 'Population',
 			data: [
-				/*{y:0,x: 2010, color: '#A8BCC6'},*/
+				{y:0,x: 2010, color: '#A8BCC6'},
 				{y:764,x: 2011, color: '#A8BCC6'},
 				{y:768,x: 2012, color: '#A8BCC6'},
-				{y:870, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:870, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}},
+				{y:0,x: 2014, color: '#A8BCC6'}
 			]
 		}],
 	});
@@ -1644,7 +1679,8 @@ $('#graph-container-9').highcharts({
 			lineColor: "#4b6a79",
 			lineWidth: 1,
 			maxPadding: 0.5,
-			showFirstLabel: true,
+			showFirstLabel: false,
+			showLastLabel: false,
 			useHTML: true,
 			labels: {
 				style: {
@@ -1725,10 +1761,11 @@ $('#graph-container-9').highcharts({
 		series: [{
 			name: 'Population',
 			data: [
-				/*{y:0,x: 2010, color: '#A8BCC6'},*/
+				{y:0,x: 2010, color: '#A8BCC6'},
 				{y:255,x: 2011, color: '#A8BCC6'},
 				{y:277,x: 2012, color: '#A8BCC6'},
-				{y:310, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:310, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}},
+				{y:0,x: 2014, color: '#A8BCC6'}
 			]
 		}],
 	});
@@ -1766,7 +1803,8 @@ $('#graph-container-10').highcharts({
 			lineColor: "#4b6a79",
 			lineWidth: 1,
 			maxPadding: 0.5,
-			showFirstLabel: true,
+			showFirstLabel: false,
+			showLastLabel: false,
 			useHTML: true,
 			labels: {
 				style: {
@@ -1826,7 +1864,7 @@ $('#graph-container-10').highcharts({
 		plotOptions: {
 			column: {
 				borderWidth: 0,
-				pointWidth: 20,
+				pointWidth: 45,
 				/*pointPadding: 0.5,*/
 				dataLabels: {
 					enabled: true,
@@ -1847,10 +1885,11 @@ $('#graph-container-10').highcharts({
 		series: [{
 			name: 'Population',
 			data: [
-				/*{y:0,x: 2010, color: '#A8BCC6'},*/
+				{y:0,x: 2010, color: '#A8BCC6'},
 				{y:152,x: 2011, color: '#A8BCC6'},
 				{y:201,x: 2012, color: '#A8BCC6'},
-				{y:250, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:250, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}},
+				{y:0,x: 2014, color: '#A8BCC6'},
 			]
 		}],
 	});
@@ -1888,7 +1927,8 @@ $('#graph-container-11').highcharts({
 			lineColor: "#4b6a79",
 			lineWidth: 1,
 			maxPadding: 0.5,
-			showFirstLabel: true,
+			showFirstLabel: false,
+			showLastLabel: false,
 			useHTML: true,
 			labels: {
 				style: {
@@ -1948,7 +1988,7 @@ $('#graph-container-11').highcharts({
 		plotOptions: {
 			column: {
 				borderWidth: 0,
-				pointWidth: 20,
+				pointWidth: 45,
 				/*pointPadding: 0.5,*/
 				dataLabels: {
 					enabled: true,
@@ -1969,10 +2009,11 @@ $('#graph-container-11').highcharts({
 		series: [{
 			name: 'Population',
 			data: [
-				/*{y:0,x: 2010, color: '#A8BCC6'},*/
+				{y:0,x: 2010, color: '#A8BCC6'},
 				{y:150,x: 2011, color: '#A8BCC6'},
 				{y:275,x: 2012, color: '#A8BCC6'},
-				{y:332, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:332, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}},
+				{y:0,x: 2014, color: '#A8BCC6'}
 			]
 		}],
 	});
@@ -2253,7 +2294,8 @@ function initChairmanGraph(){
 			lineColor: "#4b6a79",
 			lineWidth: 1,
 			maxPadding: 0.25,
-			showFirstLabel: true,
+			showFirstLabel: false,
+			showLastLabel: false,
 			useHTML: true,
 			labels: {
 				style: {
@@ -2313,7 +2355,7 @@ function initChairmanGraph(){
 		plotOptions: {
 			column: {
 				borderWidth: 0,
-				pointWidth: 20,
+				pointWidth: 25,
 				//pointPadding: 0.1,
 				dataLabels: {
 					enabled: true,
@@ -2334,8 +2376,10 @@ function initChairmanGraph(){
 		series: [{
 			name: 'Population',
 			data: [
+				{y:0,x: 2011, color: '#A8BCC6'},
 				{y:2.25,x: 2012, color: '#A8BCC6'},
-				{y:3.06, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:3.06, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}},
+				{y:0,x: 2014, color: '#A8BCC6'},
 			],
 			formatter: function () {
 				return Highcharts.numberFormat(this.y, 1, '.', ',');
@@ -2376,7 +2420,8 @@ function initChairmanGraph(){
 			lineColor: "#4b6a79",
 			lineWidth: 1,
 			maxPadding: 0.25,
-			showFirstLabel: true,
+			showFirstLabel: false,
+			showLastLabel: false,
 			useHTML: true,
 			labels: {
 				style: {
@@ -2435,14 +2480,21 @@ function initChairmanGraph(){
 		plotOptions: {
 			column: {
 				borderWidth: 0,
-				pointWidth: 20,
+				pointWidth: 25,
 				//pointPadding: 0.1,
 				dataLabels: {
 					enabled: true,
 					/*color: '#A8BCC6',*/
 					align: 'center',
 					x: 0,
-					y: 0
+					y: 0,
+					formatter: function () {
+						if (this.value == 2013) {
+							return '<b>' + this.value + '</b>';
+						} else {
+							return this.value;
+						}
+					}	
 				}
 				//groupPadding: 0.2
 			}
@@ -2450,8 +2502,10 @@ function initChairmanGraph(){
 		series: [{
 			name: 'Population',
 			data: [
+				{y:0,x: 2011, color: '#A8BCC6'},
 				{y:11.42,x: 2012, color: '#A8BCC6'},
-				{y:13.68, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:13.68, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}},
+				{y:0,x: 2014, color: '#A8BCC6'}
 			]
 		}],
 	});

@@ -47,6 +47,7 @@ hr { background-color: #e7e7e7; border: 0; clear: both; height: 1px; margin-bott
 /*p { margin-bottom: 18px; }*/
 ul { list-style: disc; margin: 0 0 0 1.5em;}
 ul li{line-height:160%;padding-bottom: 1.5em;}
+#chi-page ul li{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei'; */}
 ol {list-style:decimal; margin: 0 0 18px 20px; }
 ol li{margin-bottom:10px; /*line-height:190%;*/ line-height:160%;}
 ol li ol{margin:20px 0 0 20px;}
@@ -84,7 +85,8 @@ a:active, a:hover { color: #458CB4; text-decoration: underline; }/* Text meant o
 .noBorder { border:none !important; }
 #header { padding: 0; position:relative; width:100%; z-index:999; background:#fff;}
 .headerContainer{margin:0 auto; width:984px; background:#fff; height:125px; position:relative;}
-#shareBox{position:absolute; top: 20px;right: 75px; z-index:2000; background:url(images/general/bg_sharebox.png) no-repeat; width:220px; height:25px; padding:20px 20px 20px 25px; display:none;}
+#shareBox{position:absolute; top: 16px;right: 75px; z-index:2000; background:url(images/general/bg_sharebox.png) no-repeat; width:220px; height:25px; padding:20px 20px 20px 25px; display:none;}
+#iconBtnstickyContainer #shareBox{ top: 24px;}
 #tooltips_print{background:url(images/general/tooltip_print.png) no-repeat; width:84px; height:29px; position:absolute; right:140px; top:20px; z-index:999; display:none;}
 #tooltips_download{background:url(images/general/tooltip_download.png) no-repeat; width:105px; height:29px; position:absolute; right:153px; top: 20px; z-index:999; display:none;}
 body.home #tooltips_print{top:27px;}
@@ -742,9 +744,9 @@ li[type=i]{list-style-type: none;}
 .downloadLinksContainer{margin-bottom:12px;padding-bottom: 10px;}
 .downloadLinksContainer div, .sectionHeader{font-size:18px; font-family:'Trade Gothic W01 Bold 2'; padding-bottom:10px;}
 #chi-page .downloadLinksContainer div, #chi-page .sectionHeader{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
-.homeSection .downloadLinkList{margin:0 0 20px 0;padding-bottom:0;}
+.homeSection .downloadLinkList,.downloadLinkList{margin:0 0 20px 0;padding-bottom:0;}
 #chi-page .downloadLinkList,#chi-page .downloadLeft p{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}
-.homeSection .downloadLinkList li{padding-bottom: 0;list-style: none;margin-bottom: 10px;background:url(images/home/btn_download.png) no-repeat 0 5px; padding-left:25px;}
+.homeSection .downloadLinkList li,.downloadLinkList li{padding-bottom: 0;list-style: none;margin-bottom: 10px;background:url(images/home/btn_download.png) no-repeat 0 5px; padding-left:25px;}
 .downloadLink{color:#000;}
 
 /*#strategicMapImageContainer img{position:absolute; display:none;}*/

@@ -13,6 +13,7 @@ a.download-section:hover { text-decoration:underline; }
 #chi-page #breadcrumb{font-family:'Heiti', 'Microsoft Yahei', 'SimHei';}
 #breadcrumb a { text-decoration:none; color:#458CB4;}
 #breadcrumb a:hover { text-decoration:underline; }
+#chi-page #breadcrumb a{font-size: 13px}
 #breadcrumb .pageLinkContainer{float:right;font-size: 15px;}
 #breadcrumb #backToTopLink {padding: 2px 8px 4px;color: #fff;background-color: #0072A4;margin-bottom: 2px;margin-top: -3px;font-size: 13px;}
 #breadcrumb #backToTopLink:hover{background-color: #8EAFBE;text-decoration:none;}
