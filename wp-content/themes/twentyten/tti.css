@@ -7,11 +7,13 @@ a#presentLink { background: url(images/general/presentation_icon.png) no-repeat;
 a#pressLink { background: url(images/general/press_icon.png) no-repeat; }
 a#audioLink { background: url(images/general/audio_icon.png) no-repeat; }
 a#pdfLink { background: url(images/general/pdf_icon.png) 0 -3px no-repeat; height: auto; line-height: 100%; margin-bottom: 15px; padding-bottom: 5px; }
+#breadcrumb #topLinearLinkContainer{float:left; margin-right:17px}
+#breadcrumb #topLinearLinkContainer a{color: #458CB4;}
 a.download-section { font-weight:bold; text-decoration:none; }
 a.download-section:hover { text-decoration:underline; }
-#breadcrumb { font-size:15px; font-size: 13px; color:#999999; font-family:'Trade Gothic W01 Roman'; /*width:960px; margin:17px auto;*/ width:100%; position:relative; top:0px; background-color: #fff; padding:17px 0;}
-#chi-page #breadcrumb{font-family:'Heiti', 'Microsoft Yahei', 'SimHei';}
-#breadcrumb a { text-decoration:none; color:#458CB4;}
+#breadcrumb { font-size:15px; font-size: 13px; color:#458CB4; font-family:'Trade Gothic W01 Roman'; /*width:960px; margin:17px auto;*/ width:100%; position:relative; top:0px; background-color: #fff; padding:17px 0;}
+#chi-page #breadcrumb{font-family:'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';}
+#breadcrumb a { text-decoration:none; color:#999999;}
 #breadcrumb a:hover { text-decoration:underline; }
 #chi-page #breadcrumb a{font-size: 13px}
 #breadcrumb .pageLinkContainer{float:right;font-size: 15px;}
@@ -33,9 +35,9 @@ a#text-large { font-size:14px; text-decoration:none; }
 #site-title { float: left; margin: 79px 0 0 21px;/*margin-left:60px; line-height: 105px; text-indent: -9999px; margin-top: 47px;*/ }
 #global-nav { margin-top:20px; font-size:90%; float:right; width:680px;}
 #global-nav a, #second-nav a { color:#3B3B3B; text-decoration:none; font-family:'Trade Gothic W01 Roman'; font-size:14px;}
-#chi-page #global-nav a,#chi-page  #second-nav a {font-family:'Heiti', 'Microsoft Yahei', 'SimHei';}
+#chi-page #global-nav a,#chi-page  #second-nav a {font-family:'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';}
 #chi-page  #second-nav a.lang-sel-link,#chi-page  #second-nav a#text-large,#chi-page  #second-nav a#text-medium,#chi-page  #second-nav a#text-small{font-family:'Trade Gothic W01 Roman';}
-#global-nav a:hover, #second-nav a:hover { text-decoration:underline; }#second-nav .lang-sel-link{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}#chi-page #second-nav .lang-sel-link{font-family: 'Trade Gothic W01 Cn 18';}
+#global-nav a:hover, #second-nav a:hover { text-decoration:underline; }#second-nav .lang-sel-link{font-family: 'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';}#chi-page #second-nav .lang-sel-link{font-family: 'Trade Gothic W01 Cn 18';}
 #global-nav-list{float:right; margin-top: 15px;}
 #second-nav { margin-top: 75px; font-size:90%; float:right; clear:right; margin-right: 12px;}
 #global-nav-list a, #second-nav-list a { margin:0 4px; }
@@ -120,10 +122,10 @@ z-index: 899;
    );
 }
 #chi-page .finicialSubNav .sub-nav li{width:288px !important; padding-bottom:1px;}
-#chi-page .subNavDiv .sub-nav li a{font-family:'Heiti', 'Microsoft Yahei', 'SimHei';}
+#chi-page .subNavDiv .sub-nav li a{font-family:'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';}
 #chi-page .subNavDiv .sub-nav li a:hover{font-weight:bold;}
 #chi-page .finicialSubNav li.current_page_item, .finicialSubNav li.current_page_parent{padding-bottom: 3px!important; padding-top:3px!important;}
-#chi-page .sub-nav li.current_page_item a,#chi-page  .sub-nav li.current_page_parent a,#chi-page  .sub-nav li.current_page_ancestor{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
+#chi-page .sub-nav li.current_page_item a,#chi-page  .sub-nav li.current_page_parent a,#chi-page  .sub-nav li.current_page_ancestor{font-family: 'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
 
 #masthead { position:relative;}
 /*** HOME --------------------------------------------------------------------***/#home-container .content { font-size:100%; line-height:20px; }
@@ -200,13 +202,13 @@ ul#home-financialHL-list { color:#4b6a79; font-size:12px; }
 /** FOOTER */
 .bottomNav{font-size: 100%; margin: 20px 0 0 0; padding-top: 50px;font-family:'Trade Gothic W01 Roman';width: 960px;margin: 0 auto;margin-bottom: 20px;}
 .bottomNav a{font-size: 15px}
-#chi-page .bottomNav a {font-family: 'Heiti','Microsoft Yahei','SimHei';}
+#chi-page .bottomNav a {font-family: 'Heiti TC Medium','Microsoft Yahei','SimHei';}
 #footer { /* margin-top:10px; */ }
 #copyright-footer {clear:right;float:right; font-family: 'Trade Gothic W01 Roman'; font-size:15px; color:#000;}
-#chi-page #copyright-footer{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}
+#chi-page #copyright-footer{font-family: 'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';}
 #footer-links { float:left; font-size:11px;}
 #footer-links a { color:#000; margin:0 5px; text-decoration:none; font-family: 'Trade Gothic W01 Roman'; font-size:15px;}
-#chi-page #footer-links a{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}
+#chi-page #footer-links a{font-family: 'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';}
 #footer-links a:hover { text-decoration:underline; }
 #footer .footerLogoTable tr td{ vertical-align:middle; padding-right:15px;}
 .home-grad-box { background: url(images/home/home_content_box_bg.jpg) repeat-x; }
@@ -254,18 +256,18 @@ body.page-id-1476 #report-content,body.page-id-1480 #report-content{height:494px
 .quoteClose{background: url(images/home/chairman_quote_close.png) no-repeat;width:14px;height:11px;display: inline-block;margin-left: 5px;margin-bottom: -5px;}
 #report-content .quote p {font-size: 105%;font-family: 'TradeGothicW01-BoldCn20 675334'; letter-spacing: -1px;line-height: 130%; padding-bottom: 25px; color:#777;}
 #chi-page #report-content .quote p {font-size: 90%;}
-#chi-page .quote{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:bold;letter-spacing: 1px;line-height: 150%;font-size: 130%;}
-#chi-page .quote p{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
+#chi-page .quote{font-family: 'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';font-weight:bold;letter-spacing: 1px;line-height: 150%;font-size: 130%;}
+#chi-page .quote p{font-family: 'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
 span.person-title { font-size:70%; /*color:#4b6a79;*/ }
 #report-content p{ padding-bottom: 1.5em; /*line-height:190%;*/line-height: 180%;font-family: 'Trade Gothic W01 Roman';}
 .homeSection p,.homeSection ul {padding-bottom: 20px;font-size: 16px;line-height: 24px;}
 #chi-page .homeSection p,.homeSection ul {line-height: 30px;}
 .homeSection li{padding-bottom: 5px;}
-#chi-page #report-content p{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';}
-#chi-page #report-content p,#chi-page #report-content td{/* font-family: 'Heiti', 'Microsoft Yahei', 'SimHei'; */letter-spacing: 1px;line-height: 170%}
-#report-content h6, .homeSection h6{font-size: 1.2em;/*padding: 5px 0 5px;*/font-family: 'Trade Gothic W01 Bold 2';font-weight: normal;color: #000;padding-bottom: 0.3em;}
+#chi-page #report-content p{font-family: 'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';}
+#chi-page #report-content p,#chi-page #report-content td{/* font-family: 'Heiti TC Medium', 'Microsoft Yahei', 'SimHei'; */letter-spacing: 1px;line-height: 170%}
+#report-content h6, .homeSection h6, .generalContent h6{font-size: 1.2em;/*padding: 5px 0 5px;*/font-family: 'Trade Gothic W01 Bold 2';font-weight: normal;color: #000;padding-bottom: 0.3em;}
 .homeSection h6{font-size: 18px;}
-#chi-page #report-content h6,#chi-page .homeSection h6{font-family: 'Heiti', 'Microsoft Yahei', 'SimHei';font-weight: bold;letter-spacing: 1px;}
+#chi-page #report-content h6,#chi-page .homeSection h6{font-family: 'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';font-weight: bold;letter-spacing: 1px;line-height: 130%;}
 #report-menu { width:180px; float:right; }
 .report-menu-sep { margin:20px 0; margin-bottom:10px; display:block; height:1px; border-top:1px solid #aaa; }
 .report-menu-title { color:#000; font-weight:bold; font-size:12px; line-height:16px; }
@@ -291,7 +293,7 @@ span.person-title { font-size:70%; /*color:#4b6a79;*/ }
 .brand-desc { padding-top:20px; float:left; width:25%; }
 .review-operation-desc { float:left; width: 60%; }
 .finance-notes-sub-title { color:#666; margin-bottom: 0.5em; font-family: 'Trade Gothic W01 Bold 2';}
-#chi-page .finance-notes-sub-title {font-size: 110%;font-family: 'Heiti', 'Microsoft Yahei', 'SimHei'; }
+#chi-page .finance-notes-sub-title {font-size: 110%;font-family: 'Heiti TC Medium', 'Microsoft Yahei', 'SimHei'; }
 .GSM-header { font-size: 130%; font-weight: bold; color: #333; width:95%; border-bottom:1px solid #aaa; }
 .GSM-country { font-size: 110%; font-weight: bold; color: #555; margin-bottom:5px; }
 .report-sub-sub-title { color: #466678; }

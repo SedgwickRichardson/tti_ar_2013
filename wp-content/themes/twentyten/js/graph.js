@@ -44,8 +44,8 @@ Highcharts.setOptions({
 			minPadding: 0,
 			startOnTick: false,
 			endOnTick: false,*/
-			showFirstLabel: false,
-			showLastLabel: false,
+			/*showFirstLabel: false,
+			showLastLabel: false,*/
 			useHTML: true,
 			labels: {
 				style: {
@@ -104,7 +104,7 @@ Highcharts.setOptions({
 		plotOptions: {
 			column: {
 				borderWidth: 0,
-				pointWidth: 15,
+				pointWidth: 20,
 				/*pointPadding: 0.5,*/
 				dataLabels: {
 					enabled: true,
@@ -128,11 +128,11 @@ Highcharts.setOptions({
 		series: [{
 			name: 'Population',
 			data: [
-				{y:0,x: 2010, color: '#A8BCC6'},
+				/*{y:0,x: 2010, color: '#A8BCC6'},*/
 				{y:3667,x: 2011, color: '#A8BCC6'},
 				{y:3852,x: 2012, color: '#A8BCC6'},
-				{y:4300, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}},
-				{y:0,x: 2014, color: '#A8BCC6'}
+				{y:4300, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}}/*,
+				{y:0,x: 2014, color: '#A8BCC6'}*/
 
 			]
 		}],
@@ -191,13 +191,13 @@ Highcharts.setOptions({
 			
 		},
 		yAxis: {
-			min: 30,
+			min: 0,
 			max: 35,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
 			tickWidth: 0,
-			tickInterval: 1,
+			tickInterval: 5,
 			lineWidth: 0,
 			lineColor: "#4b6a79",
 			showFirstLabel: true,
@@ -799,7 +799,7 @@ function initFinancialHighlights(lang){
 			tickWidth: 0,
 			lineColor: "#4b6a79",
 			lineWidth: 1,
-			maxPadding: 0.5,
+			/*maxPadding: 0.25,*/
 			showFirstLabel: false,
 			showLastLabel: false,
 			useHTML: true,
@@ -876,7 +876,10 @@ function initFinancialHighlights(lang){
 					}
 				}
 				//groupPadding: 0.2
-			}
+			},
+			series: {
+                pointPadding: 0.8
+            }
 		},
 		series: [{
 			name: 'Population',
@@ -944,13 +947,13 @@ function initFinancialHighlights(lang){
 			
 		},
 		yAxis: {
-			min: 30,
+			min: 0,
 			max: 35,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
 			tickWidth: 0,
-			tickInterval: 1,
+			tickInterval: 5,
 			lineWidth: 0,
 			lineColor: "#4b6a79",
 			showFirstLabel: true,
@@ -1051,7 +1054,7 @@ function initFinancialHighlights(lang){
 			lineWidth: 1,
 			maxPadding: 0.25,
 			showFirstLabel: false,
-			showFirstLabel: false,
+			showLastLabel: false,
 			useHTML: true,
 			labels: {
 				style: {
@@ -1492,7 +1495,7 @@ function initFinancialHighlights(lang){
 		plotOptions: {
 			column: {
 				borderWidth: 0,
-				pointWidth: 20,
+				pointWidth: 25,
 				/*pointPadding: 0.5,*/
 				dataLabels: {
 					enabled: true,
@@ -1616,7 +1619,7 @@ $('#graph-container-8').highcharts({
 		plotOptions: {
 			column: {
 				borderWidth: 0,
-				pointWidth: 20,
+				pointWidth: 25,
 				/*pointPadding: 0.5,*/
 				dataLabels: {
 					enabled: true,
@@ -1701,12 +1704,12 @@ $('#graph-container-9').highcharts({
 		},
 		yAxis: {
 			min: 0,
-			max: 400,
+			max: 350,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
 			tickWidth: 0,
-			tickInterval: 100,
+			tickInterval: 50,
 			lineWidth: 0,
 			lineColor: "#4b6a79",
 			/*offset: -40,*/
@@ -1740,7 +1743,7 @@ $('#graph-container-9').highcharts({
 		plotOptions: {
 			column: {
 				borderWidth: 0,
-				pointWidth: 20,
+				pointWidth: 25,
 				/*pointPadding: 0.5,*/
 				dataLabels: {
 					enabled: true,
@@ -1825,12 +1828,12 @@ $('#graph-container-10').highcharts({
 		},
 		yAxis: {
 			min: 0,
-			max: 300,
+			max: 250,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
 			tickWidth: 0,
-			tickInterval: 100,
+			tickInterval: 50,
 			lineWidth: 0,
 			lineColor: "#4b6a79",
 			/*offset: -40,*/
@@ -1949,12 +1952,12 @@ $('#graph-container-11').highcharts({
 		},
 		yAxis: {
 			min: 0,
-			max: 400,
+			max: 350,
 			title: {text:""},
 			labels: {enabled:true},
 			gridLineWidth: 0,
 			tickWidth: 0,
-			tickInterval: 100,
+			tickInterval: 50,
 			lineWidth: 0,
 			lineColor: "#4b6a79",
 			/*offset: -40,*/
@@ -2453,9 +2456,6 @@ function initChairmanGraph(){
 			showFirstLabel: true,
 			labels: 
 			{
-				/*formatter: function () {
-					return Highcharts.numberFormat(this.value, 1);
-				},*/
 				style: {
 					color: "#4B6A79"
 				}
@@ -2489,11 +2489,10 @@ function initChairmanGraph(){
 					x: 0,
 					y: 0,
 					formatter: function () {
-						if (this.value == 2013) {
-							return '<b>' + this.value + '</b>';
-						} else {
-							return this.value;
-						}
+						if(this.y==0)
+							return "";
+						else
+							return this.y;
 					}	
 				}
 				//groupPadding: 0.2
@@ -2506,7 +2505,10 @@ function initChairmanGraph(){
 				{y:11.42,x: 2012, color: '#A8BCC6'},
 				{y:13.68, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '13px', fontWeight: 'bold', color:'#0077A8'}}},
 				{y:0,x: 2014, color: '#A8BCC6'}
-			]
+			],
+			formatter: function () {
+				return Highcharts.numberFormat(this.y, 1, '.', ',');
+			}
 		}],
 	});
 }

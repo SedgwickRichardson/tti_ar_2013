@@ -67,7 +67,7 @@ $prevPage = $prevPage[0];
 						<?
 						}
 						?>
-							<div style="float:left; margin-right:17px; width:<?php echo $langContent[ICL_LANGUAGE_CODE]['width']; ?>px;">
+							<div id="topLinearLinkContainer" style="width:<?php echo $langContent[ICL_LANGUAGE_CODE]['width']; ?>px;">
 								<?php
 								if(!empty($prevPage)){
 								?>
@@ -101,7 +101,7 @@ $prevPage = $prevPage[0];
 						</div>
 					</div>
 				</div>
-				<div id="prod_status" style="width: 960px;margin: 0 auto;border: 3px solid #f00;margin-bottom:20px"><h1 style="margin:30px auto;color: #f00;font-size: 18px;text-align: center;">
+				<div id="prod_status" style="width: 960px;margin: 0 auto;border: 3px solid #f00;margin-bottom:20px;display:none;"><h1 style="margin:30px auto;color: #f00;font-size: 18px;text-align: center;">
 					<?php
 						$alert = get_field("prod_status");
 						if($alert==""){

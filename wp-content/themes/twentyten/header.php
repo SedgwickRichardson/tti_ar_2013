@@ -190,7 +190,7 @@ $(document).ready(function(){
 <div id="header">
 		<div id="masthead">
 			<div class="headerContainer clearfix">
-				<div id="tti-logo"><a title ="<?php echo $homeContent[ICL_LANGUAGE_CODE]['TTI Annual Report 2012'];?>" href="<?php echo site_url();echo get_curr_lang_path() ; ?>"><img src="<?php bloginfo( 'template_url' ); ?>/images/headers/tti_logo.jpg" /></a></div>
+				<div id="tti-logo"><a target="_blank" title ="<?php echo $homeContent[ICL_LANGUAGE_CODE]['TTI Group'];?>" href="http://www.ttigroup.com/"><img src="<?php bloginfo( 'template_url' ); ?>/images/headers/tti_logo.jpg" /></a></div>
 				<div id="branding" role="banner">
 					<h1 id="site-title">
 							<a rel="home" title="<?php echo $homeContent[ICL_LANGUAGE_CODE]['TTI Annual Report 2012'];?>" href="<?php echo site_url();echo get_curr_lang_path() ; ?>"><img src="<?php bloginfo( 'template_url' ); ?>/images/headers/<?php echo $homeContent[ICL_LANGUAGE_CODE]['report image name'];?>" /></a>
@@ -222,10 +222,10 @@ $(document).ready(function(){
 									echo '<a class="lang-sel-link" href="'.$currLang['url'].'">'.$currLang['native_name'].'</a>';
 								}
 							}
-						?>   |   
+						?><!--    |   
 							<a href="#" id="text-small" style="margin:0; font-size:14px;">A</a>
 							<a href="#" id="text-medium" style="margin:0; font-size:17px;">A</a>
-							<a href="#" id="text-large" style="margin:0; font-size:20px;">A</a> 
+							<a href="#" id="text-large" style="margin:0; font-size:20px;">A</a>  -->
 						</div>
 					</div>
 				</div>
