@@ -87,14 +87,13 @@ a:active, a:hover { color: #458CB4; text-decoration: underline; }/* Text meant o
 .headerContainer{margin:0 auto; width:984px; background:#fff; height:125px; position:relative;}
 #shareBox{position:absolute; top: 14px;right: 75px; z-index:2000; background:url(images/general/bg_sharebox.png) no-repeat; width:220px; height:25px; padding:20px 20px 20px 25px; display:none;}
 #iconBtnstickyContainer #shareBox{ top: 24px;}
-#tooltips_print{background:url(images/general/tooltip_print.png) no-repeat; width:84px; height:29px; position:absolute; right:140px; top:20px; z-index:999; display:none;}
-#tooltips_download{background:url(images/general/tooltip_download.png) no-repeat; width:105px; height:29px; position:absolute; right:153px; top: 20px; z-index:999; display:none;}
-body.home #tooltips_print{top:27px;}
-body.home #tooltips_download{top:27px;}
-#chi-page #tooltips_print{background:url(images/general/tooltip_print_tc.png) no-repeat; width:67px; height:29px; position:absolute; right:168px; top:20px; z-index:999; display:none;}
-#chi-page #tooltips_download{background:url(images/general/tooltip_download_tc.png) no-repeat; width:65px; height:29px; position:absolute; right:205px; top: 20px; z-index:999; display:none;}
-body.home#chi-page #tooltips_print{top:30px }
-body.home#chi-page #tooltips_download{top:30px}
+#tooltips_print{background:url(images/general/tooltip_print.png) no-repeat; width:105px; height:43px; position:absolute; right: -110px;top: 10px; z-index:999; display:none;}
+#tooltips_download{background:url(images/general/tooltip_download.png) no-repeat; width:130px; height:43px; position:absolute; right: -140px;top: 10px; z-index:999; display:none;}
+body.home #tooltips_print{top: 10px;right: -110px;}
+body.home #tooltips_download{top: 10px;right: -140px;}
+#chi-page #tooltips_print{background:url(images/general/tooltip_print_tc.png) no-repeat; width:77px; height:43px; position:absolute;right: -80px; top: 10px;z-index:999; display:none;}
+#chi-page #tooltips_download{background:url(images/general/tooltip_download_tc.png) no-repeat; width:77px; height:43px; position:absolute; right: -90px;top: 10px; z-index:999; display:none;}
+body.home#chi-page #tooltips_print,body.home#chi-page #tooltips_download{top: 10px;right: -80px;}
 #downloadLink:hover span{display:block !important;}
 #printLink:hover span{display:block !important;}
 body.home .shareBox{top: 25px;right: -125px; z-index:999}
@@ -102,7 +101,8 @@ body.home .shareBox{top: 25px;right: -125px; z-index:999}
 .shareBox a{margin:0 4px;}
 #quickLinkBox{display:none; background:url(images/general/bg_quicklinks.png) no-repeat; height: 84px; padding: 18px 15px; position: absolute; right: 132px;top: 92px; width: 109px; z-index: 999;}
 body.home #quickLinkBox{right: 82px;}
-#chi-page #quickLinkBox{right: 50px;}
+#chi-page #quickLinkBox{right: 100px;}
+body.home#chi-page #quickLinkBox{right:50px;}
 #second-nav #quickLinkBox a{line-height: 150%;font-size: 0.8em;display: block;margin-bottom: 3px;}
 .addthis_button_facebook .at16nc.at16t_facebook{background:url(images/general/btn_facebook.png) no-repeat; width:24px; height:24px;}
 .addthis_button_facebook .at16nc.at16t_facebook:hover{background-position:0 -74px !important;}
@@ -227,8 +227,8 @@ body.search-results  .page-title{margin-top:36px;}
 #content .entry-title { color: #000; font-size: 21px; font-weight: bold; line-height: 1.3em; margin-bottom: 0; }
 .entry-title a:link, .entry-title a:visited { color: #000; text-decoration: none; }
 .entry-title a:active, .entry-title a:hover { color: #ff4b33; }
-body.search-results .entry-title a{font-family: 'TradeGothicW01-BoldCn20 675334';font-size: 95%;padding: 10px 0;font-weight: normal;}
-body#chi-page.search-results .entry-title a{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei',新細明體,細明體;font-weight: bold;}
+body.search-results .entry-title a{font-family: 'Trade Gothic W01 Bold 2';font-size: 95%;padding: 10px 0;font-weight: normal;}
+body#chi-page.search-results .entry-title a{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 .entry-meta { color: #888; font-size: 12px; }
 .entry-meta abbr, .entry-utility abbr { border: none; }
 .entry-meta abbr:hover, .entry-utility abbr:hover { border-bottom: 1px dotted #666; }
@@ -725,7 +725,8 @@ li[type=i]{list-style-type: none;}
 .btn_readMore:hover .readMoreRight{background:url(images/home/bg_readMore_right.png) -15px 0 no-repeat;}
 .headlineTitle{font-family:'Trade Gothic W01 Bold 2';line-height: 110%; font-size: 1.7em;padding-bottom: 2em;}
 .homeSectionContentDiv .headlineTitle{height: 2em;}
-.downloadRight .headlineTitle,.downloadLeft .headlineTitle{padding-bottom: 30px;margin-bottom: 10px;height: inherit;}
+.downloadRight .headlineTitle,.downloadLeft .headlineTitle{padding-bottom: 30px;margin-bottom: 10px;height: inherit;font-size: 23px;}
+#chi-page .downloadRight .headlineTitle,#chi-page .downloadLeft .headlineTitle{font-size: 25px;}
 #chi-page .headlineTitle{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';font-weight:bold;font-size: 170%;}
 .headlineTitle a{display:block; float:left; margin-right:40px; opacity:0.2;}
 .headlineTitle a:hover, .headlineTitle a.currentBrand{ opacity:1;}
@@ -868,7 +869,7 @@ li[type=i]{list-style-type: none;}
 #chi-page .bodPhotoPos{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';font-size: 90%;}
 .bodContent{width:700px; margin-left:5px;}
 .bodContent .bodContentItem{display:none;}
-.bodContent .headlineTitle{font-size:1.3em;}
+.bodContent .headlineTitle,#chi-page .bodContent .headlineTitle{font-size:1.3em;}
 .BODheadlineTitle{padding-bottom: 1.5em;/*margin-bottom: 1em;*//*border-bottom: 1px solid #000;*/}
 /*------------------------------------------------Board of directors ends-------------------------------------------*/
 

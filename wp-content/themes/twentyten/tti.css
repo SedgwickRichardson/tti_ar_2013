@@ -23,7 +23,7 @@ a.download-section:hover { text-decoration:underline; }
 .parent-pageid-86 #breadcrumb, .parent-pageid-315 #breadcrumb, .parent-pageid-131 #breadcrumb, .parent-pageid-317 #breadcrumb{background-color:#F5F6F7;}
 /* header **/
 #iconBtn{/* margin-top: -6px;*/float:left; margin-top: 3px;}
-#iconBtn a{display:block;float:left;margin-right: 17px;/* font-family:entypo;font-size: 27px; */}
+#iconBtn a{display:block;float:left;margin-right: 17px;position:relative;/* font-family:entypo;font-size: 27px; */}
 /* #iconBtn a:hover{text-decoration:none;} */
 #headerShareBtn{background: url(images/general/btnShare.gif) no-repeat; width:16px;height:14px;text-indent:-9999px;}
 #downloadLink{background: url(images/general/btnDownload.gif) no-repeat; width:16px;height:14px;text-indent:-9999px;}

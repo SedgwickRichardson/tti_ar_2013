@@ -40,10 +40,10 @@ Highcharts.setOptions({
 			tickWidth: 0,
 			lineColor: "#4b6a79",
 			lineWidth: 1,
-			/*maxPadding: 0,
-			minPadding: 0,
+			maxPadding: 0.2,
+			minPadding: 0.2,
 			startOnTick: false,
-			endOnTick: false,*/
+			endOnTick: false,
 			/*showFirstLabel: false,
 			showLastLabel: false,*/
 			useHTML: true,
@@ -105,7 +105,7 @@ Highcharts.setOptions({
 			column: {
 				borderWidth: 0,
 				pointWidth: 20,
-				/*pointPadding: 0.5,*/
+				pointPadding: 0,
 				dataLabels: {
 					enabled: true,
 					/*color: '#A8BCC6',*/
