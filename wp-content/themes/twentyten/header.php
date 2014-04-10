@@ -222,10 +222,10 @@ $(document).ready(function(){
 									echo '<a class="lang-sel-link" href="'.$currLang['url'].'">'.$currLang['native_name'].'</a>';
 								}
 							}
-						?><!--    |   
+						?>    |   
 							<a href="#" id="text-small" style="margin:0; font-size:14px;">A</a>
 							<a href="#" id="text-medium" style="margin:0; font-size:17px;">A</a>
-							<a href="#" id="text-large" style="margin:0; font-size:20px;">A</a>  -->
+							<a href="#" id="text-large" style="margin:0; font-size:20px;">A</a>
 						</div>
 					</div>
 				</div>

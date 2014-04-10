@@ -77,8 +77,8 @@ $(document).ready(function(){
 	initOperationalMap();
 	initBod();
 	initCEOReview();
-	initFindOutMore('findOutMoreBtn', 'findOutMoreContent');
-	initFindOutMore('operationalTabContent', 'findOutMoreContent');
+	/*initFindOutMore('findOutMoreBtn', 'findOutMoreContent');
+	initFindOutMore('operationalTabContent', 'findOutMoreContent');*/
 	initFindOutMoreBannerContent();
 	initInnerPageTopNav();
 	$('.tooltip').tooltipster({
@@ -95,21 +95,18 @@ $(document).ready(function(){
 	});
 	
 	//init interactive chart for Power Equipment Highlights
-   if($('body').hasClass('page-id-3636')){
+   /*if($('body').hasClass('page-id-3636')){
 		initPowerEquipmentHighlightsGraph("en");
 	}
 	else if($('body').hasClass('page-id-3639')){
 		initPowerEquipmentHighlightsGraph("chi");
-	}
+	}*/
+	/*
 	else if($('body').hasClass('page-id-1470')){
 	//init interactive chart for Power Equipment Highlights
 		initFloorCareHighlightsGraph("en");
 	}
-	else if($('body').hasClass('page-id-1470')){
-	//init interactive chart for Power Equipment Highlights
-		initFloorCareHighlightsGraph("en");
-	}
-	else if($('body').hasClass('page-id-5322')){
+	else*/ if($('body').hasClass('page-id-5322')){
 		initFloorCareHighlightsGraph("chi");
 	}
 	else if($('body').hasClass('page-id-13') || $('body').hasClass('page-id-18')){

@@ -100,9 +100,9 @@ body.home .shareBox{top: 25px;right: -125px; z-index:999}
 #chi-page .shareBox{right: 85px;}
 .shareBox a{margin:0 4px;}
 #quickLinkBox{display:none; background:url(images/general/bg_quicklinks.png) no-repeat; height: 84px; padding: 18px 15px; position: absolute; right: 132px;top: 92px; width: 109px; z-index: 999;}
-body.home #quickLinkBox{right: 82px;}
+body.home #quickLinkBox{right: 135px;/*right: 82px;*/}
 #chi-page #quickLinkBox{right: 100px;}
-body.home#chi-page #quickLinkBox{right:50px;}
+/*body.home#chi-page #quickLinkBox{right:50px;}*/
 #second-nav #quickLinkBox a{line-height: 150%;font-size: 0.8em;display: block;margin-bottom: 3px;}
 .addthis_button_facebook .at16nc.at16t_facebook{background:url(images/general/btn_facebook.png) no-repeat; width:24px; height:24px;}
 .addthis_button_facebook .at16nc.at16t_facebook:hover{background-position:0 -74px !important;}
@@ -630,6 +630,8 @@ li[type=i]{list-style-type: none;}
 /*reusable starts by Ron on 2013-03-27*/
 .centerDiv{width:984px; margin:0 auto;}
 #content .innerPageCenterDiv{width:960px; margin:0 auto;/*position: relative;*/}
+#powerHighlightsContent p{width:836px;}
+#powerHighlightsContent .powerEquipmentTable p{width:inherit;}
 .quoteContainer{/* width:700px;  */padding-bottom:10px;}
 .oneColumnPageHeaderContainer{padding:20px 0 10px 0; position:relative;}
 .threeQuarterWidthContainer{width:786px;}
@@ -690,7 +692,7 @@ li[type=i]{list-style-type: none;}
 .chairmanStatementLeft .graphContainer .graphProfile{text-align: right;}
 .overviewLeft .graphContainer .graphProfile{text-align: left;}
 .reviewOperationTwoColumn .graphContainer .graphProfile{}
-.downloadRight .dotUnderline, .downloadLeft .dotUnderline{background: url(images/home/figure_dot_line.png) repeat-x center bottom;}
+.downloadRight .dotUnderline, .downloadLeft .dotUnderline,.innerPageCenterDiv.dotUnderline{background: url(images/home/figure_dot_line.png) repeat-x center bottom;}
 #FHContentDiv .graphContainer .dotUnderline,.graphContainer .dotUnderline{background: url(images/home/figure_dot_line.png) repeat-x center bottom;margin-bottom: 1.5em;width:100%;text-align: right;}
 #chi-page .graphContainer .graphProfile{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';font-weight:bold;line-height: 1.5em;}
 .graphContainer .figure_arrow_up{width:19px;height:21px;background: url(images/home/figure_arrow_up.gif);vertical-align: top;display: inline-block;margin-right: 5px;font-size: 0;line-height: 0;}
@@ -911,32 +913,34 @@ li[type=i]{list-style-type: none;}
 /*power equipment starts by Ron on 2013-03-28*/
 .mainBannerContainer{padding:20px 0 40px 0; position:relative; width:960px; height:486px;}
 .findoutMoreBannerContent{background:url(images/general/bg_findoutmore_content.png) repeat; position:absolute; bottom:40px;  display:none; width:178px; height:49px; right:0;}
-.btn_close_findoutMoreBanner{position:absolute; background:url(images/general/btn_close_findoutmoreBanner.png) no-repeat; width: 66px;height: 28px;top: -15px;right: 25px; opacity:0;}
-#chi-page .btn_close_findoutMoreBanner{background:url(images/general/btn_close_findoutmoreBanner_chi.png) no-repeat;}
+.btn_close_findoutMoreBanner{position:absolute; background:url(images/general/btn_close_findoutmoreBanner.gif) no-repeat; width: 66px;height: 28px;top: -15px;right: 25px; opacity:0;}
+.btn_close_findoutMoreBanner2{background:url(images/general/btn_close_findoutmoreBanner2.gif) no-repeat;}
+#chi-page .btn_close_findoutMoreBanner{background:url(images/general/btn_close_findoutmoreBanner_chi.gif) no-repeat;}
+#chi-page .btn_close_findoutMoreBanner2{background:url(images/general/btn_close_findoutmoreBanner_chi2.gif) no-repeat;}
 .btn_close_findoutMoreBanner_floorcare{background:url(images/general/btn_close_findoutmoreBanner_floorcare.png) no-repeat;}
-.findoutMoreBannerContent .contentDiv{width:608px; padding: 20px 90px 36px 262px;color:#fff; font-size:13px; opacity:0;}
-.findoutMoreBannerContent .contentDiv p{padding-bottom:0 !important;}
-.findoutMoreBannerContent .findoutMoreTitle{font-family:'Trade Gothic W01 Bold 2'; text-transform:uppercase; font-size:18px; padding-bottom: 20px;}
+.findoutMoreBannerContent .contentDiv{/*width:608px; */padding: 20px 30px;color:#fff;/* font-size:13px; */opacity:0;}
+.findoutMoreBannerContent .contentDiv p{padding-bottom:0 !important;font-size: 0.9em;}
+.findoutMoreBannerContent .findoutMoreTitle{font-family:'Trade Gothic W01 Bold 2'; text-transform:uppercase; font-size: 1.2em; padding-bottom: 0.4em;}
 #chi-page .findoutMoreBannerContent .findoutMoreTitle{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
-#btn_banner_findoutMore{background:url(images/general/btn_findoutmore.png) no-repeat; width:178px; height:49px; position:absolute; bottom:40px; right:0px; z-index:799;}
+#btn_banner_findoutMore{background:url(images/general/btn_findoutmore.png) no-repeat; width:233px; height:49px; position:absolute; bottom:40px; right:0px; z-index:799;}
 #chi-page #btn_banner_findoutMore{background:url(images/general/btn_findoutmore-tc.png) no-repeat;}
 .powerEquipmentTableContainer{/*padding:20px 0;*/}
 .powerEquipmentTable tr td{/*padding-right:25px; vertical-align:middle;*/}
-#report-content .highlightTableTitle{background-color: #333333;padding: 5px 11px;color: #fff;font-family:'Trade Gothic W01 Bold 2' }
+#report-content .highlightTableTitle{background-color: #0072A4;padding: 5px 11px;color: #fff;font-family:'Trade Gothic W01 Bold 2' }
 #chi-page #report-content .highlightTableTitle{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';}
 
 /*----------------------buttons in overview pages------------------------------*/
 .btn_milwaukee{background:url(../../uploads/2013/operational-highlight/logo_milwaukee.jpg) no-repeat; width:226px; height:153px; display:block;}
 #chi-page .btn_milwaukee{background:url(../../uploads/2013/operational-highlight/logo_milwaukee_tc.jpg) no-repeat; }
-.btn_milwaukee2{background:url(../../uploads/2013/operational-highlight/logo_milwaukee2.jpg) no-repeat; width:226px; height:153px; display:block;}
+.btn_milwaukee2{background:url(../../uploads/2013/operational-highlight/logo_milwaukee2.jpg) no-repeat; height:140px; display:block;}
 .btn_aeg{background:url(../../uploads/2013/operational-highlight/logo_aeg.jpg) no-repeat; width:226px; height:153px; display:block;}
 #chi-page .btn_aeg{background:url(../../uploads/2013/operational-highlight/logo_aeg_tc.jpg) no-repeat; }
 .btn_ryobi{background:url(../../uploads/2013/operational-highlight/logo_ryobi.jpg) no-repeat; width:226px; height:153px; display:block;}
 #chi-page .btn_ryobi{background:url(../../uploads/2013/operational-highlight/logo_ryobi_tc.jpg) no-repeat;}
-.btn_ryobi2{background:url(../../uploads/2013/operational-highlight/logo_ryobi2.jpg) no-repeat; width:344px; height:130px; display:block;margin-right:6px !important;}
-.btn_stiletto{background:url(../../uploads/2013/operational-highlight/logo_stelitto.jpg) no-repeat; width:226px; height:153px; display:block;}
-.btn_homelite{background:url(../../uploads/2013/operational-highlight/logo_homelite.jpg) no-repeat; width:342px; height:130px; display:block;}
-.btn_hart{background:url(../../uploads/2013/operational-highlight/logo_hart.jpg) no-repeat; width:226px; height:130px; display:block;}
+.powerEquipmentTableContainer .btn_ryobi2{background:url(../../uploads/2013/operational-highlight/logo_ryobi2.jpg) no-repeat; width:478px; height:140px; display:block;margin-right:3px !important;}
+.btn_stiletto{background:url(../../uploads/2013/operational-highlight/logo_stelitto.jpg) no-repeat; height:140px; display:block;}
+.powerEquipmentTableContainer .btn_homelite{background:url(../../uploads/2013/operational-highlight/logo_homelite.jpg) no-repeat; width:479px; height:140px; display:block;}
+.btn_hart{background:url(../../uploads/2013/operational-highlight/logo_hart.jpg) no-repeat; height:140px; display:block;}
 .btn_homelite_small{background:url(../../uploads/2013/operational-highlight/logo_homelite.png) no-repeat; width:108px; height:20px; display:block;}
 .btn_hoover{background:url(../../uploads/2013/operational-highlight/logo_hoover.jpg) no-repeat; width:342px; height:213px; display:block;}
 #chi-page .btn_hoover{background:url(../../uploads/2013/operational-highlight/logo_hoover_tc.jpg) no-repeat;}
@@ -948,10 +952,10 @@ li[type=i]{list-style-type: none;}
 #chi-page .btn_oreck{background:url(../../uploads/2013/operational-highlight/logo_oreck_tc.jpg) no-repeat;}
 
 /*----------------------find out more popup in overview pages------------------------------*/
-#findOutMoreContainer a{/*width:226px;height:153px;*/text-indent: -9999px;margin-right: 7px;
-margin-bottom: 26px;}
-#findOutMoreContainer_floorcare a{/*width:226px;height:153px;*/text-indent: -9999px;margin-right: 8px;
-margin-bottom: 6px;}
+.powerEquipmentTableContainer a{width:318px;/*height:163px;*/text-indent: -9999px;margin-right: 3px;
+margin-bottom: 17px;}
+#findOutMoreContainer_floorcare a{width:475px;height:172px;text-indent: -9999px;margin-right: 8px;
+margin-bottom: 8px;}
 #findOutMoreContainer a:hover,#findOutMoreContainer_floorcare a:hover{background-position: right top;}
 #findOutMoreContent .findOutMoreItem{position:absolute; display:none;}
 #findOutMoreContent .findOutMoreItem .btn_findOutMoreClose{background:url(images/general/btn_findoutmore_close.png) no-repeat;width: 59px;height: 20px;position: absolute;right: 12px;top: 20px; display:block;}
@@ -981,15 +985,15 @@ margin-bottom: 6px;}
 padding: 0 0.5em;}
 .productTechTable tr.titleRow td{color: #fff;font-family: 'Trade Gothic W01 Bold 2';font-size: 1em;padding: 0 0.5em;}
 #chi-page .productTechTable tr.titleRow td{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
-.milwaukeeTable tr.titleRow td{ background-color: #ff0e2d;/* border-top: 2px solid #BF2139;border-bottom: 1px solid #BF2139; */}
-.stilettoHartTable tr.titleRow td{ background-color:#7B7979; /* border-top:2px solid #231F20; border-bottom:1px solid #231F20; */} /*Stiletto and Hart*/
-.aegTable tr.titleRow td{ background-color:#f4792a; /* border-top:2px solid #F47F24; border-bottom:1px solid #F47F24; */}
-.ryobiTable tr.titleRow td{ background-color:#d5e041;color:#393939; /* border-top:2px solid #C3D52E; border-bottom:1px solid #C3D52E; */}
-.homeliteDirtTable tr.titleRow td{ background-color:#ee2e24; /* border-top:2px solid #EC1C24; border-bottom:1px solid #EC1C24; */} /*Homelite and Dirt Devil*/
-.dirtTable tr.titleRow td{ background-color:#ff0e2d;}
-.hooverTable tr.titleRow td{ background-color:#cd1338;}
-.oreckTable tr.titleRow td{ background-color:#004990;}
-.vaxTable tr.titleRow td{ background-color:#f26722; /* border-top:2px solid #F16528; border-bottom:1px solid #F16528; */}
+.milwaukeeTable tr.titleRow td{ background-color: #F52925;/* border-top: 2px solid #BF2139;border-bottom: 1px solid #BF2139; */}
+.stilettoHartTable tr.titleRow td{ background-color:#000000; /* border-top:2px solid #231F20; border-bottom:1px solid #231F20; */} /*Stiletto and Hart*/
+.aegTable tr.titleRow td{ background-color:#EE7A0E; /* border-top:2px solid #F47F24; border-bottom:1px solid #F47F24; */}
+.ryobiTable tr.titleRow td{ background-color:#E3E65B;color:#393939; /* border-top:2px solid #C3D52E; border-bottom:1px solid #C3D52E; */}
+.homeliteDirtTable tr.titleRow td{ background-color:#FF290B; /* border-top:2px solid #EC1C24; border-bottom:1px solid #EC1C24; */} /*Homelite and Dirt Devil*/
+.dirtTable tr.titleRow td{ background-color:#F58426;}
+.hooverTable tr.titleRow td{ background-color:#CE1141;}
+.oreckTable tr.titleRow td{ background-color:#003F7F;}
+.vaxTable tr.titleRow td{ background-color:#F58426; /* border-top:2px solid #F16528; border-bottom:1px solid #F16528; */}
 .productTechTable tr.lastRow td{border-bottom:1px solid #393939;}
 .productTechTable tr td li.lastList{padding-bottom:0;}
 .productTechfullWidth{border-top:24px solid #E95D12; border-bottom:24px solid #E95D12; padding:60px 0;}

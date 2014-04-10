@@ -1470,8 +1470,8 @@ function initFindOutMoreBannerContent(){
 		//$(this).animate({opacity:'0'}, 300);
 		$(this).css('display', 'none');
 		$('.findoutMoreBannerContent').css('display', 'block');
-		var contentHeight = $('.findoutMoreBannerContent .contentDiv').height()+22+36;
-		$('.findoutMoreBannerContent').animate({width:"960px", height:contentHeight+'px'}, 300);
+		var contentHeight = $('.findoutMoreBannerContent .contentDiv').height();
+		$('.findoutMoreBannerContent').animate({width:"960px", height:'140px'}, 300);
 		$('.findoutMoreBannerContent .contentDiv').animate({opacity:'1'}, 600);
 		$('#btn_close_findoutMoreBanner').animate({opacity:'1'}, 800);
 	})
@@ -1481,7 +1481,7 @@ function initFindOutMoreBannerContent(){
 		setTimeout('$("#btn_banner_findoutMore").css("display", "block");', 600)
 		$('#btn_close_findoutMoreBanner').animate({opacity:'0'}, 200);
 		$('.findoutMoreBannerContent .contentDiv').animate({opacity:'0'}, 600);
-		$('.findoutMoreBannerContent').animate({width:"178px", height:'49px'}, 600);		
+		$('.findoutMoreBannerContent').animate({width:"233px", height:'49px'}, 600);		
 	})
 }
 function initShare()
