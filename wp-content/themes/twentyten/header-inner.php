@@ -41,9 +41,11 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/tti.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/font-<?php if($_COOKIE['gre_font_cookie']) echo $_COOKIE['gre_font_cookie'];else echo "medium"; ?>.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/tooltipster.css" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.1'></script>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/jquery.tooltipster.min.js"></script>
 <script type='text/javascript' src='<?php bloginfo( 'template_url' ); ?>/js/tti.js'></script>
 <script type='text/javascript' src='<?php bloginfo( 'template_url' ); ?>/js/jquery.cookie.js'></script>
 <script type='text/javascript' src='<?php bloginfo( 'template_url' ); ?>/js/jquery.pngFix.pack.js'></script>
@@ -78,9 +80,19 @@ $(document).ready(function(){
 	initFindOutMore('findOutMoreBtn', 'findOutMoreContent');
 	initFindOutMore('operationalTabContent', 'findOutMoreContent');
 	initFindOutMoreBannerContent();
-	
-	// var HeaderTop = $('#header').offset().top; 
 	initInnerPageTopNav();
+	$('.tooltip').tooltipster({
+	   arrow: false,
+	   /*offsetX: -20,*/
+	   offsetY: 5,
+	   position: 'bottom-right'
+	});
+	$('.tooltip-left').tooltipster({
+	   arrow: false,
+	   /*offsetX: -20,*/
+	   offsetY: 5,
+	   position: 'bottom-left'
+	});
 	
 	//init interactive chart for Power Equipment Highlights
    if($('body').hasClass('page-id-3636')){
@@ -345,29 +357,6 @@ $(window).load(function () {
 											'post_type'    => 'page',
 											'post_status'  => 'publish' ,
 											'exclude' => '3643,3712'
-											);
-											wp_list_pages( $args );
-										?>
-										</ul>
-								</div>
-							</div>
-							<div class="subNavDiv finicialSubNav">
-								<div class="subNav clearfix">
-									<ul class="sub-nav clearfix">
-											<?php
-											if(ICL_LANGUAGE_CODE=="zh-hant")
-												$page_id=131;
-											else
-												$page_id=86;
-											$args = array(
-											'depth'        => 1,
-											'child_of'     => $page_id,
-											'title_li'     => '',
-											'echo'         => 1,
-											'authors'      => '',
-											'sort_column'  => 'menu_order',
-											'post_type'    => 'page',
-											'post_status'  => 'publish' 
 											);
 											wp_list_pages( $args );
 										?>

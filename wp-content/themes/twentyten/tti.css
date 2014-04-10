@@ -12,7 +12,7 @@ a#pdfLink { background: url(images/general/pdf_icon.png) 0 -3px no-repeat; heigh
 a.download-section { font-weight:bold; text-decoration:none; }
 a.download-section:hover { text-decoration:underline; }
 #breadcrumb { font-size:15px; font-size: 13px; color:#458CB4; font-family:'Trade Gothic W01 Roman'; /*width:960px; margin:17px auto;*/ width:100%; position:relative; top:0px; background-color: #fff; padding:17px 0;}
-#chi-page #breadcrumb{font-family:'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';}
+#chi-page #breadcrumb{font-family:'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';}
 #breadcrumb a { text-decoration:none; color:#999999;}
 #breadcrumb a:hover { text-decoration:underline; }
 #chi-page #breadcrumb a{font-size: 13px}
@@ -35,9 +35,9 @@ a#text-large { font-size:14px; text-decoration:none; }
 #site-title { float: left; margin: 79px 0 0 21px;/*margin-left:60px; line-height: 105px; text-indent: -9999px; margin-top: 47px;*/ }
 #global-nav { margin-top:20px; font-size:90%; float:right; width:680px;}
 #global-nav a, #second-nav a { color:#3B3B3B; text-decoration:none; font-family:'Trade Gothic W01 Roman'; font-size:14px;}
-#chi-page #global-nav a,#chi-page  #second-nav a {font-family:'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';}
+#chi-page #global-nav a,#chi-page  #second-nav a {font-family:'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';}
 #chi-page  #second-nav a.lang-sel-link,#chi-page  #second-nav a#text-large,#chi-page  #second-nav a#text-medium,#chi-page  #second-nav a#text-small{font-family:'Trade Gothic W01 Roman';}
-#global-nav a:hover, #second-nav a:hover { text-decoration:underline; }#second-nav .lang-sel-link{font-family: 'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';}#chi-page #second-nav .lang-sel-link{font-family: 'Trade Gothic W01 Cn 18';}
+#global-nav a:hover, #second-nav a:hover { text-decoration:underline; }#second-nav .lang-sel-link{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';}#chi-page #second-nav .lang-sel-link{font-family: 'Trade Gothic W01 Cn 18';}
 #global-nav-list{float:right; margin-top: 15px;}
 #second-nav { margin-top: 75px; font-size:90%; float:right; clear:right; margin-right: 12px;}
 #global-nav-list a, #second-nav-list a { margin:0 4px; }
@@ -85,23 +85,25 @@ z-index: 899;
 .sub-nav li.current_page_item, .sub-nav li.current_page_parent{/*padding-bottom: 2px;*/}
 .sub-nav li.current_page_item a, .sub-nav li.current_page_parent a, .sub-nav li.current_page_ancestor a{font-family: 'Trade Gothic W01 Bold 2';line-height: 22px;}
 
-.executiveSubNav{height:130px;}
+.executiveSubNav{height: 102px;}
 .executiveSubNav .sub-nav li{float:none !important;}
 .page-item-326, .page-item-13, .page-item-27, .page-item-3636, .page-item-3639{margin-left: 0px;}
 .page-item-2589, .page-item-3643, .page-item-1470, .page-item-3712, .page-item-3645, .page-item-5322, .page-item-3714{margin-left: 454px;}
 .page-item-2589{margin-top:-95px;}
-.page-item-3643, .page-item-3645{margin-top: -131px;}
+.page-item-3645{margin-top: -131px;}
 
 .page-item-328, .page-item-18, .page-item-158{margin-left: 0px;}
 .page-item-2591{margin-left: 330px;}
 .page-item-2591{margin-top:-95px;}
+.page-item-3643,.page-item-3645{margin-top: -99px}
 
 .page-item-64, .page-item-68{margin-left: 0px;}
-.page-item-70, .page-item-72, .page-item-150, .page-item-152{margin-left: 454px;}
+.page-item-70, .page-item-72,/* .page-item-150, */.page-item-152,.page-item-152,.page-item-150{margin-left: 454px;}
 .page-item-70{margin-top:-63px;}
+.page-item-150{margin-top: -67px;}
 
-.page-item-138, .page-item-154{margin-left: 0px;}
-.page-item-150{margin-top:-63px;}
+.page-item-138{margin-left: 0px;}
+/*.page-item-150{margin-top:-63px;}*/
 
 .page-item-88, .page-item-286, .page-item-294{margin-left: 0px;}
 .page-item-298, .page-item-302, .page-item-306{margin-left: 325px;}
@@ -122,10 +124,10 @@ z-index: 899;
    );
 }
 #chi-page .finicialSubNav .sub-nav li{width:288px !important; padding-bottom:1px;}
-#chi-page .subNavDiv .sub-nav li a{font-family:'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';}
+#chi-page .subNavDiv .sub-nav li a{font-family:'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';}
 #chi-page .subNavDiv .sub-nav li a:hover{font-weight:bold;}
 #chi-page .finicialSubNav li.current_page_item, .finicialSubNav li.current_page_parent{padding-bottom: 3px!important; padding-top:3px!important;}
-#chi-page .sub-nav li.current_page_item a,#chi-page  .sub-nav li.current_page_parent a,#chi-page  .sub-nav li.current_page_ancestor{font-family: 'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
+#chi-page .sub-nav li.current_page_item a,#chi-page  .sub-nav li.current_page_parent a,#chi-page  .sub-nav li.current_page_ancestor{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
 
 #masthead { position:relative;}
 /*** HOME --------------------------------------------------------------------***/#home-container .content { font-size:100%; line-height:20px; }
@@ -205,10 +207,10 @@ ul#home-financialHL-list { color:#4b6a79; font-size:12px; }
 #chi-page .bottomNav a {font-family: 'Heiti TC Medium','Microsoft Yahei','SimHei';}
 #footer { /* margin-top:10px; */ }
 #copyright-footer {clear:right;float:right; font-family: 'Trade Gothic W01 Roman'; font-size:15px; color:#000;}
-#chi-page #copyright-footer{font-family: 'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';}
+#chi-page #copyright-footer{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';}
 #footer-links { float:left; font-size:11px;}
 #footer-links a { color:#000; margin:0 5px; text-decoration:none; font-family: 'Trade Gothic W01 Roman'; font-size:15px;}
-#chi-page #footer-links a{font-family: 'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';}
+#chi-page #footer-links a{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';}
 #footer-links a:hover { text-decoration:underline; }
 #footer .footerLogoTable tr td{ vertical-align:middle; padding-right:15px;}
 .home-grad-box { background: url(images/home/home_content_box_bg.jpg) repeat-x; }
@@ -251,23 +253,24 @@ body.page-id-1476 #report-content,body.page-id-1480 #report-content{height:494px
 .report-content-515 ul { list-style: outside; }
 .report-content-515 ul .sub-title { color:#4b6a79; font-weight: bold; font-size:100%; }
 .quote{padding-left:20px; font-family: 'Trade Gothic W01 Bold 2';font-size: 1.3em;line-height: 130%;padding-bottom: 1em;color: #0072A4;background: url(images/home/chairman_quote_open.png) no-repeat top left;}
-.innerPageCenterDiv .oneColumnPageHeaderContainer .quote{background: none;padding-left: 0 }
+.innerPageCenterDiv .oneColumnPageHeaderContainer .quote{background: none;padding-left: 0;color:#393939; }
 .chairmanStatementRight .quote{padding-bottom: 2em;}
 .quoteClose{background: url(images/home/chairman_quote_close.png) no-repeat;width:14px;height:11px;display: inline-block;margin-left: 5px;margin-bottom: -5px;}
 #report-content .quote p {font-size: 105%;font-family: 'TradeGothicW01-BoldCn20 675334'; letter-spacing: -1px;line-height: 130%; padding-bottom: 25px; color:#777;}
 #chi-page #report-content .quote p {font-size: 90%;}
-#chi-page .quote{font-family: 'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';font-weight:bold;letter-spacing: 1px;line-height: 150%;font-size: 130%;}
-#chi-page .quote p{font-family: 'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
+#chi-page .quote{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';font-weight:bold;letter-spacing: 1px;line-height: 150%;font-size: 130%;}
+#chi-page .quote p{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
 span.person-title { font-size:70%; /*color:#4b6a79;*/ }
 #report-content p{ padding-bottom: 1.5em; /*line-height:190%;*/line-height: 180%;font-family: 'Trade Gothic W01 Roman';}
 .homeSection p,.homeSection ul {padding-bottom: 20px;font-size: 16px;line-height: 24px;}
 #chi-page .homeSection p,.homeSection ul {line-height: 30px;}
 .homeSection li{padding-bottom: 5px;}
-#chi-page #report-content p{font-family: 'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';}
-#chi-page #report-content p,#chi-page #report-content td{/* font-family: 'Heiti TC Medium', 'Microsoft Yahei', 'SimHei'; */letter-spacing: 1px;line-height: 170%}
+#chi-page #report-content p{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';}
+#chi-page #report-content p,#chi-page #report-content td{/* font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei'; */letter-spacing: 1px;line-height: 170%}
 #report-content h6, .homeSection h6, .generalContent h6{font-size: 1.2em;/*padding: 5px 0 5px;*/font-family: 'Trade Gothic W01 Bold 2';font-weight: normal;color: #000;padding-bottom: 0.3em;}
+#report-content .productTechTable h6{font-size: 1em;}
 .homeSection h6{font-size: 18px;}
-#chi-page #report-content h6,#chi-page .homeSection h6{font-family: 'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';font-weight: bold;letter-spacing: 1px;line-height: 130%;}
+#chi-page #report-content h6,#chi-page .homeSection h6{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';font-weight: bold;letter-spacing: 1px;line-height: 130%;}
 #report-menu { width:180px; float:right; }
 .report-menu-sep { margin:20px 0; margin-bottom:10px; display:block; height:1px; border-top:1px solid #aaa; }
 .report-menu-title { color:#000; font-weight:bold; font-size:12px; line-height:16px; }
@@ -293,7 +296,7 @@ span.person-title { font-size:70%; /*color:#4b6a79;*/ }
 .brand-desc { padding-top:20px; float:left; width:25%; }
 .review-operation-desc { float:left; width: 60%; }
 .finance-notes-sub-title { color:#666; margin-bottom: 0.5em; font-family: 'Trade Gothic W01 Bold 2';}
-#chi-page .finance-notes-sub-title {font-size: 110%;font-family: 'Heiti TC Medium', 'Microsoft Yahei', 'SimHei'; }
+#chi-page .finance-notes-sub-title {font-size: 110%;font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei'; }
 .GSM-header { font-size: 130%; font-weight: bold; color: #333; width:95%; border-bottom:1px solid #aaa; }
 .GSM-country { font-size: 110%; font-weight: bold; color: #555; margin-bottom:5px; }
 .report-sub-sub-title { color: #466678; }

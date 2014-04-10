@@ -359,7 +359,7 @@ $homeContent['en']['Consumer and Trade'] = $str;
 $str = '消費者及商業';
 $homeContent['zh-hant']['Consumer and Trade'] = $str;
 
-$str = 'Premium Cleansing';
+$str = 'Premium Cleaning';
 $homeContent['en']['Premium Cleansing'] = $str;
 $str = '卓越清洗功能';
 $homeContent['zh-hant']['Premium Cleansing'] = $str;
@@ -433,7 +433,7 @@ $homeContent['zh-hant']['Review of Operations'] = '業務回顧';
 $homeContent['en']['Executive Summary'] = 'Executive Summary';
 $homeContent['zh-hant']['Executive Summary'] = '行政摘要';
 
-$homeContent['en']['MDA & Governance'] = 'Management’s Discussion and Analysis, and Governance';
+$homeContent['en']['MDA & Governance'] = 'MD&A and Governance';
 $homeContent['zh-hant']['MDA & Governance'] = '討論、分析與管治';
 
 $homeContent['en']['Our Brands'] = 'Our Brands';
@@ -460,7 +460,7 @@ $homeContent['en']['Governance'] = 'Governance';
 $homeContent['zh-hant']['Governance'] = '管治';
 $homeContent['en']['Board of Directors'] = 'Board of Directors';
 $homeContent['zh-hant']['Board of Directors'] = '董事會';
-$homeContent['en']['Managements Discussion and Analysis'] = 'Management&#39;s Discussion and Analysis';
+$homeContent['en']['Managements Discussion and Analysis'] = 'Management’s Discussion and Analysis';
 $homeContent['zh-hant']['Managements Discussion and Analysis'] = '管理層討論與分析';
 $homeContent['en']['Corporate Governance Report'] = 'Corporate Governance Report';
 $homeContent['zh-hant']['Corporate Governance Report'] = '企業管治報告';
@@ -482,10 +482,10 @@ $homeContent['en']['Financials'] = 'Financials';
 $homeContent['zh-hant']['Financials'] = '財務';
 $homeContent['en']['Financial Summary'] = 'Financial Summary';
 $homeContent['zh-hant']['Financial Summary'] = '財務概要';
-$homeContent['en']['Independent Auditors Report'] = 'Independent Auditor&#39;s Report';
+$homeContent['en']['Independent Auditors Report'] = 'Independent Auditor’s Report';
 $homeContent['zh-hant']['Independent Auditors Report'] = '獨立核數師報告書';
-$homeContent['en']['Consolidated Statement of Comprehensive Income'] = 'Consolidated Statement of Comprehensive Income';
-$homeContent['zh-hant']['Consolidated Statement of Comprehensive Income'] = '綜合全面收入表';
+$homeContent['en']['Consolidated Statement of Comprehensive Income'] = 'Consolidated Statement of Profit or Loss and Other Comprehensive Income';
+$homeContent['zh-hant']['Consolidated Statement of Comprehensive Income'] = '綜合損益及其他全面收入表';
 $homeContent['en']['Consolidated Statement of Financial Position'] = 'Consolidated Statement of Financial Position';
 $homeContent['zh-hant']['Consolidated Statement of Financial Position'] = '綜合財務狀況表';
 $homeContent['en']['Statements of Financial Position'] = 'Statement of Financial Position';
@@ -595,7 +595,7 @@ $(window).load(function () {
               <div><?php echo $homeContent[ICL_LANGUAGE_CODE]['HIGHLIGHTS'];?></div>
             </div>
             <div class="sectionContent">
-              <div class="homeSectionContentDiv clearfix">
+              <div class="homeSectionContentDiv clearfix" style="padding-top: 15px;">
               	<div class="homeSectionContentInnerFullWidthDiv">
               		<?php echo $homeContent[ICL_LANGUAGE_CODE]['HIGHLIGHTS Table'];?>
 					<div class="FH_highlight_graph clearfix">
@@ -612,7 +612,7 @@ $(window).load(function () {
 						<div id="home-graph-container-4" class="graph-container" style="width: 185px;height: 230px;"></div>
 						</div>
               		</div>
-              		<div class="readMoreDiv"> <a href="<?php echo site_url();echo get_curr_lang_path() ; ?>/executive-summary<?php echo get_curr_lang_second_path() ; ?>/highlights-2<?php echo get_curr_lang_second_path() ; ?>" class="btn_readMore clearfix"> <span class="readMoreLeft"></span> <span class="readMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Financial Highlights read more'] ;?></span> <span class="readMoreRight"></span> </a>
+              		<div class="readMoreDiv"> <a href="<?php echo site_url();echo get_curr_lang_path() ; ?>/financial-highlights<?php echo get_curr_lang_second_path() ; ?>" class="btn_readMore clearfix"> <span class="readMoreLeft"></span> <span class="readMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Financial Highlights read more'] ;?></span> <span class="readMoreRight"></span> </a>
 						</div>
 				</div>
               </div>
@@ -749,45 +749,45 @@ $(window).load(function () {
                   <div class="downloadLeft">
                     <div class="headlineTitle dotUnderline"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Full Report (PDF)'] ;?></div>
                     <div class="reportCoverContainer"><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf"><img src="<?php bloginfo('wpurl'); ?>/wp-content/themes/twentyten/images/home/home_cover<?php echo get_curr_lang_second_path() ; ?>.jpg" alt="" /></a></div>
-                    <a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Download full report'] ;?></a> </div>
+                    <a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Download full report'] ;?></a> </div>
                   <div class="downloadRight">
                     <div class="headlineTitle dotUnderline"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Sections (PDF)'] ;?></div>
                     <div class="downloadLinksContainer dotUnderline">
                       <div><?php echo $homeContent[ICL_LANGUAGE_CODE]['Executive Summary'] ;?></div>
                       <ul class="downloadLinkList">
-                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Financial_Highlights<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Financial Highlights'] ;?></a></li>
-                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Chairman_Statement<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['CHAIRMANS STATEMENT'] ;?></a></li>
-                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_CEO_Review<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Chief Executive Officers Strategic Review'] ;?></a></li>
-                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Power_Equipment_Highlights<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Power Equipment Highlights'] ;?></a></li>
-                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Power_Equipment<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Power Equipment'] ;?></a></li>
-                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Floor_Care_And_Appliances_Highlights<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Floor Care and Appliances Highlights'] ;?></a></li>
-                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Floor_Care_And_Appliances<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Floor Care and Appliances'] ;?></a></li>
+                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_Financial_Highlights<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Financial Highlights'] ;?></a></li>
+                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_Chairman_Statement<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['CHAIRMANS STATEMENT'] ;?></a></li>
+                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_CEO_Review<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Chief Executive Officers Strategic Review'] ;?></a></li>
+                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_Power_Equipment_Accessories_And_Hand_Tools_Overview<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Power Equipment Highlights'] ;?></a></li>
+                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_Power_Equipment_Accessories_And_Hand_Tools<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Power Equipment'] ;?></a></li>
+                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_Floor_Care_And_Appliances_Overview<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Floor Care and Appliances Highlights'] ;?></a></li>
+                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_Floor_Care_And_Appliances<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Floor Care and Appliances'] ;?></a></li>
                       </ul>
                     </div>
                     <div class="downloadLinksContainer dotUnderline">
                       <div><?php echo $homeContent[ICL_LANGUAGE_CODE]['MDA & Governance'] ;?></div>
                       <ul class="downloadLinkList">
-                      	<li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Board_of_Directors<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Board of Directors'] ;?></a></li>
-                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Management_Discussion_Analysis<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Managements Discussion and Analysis'] ;?></a></li>
-                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Corporate_Governance<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Corporate Governance Report'] ;?></a></li>
-                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Director_Report<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Report of the Directors'] ;?></a></li>
+                      	<li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_Board_of_Directors<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Board of Directors'] ;?></a></li>
+                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_Managements_Discussion_Analysis<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Managements Discussion and Analysis'] ;?></a></li>
+                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_Corporate_Governance<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Corporate Governance Report'] ;?></a></li>
+                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_Director_Report<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Report of the Directors'] ;?></a></li>
                       </ul>
                     </div>
                     <div class="downloadLinksContainer dotUnderline">
                       <div><?php echo $homeContent[ICL_LANGUAGE_CODE]['Financials'] ;?></div>
                       <ul class="downloadLinkList">
-                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Financial_Summary<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Financial Summary'] ;?></a></li>
-                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Independent_Auditor_Report<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Independent Auditors Report'] ;?></a></li>
-                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Consolidated_Statement_Comprehensive_Income<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Consolidated Statement of Comprehensive Income'] ;?></a></li>
-                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Consolidated_Statement_Financial_Position<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Consolidated Statement of Financial Position'] ;?></a></li>
-                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Statement_Financial_Position<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Statements of Financial Position'] ;?></a></li>
-                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Consolidated_Statement_Changes_Equity<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Consolidated Statement of Changes in Equity'] ;?></a></li>
-                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Consolidated_Statement_Cash_Flow<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Consolidated Statement of Cash Flow'] ;?></a></li>
-                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Notes_Consolidated_Financial_Statement<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Notes to the Consolidated Financial Statements'] ;?></a></li>
+                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_Financial_Summary<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Financial Summary'] ;?></a></li>
+                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_Independent_Auditor_Report<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Independent Auditors Report'] ;?></a></li>
+                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_Consolidated_Statement_Profit_Loss_Comprehensive_Income<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Consolidated Statement of Comprehensive Income'] ;?></a></li>
+                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_Consolidated_Statement_Financial_Position<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Consolidated Statement of Financial Position'] ;?></a></li>
+                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_Statement_Financial_Position<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Statements of Financial Position'] ;?></a></li>
+                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_Consolidated_Statement_Changes_Equity<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Consolidated Statement of Changes in Equity'] ;?></a></li>
+                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_Consolidated_Statement_Cash_Flow<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Consolidated Statement of Cash Flow'] ;?></a></li>
+                        <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_Notes_Consolidated_Financial_Statement<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Notes to the Consolidated Financial Statements'] ;?></a></li>
                       </ul>
                     </div>
                     <ul class="downloadLinkList">
-                      <li><a target="_blank" style="background-position: 0 5px" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR12_Corporate_info<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink sectionHeader"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Corporate Information'] ;?></a></li>
+                      <li><a target="_blank" style="background-position: 0 5px" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_Corporate_info<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink sectionHeader"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Corporate Information'] ;?></a></li>
                     </ul>
                   </div>
                 </div>

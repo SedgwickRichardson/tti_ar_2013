@@ -1283,8 +1283,8 @@ function initFinancialHighlights(lang){
 	}
 	else
 	{
-		tip1 = "北美洲";
-		tip2 = "歐洲、其他地區"
+		tip1 = "電動工具、配件及<br>手動工具";
+		tip2 = "地板護理及器具"
 	}
 	
 	$('#graph-container-5').highcharts({

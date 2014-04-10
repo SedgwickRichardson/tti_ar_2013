@@ -694,7 +694,7 @@ function initInnerPageTopNav()
 			if(mainNavConainerArray[i].className.indexOf('current-page-ancestor') > 0)
 			{
 				/*subNavArray[i-1].style.display = 'block';*/
-				subNavArray[i].style.display = 'block';
+				subNavArray[i-1].style.display = 'block';
 				var subNavHeight = $('#subNavContainer').height()+'px';
 				headerHeight = $('#header').height();
 				$('#subNavWraper').height(subNavHeight);

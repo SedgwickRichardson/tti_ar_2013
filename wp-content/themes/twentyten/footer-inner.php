@@ -18,19 +18,23 @@ $nextPage = get_post_custom_values('nextPage', get_the_ID());
 $nextPage = $nextPage[0];
 $prevPage = get_post_custom_values('prevPage', get_the_ID());
 $prevPage = $prevPage[0];
+$nextTipTitle = get_post_custom_values('tipTitle', $nextPage);
+$nextTipTitle = $nextTipTitle[0];
+$prevTipTitle = get_post_custom_values('tipTitle', $prevPage);
+$prevTipTitle = $prevTipTitle[0];
 ?>
 <div class="bottomNav clearfix">
 <?php
 if(!empty($prevPage)){
 ?>
-<div class="floatLeft"><a href="<?php echo site_url();echo $prevPage;?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Previous page']; ?></a></div>
+<div class="floatLeft"><a class="tooltip-left" title="<?php if(ICL_LANGUAGE_CODE=="zh-hant"){echo '去到';} else{echo 'Go to ';}?><?php if(empty($prevTipTitle)){echo get_the_title($prevPage);}else{echo $prevTipTitle;} ?>" href="<?php echo get_permalink($prevPage);?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Previous page']; ?></a></div>
 <?
 }
 ?>
 <?php
 if(!empty($nextPage)){
 ?>
-<div class="floatRight"><a href="<?php echo site_url();echo $nextPage;?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Next page']; ?></a></div>
+<div class="floatRight"><a class="tooltip" title="<?php if(ICL_LANGUAGE_CODE=="zh-hant"){echo '去到';} else{echo 'Go to ';}?><?php if(empty($nextTipTitle)){echo get_the_title($nextPage);}else{echo $nextTipTitle;} ?>" href="<?php echo get_permalink($nextPage);?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Next page']; ?></a></div>
 <?
 }
 ?>
