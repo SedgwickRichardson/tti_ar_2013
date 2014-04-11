@@ -94,30 +94,12 @@ $(document).ready(function(){
 	   position: 'bottom-left'
 	});
 	
-	//init interactive chart for Power Equipment Highlights
-   /*if($('body').hasClass('page-id-3636')){
-		initPowerEquipmentHighlightsGraph("en");
-	}
-	else if($('body').hasClass('page-id-3639')){
-		initPowerEquipmentHighlightsGraph("chi");
-	}*/
-	/*
-	else if($('body').hasClass('page-id-1470')){
-	//init interactive chart for Power Equipment Highlights
-		initFloorCareHighlightsGraph("en");
-	}
-	else*/ if($('body').hasClass('page-id-5322')){
+	/*if($('body').hasClass('page-id-5322')){
 		initFloorCareHighlightsGraph("chi");
 	}
-	else if($('body').hasClass('page-id-13') || $('body').hasClass('page-id-18')){
+	else */if($('body').hasClass('page-id-13') || $('body').hasClass('page-id-18')){
 	//init interactive chart for Chairman’s Statement
 		initChairmanGraph();
-	}
-	else if($('body').hasClass('page-id-2589')){
-		initOperationalHighlightsGraph("en");
-	}
-	else if($('body').hasClass('page-id-2591')){
-		initOperationalHighlightsGraph("chi");
 	}
 	else if($('body').hasClass('page-id-326')){
 		initFinancialHighlights("en");
@@ -131,18 +113,12 @@ $(window).load(function () {
 	{
 		var headerHeight = $('#header').height();
 		if( $(window).scrollTop() > 127 ) {
-			$('#main-nav').css({position: 'fixed', top: '-10px', 'z-index': '899'});
+			$('#main-nav').css({position: 'fixed', top: '0px', 'z-index': '899'});
 			$('#wrapper').css({"margin-top":"0"});
-			//$('#backToTop').show();
-			//$('.bottomBacktoTop').fadeIn(300);
-			//$('.sideBacktoTop').fadeIn(300);
 			
 		} else {
 			$('#main-nav').css({position: 'relative', 'z-index': '899', top:'0'});
 			$('#wrapper').css({"margin-top":"0"});
-			//$('#backToTop').hide();
-			//$('.bottomBacktoTop').fadeOut(300);
-			//$('.sideBacktoTop').fadeOut(300);
 		}
 		
 		if( $(window).scrollTop() > 170 ) {

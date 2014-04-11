@@ -139,7 +139,7 @@ body.home #quickLinkBox{right: 135px;/*right: 82px;*/}
 #access .menu-header li#menu-item-101{width:188px;}
 #access ul.sub-menu li { margin-right:0; border-bottom: 1px solid #CCCCCC; }
 #access #menu-item-37 ul, #access #menu-item-101 ul { left:-18px; }
-#access a { color: #E5E5E5; display: block; line-height: 20px; height:37px; padding: 12px 0 0; text-decoration:none; font-size:13px; font-family:'Trade Gothic W01 Bold 2'; margin-top:10px; text-transform:uppercase;}
+#access a { color: #E5E5E5; display: block; line-height: 20px; height:37px; padding: 12px 0 0; text-decoration:none; font-size:13px; font-family:'Trade Gothic W01 Bold 2'; /*margin-top:10px; */text-transform:uppercase;}
 #chi-page #access a {font:16px 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';height: 38px;padding: 11px 0 0;}
 #access ul ul {	/* box-shadow: 0px 3px 3px rgba(0,0,0,0.2);	-moz-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);	-webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.2); */ display: none; position: absolute; top: 34px; left: 0; float: left; width: auto; z-index: 99999; background-color: #EBEBEB; }
 #access ul ul li { min-width: 180px; border-bottom:1px solid #CCCCCC; }
@@ -376,7 +376,7 @@ body.home #iconBtn{margin-top: 14px;float:right;}
 #iconBtnstickyContainer{background:url(../../themes/twentyten/images/general/bg_home_top_sticky.png) bottom no-repeat; width:829px; height:44px; z-index:997;}
 #primary .homeSection{padding-bottom:45px; font-family:'Trade Gothic W01 Roman'; font-size: 15px; line-height: 140%;}
 #chi-page #primary .homeSection{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';line-height: 1.7em;letter-spacing: 1px}
-.sectionTitle{/*background:#A8BCC6 url(images/general/bg_home_title.png) no-repeat;*/ background-color: #0077A8;width:825px; height:45px; color:#fff; font-family: 'Trade Gothic W01 Bold 2'; font-size:22px;}
+.sectionTitle{/*background:#A8BCC6 url(images/general/bg_home_title.png) no-repeat;*/margin-left: 5px; background-color: #0077A8;width:820px; height:45px; color:#fff; font-family: 'Trade Gothic W01 Bold 2'; font-size:22px;}
 #chi-page .sectionTitle{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
 .sectionTitle div{display:block; padding:12px 0 0 24px; font-size:22px;}
 .sectionContent{/*background:url(images/general/bg_home_item_btmBorder.png) no-repeat bottom;*/ width:820px; margin-left:5px;}

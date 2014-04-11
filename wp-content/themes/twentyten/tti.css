@@ -58,10 +58,10 @@ a#searchsubmit, a#searchsubmit-404 { /*	display:block;*/ cursor:pointer; display
 a#searchsubmit-404 { float:left; }
 /* a#searchsubmit:hover,a#searchsubmit-404:hover{	color:#000;	background: url(images/general/search_btn_ol.gif) no-repeat;}
  */#main-nav { /*height:49px; width:100%; background-color: #0072A4;  -moz-box-shadow:0 3px 3px rgba(0,0,0,0.25); -webkit-box-shadow:0 3px 3px rgba(0,0,0,0.25); box-shadow: 0 3px 3px rgba(0,0,0,0.25); position:relative; z-index:899;*/
-height: 59px;
+height: 49px;
 width: 100%;
 background-color: #0072A4;
-background: url(images/general/main_nav_bg.jpg) repeat-x;
+/*background: url(images/general/main_nav_bg.jpg) repeat-x;*/
 -moz-box-shadow: 0 3px 3px rgba(0,0,0,0.25);
 -webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.25);
 box-shadow: 0 3px 3px rgba(0,0,0,0.25);
