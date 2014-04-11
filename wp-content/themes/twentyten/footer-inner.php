@@ -27,14 +27,14 @@ $prevTipTitle = $prevTipTitle[0];
 <?php
 if(!empty($prevPage)){
 ?>
-<div class="floatLeft"><a class="tooltip-left" title="<?php if(ICL_LANGUAGE_CODE=="zh-hant"){echo '去到';} else{echo 'Go to ';}?><?php if(empty($prevTipTitle)){echo get_the_title($prevPage);}else{echo $prevTipTitle;} ?>" href="<?php echo get_permalink($prevPage);?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Previous page']; ?></a></div>
+<div class="floatLeft"><a class="tooltip-left" title="<?php if(ICL_LANGUAGE_CODE=="zh-hant"){echo '前往';} else{echo 'Go to ';}?><?php if(empty($prevTipTitle)){echo get_the_title($prevPage);}else{echo $prevTipTitle;} ?>" href="<?php echo get_permalink($prevPage);?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Previous page']; ?></a></div>
 <?
 }
 ?>
 <?php
 if(!empty($nextPage)){
 ?>
-<div class="floatRight"><a class="tooltip" title="<?php if(ICL_LANGUAGE_CODE=="zh-hant"){echo '去到';} else{echo 'Go to ';}?><?php if(empty($nextTipTitle)){echo get_the_title($nextPage);}else{echo $nextTipTitle;} ?>" href="<?php echo get_permalink($nextPage);?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Next page']; ?></a></div>
+<div class="floatRight"><a class="tooltip" title="<?php if(ICL_LANGUAGE_CODE=="zh-hant"){echo '前往';} else{echo 'Go to ';}?><?php if(empty($nextTipTitle)){echo get_the_title($nextPage);}else{echo $nextTipTitle;} ?>" href="<?php echo get_permalink($nextPage);?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Next page']; ?></a></div>
 <?
 }
 ?>

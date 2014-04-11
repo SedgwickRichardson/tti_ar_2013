@@ -74,10 +74,10 @@ $(document).ready(function(){
             $('#header').css({position: 'fixed', top: '0px'});
 				if(isiPhone())
 				{
-					$("#iconBtnstickyContainer").css({"top":window.pageYOffset-5, "position":"absolute"});
+					$("#iconBtnstickyContainer").css({"top":window.pageYOffset, "position":"absolute"});
 				}else
-					$('#iconBtnstickyContainer').css({position: 'fixed', top: '183px'});
-				$('.homeContentLeft').css({'margin-top':38});
+					$('#iconBtnstickyContainer').css({position: 'fixed', top: '173px'});
+				$('.homeContentLeft').css({'margin-top':28});
 				//$('#backToTop').show();
 			//$('#header .logo img').css({"margin": "10px"});
         } else {
@@ -87,7 +87,7 @@ $(document).ready(function(){
 					$("#iconBtnstickyContainer").css({"top":window.pageYOffset, "position":"absolute", 'z-index':1});
 				}else
 					$('#iconBtnstickyContainer').css({position: 'fixed', 'z-index':1});
-				$('.homeContentLeft').css({'margin-top':38});
+				$('.homeContentLeft').css({'margin-top':28});
 				//$('#backToTop').hide();
 			//$('#header .logo img').css({"margin": "30px"});
         }
