@@ -85,13 +85,17 @@ $(document).ready(function(){
 	   arrow: false,
 	   /*offsetX: -20,*/
 	   offsetY: 5,
-	   position: 'bottom-right'
+	   position: 'bottom-right',
+	   speed: 0,
+	   delay: 0
 	});
 	$('.tooltip-left').tooltipster({
 	   arrow: false,
 	   /*offsetX: -20,*/
 	   offsetY: 5,
-	   position: 'bottom-left'
+	   position: 'bottom-left',
+	   speed: 0,
+	   delay: 0
 	});
 	
 	/*if($('body').hasClass('page-id-5322')){
@@ -258,11 +262,13 @@ $(window).load(function () {
 							<div id="second-link" style="float: right;">
 								<a target="_blank" href="http://www.ttigroup.com/"><?php echo $langContent[ICL_LANGUAGE_CODE]['TTI Group']; ?></a> | 
 								<a href="javascript:;" id="quickLinksBtn"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Quick Links'];?></a> | 
-								<div id="quickLinkBox">								
+								<div id="quickLinkBox">
+									<div class="quickLinkContent">							
 									<a target="_blank" href="<?php echo $langContent[ICL_LANGUAGE_CODE]['Investor Relations link']; ?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Investor Relations']; ?></a>
 									<a target="_blank" href="http://www.ttigroup.com/en/investor_relations/presentation_and_webcasts"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Audio Webcast']; ?></a>
 									<a target="_blank" href="http://www.ttigroup.com/en/investor_relations/presentation_and_webcasts"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Presentation']; ?></a>
 									<a target="_blank" href="<?php echo $langContent[ICL_LANGUAGE_CODE]['Press release link']; ?>"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Press release']; ?></a>
+									</div>
 								</div>																	<a href="<?php echo site_url();echo get_curr_lang_path() ; ?>/downloads<?php echo get_curr_lang_second_path() ; ?>"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Downloads']; ?></a> |  
 						<?php
 									$langs = icl_get_languages('skip_missing=N&orderby=KEY&order=DIR') ; 

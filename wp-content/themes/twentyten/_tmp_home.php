@@ -500,14 +500,14 @@ $homeContent['en']['Corporate Information'] = 'Corporate Information';
 $homeContent['zh-hant']['Corporate Information'] = '公司資料';
 $langContent['en']['Print this page'] = '&#59158;';
 $langContent['zh-hant']['Print this page'] = '&#59158;';
-$langContent['en']['Print this page in PDF'] = '&#59158;';
-$langContent['zh-hant']['Print this page in PDF'] = '&#59158;';
+$langContent['en']['Print this page in PDF'] = 'Print this page';
+$langContent['zh-hant']['Print this page in PDF'] = '列印此頁';
 $langContent['en']['Download PDF file of this section'] = '&#128229;';
 $langContent['zh-hant']['Download PDF file of this section'] = '&#128229;';
 $langContent['en']['Email this page'] = '&#59196;';
 $langContent['zh-hant']['Email this page'] = '&#59196;';
-$langContent['en']['Download this section'] = '&#128229;';
-$langContent['zh-hant']['Download this section'] = '&#128229;';
+$langContent['en']['Download this section'] = 'Download this page';
+$langContent['zh-hant']['Download this section'] = '下載此頁';
 
 $langContent['en']['home share position'] = 'right:-125px;';
 $langContent['zh-hant']['home share position'] = 'right: -133px;';
@@ -564,10 +564,11 @@ $(window).load(function () {
 		  <div id="iconBtnstickyContainer">
 			  <div id="iconBtn">
 					<a href="javascript:;" id="headerShareBtn"><?php echo $langContent[ICL_LANGUAGE_CODE]['Email this page']; ?></a>
-					<a id="downloadLink" target="_blank" href="<?php echo site_url();echo '/wp-content/uploads/2013/pdf/';echo $homeContent[ICL_LANGUAGE_CODE]['PDF Links'];?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Download this section']; ?><span id="tooltips_download"></span></a>
-					<a id="printLink" target="_blank" href="<?php echo site_url();echo '/wp-content/uploads/2013/pdf/';echo $homeContent[ICL_LANGUAGE_CODE]['PDF Links'];?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?><span id="tooltips_print"></span></a>
+					<a class="tooltip-left" title="<?php echo $langContent[ICL_LANGUAGE_CODE]['Download this section']; ?>" id="downloadLink" target="_blank" href="<?php echo site_url();echo '/wp-content/uploads/2013/pdf/';echo $homeContent[ICL_LANGUAGE_CODE]['PDF Links'];?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Download this section']; ?><!-- <span id="tooltips_download"></span> --></a>
+					<a class="tooltip-left" title="<?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?>" id="printLink" target="_blank" href="<?php echo site_url();echo '/wp-content/uploads/2013/pdf/';echo $homeContent[ICL_LANGUAGE_CODE]['PDF Links'];?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?><!-- <span id="tooltips_print"></span> --></a>
 			  </div>  
 			  <div class="addthis_toolbox addthis_default_style shareBox" id="shareBox" style="display:none; <?php echo $langContent[ICL_LANGUAGE_CODE]['home share position']; ?>">
+			  	<div class="shareBoxContent">
 					<a class="addthis_button_facebook"></a>
 					<a class="addthis_button_twitter"></a>
 					<a class="addthis_button_google_plusone_badge" g:plusone:size="small" g:plusone:name="" g:plusone:href="https://plus.google.com/102383601500147943541/"></a> 
@@ -576,6 +577,7 @@ $(window).load(function () {
 					<a class="addthis_button_email"></a>
 					<a class="addthis_button_sinaweibo"></a>
 					<div id="qqwb_share__" data-appkey="801387349" data-icon="2" data-counter="0" data-content="<?php echo $homeContent[ICL_LANGUAGE_CODE]['tencent']; ?>"></div>
+				</div>
 			  </div>
 		  </div>
 		  <script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
@@ -753,9 +755,14 @@ $(window).load(function () {
                   <div class="downloadRight">
                     <div class="headlineTitle dotUnderline"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Sections (PDF)'] ;?></div>
                     <div class="downloadLinksContainer dotUnderline">
-                      <div><?php echo $homeContent[ICL_LANGUAGE_CODE]['Executive Summary'] ;?></div>
+                      <div><?php echo $homeContent[ICL_LANGUAGE_CODE]['Financial Highlights'] ;?></div>
                       <ul class="downloadLinkList">
                         <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_Financial_Highlights<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Financial Highlights'] ;?></a></li>
+                       </ul>
+                    </div>
+                    <div class="downloadLinksContainer dotUnderline">
+                      <div><?php echo $homeContent[ICL_LANGUAGE_CODE]['Executive Summary'] ;?></div>
+                      <ul class="downloadLinkList">
                         <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_Chairman_Statement<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['CHAIRMANS STATEMENT'] ;?></a></li>
                         <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_CEO_Review<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Chief Executive Officers Strategic Review'] ;?></a></li>
                         <li><a target="_blank" href="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/pdf/TTI_AR13_Power_Equipment_Accessories_And_Hand_Tools_Overview<?php echo get_pdf_curr_lang_second_path() ; ?>.pdf" class="downloadLink"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Power Equipment Highlights'] ;?></a></li>

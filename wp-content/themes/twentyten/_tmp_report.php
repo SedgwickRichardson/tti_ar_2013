@@ -12,18 +12,18 @@
 get_header("inner"); 
 remove_filter ('the_content', 'wpautop');
 $currLang = ICL_LANGUAGE_CODE;
-$langContent['en']['Download this section'] = '&#128229;';
-$langContent['zh-hant']['Download this section'] = '&#128229;';
+$langContent['en']['Download this section'] = 'Download this page';
+$langContent['zh-hant']['Download this section'] = '下載此頁';
 $langContent['en']['Previous page'] = '&laquo; Previous';
 $langContent['zh-hant']['Previous page'] = '&laquo; 上一頁';
 $langContent['en']['Next page'] = 'Next &raquo;';
 $langContent['zh-hant']['Next page'] = '下一頁 &raquo;';
 $langContent['en']['width'] = '130';
 $langContent['zh-hant']['width'] = '125';
-$langContent['en']['Print this page'] = '&#59158;';
-$langContent['zh-hant']['Print this page'] = '&#59158;';
-$langContent['en']['Print this page in PDF'] = '&#59158;';
-$langContent['zh-hant']['Print this page in PDF'] = '&#59158;';
+$langContent['en']['Print this page'] = 'Print this page';
+$langContent['zh-hant']['Print this page'] = '列印此頁';
+$langContent['en']['Print this page in PDF'] = 'Print this page';
+$langContent['zh-hant']['Print this page in PDF'] = '列印此頁PDF';
 $langContent['en']['Download PDF file of this section'] = '&#128229;';
 $langContent['zh-hant']['Download PDF file of this section'] = '&#128229;';
 $langContent['en']['Email this page'] = '&#59196;';
@@ -65,8 +65,8 @@ $prevTipTitle = $prevTipTitle[0];
 						if(!empty($pdfLink)){	?>
 							<div id="iconBtn">
 								<a href="javascript:;" id="headerShareBtn"><?php echo $langContent[ICL_LANGUAGE_CODE]['Email this page']; ?></a>
-								<a id="downloadLink" target="_blank" href="<?php echo site_url();echo $pdfLink;?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Download this section']; ?><span id="tooltips_download"></span></a>
-								<a id="printLink" target="_blank" href="<?php echo site_url();echo $pdfLink;?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?><span id="tooltips_print"></span></a>
+								<a class="tooltip-left" title="<?php echo $langContent[ICL_LANGUAGE_CODE]['Download this section']; ?>" id="downloadLink" target="_blank" href="<?php echo site_url();echo $pdfLink;?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Download this section']; ?><!-- <span id="tooltips_download"></span> --></a>
+								<a class="tooltip-left" title="<?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?>" id="printLink" target="_blank" href="<?php echo site_url();echo $pdfLink;?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?><!-- <span id="tooltips_print"></span> --></a>
 							</div>
 						<?
 						}
@@ -90,6 +90,7 @@ $prevTipTitle = $prevTipTitle[0];
 							<a id="backToTopLink"  href="javascript:initBackTop();" style="float:right;"><?php echo $langContent[ICL_LANGUAGE_CODE]['BACK TO TOP']; ?></a>
 							
 							<div class="addthis_toolbox addthis_default_style shareBox" id="shareBox" style="display:none">
+								<div class="shareBoxContent">
 								<a class="addthis_button_facebook"></a>
 								<a class="addthis_button_twitter"></a>
 								<a class="addthis_button_google_plusone_badge" g:plusone:size="small" g:plusone:name="" g:plusone:href="https://plus.google.com/102383601500147943541/"></a> 
@@ -101,6 +102,7 @@ $prevTipTitle = $prevTipTitle[0];
 								<div id="qqwb_share__" data-appkey="801387349" data-icon="2" data-counter="0" data-content="<?php echo $langContent[ICL_LANGUAGE_CODE]['tencent']; ?>"></div>
 								<!--<script type="text/javascript" src="http://china-addthis.googlecode.com/svn/trunk/addthis.js" charset="UTF-8"></script>
 								<a class="addico add_48" href="http://addthis.org.cn/go/?act=share&id=48" i="48" e="click" title="收藏&amp;分享">分享</a>-->
+								</div>
 							</div>		
 						</div>
 					</div>

@@ -41,9 +41,11 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/tti.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/font-<?php if($_COOKIE['gre_font_cookie']) echo $_COOKIE['gre_font_cookie'];else echo "medium"; ?>.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/tooltipster.css" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.1'></script>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/jquery.tooltipster.min.js"></script>
 <script type='text/javascript' src='<?php bloginfo( 'template_url' ); ?>/js/tti.js'></script>
 <script type='text/javascript' src='<?php bloginfo( 'template_url' ); ?>/js/jquery.cookie.js'></script>
 <script type='text/javascript' src='<?php bloginfo( 'template_url' ); ?>/js/jquery.pngFix.pack.js'></script>
@@ -110,6 +112,24 @@ $(document).ready(function(){
 	 initOperationalMap();
 	 inithomeBrandTab('homePowerEquipmentBrandTabContainer', 'homePowerEquipmentBrandContentContainer');
 	 inithomeBrandTab('homeFloorCareBrandTabContainer', 'homeFloorCareBrandContentContainer');
+
+	 $('.tooltip').tooltipster({
+	   arrow: false,
+	   /*offsetX: -20,*/
+	   offsetY: 5,
+	   position: 'bottom-right',
+	   speed: 0,
+	   delay: 0
+	});
+	$('.tooltip-left').tooltipster({
+	   arrow: false,
+	   /*offsetX: -20,*/
+	   offsetY: 5,
+	   position: 'bottom-left',
+	   speed: 0,
+	   delay: 0
+	});
+	
 });
 </script>
 <!--[if IE 6]>
@@ -207,11 +227,13 @@ $(document).ready(function(){
 							<div id="second-link" style="float: right;">
 								<a target="_blank" href="http://www.ttigroup.com/"><?php echo $langContent[ICL_LANGUAGE_CODE]['TTI Group']; ?></a> | 
 								<a href="javascript:;" id="quickLinksBtn"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Quick Links']; ?></a> | 
-								<div id="quickLinkBox">								
+								<div id="quickLinkBox">
+									<div class="quickLinkContent">							
 									<a target="_blank" href="<?php echo $langContent[ICL_LANGUAGE_CODE]['Investor Relations link']; ?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Investor Relations']; ?></a>
 									<a target="_blank" href="http://www.ttigroup.com/en/investor_relations/presentation_and_webcasts"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Audio Webcast']; ?></a>
 									<a target="_blank" href="http://www.ttigroup.com/en/investor_relations/presentation_and_webcasts"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Presentation']; ?></a>
 									<a target="_blank" href="<?php echo $langContent[ICL_LANGUAGE_CODE]['Press release link']; ?>"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Press release']; ?></a>
+									</div>
 								</div>
 								<a href="<?php echo site_url();echo get_curr_lang_path() ; ?>/downloads<?php echo get_curr_lang_second_path() ; ?>"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Downloads']; ?></a> |  
 						<?php
