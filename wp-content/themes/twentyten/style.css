@@ -70,7 +70,7 @@ blockquote cite, blockquote em, blockquote i { font-style: normal; }
 pre { background: #f7f7f7; color: #222; line-height: 18px; margin-bottom: 18px; padding: 1.5em; }
 abbr, acronym { border-bottom: 1px dotted #666; cursor: help; }
 sup, sub { height: 0; line-height: 1; position: relative; vertical-align: baseline; }
-sup { bottom: 1ex; }
+sup { bottom: 0.5ex; }
 sub { top: .5ex; }
 input[type="text"], textarea { background: #f9f9f9; border: 1px solid #ccc; box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1); -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1); -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1); padding: 2px; }
 a:link { color: #458CB4;text-decoration: none; }
@@ -673,6 +673,7 @@ li[type=i]{list-style-type: none;}
 .noPaddingBottom{padding-bottom:0 !important;}
 .textAlignLeft{text-align:left !important;}
 .closer{letter-spacing: -2px;}
+.findoutMoreBannerContent .contentDiv p.note{margin-top: 0.8em;font-size: 60%;}
 .graphContainer .graphTitleDiv{font-size:95%; line-height:130%; padding-bottom:1em;color: #393939; }
 .graphContainer .graphTitleDivWithArrow{background: url(images/highlights/FHArrow.png) no-repeat left top;padding-left: 30px;}
 #chi-page .graphContainer .graphTitleDivWithArrow{background-position: left 3px;}
@@ -753,7 +754,7 @@ li[type=i]{list-style-type: none;}
 #chi-page .downloadLinksContainer div, #chi-page .sectionHeader{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 .homeSection .downloadLinkList,.downloadLinkList{margin:0 0 20px 0;padding-bottom:0;}
 #chi-page .downloadLinkList,#chi-page .downloadLeft p{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';}
-.homeSection .downloadLinkList li,.downloadLinkList li,.downloadLeft .downloadLink{padding-bottom: 0;list-style: none;margin-bottom: 10px;background:url(images/home/btn_download.png) no-repeat 0 5px; padding-left:25px;}
+.homeSection .downloadLinkList li,.downloadLinkList li,.downloadLeft .downloadLink{padding-bottom: 0.1em;list-style: none;margin-bottom: 10px;background:url(images/home/btn_download.png) no-repeat 0 0.3em; padding-left:25px;}
 .homeSection .downloadLeft .downloadLink{font-size: 16px;}
 /*.downloadLink{color:#000;}*/
 
@@ -911,7 +912,7 @@ li[type=i]{list-style-type: none;}
 
 /*Operational highlights ends by Ron on 2013-03-28*/
 /*power equipment starts by Ron on 2013-03-28*/
-.mainBannerContainer{padding:20px 0 40px 0; position:relative; width:960px; height:486px;}
+.mainBannerContainer{padding:0 0 40px 0; position:relative; width:960px; height:486px;}
 .findoutMoreBannerContent{background:url(images/general/bg_findoutmore_content.png) repeat; position:absolute; bottom:40px;  display:none; width:178px; height:49px; right:0;}
 .btn_close_findoutMoreBanner{position:absolute; background:url(images/general/btn_close_findoutmoreBanner.gif) no-repeat; width: 66px;height: 28px;top: -15px;right: 25px; opacity:0;}
 .btn_close_findoutMoreBanner2{background:url(images/general/btn_close_findoutmoreBanner2.gif) no-repeat;}
@@ -922,8 +923,10 @@ li[type=i]{list-style-type: none;}
 .findoutMoreBannerContent .contentDiv p{padding-bottom:0 !important;font-size: 0.9em;}
 .findoutMoreBannerContent .findoutMoreTitle{font-family:'Trade Gothic W01 Bold 2'; text-transform:uppercase; font-size: 1.2em; padding-bottom: 0.4em;}
 #chi-page .findoutMoreBannerContent .findoutMoreTitle{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
-#btn_banner_findoutMore{background:url(images/general/btn_findoutmore.png) no-repeat; width:233px; height:49px; position:absolute; bottom:40px; right:0px; z-index:799;}
-#chi-page #btn_banner_findoutMore{background:url(images/general/btn_findoutmore-tc.png) no-repeat;}
+#btn_banner_findoutMore{background:url(images/general/btn_findoutmore.png) no-repeat left top; width:233px; height:49px; position:absolute; bottom:40px; right:0px; z-index:799;}
+#btn_banner_findoutMore:hover{background-position: right top;}
+#chi-page #btn_banner_findoutMore{background:url(images/general/btn_findoutmore-tc.png) no-repeat top left;display:block;}
+#chi-page #btn_banner_findoutMore:hover{background-position: right top;}
 .powerEquipmentTableContainer{/*padding:20px 0;*/}
 .powerEquipmentTable tr td{/*padding-right:25px; vertical-align:middle;*/}
 #report-content .highlightTableTitle{background-color: #0072A4;padding: 5px 11px;color: #fff;font-family:'Trade Gothic W01 Bold 2' }
@@ -985,14 +988,14 @@ margin-bottom: 8px;}
 padding: 0 0.5em;}
 .productTechTable tr.titleRow td{color: #fff;font-family: 'Trade Gothic W01 Bold 2';font-size: 1em;padding: 0 0.5em;}
 #chi-page .productTechTable tr.titleRow td{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
-.milwaukeeTable tr.titleRow td{ background-color: #F52925;/* border-top: 2px solid #BF2139;border-bottom: 1px solid #BF2139; */}
+.milwaukeeTable tr.titleRow td{ background-color: #db011c;/* border-top: 2px solid #BF2139;border-bottom: 1px solid #BF2139; */}
 .stilettoHartTable tr.titleRow td{ background-color:#000000; /* border-top:2px solid #231F20; border-bottom:1px solid #231F20; */} /*Stiletto and Hart*/
 .aegTable tr.titleRow td{ background-color:#EE7A0E; /* border-top:2px solid #F47F24; border-bottom:1px solid #F47F24; */}
-.ryobiTable tr.titleRow td{ background-color:#E3E65B;color:#393939; /* border-top:2px solid #C3D52E; border-bottom:1px solid #C3D52E; */}
-.homeliteDirtTable tr.titleRow td{ background-color:#FF290B; /* border-top:2px solid #EC1C24; border-bottom:1px solid #EC1C24; */} /*Homelite and Dirt Devil*/
-.dirtTable tr.titleRow td{ background-color:#F58426;}
+.ryobiTable tr.titleRow td{ background-color:#d6e041;color:#393939; /* border-top:2px solid #C3D52E; border-bottom:1px solid #C3D52E; */}
+.homeliteDirtTable tr.titleRow td{ background-color:#ee2e24; /* border-top:2px solid #EC1C24; border-bottom:1px solid #EC1C24; */} /*Homelite and Dirt Devil*/
+.dirtTable tr.titleRow td{ background-color:#db011c;}
 .hooverTable tr.titleRow td{ background-color:#CE1141;}
-.oreckTable tr.titleRow td{ background-color:#003F7F;}
+.oreckTable tr.titleRow td{ background-color:#004b91;}
 .vaxTable tr.titleRow td{ background-color:#F58426; /* border-top:2px solid #F16528; border-bottom:1px solid #F16528; */}
 .productTechTable tr.lastRow td{border-bottom:1px solid #393939;}
 .productTechTable tr td li.lastList{padding-bottom:0;}
@@ -1056,65 +1059,3 @@ body.page-id-371 #report-content p{font-family: 'Heiti TC Medium','Microsoft Yah
 .bottomBacktoTop{position:fixed; bottom:0; height:30px; box-shadow: 0 0 2px #000000; background:url(images/general/arrow_up.png) no-repeat center 10px #2E5263; text-align:center; color:#fff !important; z-index:2000; width:100%; font-family: 'Trade Gothic W01 Cn 18'; padding-top:20px; font-size:14px; display:none;}
 .sideBacktoTop{position:fixed; background:url(images/general/btn_backtotop.png) no-repeat; right:20px; width:43px; height:43px; bottom:20px; z-index:2000; display:none;}
 .sideBacktoTop:hover{background-position:0 -93px;}
-/*.btnOverlayOpen{display:none;position:absolute; background:url(images/general/btn_overlay_open.png) no-repeat; width:24px; height:24px;display:block;text-indent:-9999px;cursor:pointer;}
-.btnOverlayOpen:hover{background-position:-24px 0;}
-#btnOverlayOpen1{top: 16px;left: 12px;}
-#btnOverlayOpen2{left: 417px;top: 31px;}
-#btnOverlayOpen3{left: 417px;top: 154px;}
-#btnOverlayOpen4{left: 417px;top: 280px;}
-#btnOverlayOpen5{top: 154px;left: 695px;}#chi-page #btnOverlayOpen5{top: 154px;left: 715px;}
-#btnOverlayOpen6{left: 12px;top: 441px;}
-#btnOverlayOpen7{top: 441px;left: 654px;}
-#btnOverlayOpen8{left: 24px;top: 540px;}
-#btnOverlayOpen9{left: 421px;top: 352px;}
-#btnOverlayOpen10{left: 749px;top: 559px;}
-.brandContainer tr td{padding-right:69px; vertical-align:middle;}
-.brandContainer a{display:block; opacity:0.3;}
-.brandContainer a.active, .brandContainer a:hover{opacity:1;}
-.brandLargeImageContainer{position:relative;}
-#aegOverlay .open1{top: 361px;left: 7px;}
-#chi-page #aegOverlay .open1{top: 351px;left: 12px;}
-#aegOverlay .open2{top: 602px;left: 7px;}
-#chi-page #aegOverlay .open2{top: 600px;left: 7px;}
-#aegOverlay .open3{top: 602px;left: 402px;}
-#chi-page #aegOverlay .open3{top: 600px;left: 402px;}
-#aegOverlay .open4{top: 602px;left: 685px;}
-#chi-page #aegOverlay .open4{top: 600px;left: 685px;}
-#aegOverlay .open5{top: 22px;left: 420px;}
-#aegOverlay .open6{top: 22px;left: 734px;}
-#aegOverlay .open7{top: 272px;left: 420px;}
-#ryobiOverlay .open1{top: 360px;left: 7px;}
-#chi-page #ryobiOverlay .open1{top: 350px;left: 7px;}
-#ryobiOverlay .open2{top: 583px;left: 7px;}
-#chi-page #ryobiOverlay .open2{top: 578px;left: 7px;}
-#ryobiOverlay .open3{top: 583px;left: 402px;}
-#chi-page #ryobiOverlay .open3{top: 578px;left: 407px;}
-#ryobiOverlay .open4{top: 583px;left: 660px;}
-#chi-page #ryobiOverlay .open4{top: 578px;left: 660px;}
-#ryobiOverlay .open5{top: 23px;left: 420px;}
-#ryobiOverlay .open6{top: 20px;left: 700px;}
-#chi-page #ryobiOverlay .open6{top: 20px;left: 705px;}
-#ryobiOverlay .open7{top: 339px;left: 420px;}
-#chi-page #ryobiOverlay .open7{top: 339px;left: 416px;}
-#ryobiOverlay .open8{top: 339px;left: 713px;}
-#chi-page #ryobiOverlay .open8{top: 339px;left: 705px;}
-#hooverOverlay .open1{left: 20px;top: 552px;}
-#hooverOverlay .open2{left: 424px;top: 370px;}
-#hooverOverlay .open3{left: 790px;top: 545px;}
-#chi-page #hooverOverlay .open1{left: 20px;top: 532px;}
-#chi-page #hooverOverlay .open2{left: 424px;top: 350px;}
-#chi-page #hooverOverlay .open3{left: 790px;top: 525px;}
-#vaxOverlay .open1{left: 135px;top: 510px;}
-#vaxOverlay .open2{left: 775px;top: 555px;}
-#vaxOverlay .open3{left: 422px;top: 350px;}
-#vaxOverlay .open4{left: 710px;top: 350px;}
-#chi-page #vaxOverlay .open1{left: 135px;top: 522px;}
-#chi-page #vaxOverlay .open2{left: 790px;top: 565px;}
-#chi-page #vaxOverlay .open3{left: 430px;top: 355px;}
-#chi-page #vaxOverlay .open4{left: 720px;top: 355px;}
-#dirtdevilOverlay .open1{left: 28px;top: 540px;}
-#chi-page #dirtdevilOverlay .open1{top: 548px;}
-#dirtdevilOverlay .open2{top: 348px;left: 424px;}
-#chi-page #dirtdevilOverlay .open2{top: 355px;left: 430px;}
-#dirtdevilOverlay .open3{top: 474px;left: 750px;}
-#chi-page #dirtdevilOverlay .open3{top: 484px;left: 760px;}*/
