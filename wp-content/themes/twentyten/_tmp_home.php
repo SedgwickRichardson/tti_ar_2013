@@ -697,8 +697,8 @@ $(window).load(function () {
 				    <td class="homeProduct2ndCategory"><p><?php echo $homeContent[ICL_LANGUAGE_CODE]['Industrial'] ;?></p></td>
 				    <td class="homeProduct2ndCategory"><p><?php echo $homeContent[ICL_LANGUAGE_CODE]['Professional'] ;?></p></td>
 				    <td class="homeProduct2ndCategory"><p><?php echo $homeContent[ICL_LANGUAGE_CODE]['Consumer and Trade'] ;?></p></td>
-				    <td class="homeProduct2ndCategory" colspan="3"><p>&nbsp;</p></td>
-				    <td class="homeProduct2ndCategory" colspan="2"><p class="noMarginRight">&nbsp;</p></td>
+				    <td class="homeProduct2ndCategory" colspan="3"><p style="text-indent:-9999px"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Power Equipment & Accessories'] ;?></p></td>
+				    <td class="homeProduct2ndCategory" colspan="2"><p class="noMarginRight" style="text-indent:-9999px"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Hand Tools'] ;?></p></td>
 				  </tr>
 				  <tr>
 				    <td><a href="<?php echo site_url();echo get_curr_lang_path() ; ?>/executive-summary<?php echo get_curr_lang_second_path() ; ?>/power-equipment<?php echo get_curr_lang_second_path() ; ?>/industrial-power-tools<?php echo get_curr_lang_second_path() ; ?>/milwaukee<?php echo get_curr_lang_second_path() ; ?>"><img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/milwaukee_logo.png" alt="" width="100" height="49" /><span class="logoBtnArrow"></span></a></td>

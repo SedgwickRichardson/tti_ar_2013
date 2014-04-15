@@ -384,7 +384,7 @@ body.home #iconBtn{margin-top: 14px;float:right;}
 #chi-page #primary .homeSection{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';line-height: 1.7em;letter-spacing: 1px}
 .sectionTitle{/*background:#A8BCC6 url(images/general/bg_home_title.png) no-repeat;*/margin-left: 5px; background-color: #0077A8;width:820px; height:45px; color:#fff; font-family: 'Trade Gothic W01 Bold 2'; font-size:22px;}
 #chi-page .sectionTitle{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';font-weight:bold;}
-.sectionTitle div{display:block; padding:12px 0 0 24px; font-size:22px;}
+.sectionTitle div{display:block; padding:9px 0 0 24px; font-size:22px;}
 .sectionContent{/*background:url(images/general/bg_home_item_btmBorder.png) no-repeat bottom;*/ width:820px; margin-left:5px;}
 .homeSectionContentDiv{padding:33px 15px 44px 0;}
 .homeSectionContentInnerFullWidthDiv{padding: 11px 0 0 12px;}
@@ -747,7 +747,8 @@ li[type=i]{list-style-type: none;}
 .headlineTitle span{font-family:'Trade Gothic W01 Roman';/*letter-spacing: -1px;*/}
 .headlineTitle span.bodTitle{font-size: 80%;}
 .headlineTitle span.bodPos{font-size: 0.9em;display: block;font-family: 'Trade Gothic W01 Obl';}
-#chi-page  #content .headlineTitle span{font-family:'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';font-weight:normal;font-style: italic;}
+#chi-page .headlineTitle span.bodPos{font-style: italic;}
+#chi-page  #content .headlineTitle span{font-family:'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';font-weight:normal;}
 .subheadlineTitle{font-size: 1.2em;font-family: 'Trade Gothic W01 Bold 2';margin-top: 40px; }
 #chi-page .subheadlineTitle{font-family:'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';font-weight:bold}
 
@@ -1045,7 +1046,7 @@ padding: 0 0.5em;}
 .chi-bold-font{font-family: 'Heiti TC Medium','Microsoft Yahei','SimHei'!important;font-weight: bold!important;}
 /*SiteMap starts*/
 #chi-page .siteMapContainer a,#chi-page .siteMaplinkContainer a, #chi-page .siteMapContainer span{font-family: 'Heiti TC Medium','Microsoft Yahei','SimHei';}
-#chi-page .siteMapTitle{font-family: 'Heiti TC Medium','Microsoft Yahei','SimHei';}
+#chi-page .siteMapTitle{font-family: 'Heiti TC Medium','Microsoft Yahei','SimHei';font-weight: bold;}
 body.page-id-371 #report-content p{font-family: 'Heiti TC Medium','Microsoft Yahei','SimHei';}
 .siteMapContainer{margin-top:20px; }
 .siteMapSection{width: 450px;margin-right: 60px;float:left; margin-bottom:40px;}

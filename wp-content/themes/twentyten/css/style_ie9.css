@@ -5,8 +5,41 @@ bottom: 0.9ex;
 margin-left: -2px;
 }
 sup {
-bottom: 0.7ex;
+bottom: 0.6em;
 }
 #chi-page sup {
-bottom: 0.7ex;
+bottom: 0.4em;
+}
+#chi-page .sectionTitle div{
+	padding:16px 0 0 24px;
+}
+#chi-page #breadcrumb #backToTopLink{
+	padding: 6px 8px 0px;
+}
+#chi-page #breadcrumb #topLinearLinkContainer{
+	padding-top: 4px;
+}
+#chi-page .tooltipster-default .tooltipster-content {
+	padding: 10px 11px 2px;
+}
+#chi-page .homeSection .btn_readMore .readMoreMid{
+	padding: 25px 0 17px 15px;
+}
+/*#chi-page .homeOverviewContentDiv .homeProduct1stCategory p{
+	padding: 8px 0 2px 20px;
+}*/
+#chi-page #report-content .highlightTableTitle{
+	padding: 10px 11px 0;
+}
+#chi-page .boardOfDirectorLinks a{
+	padding: 0.5em 1em 0;
+}
+#chi-page #report-content p, #chi-page #report-content td{
+	padding: 0.4em 0.5em 0;
+}
+#chi-page .homeSection .downloadLinkList li,#chi-page  .downloadLinkList li{
+	padding-top: 0.2em;
+}
+#chi-page .homeOverviewContentDiv .homeProduct2ndCategory{
+	height: 100%
 }

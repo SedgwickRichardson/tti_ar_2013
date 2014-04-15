@@ -9,9 +9,20 @@
  * @since Twenty Ten 1.0
  */
 ?><!DOCTYPE html>
+<?php
+$currLang = ICL_LANGUAGE_CODE;
+$homeContent['en']['TTI Annual Report 2012'] = 'TTI Annual Report 2013';
+$homeContent['zh-hant']['TTI Annual Report 2012'] = '創科實業有限公司 2013年 年報';
+$homeContent['en']['fb description'] = 'TTI delivered another record year for sales, gross margin and profit in 2013. We are excited about our positive momentum and are well positioned to build on our record financial performance through our continued commitment to innovation and superior products.';
+$homeContent['zh-hant']['fb description'] = '創科實業於二零一三年之銷售額、毛利率及溢利均再創新高。我們對此增長勢頭感到欣喜，並在此驕人業績的基礎上，透過持續創新及不斷推出優質產品，繼續推動業務發展。';
+?>
 <html xmlns:fb="http://ogp.me/ns/fb#" <?php language_attributes(); ?>>
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta property="og:image" content="<?php bloginfo( 'template_url' ); ?>/images/home/fb_cover<?php if(ICL_LANGUAGE_CODE=="zh-hant") echo '_tc';?>.jpg" />
+<meta property="og:url" content="<?php echo get_permalink(); ?>" />
+<meta property="og:title" content="<?php echo $homeContent[$currLang]['TTI Annual Report 2012'] ?>" />
+<meta property="og:description" content="<?php echo $homeContent[$currLang]['fb description'] ?>" />
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title><?php
 	$pa = get_post_ancestors( $post );
@@ -169,7 +180,7 @@ $(window).load(function () {
    
 });
 </script>
-<!--[if lte IE 9]>
+<!--[if IE 9]>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/style_ie9.css"/>
 <![endif]-->
 <!--[if lte IE 8]>
@@ -191,7 +202,6 @@ $(window).load(function () {
 ?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
 <?php
-	$currLang = ICL_LANGUAGE_CODE;
 	$langContent['en']['annual_report'] = 'Annual Report 2011';
 	$langContent['zh-hant']['annual_report'] = '<span style="color:#0089c0;">2010年</span> <span style="color:#4c6a79;">年報</span>';
 	
@@ -230,8 +240,6 @@ $(window).load(function () {
 	$homeContent['zh-hant']['BACK TO TOP'] = '返回頁首';
 	$homeContent['en']['report image name'] = 'img_annual_report_2013.png';
 	$homeContent['zh-hant']['report image name'] = 'img_annual_report_2013_chi.png';
-	$homeContent['en']['TTI Annual Report 2012'] = 'TTI Annual Report 2013';
-	$homeContent['zh-hant']['TTI Annual Report 2012'] = '創科實業有限公司 2013年 年報';
 	$homeContent['en']['Downloads'] = 'Downloads';	$homeContent['zh-hant']['Downloads'] = '下載';
 	$homeContent['en']['Quick Links'] = 'Quick Links';
 	$homeContent['zh-hant']['Quick Links'] = '快速連結';

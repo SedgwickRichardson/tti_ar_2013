@@ -2,7 +2,24 @@
  var isFirefox = testCSS('MozBoxSizing');                 // FF 0.8+
  var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0; // At least Safari 3+: "[object HTMLElementConstructor]"
  var isChrome = !isSafari && testCSS('WebkitTransform');  // Chrome 1+
- var isIE = /*@cc_on!@*/false || testCSS('msTransform');  // At least IE6
+ var isIE, ieVersion;
+ //Internet Explorer
+if (navigator.appName == "Microsoft Internet Explorer") {
+    //Set IE as true
+    isIE = true;
+    //Create a user agent var
+    var ua = navigator.userAgent;
+    //Write a new regEx to find the version number
+    var re = new RegExp("MSIE ([0-9]{1,}[.0-9]{0,})");
+    //If the regEx through the userAgent is not null
+    if (re.exec(ua) != null) {
+        //Set the IE version
+        ieVersion = parseInt(RegExp.$1);
+    }
+}
+else {
+    isIE = false;
+}
  
  function testCSS(prop) {
 	return prop in document.documentElement.style;
@@ -774,29 +791,29 @@ function initHomeScrollMenu()
 			
 			var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
 				
-			if(isChrome)
+			if(isIE){
+				$body.animate({
+					scrollTop: movePos-211
+				}, 750);
+				currentAnchor = this.num;
+				setTimeout("this.className += ' active'", 750 );
+			}
+			else if(isChrome)
 			{
 				$body.animate({
-					scrollTop: movePos-221
+					scrollTop: movePos-212
 				}, 750);
 				currentAnchor = this.num;
 				setTimeout("this.className += ' active'", 750 );
 			}else if(isiPhone()){
 				$body.animate({
-					scrollTop: movePos-220
+					scrollTop: movePos-211
 				}, 750);
 				currentAnchor = this.num;
-				setTimeout("this.className += ' active'", 750 );
-				/*var hack = document.createElement("div");
-				hack.style.height = "101%";
-				document.body.appendChild(hack);
-				setTimeout(function(){
-					 document.body.removeChild(hack);
-					 hack = null;
-				}, 751);		*/	
+				setTimeout("this.className += ' active'", 750 );	
 			}else{
 				$body.animate({
-					scrollTop: movePos-220
+					scrollTop: movePos-211
 				}, 750);
 				currentAnchor = this.num;
 				setTimeout("this.className += ' active'", 750 );

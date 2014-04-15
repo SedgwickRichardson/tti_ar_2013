@@ -1,8 +1,5 @@
-#chi-page .quoteClose{
-	margin-left: -8px;
-}
 sup {
-	bottom: 1ex;
+	bottom: 0.5em;
 }
 #site-search{
 	top:0px;
@@ -31,3 +28,13 @@ sup {
 	overflow:visible;
 }
 #shareBox{right: 100px;}
+/*#chi-page #access a {
+	padding: 16px 0 0;	
+	height: 33px;
+}*/
+#chi-page #breadcrumb #backToTopLink{
+	padding: 2px 8px 4px;
+}
+#chi-page .homeSection .btn_readMore .readMoreMid{
+	padding: 19px 0 23px 15px;
+}
