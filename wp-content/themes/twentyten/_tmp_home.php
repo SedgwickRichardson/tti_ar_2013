@@ -524,8 +524,8 @@ $homeContent['zh-hant']['USDm'] = '百萬美元';
 $homeContent['en']['Quick Links'] = 'Quick Links';
 $homeContent['zh-hant']['Quick Links'] = '快速連結';
 
-$homeContent['en']['tencent'] = 'TTI Annual Report 2012';
-$homeContent['zh-hant']['tencent'] = '创科实业2012年年报';
+$homeContent['en']['tencent'] = 'TTI Annual Report 2013';
+$homeContent['zh-hant']['tencent'] = '创科实业2013年年报';
 
 $homeContent['en']['PDF Links'] = 'TTI_AR12_home_en.pdf';
 $homeContent['zh-hant']['PDF Links'] = 'TTI_AR12_home_tc.pdf';
@@ -540,7 +540,7 @@ $(document).ready(function(){
 	 var homeRightNavTop = $('#homeRightNav').offset().top;
 	 $(window).scroll(function(){
 		  if( $(window).scrollTop() > 0) {
-				$('#wrapper').css({"margin-top":"185px"});
+				$('#wrapper').css({"margin-top":"174px"});
 				
 		  }		  
 	 });

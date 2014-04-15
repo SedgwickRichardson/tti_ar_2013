@@ -1,2 +1,12 @@
-.strategic_drivers_four_factor_links_container {
-margin-top: 39px;}
+sup {
+bottom: 0.9ex;
+}
+#chi-page .quoteClose{
+margin-left: -2px;
+}
+sup {
+bottom: 0.7ex;
+}
+#chi-page sup {
+bottom: 0.7ex;
+}

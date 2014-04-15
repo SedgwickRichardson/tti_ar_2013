@@ -60,7 +60,8 @@ dl { margin: 0 0 24px 0; }
 dt { font-weight: bold; }
 dd { margin-bottom: 18px; }
 strong { font-weight: bold; }
-cite, em, i { font-style: italic; }
+cite, em, i { font-style: normal; font-family:'Trade Gothic W01 Obl';}
+#chi-page cite, #chi-page em, #chi-page i { font-style: italic; font-family:inherit;}
 h6 em, h6 i { font-family:'TradeGothicW01-BoldCn20 675337'; font-style:normal!important;font-size: 95%;color: #666; }
 #chi-page h6 em, h6 i{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei'; font-style:italic !important;font-size: 85%;}
 big { font-size: 131.25%; }
@@ -745,8 +746,8 @@ li[type=i]{list-style-type: none;}
 #chi-page  #content .headlineTitle{font-family:'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';font-weight:bold;letter-spacing:1px;line-height: 120%;/*font-size: 1.2em;*/}
 .headlineTitle span{font-family:'Trade Gothic W01 Roman';/*letter-spacing: -1px;*/}
 .headlineTitle span.bodTitle{font-size: 80%;}
-.headlineTitle span.bodPos{font-size: 0.9em;display: block;font-family: 'Trade Gothic W01 Roman';}
-#chi-page  #content .headlineTitle span{font-family:'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';font-weight:normal;}
+.headlineTitle span.bodPos{font-size: 0.9em;display: block;font-family: 'Trade Gothic W01 Obl';}
+#chi-page  #content .headlineTitle span{font-family:'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';font-weight:normal;font-style: italic;}
 .subheadlineTitle{font-size: 1.2em;font-family: 'Trade Gothic W01 Bold 2';margin-top: 40px; }
 #chi-page .subheadlineTitle{font-family:'Heiti TC Medium', 'Microsoft Yahei', 'SimHei';font-weight:bold}
 
@@ -1000,6 +1001,7 @@ padding: 0 0.5em;}
 #chi-page .productTechTable tr.titleRow td{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';font-weight: bold;}
 .milwaukeeTable tr.titleRow td{ background-color: #db011c;/* border-top: 2px solid #BF2139;border-bottom: 1px solid #BF2139; */}
 .stilettoHartTable tr.titleRow td{ background-color:#000000; /* border-top:2px solid #231F20; border-bottom:1px solid #231F20; */} /*Stiletto and Hart*/
+.hartTable tr.titleRow td{ background-color:#575856;}
 .aegTable tr.titleRow td{ background-color:#EE7A0E; /* border-top:2px solid #F47F24; border-bottom:1px solid #F47F24; */}
 .ryobiTable tr.titleRow td{ background-color:#d6e041;color:#393939; /* border-top:2px solid #C3D52E; border-bottom:1px solid #C3D52E; */}
 .homeliteDirtTable tr.titleRow td{ background-color:#ee2e24; /* border-top:2px solid #EC1C24; border-bottom:1px solid #EC1C24; */} /*Homelite and Dirt Devil*/

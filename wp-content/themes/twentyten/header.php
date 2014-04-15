@@ -11,6 +11,7 @@
 ?><!DOCTYPE html>
 <html xmlns:fb="http://ogp.me/ns/fb#" <?php language_attributes(); ?>>
 <head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title><?php
 	$pa = get_post_ancestors( $post );
@@ -132,17 +133,17 @@ $(document).ready(function(){
 	
 });
 </script>
-<!--[if IE 6]>
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/style_ie6.css"/>
+<!--[if lte IE 9]>
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>css/style_ie9.css"/>
 <![endif]-->
-<!--[if IE 7]>
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/style_ie7.css"/>
+<!--[if lte IE 8]>
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>css/style_ie8.css"/>
 <![endif]-->
-<!--[if IE 8]>
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/style_ie8.css"/>
+<!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>css/style_ie7.css"/>
 <![endif]-->
-<!--[if IE 9]>
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/style_ie9.css"/>
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>css/style_ie6.css"/>
 <![endif]-->
 <?php
 	/* We add some JavaScript to pages with the comment form
