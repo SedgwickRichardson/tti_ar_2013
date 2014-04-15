@@ -47,10 +47,10 @@ if(!empty($nextPage)){
 	 */
 	get_sidebar( 'footer' );
 $menu['en']['sitemap'] = 'Sitemap';
-$menu['en']['terms'] = 'Copyright';
+$menu['en']['terms'] = 'Intellectual Property';
 $menu['en']['privacy'] = 'privacy policy';
 $menu['zh-hant']['sitemap'] = '網站概覽';
-$menu['zh-hant']['terms'] = '版權';
+$menu['zh-hant']['terms'] = '知識產權';
 $menu['zh-hant']['privacy'] = '';
 //COPYRIGHT
 $menu['en']['copyright'] = 'Copyright &copy; 2014 Techtronic Industries Co. Ltd.';
@@ -74,7 +74,7 @@ $menu['zh-hant']['copyright'] = '版權 © 2014 創科實業有限公司';
 				<div style="float:right;">
 					<div id="footer-links" style="float:right; padding-bottom:20px;">
 						<a href="<?php echo site_url();echo get_curr_lang_path() ; ?>/sitemap<?php echo get_curr_lang_second_path() ; ?>"><?php echo $menu[ICL_LANGUAGE_CODE]['sitemap'];?></a> |
-						<a href="<?php echo site_url();echo get_curr_lang_path() ; ?>/copyright<?php echo get_curr_lang_second_path() ; ?>"><?php echo $menu[ICL_LANGUAGE_CODE]['terms'];?></a>
+						<a href="<?php echo site_url();echo get_curr_lang_path() ; ?>/intellectual-property<?php echo get_curr_lang_second_path() ; ?>"><?php echo $menu[ICL_LANGUAGE_CODE]['terms'];?></a>
 					</div><!-- #site-generator -->
 					<div id="copyright-footer"><?php echo $menu[ICL_LANGUAGE_CODE]['copyright']; ?></div>
 				</div>
