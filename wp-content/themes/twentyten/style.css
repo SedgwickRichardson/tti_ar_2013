@@ -702,8 +702,8 @@ li[type=i]{list-style-type: none;}
 .chairmanStatementLeft .graphContainer .graphProfile{text-align: right;}
 .overviewLeft .graphContainer .graphProfile{text-align: left;}
 .reviewOperationTwoColumn .graphContainer .graphProfile{}
-.downloadRight .dotUnderline, .downloadLeft .dotUnderline,.innerPageCenterDiv.dotUnderline,.innerPageCenterDiv .dotUnderline{background: url(images/home/figure_dot_line.png) repeat-x center bottom;}
-#FHContentDiv .graphContainer .dotUnderline,.graphContainer .dotUnderline{background: url(images/home/figure_dot_line.png) repeat-x center bottom;margin-bottom: 1.5em;width:100%;text-align: right;}
+.downloadRight .dotUnderline, .downloadLeft .dotUnderline,.innerPageCenterDiv.dotUnderline,.innerPageCenterDiv .dotUnderline{background: url(images/home/figure_dot_line.png) repeat-x left bottom;}
+#FHContentDiv .graphContainer .dotUnderline,.graphContainer .dotUnderline{background: url(images/home/figure_dot_line.png) repeat-x left bottom;margin-bottom: 1.5em;width:100%;text-align: right;}
 #chi-page .graphContainer .graphProfile{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';font-weight:bold;line-height: 1.5em;}
 .graphContainer .figure_arrow_up{width:19px;height:21px;background: url(images/home/figure_arrow_up.gif);vertical-align: top;display: inline-block;margin-right: 5px;font-size: 0;line-height: 0;}
 .graphContainer .graphProfile .darkText{color:#777 !Important;font-family:'Trade Gothic W01 Bold'}

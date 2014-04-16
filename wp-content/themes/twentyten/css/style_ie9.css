@@ -34,12 +34,22 @@ bottom: 0.4em;
 #chi-page .boardOfDirectorLinks a{
 	padding: 0.5em 1em 0;
 }
-#chi-page #report-content p, #chi-page #report-content td{
+/*#chi-page #report-content p, #chi-page #report-content td{
 	padding: 0.4em 0.5em 0;
-}
+}*/
 #chi-page .homeSection .downloadLinkList li,#chi-page  .downloadLinkList li{
 	padding-top: 0.2em;
 }
 #chi-page .homeOverviewContentDiv .homeProduct2ndCategory{
 	height: 100%
+}
+#chi-page .graphContainer .graphTitleDiv .graphTitle{
+	display: block;
+	padding-top: 0.2em;
+}
+#chi-page .chairmanStatementLeft .graphContainer .graphTitleDiv .graphTitle{
+	padding-top: 0.3em;
+}
+#chi-page #secondary #homeRightNav a {
+    padding: 17px 4px 10px;
 }

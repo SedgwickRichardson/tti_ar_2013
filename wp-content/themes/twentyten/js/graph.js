@@ -2143,7 +2143,7 @@ $('#graph-container-12').highcharts({
 				/*{y:0,x: 2010, color: '#A8BCC6'},*/
 				{y:18.9,x: 2011, color: '#A8BCC6'},
 				{y:16.2,x: 2012, color: '#A8BCC6'},
-				{y:13.9, x: 2013, color: '#0077A8', dataLabels:{y: current_y_offset, style: {fontSize: '14px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:13.9, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '14px', fontWeight: 'bold', color:'#0077A8'}}}
 			]
 		}],
 	});
@@ -2263,7 +2263,7 @@ $('#graph-container-13').highcharts({
 				/*{y:0,x: 2010, color: '#A8BCC6'},*/
 				{y:59.3,x: 2011, color: '#A8BCC6'},
 				{y:25.8,x: 2012, color: '#A8BCC6'},
-				{y:10.6, x: 2013, color: '#0077A8', dataLabels:{y: current_y_offset, style: {fontSize: '14px', fontWeight: 'bold', color:'#0077A8'}}}
+				{y:10.6, x: 2013, color: '#0077A8', dataLabels:{style: {fontSize: '14px', fontWeight: 'bold', color:'#0077A8'}}}
 			]
 		}],
 	});
