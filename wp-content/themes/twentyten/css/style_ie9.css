@@ -32,11 +32,11 @@ bottom: 0.4em;
 	padding: 10px 11px 0;
 }
 #chi-page .boardOfDirectorLinks a{
-	padding: 0.5em 1em 0;
+	padding: 0.6em 1em 0;
 }
-/*#chi-page #report-content p, #chi-page #report-content td{
+#chi-page #report-content .productTechTable .titleRow td{
 	padding: 0.4em 0.5em 0;
-}*/
+}
 #chi-page .homeSection .downloadLinkList li,#chi-page  .downloadLinkList li{
 	padding-top: 0.2em;
 }
