@@ -12,7 +12,7 @@
 <?php
 $currLang = ICL_LANGUAGE_CODE;
 $homeContent['en']['TTI Annual Report 2012'] = 'TTI Annual Report 2013';
-$homeContent['zh-hant']['TTI Annual Report 2012'] = '創科實業有限公司 2013年 年報';
+$homeContent['zh-hant']['TTI Annual Report 2012'] = '創科實業 2013年 年報';
 $homeContent['en']['fb description'] = 'TTI delivered another record year for sales, gross margin and profit in 2013. We are excited about our positive momentum and are well positioned to build on our record financial performance through our continued commitment to innovation and superior products.';
 $homeContent['zh-hant']['fb description'] = '創科實業於二零一三年之銷售額、毛利率及溢利均再創新高。我們對此增長勢頭感到欣喜，並在此驕人業績的基礎上，透過持續創新及不斷推出優質產品，繼續推動業務發展。';
 ?>
