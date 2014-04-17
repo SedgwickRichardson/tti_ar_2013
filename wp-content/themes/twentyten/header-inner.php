@@ -41,7 +41,7 @@ $homeContent['zh-hant']['fb description'] = '創科實業於二零一三年之�
 	
 	global $page, $paged;
 	wp_title( '|', true, 'right' );
-	bloginfo( 'name' );
+	echo $homeContent[$currLang]['TTI Annual Report 2012'];
 	$site_description = get_bloginfo( 'description', 'display' );
 	if ( $site_description && ( is_home() || is_front_page() ) )
 		echo " | $site_description";
