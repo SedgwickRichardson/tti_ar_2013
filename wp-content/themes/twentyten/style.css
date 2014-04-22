@@ -725,16 +725,17 @@ li[type=i]{list-style-type: none;}
 #chi-page  .graphContainer .graphProfile .numberText {font-family: 'Trade Gothic W01 Bold';font-weight: normal;}
 .morePaddingBottomForTextOnlyGraph{padding-bottom:40px;}
 .readMoreDiv {height:42px;display: inline-block;/*margin-top: 10px;*/float: right;}
-.btn_readMore .readMoreLeft{background:url(images/home/bg_readMore_left.png) no-repeat; width:15px; height:42px; float:left; display:block;}
-.btn_readMore:hover .readMoreLeft{background:url(images/home/bg_readMore_left.png) -15px 0 no-repeat;}
-.homeSection .btn_readMore .readMoreMid{padding:21px 0 21px 15px; line-height:0;font-size: 15px;}
-.btn_readMore .readMoreMid{background:url(images/home/arrow_readMore.png) no-repeat #3A5D6E 0 50%; float:left; display:block; color:#fff; font-family:'Trade Gothic W01 Bold 2'; padding:21px 0 21px 15px; line-height:0;}
-#chi-page .btn_readMore .readMoreMid{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';}
-.btn_readMore:hover .readMoreMid{background-color:#8EAFBE;text-decoration: none;}
-.btn_readMore .arrowBack{background:url(images/home/arrow_goBack.png) no-repeat #3A5D6E 0 50%;}
-.btn_readMore:hover .arrowBack{text-decoration: none;;background:url(images/home/arrow_goBack.png) no-repeat #8EAFBE 0 50%;}
-.btn_readMore .readMoreRight{background:url(images/home/bg_readMore_right.png) no-repeat; width:15px; height:42px; float:left; display:block;}
-.btn_readMore:hover .readMoreRight{background:url(images/home/bg_readMore_right.png) -15px 0 no-repeat;}
+a.btn_readMore, a.btn_readMore .readMoreMid{text-decoration: none;}
+a.btn_readMore .readMoreLeft{background:url(images/home/bg_readMore_left.png) no-repeat; width:15px; height:42px; float:left; display:block;}
+a.btn_readMore:hover .readMoreLeft{background:url(images/home/bg_readMore_left.png) -15px 0 no-repeat;}
+.homeSection a.btn_readMore .readMoreMid{padding:21px 0 21px 15px; line-height:0;font-size: 15px;}
+a.btn_readMore .readMoreMid{background:url(images/home/arrow_readMore.png) no-repeat #3A5D6E 0 50%; float:left; display:block; color:#fff; font-family:'Trade Gothic W01 Bold 2'; padding:21px 0 21px 15px; line-height:0;}
+#chi-page a.btn_readMore .readMoreMid{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';}
+a.btn_readMore:hover .readMoreMid{background-color:#8EAFBE;text-decoration: none;}
+a.btn_readMore .arrowBack{background:url(images/home/arrow_goBack.png) no-repeat #3A5D6E 0 50%;}
+a.btn_readMore:hover .arrowBack{text-decoration: none;;background:url(images/home/arrow_goBack.png) no-repeat #8EAFBE 0 50%;}
+a.btn_readMore .readMoreRight{background:url(images/home/bg_readMore_right.png) no-repeat; width:15px; height:42px; float:left; display:block;}
+a.btn_readMore:hover .readMoreRight{background:url(images/home/bg_readMore_right.png) -15px 0 no-repeat;}
 .headlineTitle{font-family:'Trade Gothic W01 Bold 2';line-height: 110%; font-size: 1.7em;padding-bottom: 2em;}
 #powerHighlightsContent .headlineTitle{padding-bottom: 1.2em;}
 .homeSectionContentDiv .headlineTitle{height: 2em;}
