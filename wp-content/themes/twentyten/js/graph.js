@@ -25,7 +25,7 @@ function initHomeGraph(lang){
 			spacingTop: 0,
 			spacingBottom: 3,
 			spacingLeft: 0,
-			spacingRight: 0,
+			spacingRight: 20,
 			marginRight: 0,
 			marginTop: 20,
 			style: {
