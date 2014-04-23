@@ -56,7 +56,6 @@ $homeContent['zh-hant']['fb description'] = '創科實業於二零一三年之�
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/font-<?php if($_COOKIE['gre_font_cookie']) echo $_COOKIE['gre_font_cookie'];else echo "medium"; ?>.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/tooltipster.css" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<!--<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.1'></script>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/jquery.tooltipster.min.js"></script>
 <script type='text/javascript' src='<?php bloginfo( 'template_url' ); ?>/js/tti.js'></script>
@@ -68,66 +67,6 @@ $homeContent['zh-hant']['fb description'] = '創科實業於二零一三年之�
 <script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/exporting.js"></script>
 <script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/graph.js"></script>
 <script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
-<script type="text/javascript">
-$(function(){
-		// Scroll initially if there's a hash (#something) in the url
-		$.localScroll.hash({
-		queue:true,
-		duration:500
-	});
-	$.localScroll({
-		duration:500,
-		queue:true,
-		hash:false
-	});
-});
-$(document).ready(function(){
-    var HeaderTop = $('#header').offset().top;
-    $(window).scroll(function(){
-		
-        if( $(window).scrollTop() > HeaderTop ) {
-            $('#header').css({position: 'fixed', top: '0px'});
-				if(isiPhone())
-				{
-					$("#iconBtnstickyContainer").css({"top":window.pageYOffset, "position":"absolute"});
-				}else
-					$('#iconBtnstickyContainer').css({position: 'fixed', top: '173px'});
-				$('.homeContentLeft').css({'margin-top':39});
-        } else {
-            $('#header').css({position: 'fixed'});
-				if(isiPhone())
-				{
-					$("#iconBtnstickyContainer").css({"top":window.pageYOffset, "position":"absolute", 'z-index':1});
-				}else
-					$('#iconBtnstickyContainer').css({position: 'fixed', 'z-index':1});
-				$('.homeContentLeft').css({'margin-top':39});
-        }
-    });
-	 
-	 initTopNav();
-	 initOperationalMap();
-	 inithomeBrandTab('homePowerEquipmentBrandTabContainer', 'homePowerEquipmentBrandContentContainer');
-	 inithomeBrandTab('homeFloorCareBrandTabContainer', 'homeFloorCareBrandContentContainer');
-
-	 $('.tooltip').tooltipster({
-	   arrow: false,
-	   /*offsetX: -20,*/
-	   offsetY: 5,
-	   position: 'bottom-right',
-	   speed: 0,
-	   delay: 0
-	});
-	$('.tooltip-left').tooltipster({
-	   arrow: false,
-	   /*offsetX: -20,*/
-	   offsetY: 5,
-	   position: 'bottom-left',
-	   speed: 0,
-	   delay: 0
-	});
-	
-});
-</script>
 <!--[if IE 9]>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/style_ie9.css"/>
 <![endif]-->

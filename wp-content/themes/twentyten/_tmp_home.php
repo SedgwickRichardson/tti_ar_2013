@@ -527,8 +527,8 @@ $homeContent['zh-hant']['Quick Links'] = '快速連結';
 $homeContent['en']['tencent'] = 'TTI Annual Report 2013';
 $homeContent['zh-hant']['tencent'] = '创科实业2013年年报';
 
-$homeContent['en']['PDF Links'] = 'TTI_AR12_home_en.pdf';
-$homeContent['zh-hant']['PDF Links'] = 'TTI_AR12_home_tc.pdf';
+$homeContent['en']['PDF Links'] = 'TTI_AR13_home_en.pdf';
+$homeContent['zh-hant']['PDF Links'] = 'TTI_AR13_home_tc.pdf';
 
 $shortLang = '';
 if (ICL_LANGUAGE_CODE == 'zh-hant'){
@@ -564,16 +564,14 @@ $(window).load(function () {
 		  <div id="iconBtnstickyContainer">
 			  <div id="iconBtn">
 					<a href="javascript:;" id="headerShareBtn"><?php echo $langContent[ICL_LANGUAGE_CODE]['Email this page']; ?></a>
-					<a class="tooltip-left" title="<?php echo $langContent[ICL_LANGUAGE_CODE]['Download this section']; ?>" id="downloadLink" target="_blank" href="<?php echo site_url();echo '/wp-content/uploads/2013/pdf/';echo $homeContent[ICL_LANGUAGE_CODE]['PDF Links'];?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Download this section']; ?><!-- <span id="tooltips_download"></span> --></a>
-					<a class="tooltip-left" title="<?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?>" id="printLink" target="_blank" href="<?php echo site_url();echo '/wp-content/uploads/2013/pdf/';echo $homeContent[ICL_LANGUAGE_CODE]['PDF Links'];?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?><!-- <span id="tooltips_print"></span> --></a>
+					<a class="tooltip-left" title="<?php echo $langContent[ICL_LANGUAGE_CODE]['Download this section']; ?>" id="downloadLink" target="_blank" href="<?php echo site_url();echo '/wp-content/uploads/2013/pdf/';echo $homeContent[ICL_LANGUAGE_CODE]['PDF Links'];?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Download this section']; ?></a>
+					<a class="tooltip-left" title="<?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?>" id="printLink" target="_blank" href="<?php echo site_url();echo '/wp-content/uploads/2013/pdf/';echo $homeContent[ICL_LANGUAGE_CODE]['PDF Links'];?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?></a>
 			  </div>  
 			  <div class="addthis_toolbox addthis_default_style shareBox" id="shareBox" style="display:none; <?php echo $langContent[ICL_LANGUAGE_CODE]['home share position']; ?>">
 			  	<div class="shareBoxContent">
 					<a class="addthis_button_facebook"></a>
 					<a class="addthis_button_twitter"></a>
 					<a class="addthis_button_google_plusone_badge" g:plusone:size="small" g:plusone:name="" g:plusone:href="https://plus.google.com/102383601500147943541/"></a> 
-					<!--<a class="addthis_button_linkedin"></a>
-					<a class="addthis_button_reddit"></a>-->
 					<a class="addthis_button_email"></a>
 					<a class="addthis_button_sinaweibo"></a>
 					<div id="qqwb_share__" data-appkey="801387349" data-icon="2" data-counter="0" data-content="<?php echo $homeContent[ICL_LANGUAGE_CODE]['tencent']; ?>"></div>
@@ -583,7 +581,6 @@ $(window).load(function () {
 		  <script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
 		  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5153b9e640b238a8"></script>
         <div class="homeContentLeft">
-		<div id="prod_status" style="width: 820px;margin: 0 auto;border: 3px solid #f00;margin-bottom:20px;display:none;"><h1 style="margin:30px auto;color: #f00;font-size: 18px;text-align: center;">Layout programmed, dummy content populated</h1></div>
           <div class="homeSection">
           	<div class="sectionContent">
               <div class="homeSectionContentDiv clearfix" style="padding-top: 0;">

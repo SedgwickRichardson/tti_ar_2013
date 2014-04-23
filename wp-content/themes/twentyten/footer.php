@@ -63,6 +63,65 @@ $menu['zh-hant']['copyright'] = '版權 © 2014 創科實業有限公司';
 	wp_footer();
 ?>
 <script type="text/javascript">
+$(document).ready(function(){
+
+    // Scroll initially if there's a hash (#something) in the url
+    $.localScroll.hash({
+    queue:true,
+    duration:500
+  });
+  $.localScroll({
+    duration:500,
+    queue:true,
+    hash:false
+  });
+
+    var HeaderTop = $('#header').offset().top;
+    $(window).scroll(function(){
+    
+        if( $(window).scrollTop() > HeaderTop ) {
+            $('#header').css({position: 'fixed', top: '0px'});
+        if(isiPhone())
+        {
+          $("#iconBtnstickyContainer").css({"top":window.pageYOffset, "position":"absolute"});
+        }else
+          $('#iconBtnstickyContainer').css({position: 'fixed', top: '173px'});
+        $('.homeContentLeft').css({'margin-top':39});
+        } else {
+            $('#header').css({position: 'fixed'});
+        if(isiPhone())
+        {
+          $("#iconBtnstickyContainer").css({"top":window.pageYOffset, "position":"absolute", 'z-index':1});
+        }else
+          $('#iconBtnstickyContainer').css({position: 'fixed', 'z-index':1});
+        $('.homeContentLeft').css({'margin-top':39});
+        }
+    });
+   
+   initTopNav();
+   initOperationalMap();
+   inithomeBrandTab('homePowerEquipmentBrandTabContainer', 'homePowerEquipmentBrandContentContainer');
+   inithomeBrandTab('homeFloorCareBrandTabContainer', 'homeFloorCareBrandContentContainer');
+
+   $('.tooltip').tooltipster({
+     arrow: false,
+     /*offsetX: -20,*/
+     offsetY: 5,
+     position: 'bottom-right',
+     speed: 0,
+     delay: 0
+  });
+  $('.tooltip-left').tooltipster({
+     arrow: false,
+     /*offsetX: -20,*/
+     offsetY: 5,
+     position: 'bottom-left',
+     speed: 0,
+     delay: 0
+  });
+  
+});
+
   /*var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-22804685-1']);
   _gaq.push(['_trackPageview']);

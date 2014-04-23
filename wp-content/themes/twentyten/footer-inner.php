@@ -96,6 +96,115 @@ $menu['zh-hant']['copyright'] = '版權 © 2014 創科實業有限公司';
 	</div>
 </div>
 <script type="text/javascript">
+$(document).ready(function(){
+
+	// Scroll initially if there's a hash (#something) in the url
+	$.localScroll.hash({
+		queue:true,
+		duration:500
+	});
+	$.localScroll({
+		duration:500,
+		queue:true,
+		hash:false
+	});
+
+    currentNoteAnchor = 0;
+	initNoteRightNav();
+	initGeneralContentRightNav();
+	initBrandGallery();
+	initOperationalTab();
+	initOperationalMap();
+	initBod();
+	initCEOReview();
+	initFindOutMoreBannerContent();
+	initInnerPageTopNav();
+	
+	$('.tooltip').tooltipster({
+	   arrow: false,
+	   /*offsetX: -20,*/
+	   offsetY: 5,
+	   position: 'bottom-right',
+	   speed: 0,
+	   delay: 0
+	});
+	$('.tooltip-left').tooltipster({
+	   arrow: false,
+	   /*offsetX: -20,*/
+	   offsetY: 5,
+	   position: 'bottom-left',
+	   speed: 0,
+	   delay: 0
+	});
+	
+	if($('body').hasClass('page-id-13') || $('body').hasClass('page-id-18')){
+	//init interactive chart for Chairman’s Statement
+		initChairmanGraph();
+	}
+	else if($('body').hasClass('page-id-326')){
+		initFinancialHighlights("en");
+	}
+	else if($('body').hasClass('page-id-328')){
+		initFinancialHighlights("chi");
+	}
+});
+
+$(window).load(function () {
+	function stickyInit()
+	{
+		var headerHeight = $('#header').height();
+		if( $(window).scrollTop() > 127 ) {
+			$('#main-nav').css({position: 'fixed', top: '0px', 'z-index': '899'});
+			$('#wrapper').css({"margin-top":"0"});
+			
+		} else {
+			$('#main-nav').css({position: 'relative', 'z-index': '899', top:'0'});
+			$('#wrapper').css({"margin-top":"0"});
+		}
+		
+		if( $(window).scrollTop() > 170 ) {
+			if($('#stickyRightNav').hasClass('generalStickyRightNav'))
+			{
+				$('#stickyRightNav').css({position: 'fixed', top: '105px', 'z-index': '899'});
+			}else{
+				$('#stickyRightNav').css({position: 'fixed', top: '105px', 'z-index': '899'});
+			}
+		} else {
+			$('#stickyRightNav').css({position: 'relative', top:'0', 'z-index':'800'});
+		}
+		
+		
+		if(headerHeight < 200)
+		{
+			if( $(window).scrollTop() > 125)
+			{
+				$('#breadcrumb').css({position: 'fixed', top: '49px', 'z-index': '900'});
+				$('#wrapper').css({'margin-top':110})
+			}else{
+				$('#breadcrumb').css({position: 'relative', top: '0'});	
+				$('#wrapper').css({'margin-top':0})
+			}	
+		}else{
+			if( $(window).scrollTop() > headerHeight-55)
+			{
+				$('#breadcrumb').css({position: 'fixed', top: '49px', 'z-index': '900'});
+				$('#wrapper').css({'margin-top':50})
+			}else{
+				$('#breadcrumb').css({position: 'relative', top: '0'});	
+				$('#wrapper').css({'margin-top':0})
+			}
+		}
+	}
+   
+   
+	stickyInit();
+	$(window).scroll(function(){
+       stickyInit();
+   });
+   
+   
+});
+
   /*var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-22804685-1']);
   _gaq.push(['_trackPageview']);

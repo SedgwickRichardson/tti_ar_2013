@@ -52,10 +52,6 @@ $prevTipTitle = $prevTipTitle[0];
 					 	<div style="float:left;width: 620px;">
 					 		<?php echo get_breadcrumb($post, true); ?>
 					 	</div>
-						<!--<div style="float:right; width:273px;">
-							<a href="#" style="float:left;">&laquo; Previous page</a>
-							<a href="#" style="float:right;">Next page &raquo;</a>
-						</div>-->
 						<div class="pageLinkContainer">
 							
 							<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
@@ -65,8 +61,8 @@ $prevTipTitle = $prevTipTitle[0];
 						if(!empty($pdfLink)){	?>
 							<div id="iconBtn">
 								<a href="javascript:;" id="headerShareBtn"><?php echo $langContent[ICL_LANGUAGE_CODE]['Email this page']; ?></a>
-								<a class="tooltip-left" title="<?php echo $langContent[ICL_LANGUAGE_CODE]['Download this section']; ?>" id="downloadLink" target="_blank" href="<?php echo site_url();echo $pdfLink;?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Download this section']; ?><!-- <span id="tooltips_download"></span> --></a>
-								<a class="tooltip-left" title="<?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?>" id="printLink" target="_blank" href="<?php echo site_url();echo $pdfLink;?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?><!-- <span id="tooltips_print"></span> --></a>
+								<a class="tooltip-left" title="<?php echo $langContent[ICL_LANGUAGE_CODE]['Download this section']; ?>" id="downloadLink" target="_blank" href="<?php echo site_url();echo $pdfLink;?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Download this section']; ?></a>
+								<a class="tooltip-left" title="<?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?>" id="printLink" target="_blank" href="<?php echo site_url();echo $pdfLink;?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?></a>
 							</div>
 						<?
 						}
@@ -94,29 +90,15 @@ $prevTipTitle = $prevTipTitle[0];
 								<a class="addthis_button_facebook"></a>
 								<a class="addthis_button_twitter"></a>
 								<a class="addthis_button_google_plusone_badge" g:plusone:size="small" g:plusone:name="" g:plusone:href="https://plus.google.com/102383601500147943541/"></a> 
-								<!--<a class="addthis_button_linkedin"></a>
-								<a class="addthis_button_reddit"></a>-->
 								<a class="addthis_button_email"></a>
 								<a class="addthis_button_sinaweibo"></a>
 								
 								<div id="qqwb_share__" data-appkey="801387349" data-icon="2" data-counter="0" data-content="<?php echo $langContent[ICL_LANGUAGE_CODE]['tencent']; ?>"></div>
-								<!--<script type="text/javascript" src="http://china-addthis.googlecode.com/svn/trunk/addthis.js" charset="UTF-8"></script>
-								<a class="addico add_48" href="http://addthis.org.cn/go/?act=share&id=48" i="48" e="click" title="收藏&amp;分享">分享</a>-->
 								</div>
 							</div>		
 						</div>
 					</div>
 				</div>
-				<div id="prod_status" style="width: 960px;margin: 0 auto;border: 3px solid #f00;margin-bottom:20px;display:none;"><h1 style="margin:30px auto;color: #f00;font-size: 18px;text-align: center;">
-					<?php
-						$alert = get_field("prod_status");
-						if($alert==""){
-							echo "Production in process, not for review yet";
-						}else{
-							echo $alert;
-						}
-					?>
-				</h1></div>
                 <div id="report-content-container">
                		<div id="report-content">
                     	<?php get_template_part( 'loop', 'page' );?>
@@ -131,13 +113,9 @@ $prevTipTitle = $prevTipTitle[0];
 <script>
 $(document).ready(function(){
 	initContentSlideToggle();
-	/*if($("body").hasClass="page-id-3653"){
-		$("#footer").css("margin-bottom","20px");
-	}*/
 	if (navigator.userAgent.indexOf('Safari') != -1 
              && navigator.userAgent.indexOf('Chrome') == -1) 
 	  {
-		//alert("safari");
 		$("#iconBtn").css("margin-top","0px");
 	  }
 });
