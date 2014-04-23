@@ -248,6 +248,8 @@ body#chi-page.search-results .entry-title a{font-family: 'Heiti TC Medium', 'MHe
 .entry-content label { color: #888; font-size: 12px; }
 .entry-content select { margin: 0 0 24px 0; }
 .entry-content sup, .entry-content sub { font-size: 80%; }
+/*.entry-content .siteMapContainer sup, .entry-content .siteMapContainer sub{bottom: 0.4ex;}
+#chi-page .entry-content .siteMapContainer sup, #chi-page .entry-content .siteMapContainer sub{bottom: 0.6ex;font-size: 80%;}*/
 .entry-content blockquote.left { float: left; margin-left: 0; margin-right: 24px; text-align: right; width: 33%; }
 .entry-content blockquote.right { float: right; margin-left: 24px; margin-right: 0; text-align: left; width: 33%; }
 .page-link { clear: both; color: #000; font-weight: bold; margin: 0 0 22px 0; word-spacing: 0.5em; }
