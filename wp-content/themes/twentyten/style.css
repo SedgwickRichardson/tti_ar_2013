@@ -711,6 +711,7 @@ li[type=i]{list-style-type: none;}
 #chi-page .graphContainer .graphProfile .smallFont{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';font-weight:normal;font-size: 95%;top: 0.2em;position: relative;}
 .graphContainer .graphProfile .graphFigure{font-size:28px;/*font-family: 'TradeGothicW01-BoldCn20 675334';color:#FAA519;*/}
 #chi-page .graphContainer .graphProfile .graphFigure{font-family:'Trade Gothic W01 Bold 2';font-weight: normal;}
+#chi-page .graphContainer .graphProfile .graphFigure .chi-bold-font{font-size:22px;}
 /*.reviewOperationTwoColumn .graph-container{float: left;width:177px;height:158px;}
 .reviewOperationTwoColumn .graphProfile{float: left;width: 193px;padding: 1.2em 0;}
 .reviewOperationTwoColumn .graphContainer .graphProfile{font-family: 'Trade Gothic W01 Bold 2';color:#1974A5;text-align: left;}

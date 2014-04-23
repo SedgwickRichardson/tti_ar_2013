@@ -188,7 +188,7 @@ $str .= '<span class="graphUnit eng-regular-font">%</span>';
 $str .= '</div>';
 $str .= '<div class="graphProfile dotUnderline">';
 $str .= '<span class="figure_arrow_up">&#8593;</span>';
-$str .= '<span class="graphFigure">70 <span class="chi-bold-font" style="font-size:24px">基點</span></span>';
+$str .= '<span class="graphFigure">70 <span class="chi-bold-font">基點</span></span>';
 $str .= '</div>';
 $homeContent['zh-hant']['HIGHLIGHTS chart2 title'] =  $str;
 
