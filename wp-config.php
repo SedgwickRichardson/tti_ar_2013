@@ -37,7 +37,8 @@ else if($_SERVER['SERVER_NAME'] == "www.ttigroup.com"){
 	define('DB_USER', 'ttion_usr');
 	define('DB_PASSWORD', 'r33sxiep');
 	define('DB_HOST', 'localhost');
-	
+	define('WP_HOME', 'http://www.ttigroup.com/onlinereport/ar2013');
+	define('WP_SITEURL', 'http://www.ttigroup.com/onlinereport/ar2013');
 }
 
 /** Database Charset to use in creating database tables. */

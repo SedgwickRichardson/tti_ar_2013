@@ -565,7 +565,7 @@ $(window).load(function () {
 			  <div id="iconBtn">
 					<a href="javascript:;" id="headerShareBtn"><?php echo $langContent[ICL_LANGUAGE_CODE]['Email this page']; ?></a>
 					<a class="tooltip-left" title="<?php echo $langContent[ICL_LANGUAGE_CODE]['Download this section']; ?>" id="downloadLink" target="_blank" href="<?php echo site_url();echo '/wp-content/uploads/2013/pdf/';echo $homeContent[ICL_LANGUAGE_CODE]['PDF Links'];?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Download this section']; ?></a>
-					<a class="tooltip-left" title="<?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?>" id="printLink" target="_blank" href="<?php echo site_url();echo '/wp-content/uploads/2013/pdf/';echo $homeContent[ICL_LANGUAGE_CODE]['PDF Links'];?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?></a>
+					<a class="tooltip-left" title="<?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?>" id="printLink" target="_blank" href="javascript:window.print()<?php //echo site_url();//echo '/wp-content/uploads/2013/pdf/';echo $homeContent[ICL_LANGUAGE_CODE]['PDF Links'];?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?></a>
 			  </div>  
 			  <div class="addthis_toolbox addthis_default_style shareBox" id="shareBox" style="display:none; <?php echo $langContent[ICL_LANGUAGE_CODE]['home share position']; ?>">
 			  	<div class="shareBoxContent">
@@ -599,16 +599,16 @@ $(window).load(function () {
               		<?php echo $homeContent[ICL_LANGUAGE_CODE]['HIGHLIGHTS Table'];?>
 					<div class="FH_highlight_graph clearfix">
 						<div class="graphContainer"> <?php echo $homeContent[ICL_LANGUAGE_CODE]['HIGHLIGHTS chart1 title'];?>
-						<div id="home-graph-container-1" class="graph-container" style="width: 185px;height: 230px;"></div>
+						<div id="home-graph-container-1" class="graph-container" style="width: 180px;height: 230px;"></div>
 						</div>
 						<div class="graphContainer"> <?php echo $homeContent[ICL_LANGUAGE_CODE]['HIGHLIGHTS chart2 title'];?>
-						<div id="home-graph-container-2" class="graph-container" style="width: 170px;height: 230px;"></div>
+						<div id="home-graph-container-2" class="graph-container" style="width: 180px;height: 230px;"></div>
 						</div>
 						<div class="graphContainer"> <?php echo $homeContent[ICL_LANGUAGE_CODE]['HIGHLIGHTS chart3 title'] ;?>
-						<div id="home-graph-container-3" class="graph-container" style="width: 170px;height: 230px;"></div>
+						<div id="home-graph-container-3" class="graph-container" style="width: 180px;height: 230px;"></div>
 						</div>
 						<div class="graphContainer noMarginRight"> <?php echo $homeContent[ICL_LANGUAGE_CODE]['HIGHLIGHTS chart4 title'] ;?>
-						<div id="home-graph-container-4" class="graph-container" style="width: 170px;height: 230px;"></div>
+						<div id="home-graph-container-4" class="graph-container" style="width: 180px;height: 230px;"></div>
 						</div>
               		</div>
               		<div class="readMoreDiv"> <a href="<?php echo site_url();echo get_curr_lang_path() ; ?>/financial-highlights<?php echo get_curr_lang_second_path() ; ?>" class="btn_readMore clearfix"> <span class="readMoreLeft"></span> <span class="readMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Financial Highlights read more'] ;?></span> <span class="readMoreRight"></span> </a>

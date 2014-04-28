@@ -50,6 +50,7 @@ $homeContent['zh-hant']['fb description'] = '創科實業於二零一三年之�
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
+<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" type="image/icon" />
 <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/43e1adce-17f3-48ab-a9c7-54a3c7075afc.css"/>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/tti.css" />
