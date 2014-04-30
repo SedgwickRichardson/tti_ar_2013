@@ -687,6 +687,10 @@ li[type=i]{list-style-type: none;}
 .findoutMoreBannerContent .contentDiv p.note{margin-top: 0.8em;font-size: 60%;}
 .graphContainer .graphTitleDiv{font-size:95%; line-height:130%; padding-bottom:1em;color: #393939; }
 .graphContainer .graphTitleDivWithArrow{background: url(images/highlights/FHArrow.png) no-repeat left top;padding-left: 30px;}
+.graphContainer .graphTitleDivWithBigArrow{background: url(images/highlights/FHBigArrow.png) no-repeat left top;padding-left: 35px;}
+#FHContentDiv .graphContainer .graphTitleDivWithBigArrow .graphTitle{font-size: 2.1em;color:#4A6878;display: block;margin-bottom: 0.5em;padding-top: 0.1em;}
+#chi-page #FHContentDiv .graphContainer .graphTitleDivWithBigArrow .graphTitle{line-height: 100%;padding-top: 0;}
+#FHContentDiv .graphContainer .graphTitleDivWithBigArrow .graphUnit{margin-left: -35px;}
 #chi-page .graphContainer .graphTitleDivWithArrow{background-position: left 3px;}
 .reviewOperationTwoColumn .graphContainer .graphTitleDiv{margin-bottom: 15px;}
 .graphTitleDiv .graphTitle{font-size: 1.4em; font-family: 'Trade Gothic W01 Bold 2';}
@@ -1013,7 +1017,7 @@ padding: 0 0.5em;}
 .dirtTable tr.titleRow td{ background-color:#db011c;}
 .hooverTable tr.titleRow td{ background-color:#CE1141;}
 .oreckTable tr.titleRow td{ background-color:#004b91;}
-.vaxTable tr.titleRow td{ background-color:#F58426; /* border-top:2px solid #F16528; border-bottom:1px solid #F16528; */}
+.vaxTable tr.titleRow td{ background-color:#ff6814; /* border-top:2px solid #F16528; border-bottom:1px solid #F16528; */}
 .productTechTable tr.lastRow td{border-bottom:1px solid #393939;}
 .productTechTable tr td li.lastList{padding-bottom:0;}
 .productTechfullWidth{border-top:24px solid #E95D12; border-bottom:24px solid #E95D12; padding:60px 0;}

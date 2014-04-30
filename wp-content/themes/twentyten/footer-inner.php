@@ -23,6 +23,7 @@ $nextTipTitle = $nextTipTitle[0];
 $prevTipTitle = get_post_custom_values('tipTitle', $prevPage);
 $prevTipTitle = $prevTipTitle[0];
 ?>
+</div>
 <div class="bottomNav clearfix">
 <?php
 if(!empty($prevPage)){
@@ -136,17 +137,6 @@ $(document).ready(function(){
 	   speed: 0,
 	   delay: 0
 	});
-	
-	if($('body').hasClass('page-id-13') || $('body').hasClass('page-id-18')){
-	//init interactive chart for Chairman’s Statement
-		initChairmanGraph();
-	}
-	else if($('body').hasClass('page-id-326')){
-		initFinancialHighlights("en");
-	}
-	else if($('body').hasClass('page-id-328')){
-		initFinancialHighlights("chi");
-	}
 });
 
 $(window).load(function () {

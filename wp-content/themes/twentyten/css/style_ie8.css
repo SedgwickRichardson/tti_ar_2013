@@ -38,3 +38,15 @@ sup {
 #chi-page .homeSection .btn_readMore .readMoreMid{
 	padding: 19px 0 23px 15px;
 }
+#chi-page .FH_highlight .section_list li {
+    margin-bottom: 5px;
+    padding-top: 2px;
+    background: url(../images/home/main_section_bullet.png) no-repeat left top;
+}
+#content table.financialTable tr td {
+   padding-top: 0.6em;
+    padding-bottom: 0;
+}
+#chi-page #FHContentDiv .graphContainer .graphTitleDivWithBigArrow .graphTitle {
+    padding-top: 0.3em;
+}

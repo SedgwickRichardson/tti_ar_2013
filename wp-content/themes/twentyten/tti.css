@@ -257,6 +257,10 @@ body.page-id-1476 #report-content,body.page-id-1480 #report-content{height:494px
 .chairmanStatementRight .quote{padding-bottom: 2em;}
 .quoteClose{background: url(images/home/chairman_quote_close.png) no-repeat;width:14px;height:11px;display: inline-block;margin-left: 5px;margin-bottom: -5px;}
 #chi-page .quoteClose{margin-left: -8px;}
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+#chi-page .quoteClose{margin-left: 0;}
+}
 #report-content .quote p {font-size: 105%;font-family: 'TradeGothicW01-BoldCn20 675334'; letter-spacing: -1px;line-height: 130%; padding-bottom: 25px; color:#777;}
 #chi-page #report-content .quote p {font-size: 90%;}
 #chi-page .quote{font-family: 'Heiti TC Medium', 'MHeiHK', 'Microsoft Yahei', 'SimHei';font-weight:bold;letter-spacing: 1px;line-height: 150%;font-size: 130%;}

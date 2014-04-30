@@ -156,19 +156,11 @@ $str = '<div class="graphTitleDiv ">';
 $str .= '<span class="graphTitle">Turnover</span>';
 $str .= '<span class="graphUnit">USDm</span>';
 $str .= '</div>';
-$str .= '<div class="graphProfile dotUnderline">';
-$str .= '<span class="figure_arrow_up">&#8593;</span>';
-$str .= '<span class="graphFigure">11.6%</span>';
-$str .= '</div>';
 $homeContent['en']['HIGHLIGHTS chart1 title'] =  $str;
 
 $str = '<div class="graphTitleDiv">';
 $str .= '<span class="graphTitle">營業額</span>';
 $str .= '<span class="graphUnit"> 百萬美元</span>';
-$str .= '</div>';
-$str .= '<div class="graphProfile dotUnderline">';
-$str .= '<span class="figure_arrow_up">&#8593;</span>';
-$str .= '<span class="graphFigure">11.6%</span>';
 $str .= '</div>';
 $homeContent['zh-hant']['HIGHLIGHTS chart1 title'] =  $str;
 
@@ -176,19 +168,11 @@ $str = '<div class="graphTitleDiv">';
 $str .= '<span class="graphTitle">Gross Profit Margin</span>';
 $str .= '<span class="graphUnit">%</span>';
 $str .= '</div>';
-$str .= '<div class="graphProfile dotUnderline">';
-$str .= '<span class="figure_arrow_up">&#8593;</span>';
-$str .= '<span class="graphFigure">70 bpt</span>';
-$str .= '</div>';
 $homeContent['en']['HIGHLIGHTS chart2 title'] =  $str;
 
 $str = '<div class="graphTitleDiv">';
 $str .= '<span class="graphTitle">毛利率</span>';
 $str .= '<span class="graphUnit eng-regular-font">%</span>';
-$str .= '</div>';
-$str .= '<div class="graphProfile dotUnderline">';
-$str .= '<span class="figure_arrow_up">&#8593;</span>';
-$str .= '<span class="graphFigure">70 <span class="chi-bold-font">基點</span></span>';
 $str .= '</div>';
 $homeContent['zh-hant']['HIGHLIGHTS chart2 title'] =  $str;
 
@@ -196,19 +180,11 @@ $str = '<div class="graphTitleDiv">';
 $str .= '<span class="graphTitle">EBIT</span>';
 $str .= '<span class="graphUnit">USDm</span>';
 $str .= '</div>';
-$str .= '<div class="graphProfile dotUnderline">';
-$str .= '<span class="figure_arrow_up">&#8593;</span>';
-$str .= '<span class="graphFigure">16.9%</span>';
-$str .= '</div>';
 $homeContent['en']['HIGHLIGHTS chart3 title'] =  $str;
 
 $str = '<div class="graphTitleDiv">';
 $str .= '<span class="graphTitle">除利息及稅項前盈利</span>';
 $str .= '<span class="graphUnit">百萬美元</span>';
-$str .= '</div>';
-$str .= '<div class="graphProfile dotUnderline">';
-$str .= '<span class="figure_arrow_up">&#8593;</span>';
-$str .= '<span class="graphFigure">16.9%</span>';
 $str .= '</div>';
 $homeContent['zh-hant']['HIGHLIGHTS chart3 title'] =  $str;
 
@@ -216,19 +192,11 @@ $str = '<div class="graphTitleDiv">';
 $str .= '<span class="graphTitle">Basic Earnings per Share</span>';
 $str .= '<span class="graphUnit">US cents</span>';
 $str .= '</div>';
-$str .= '<div class="graphProfile dotUnderline">';
-$str .= '<span class="figure_arrow_up">&#8593;</span>';
-$str .= '<span class="graphFigure">19.8%</span>';
-$str .= '</div>';
 $homeContent['en']['HIGHLIGHTS chart4 title'] =  $str;
 
 $str = '<div class="graphTitleDiv">';
 $str .= '<span class="graphTitle">每股基本盈利</span>';
 $str .= '<span class="graphUnit"> 美仙</span>';
-$str .= '</div>';
-$str .= '<div class="graphProfile dotUnderline">';
-$str .= '<span class="figure_arrow_up">&#8593;</span>';
-$str .= '<span class="graphFigure">19.8%</span>';
 $str .= '</div>';
 $homeContent['zh-hant']['HIGHLIGHTS chart4 title'] =  $str;
 
@@ -276,21 +244,11 @@ $str = '<div class="graphTitleDiv graphTitleDivWithArrow">';
 $str .= '<span class="graphTitle">Dividend per Share</span>';
 $str .= '<span class="graphUnit">US cents</span>';
 $str .= '</div>';
-$str .= '<div class="graphProfile dotUnderline">';
-$str .= '<span class="figure_arrow_up">&#8593;</span>';
-/*$str .= '<span class="smallFont">USD</span>';*/
-$str .= '<span class="graphFigure">35.7%</span>';
-//$str .= '<span class="smallFont">m</span>';
-$str .= '</div>';
 $homeContent['en']['CHAIRMANS STATEMENT chart1 title'] = $str;
 
 $str = '<div class="graphTitleDiv graphTitleDivWithArrow">';
 $str .= '<span class="graphTitle">每股股息</span>';
 $str .= '<span class="graphUnit">美仙</span>';
-$str .= '</div>';
-$str .= '<div class="graphProfile dotUnderline">';
-$str .= '<span class="figure_arrow_up">&#8593;</span>';
-$str .= '<span class="graphFigure">35.7%</span>';
 $str .= '</div>';
 $homeContent['zh-hant']['CHAIRMANS STATEMENT chart1 title'] = $str;
 
@@ -298,19 +256,11 @@ $str = '<div class="graphTitleDiv graphTitleDivWithArrow">';
 $str .= '<span class="graphTitle">Basic Earnings per Share</span>';
 $str .= '<span class="graphUnit">US cents</span>';
 $str .= '</div>';
-$str .= '<div class="graphProfile dotUnderline">';
-$str .= '<span class="figure_arrow_up">&#8593;</span>';
-$str .= '<span class="graphFigure">19.8%</span>';
-$str .= '</div>';
 $homeContent['en']['CHAIRMANS STATEMENT chart2 title'] = $str;
 
 $str = '<div class="graphTitleDiv graphTitleDivWithArrow">';
 $str .= '<span class="graphTitle">每股基本盈利</span>';
 $str .= '<span class="graphUnit">美仙</span>';
-$str .= '</div>';
-$str .= '<div class="graphProfile dotUnderline">';
-$str .= '<span class="figure_arrow_up">&#8593;</span>';
-$str .= '<span class="graphFigure">19.8%</span>';
 $str .= '</div>';
 $homeContent['zh-hant']['CHAIRMANS STATEMENT chart2 title'] = $str;
 
@@ -550,10 +500,10 @@ $(document).ready(function(){
 $(window).load(function () {
     initHomeScrollMenu();  
 	 <?php
-	 if(ICL_LANGUAGE_CODE=="en")
+	 /*if(ICL_LANGUAGE_CODE=="en")
 		echo 'initHomeGraph("en");';
 	else
-		echo 'initHomeGraph("zh-hant");';
+		echo 'initHomeGraph("zh-hant");';*/
 	?>
 });
 </script>
@@ -599,16 +549,16 @@ $(window).load(function () {
               		<?php echo $homeContent[ICL_LANGUAGE_CODE]['HIGHLIGHTS Table'];?>
 					<div class="FH_highlight_graph clearfix">
 						<div class="graphContainer"> <?php echo $homeContent[ICL_LANGUAGE_CODE]['HIGHLIGHTS chart1 title'];?>
-						<div id="home-graph-container-1" class="graph-container" style="width: 180px;height: 230px;"></div>
+						<img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/TTI_home_FH_01_Turnover.jpg" width="185" height="375" alt="" />
 						</div>
 						<div class="graphContainer"> <?php echo $homeContent[ICL_LANGUAGE_CODE]['HIGHLIGHTS chart2 title'];?>
-						<div id="home-graph-container-2" class="graph-container" style="width: 180px;height: 230px;"></div>
+						<img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/<?php if(ICL_LANGUAGE_CODE=="en"){echo 'TTI_home_FH_02_GrossPM.jpg';}else{echo 'TTI_home_FH_02_GrossPM_Chi.jpg';}?>" width="185" height="375" alt="" />
 						</div>
 						<div class="graphContainer"> <?php echo $homeContent[ICL_LANGUAGE_CODE]['HIGHLIGHTS chart3 title'] ;?>
-						<div id="home-graph-container-3" class="graph-container" style="width: 180px;height: 230px;"></div>
+						<img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/TTI_home_FH_03_EBIT.jpg" width="185" height="375" alt="" />
 						</div>
 						<div class="graphContainer noMarginRight"> <?php echo $homeContent[ICL_LANGUAGE_CODE]['HIGHLIGHTS chart4 title'] ;?>
-						<div id="home-graph-container-4" class="graph-container" style="width: 180px;height: 230px;"></div>
+						<img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/TTI_home_FH_04_BasicEPS.jpg" width="185" height="375" alt="" />
 						</div>
               		</div>
               		<div class="readMoreDiv"> <a href="<?php echo site_url();echo get_curr_lang_path() ; ?>/financial-highlights<?php echo get_curr_lang_second_path() ; ?>" class="btn_readMore clearfix"> <span class="readMoreLeft"></span> <span class="readMoreMid"><?php echo $homeContent[ICL_LANGUAGE_CODE]['Financial Highlights read more'] ;?></span> <span class="readMoreRight"></span> </a>
@@ -627,10 +577,10 @@ $(window).load(function () {
                   <div class="contentLeft">
                   	<img src="<?php bloginfo('wpurl'); ?>/wp-content/themes/twentyten/images/home/img_chairman.jpg" alt="" />
                   	<div class="graphContainer noMarginRight"> <?php echo $homeContent[ICL_LANGUAGE_CODE]['CHAIRMANS STATEMENT chart1 title'] ;?>
-                        <div id="home-graph-container-5" class="graph-container" style="width: 244px; height: 250px;"></div>
+                        <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/TTI_home_Chairman_01_DividendPS.jpg" width="244" height="320" alt="" />
                       </div>
                       <div class="graphContainer noMarginRight"> <?php echo $homeContent[ICL_LANGUAGE_CODE]['CHAIRMANS STATEMENT chart2 title'] ;?>
-                        <div id="home-graph-container-6" class="graph-container" style="width: 244px; height: 250px;"></div>
+                        <img src="<?php bloginfo('wpurl'); ?>/wp-content/uploads/2013/home/TTI_home_Chairman_02_BasicEPS.jpg" width="244" height="320" alt="" />
                       </div>
                   </div>
                   <div class="contentRight">

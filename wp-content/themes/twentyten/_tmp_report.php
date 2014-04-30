@@ -23,7 +23,7 @@ $langContent['zh-hant']['width'] = '125';
 $langContent['en']['Print this page'] = 'Print this page';
 $langContent['zh-hant']['Print this page'] = '列印此頁';
 $langContent['en']['Print this page in PDF'] = 'Print this page';
-$langContent['zh-hant']['Print this page in PDF'] = '列印此頁PDF';
+$langContent['zh-hant']['Print this page in PDF'] = '列印此頁';
 $langContent['en']['Download PDF file of this section'] = '&#128229;';
 $langContent['zh-hant']['Download PDF file of this section'] = '&#128229;';
 $langContent['en']['Email this page'] = '&#59196;';
@@ -56,17 +56,17 @@ $prevTipTitle = $prevTipTitle[0];
 							
 							<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
 							<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5153b9e640b238a8"></script>
-						
-						<?php
-						if(!empty($pdfLink)){	?>
 							<div id="iconBtn">
 								<a href="javascript:;" id="headerShareBtn"><?php echo $langContent[ICL_LANGUAGE_CODE]['Email this page']; ?></a>
+							<?php
+							if(!empty($pdfLink)){
+							?>
 								<a class="tooltip-left" title="<?php echo $langContent[ICL_LANGUAGE_CODE]['Download this section']; ?>" id="downloadLink" target="_blank" href="<?php echo site_url();echo $pdfLink;?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Download this section']; ?></a>
-								<a class="tooltip-left" title="<?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?>" id="printLink" target="_blank" href="javascript:window.print()<?php //echo site_url();//echo $pdfLink;?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?></a>
+							<?
+							}
+							?>
+								<a class="tooltip-left" title="<?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?>" id="printLink" target="_blank" href="<?php echo get_permalink();?>/printpage/"><?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?></a>
 							</div>
-						<?
-						}
-						?>
 							<div id="topLinearLinkContainer" style="width:<?php echo $langContent[ICL_LANGUAGE_CODE]['width']; ?>px;">
 								<?php
 								if(!empty($prevPage)){

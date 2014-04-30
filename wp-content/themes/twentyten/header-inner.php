@@ -65,11 +65,8 @@ $homeContent['zh-hant']['fb description'] = '創科實業於二零一三年之�
 <script type='text/javascript' src='<?php bloginfo( 'template_url' ); ?>/js/jquery.pngFix.pack.js'></script>
 <script type="text/javascript" src='<?php bloginfo( 'template_url' ); ?>/js/jquery.scrollTo-1.4.2-min.js'></script>
 <script type="text/javascript" src='<?php bloginfo( 'template_url' ); ?>/js/jquery.localscroll-1.2.7-min.js'></script>
-<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/highcharts.js"></script>
-<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/exporting.js"></script>
-<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/graph.js"></script>
 <script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
-<!--[if IE 9]>
+<!--[if gte IE 9]>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/style_ie9.css"/>
 <![endif]-->
 <!--[if lte IE 8]>

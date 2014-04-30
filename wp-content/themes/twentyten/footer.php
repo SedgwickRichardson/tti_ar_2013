@@ -99,7 +99,6 @@ $(document).ready(function(){
     });
    
    initTopNav();
-   initOperationalMap();
    inithomeBrandTab('homePowerEquipmentBrandTabContainer', 'homePowerEquipmentBrandContentContainer');
    inithomeBrandTab('homeFloorCareBrandTabContainer', 'homeFloorCareBrandContentContainer');
 
