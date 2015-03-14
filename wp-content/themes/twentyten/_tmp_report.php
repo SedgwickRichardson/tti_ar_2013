@@ -55,7 +55,7 @@ $prevTipTitle = $prevTipTitle[0];
 						<div class="pageLinkContainer">
 							
 							<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
-							<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5153b9e640b238a8"></script>
+							<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5371c0312930a49e"></script>
 							<div id="iconBtn">
 								<a href="javascript:;" id="headerShareBtn"><?php echo $langContent[ICL_LANGUAGE_CODE]['Email this page']; ?></a>
 							<?php

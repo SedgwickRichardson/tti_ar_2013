@@ -21,7 +21,7 @@ if ($_SERVER['SERVER_NAME'] == "tti-ar2013.local.com") {
 	define('WP_HOME', 'http://tti-ar2013.local.com');
 	define('WP_SITEURL', 'http://tti-ar2013.local.com');
 	define('DB_USER', 'root');
-	define('DB_PASSWORD', 'alvarpoon');
+	define('DB_PASSWORD', 'root');
 	define('DB_HOST', 'localhost');
 }
 else if($_SERVER['SERVER_NAME'] == "tti-ar2013.sedgwick-richardson.hk"){

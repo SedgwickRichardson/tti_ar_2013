@@ -515,7 +515,7 @@ $(window).load(function () {
 			  <div id="iconBtn">
 					<a href="javascript:;" id="headerShareBtn"><?php echo $langContent[ICL_LANGUAGE_CODE]['Email this page']; ?></a>
 					<a class="tooltip-left" title="<?php echo $langContent[ICL_LANGUAGE_CODE]['Download this section']; ?>" id="downloadLink" target="_blank" href="<?php echo site_url();echo '/wp-content/uploads/2013/pdf/';echo $homeContent[ICL_LANGUAGE_CODE]['PDF Links'];?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Download this section']; ?></a>
-					<a class="tooltip-left" title="<?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?>" id="printLink" target="_blank" href="javascript:window.print()<?php //echo site_url();//echo '/wp-content/uploads/2013/pdf/';echo $homeContent[ICL_LANGUAGE_CODE]['PDF Links'];?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?></a>
+					<a class="tooltip-left" title="<?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?>" id="printLink" target="_blank" href="<?php echo site_url();echo '/wp-content/uploads/2013/pdf/';echo $homeContent[ICL_LANGUAGE_CODE]['PDF Links'];?>"><?php echo $langContent[ICL_LANGUAGE_CODE]['Print this page in PDF']?></a>
 			  </div>  
 			  <div class="addthis_toolbox addthis_default_style shareBox" id="shareBox" style="display:none; <?php echo $langContent[ICL_LANGUAGE_CODE]['home share position']; ?>">
 			  	<div class="shareBoxContent">
@@ -529,7 +529,7 @@ $(window).load(function () {
 			  </div>
 		  </div>
 		  <script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
-		  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5153b9e640b238a8"></script>
+		  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5371c0312930a49e"></script>
         <div class="homeContentLeft">
           <div class="homeSection">
           	<div class="sectionContent">

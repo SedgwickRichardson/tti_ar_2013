@@ -22,7 +22,7 @@ $homeContent['zh-hant']['fb description'] = '創科實業於二零一三年之�
 <meta property="og:image" content="<?php bloginfo( 'template_url' ); ?>/images/home/fb_cover<?php if(ICL_LANGUAGE_CODE=="zh-hant") echo '_tc';?>.jpg" />
 <meta property="og:url" content="<?php echo get_permalink(); ?>" />
 <meta property="og:title" content="<?php echo $homeContent[$currLang]['TTI Annual Report 2012'] ?>" />
-<meta property="og:description" content="<?php echo $homeContent[$currLang]['fb description'] ?>" />
+<meta property="og:description" content="<?php echo $homeContent[$currLang]['fb description'] ?>" /><meta property="og:type" content="website" />
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title><?php
 	$pa = get_post_ancestors( $post );
